@@ -7,6 +7,7 @@
 # Kevin van As
 #	23 11 2018: Original
 #	04 12 2018: Implemented lookupTable
+#	05 02 2019: Implemented sine function
 
 import os.path
 import numpy as np
@@ -15,12 +16,26 @@ from io import StringIO
 def none(t):
 	return 1
 
-
-# TODO: Sinusoid callable
+class sin:
+	# 'frequency' is the frequency [Hz] of the sine function, such that period=1/f and omega=2*pi*f.
+	# 'amplitude' is the amplitude of the sine function (so peak-crest is 2*amplitude).
+	# 'offset' shifts the sine vertically. WARNING: Then the sine will no longer have a mean of one.
+	# 'phase' [deg] shifts the sine functions horizontally. If you want to shift in coordinate space, then use `t_min = phase/(2*pi*f)` to set the right phase.
+	def __init__(self, frequency, amplitude, offset=0, phase=0):
+		#print("frequency = " + str(frequency) + ", amplitude = " + str(amplitude) + ", offset = " + str(offset) + ", phase = " + str(phase) + ".")
+		self.amp = float(amplitude)
+		self.omega = 2*np.pi * float(frequency)
+		#self.period = 1.0/frequency
+		self.offset = float(offset)
+		self.phase = float(phase)/180.0*np.pi # deg2rad phase
+	def __call__(self, t):
+		# A*sin(wt+phi)+1 has mean one.
+		return np.sin(self.omega * t + self.phase)*self.amp + 1 + self.offset
 
 class lookupTable:
-	def __init__(self, table, boundaryStrategy="cyclic"): #TODO: offset time;
+	def __init__(self, table, boundaryStrategy="cyclic", scaleToMeanOne=True): #TODO: offset time;
 		self.boundaryStrategy = boundaryStrategy
+		self.scaleToMeanOne = bool(scaleToMeanOne)
 
 		#print("table = " + str(table) + " is a " + str(type(table)))
 		#print("boundaryStrategy = " + str(boundaryStrategy) + " is a " + str(type(boundaryStrategy)))
@@ -74,6 +89,10 @@ class lookupTable:
 			raise ValueError("Received table=\"" + str(table) + "\" of type \"" + str(type(table)) + "\" with shape \""+str(shape)+
 							"\", with the correct format. However, the maximum time is not the last entry in the list, but was found at index " +
 							str(np.argmax(table[:,0])) + ".")
+
+		# Scale to mean=1?
+		if self.scaleToMeanOne:
+			table[:,1] = table[:,1] / np.mean(table[:,1])
 
 		## OK!
 		self.table = table
