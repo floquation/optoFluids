@@ -1,4 +1,6 @@
 #! /usr/bin/python3
+# TODO: Unfinished script.
+# Instead, we currently write many images to file, then sort them by frame, and then use Blender to convert an image sequence into a video.
 
 #
 #
