@@ -1,0 +1,616 @@
+     REFMED =   1.0000   REFRE =   0.155000E+01   REFIM =   0.000000E+00
+     SPHERE RADIUS =   0.525   WAVELENGTH =  0.6328
+     SIZE PARAMETER =    5.213
+
+ +++ Camera: r =   -1.0000000      -1.0000000       0.0000000    
+ +++ Camera: r =  -0.80000001      -1.0000000       0.0000000    
+ +++ Camera: r =  -0.60000002      -1.0000000       0.0000000    
+ +++ Camera: r =  -0.39999998      -1.0000000       0.0000000    
+ +++ Camera: r =  -0.19999999      -1.0000000       0.0000000    
+ +++ Camera: r =    0.0000000      -1.0000000       0.0000000    
+ +++ Camera: r =   0.20000005      -1.0000000       0.0000000    
+ +++ Camera: r =   0.39999998      -1.0000000       0.0000000    
+ +++ Camera: r =   0.60000002      -1.0000000       0.0000000    
+ +++ Camera: r =   0.79999995      -1.0000000       0.0000000    
+ +++ Camera: r =    1.0000000      -1.0000000       0.0000000    
+ +++ Camera: r =   -1.0000000     -0.80000001       0.0000000    
+ +++ Camera: r =  -0.80000001     -0.80000001       0.0000000    
+ +++ Camera: r =  -0.60000002     -0.80000001       0.0000000    
+ +++ Camera: r =  -0.39999998     -0.80000001       0.0000000    
+ +++ Camera: r =  -0.19999999     -0.80000001       0.0000000    
+ +++ Camera: r =    0.0000000     -0.80000001       0.0000000    
+ +++ Camera: r =   0.20000005     -0.80000001       0.0000000    
+ +++ Camera: r =   0.39999998     -0.80000001       0.0000000    
+ +++ Camera: r =   0.60000002     -0.80000001       0.0000000    
+ +++ Camera: r =   0.79999995     -0.80000001       0.0000000    
+ +++ Camera: r =    1.0000000     -0.80000001       0.0000000    
+ +++ Camera: r =   -1.0000000     -0.60000002       0.0000000    
+ +++ Camera: r =  -0.80000001     -0.60000002       0.0000000    
+ +++ Camera: r =  -0.60000002     -0.60000002       0.0000000    
+ +++ Camera: r =  -0.39999998     -0.60000002       0.0000000    
+ +++ Camera: r =  -0.19999999     -0.60000002       0.0000000    
+ +++ Camera: r =    0.0000000     -0.60000002       0.0000000    
+ +++ Camera: r =   0.20000005     -0.60000002       0.0000000    
+ +++ Camera: r =   0.39999998     -0.60000002       0.0000000    
+ +++ Camera: r =   0.60000002     -0.60000002       0.0000000    
+ +++ Camera: r =   0.79999995     -0.60000002       0.0000000    
+ +++ Camera: r =    1.0000000     -0.60000002       0.0000000    
+ +++ Camera: r =   -1.0000000     -0.39999998       0.0000000    
+ +++ Camera: r =  -0.80000001     -0.39999998       0.0000000    
+ +++ Camera: r =  -0.60000002     -0.39999998       0.0000000    
+ +++ Camera: r =  -0.39999998     -0.39999998       0.0000000    
+ +++ Camera: r =  -0.19999999     -0.39999998       0.0000000    
+ +++ Camera: r =    0.0000000     -0.39999998       0.0000000    
+ +++ Camera: r =   0.20000005     -0.39999998       0.0000000    
+ +++ Camera: r =   0.39999998     -0.39999998       0.0000000    
+ +++ Camera: r =   0.60000002     -0.39999998       0.0000000    
+ +++ Camera: r =   0.79999995     -0.39999998       0.0000000    
+ +++ Camera: r =    1.0000000     -0.39999998       0.0000000    
+ +++ Camera: r =   -1.0000000     -0.19999999       0.0000000    
+ +++ Camera: r =  -0.80000001     -0.19999999       0.0000000    
+ +++ Camera: r =  -0.60000002     -0.19999999       0.0000000    
+ +++ Camera: r =  -0.39999998     -0.19999999       0.0000000    
+ +++ Camera: r =  -0.19999999     -0.19999999       0.0000000    
+ +++ Camera: r =    0.0000000     -0.19999999       0.0000000    
+ +++ Camera: r =   0.20000005     -0.19999999       0.0000000    
+ +++ Camera: r =   0.39999998     -0.19999999       0.0000000    
+ +++ Camera: r =   0.60000002     -0.19999999       0.0000000    
+ +++ Camera: r =   0.79999995     -0.19999999       0.0000000    
+ +++ Camera: r =    1.0000000     -0.19999999       0.0000000    
+ +++ Camera: r =   -1.0000000       0.0000000       0.0000000    
+ +++ Camera: r =  -0.80000001       0.0000000       0.0000000    
+ +++ Camera: r =  -0.60000002       0.0000000       0.0000000    
+ +++ Camera: r =  -0.39999998       0.0000000       0.0000000    
+ +++ Camera: r =  -0.19999999       0.0000000       0.0000000    
+ +++ Camera: r =    0.0000000       0.0000000       0.0000000    
+ +++ Camera: r =   0.20000005       0.0000000       0.0000000    
+ +++ Camera: r =   0.39999998       0.0000000       0.0000000    
+ +++ Camera: r =   0.60000002       0.0000000       0.0000000    
+ +++ Camera: r =   0.79999995       0.0000000       0.0000000    
+ +++ Camera: r =    1.0000000       0.0000000       0.0000000    
+ +++ Camera: r =   -1.0000000      0.20000005       0.0000000    
+ +++ Camera: r =  -0.80000001      0.20000005       0.0000000    
+ +++ Camera: r =  -0.60000002      0.20000005       0.0000000    
+ +++ Camera: r =  -0.39999998      0.20000005       0.0000000    
+ +++ Camera: r =  -0.19999999      0.20000005       0.0000000    
+ +++ Camera: r =    0.0000000      0.20000005       0.0000000    
+ +++ Camera: r =   0.20000005      0.20000005       0.0000000    
+ +++ Camera: r =   0.39999998      0.20000005       0.0000000    
+ +++ Camera: r =   0.60000002      0.20000005       0.0000000    
+ +++ Camera: r =   0.79999995      0.20000005       0.0000000    
+ +++ Camera: r =    1.0000000      0.20000005       0.0000000    
+ +++ Camera: r =   -1.0000000      0.39999998       0.0000000    
+ +++ Camera: r =  -0.80000001      0.39999998       0.0000000    
+ +++ Camera: r =  -0.60000002      0.39999998       0.0000000    
+ +++ Camera: r =  -0.39999998      0.39999998       0.0000000    
+ +++ Camera: r =  -0.19999999      0.39999998       0.0000000    
+ +++ Camera: r =    0.0000000      0.39999998       0.0000000    
+ +++ Camera: r =   0.20000005      0.39999998       0.0000000    
+ +++ Camera: r =   0.39999998      0.39999998       0.0000000    
+ +++ Camera: r =   0.60000002      0.39999998       0.0000000    
+ +++ Camera: r =   0.79999995      0.39999998       0.0000000    
+ +++ Camera: r =    1.0000000      0.39999998       0.0000000    
+ +++ Camera: r =   -1.0000000      0.60000002       0.0000000    
+ +++ Camera: r =  -0.80000001      0.60000002       0.0000000    
+ +++ Camera: r =  -0.60000002      0.60000002       0.0000000    
+ +++ Camera: r =  -0.39999998      0.60000002       0.0000000    
+ +++ Camera: r =  -0.19999999      0.60000002       0.0000000    
+ +++ Camera: r =    0.0000000      0.60000002       0.0000000    
+ +++ Camera: r =   0.20000005      0.60000002       0.0000000    
+ +++ Camera: r =   0.39999998      0.60000002       0.0000000    
+ +++ Camera: r =   0.60000002      0.60000002       0.0000000    
+ +++ Camera: r =   0.79999995      0.60000002       0.0000000    
+ +++ Camera: r =    1.0000000      0.60000002       0.0000000    
+ +++ Camera: r =   -1.0000000      0.79999995       0.0000000    
+ +++ Camera: r =  -0.80000001      0.79999995       0.0000000    
+ +++ Camera: r =  -0.60000002      0.79999995       0.0000000    
+ +++ Camera: r =  -0.39999998      0.79999995       0.0000000    
+ +++ Camera: r =  -0.19999999      0.79999995       0.0000000    
+ +++ Camera: r =    0.0000000      0.79999995       0.0000000    
+ +++ Camera: r =   0.20000005      0.79999995       0.0000000    
+ +++ Camera: r =   0.39999998      0.79999995       0.0000000    
+ +++ Camera: r =   0.60000002      0.79999995       0.0000000    
+ +++ Camera: r =   0.79999995      0.79999995       0.0000000    
+ +++ Camera: r =    1.0000000      0.79999995       0.0000000    
+ +++ Camera: r =   -1.0000000       1.0000000       0.0000000    
+ +++ Camera: r =  -0.80000001       1.0000000       0.0000000    
+ +++ Camera: r =  -0.60000002       1.0000000       0.0000000    
+ +++ Camera: r =  -0.39999998       1.0000000       0.0000000    
+ +++ Camera: r =  -0.19999999       1.0000000       0.0000000    
+ +++ Camera: r =    0.0000000       1.0000000       0.0000000    
+ +++ Camera: r =   0.20000005       1.0000000       0.0000000    
+ +++ Camera: r =   0.39999998       1.0000000       0.0000000    
+ +++ Camera: r =   0.60000002       1.0000000       0.0000000    
+ +++ Camera: r =   0.79999995       1.0000000       0.0000000    
+ +++ Camera: r =    1.0000000       1.0000000       0.0000000    
+ +++ (Sphere): Created sphere:Sphere(x=   5.2128196,refrel= (  1.5500000    ,  0.0000000    ),r={   1.0000000,   1.0000000,   1.0000000})
+ +++ (MieAlgorithmFF.init) khat =    0.0000000       0.0000000       1.0000000    
+ +++ MieAlgorithmFF.scatter(): Sphere(x=  1.22610028E-38,refrel= (  0.0000000    , 5.90841242E-39),r={   0.0000000,   1.0000000,   1.0000000})
+ +++ SphereManager: i =            1
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   -1.0000000000000000       -1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   -1.0000000      -2.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    1.9913306236267090     
+ +++ SphereManager: i =            2
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.80000001192092896       -1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =  -0.80000001      -2.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0054275989532471     
+ +++ SphereManager: i =            3
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.60000002384185791       -1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =  -0.60000002      -2.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0174326896667480     
+ +++ SphereManager: i =            4
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.39999997615814209       -1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =  -0.39999998      -2.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0266461372375488     
+ +++ SphereManager: i =            5
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.19999998807907104       -1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =  -0.19999999      -2.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0324568748474121     
+ +++ SphereManager: i =            6
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    0.0000000000000000       -1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =    0.0000000      -2.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0344438552856445     
+ +++ SphereManager: i =            7
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.20000004768371582       -1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   0.20000005      -2.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0324568748474121     
+ +++ SphereManager: i =            8
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.39999997615814209       -1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   0.39999998      -2.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0266461372375488     
+ +++ SphereManager: i =            9
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.60000002384185791       -1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   0.60000002      -2.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0174326896667480     
+ +++ SphereManager: i =           10
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.79999995231628418       -1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   0.79999995      -2.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0054275989532471     
+ +++ SphereManager: i =           11
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    1.0000000000000000       -1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =    1.0000000      -2.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    1.9913306236267090     
+ +++ SphereManager: i =           12
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   -1.0000000000000000      -0.80000001192092896        0.0000000000000000     
+ +++ SphereManager: dr =   -1.0000000      -1.8000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0228924751281738     
+ +++ SphereManager: i =           13
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.80000001192092896      -0.80000001192092896        0.0000000000000000     
+ +++ SphereManager: dr =  -0.80000001      -1.8000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0405635833740234     
+ +++ SphereManager: i =           14
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.60000002384185791      -0.80000001192092896        0.0000000000000000     
+ +++ SphereManager: dr =  -0.60000002      -1.8000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0558459758758545     
+ +++ SphereManager: i =           15
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.39999997615814209      -0.80000001192092896        0.0000000000000000     
+ +++ SphereManager: dr =  -0.39999998      -1.8000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0677287578582764     
+ +++ SphereManager: i =           16
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.19999998807907104      -0.80000001192092896        0.0000000000000000     
+ +++ SphereManager: dr =  -0.19999999      -1.8000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0752944946289063     
+ +++ SphereManager: i =           17
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    0.0000000000000000      -0.80000001192092896        0.0000000000000000     
+ +++ SphereManager: dr =    0.0000000      -1.8000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0778949260711670     
+ +++ SphereManager: i =           18
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.20000004768371582      -0.80000001192092896        0.0000000000000000     
+ +++ SphereManager: dr =   0.20000005      -1.8000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0752944946289063     
+ +++ SphereManager: i =           19
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.39999997615814209      -0.80000001192092896        0.0000000000000000     
+ +++ SphereManager: dr =   0.39999998      -1.8000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0677287578582764     
+ +++ SphereManager: i =           20
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.60000002384185791      -0.80000001192092896        0.0000000000000000     
+ +++ SphereManager: dr =   0.60000002      -1.8000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0558459758758545     
+ +++ SphereManager: i =           21
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.79999995231628418      -0.80000001192092896        0.0000000000000000     
+ +++ SphereManager: dr =   0.79999995      -1.8000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0405635833740234     
+ +++ SphereManager: i =           22
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    1.0000000000000000      -0.80000001192092896        0.0000000000000000     
+ +++ SphereManager: dr =    1.0000000      -1.8000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0228924751281738     
+ +++ SphereManager: i =           23
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   -1.0000000000000000      -0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =   -1.0000000      -1.6000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0581541061401367     
+ +++ SphereManager: i =           24
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.80000001192092896      -0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =  -0.80000001      -1.6000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0805358886718750     
+ +++ SphereManager: i =           25
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.60000002384185791      -0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =  -0.60000002      -1.6000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1002666950225830     
+ +++ SphereManager: i =           26
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.39999997615814209      -0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =  -0.39999998      -1.6000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1158638000488281     
+ +++ SphereManager: i =           27
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.19999998807907104      -0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =  -0.19999999      -1.6000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1259174346923828     
+ +++ SphereManager: i =           28
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    0.0000000000000000      -0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =    0.0000000      -1.6000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1293957233428955     
+ +++ SphereManager: i =           29
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.20000004768371582      -0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =   0.20000005      -1.6000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1259174346923828     
+ +++ SphereManager: i =           30
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.39999997615814209      -0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =   0.39999998      -1.6000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1158638000488281     
+ +++ SphereManager: i =           31
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.60000002384185791      -0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =   0.60000002      -1.6000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1002666950225830     
+ +++ SphereManager: i =           32
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.79999995231628418      -0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =   0.79999995      -1.6000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0805361270904541     
+ +++ SphereManager: i =           33
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    1.0000000000000000      -0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =    1.0000000      -1.6000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0581541061401367     
+ +++ SphereManager: i =           34
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   -1.0000000000000000      -0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =   -1.0000000      -1.4000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0973060131072998     
+ +++ SphereManager: i =           35
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.80000001192092896      -0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =  -0.80000001      -1.4000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1259174346923828     
+ +++ SphereManager: i =           36
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.60000002384185791      -0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =  -0.60000002      -1.4000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1517498493194580     
+ +++ SphereManager: i =           37
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.39999997615814209      -0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =  -0.39999998      -1.4000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1726100444793701     
+ +++ SphereManager: i =           38
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.19999998807907104      -0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =  -0.19999999      -1.4000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1862759590148926     
+ +++ SphereManager: i =           39
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    0.0000000000000000      -0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =    0.0000000      -1.4000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1910457611083984     
+ +++ SphereManager: i =           40
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.20000004768371582      -0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =   0.20000005      -1.4000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1862759590148926     
+ +++ SphereManager: i =           41
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.39999997615814209      -0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =   0.39999998      -1.4000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1726100444793701     
+ +++ SphereManager: i =           42
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.60000002384185791      -0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =   0.60000002      -1.4000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1517498493194580     
+ +++ SphereManager: i =           43
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.79999995231628418      -0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =   0.79999995      -1.4000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1259174346923828     
+ +++ SphereManager: i =           44
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    1.0000000000000000      -0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =    1.0000000      -1.4000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.0973060131072998     
+ +++ SphereManager: i =           45
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   -1.0000000000000000      -0.19999998807907104        0.0000000000000000     
+ +++ SphereManager: dr =   -1.0000000      -1.2000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1402404308319092     
+ +++ SphereManager: i =           46
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.80000001192092896      -0.19999998807907104        0.0000000000000000     
+ +++ SphereManager: dr =  -0.80000001      -1.2000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1770622730255127     
+ +++ SphereManager: i =           47
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.60000002384185791      -0.19999998807907104        0.0000000000000000     
+ +++ SphereManager: dr =  -0.60000002      -1.2000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2113184928894043     
+ +++ SphereManager: i =           48
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.39999997615814209      -0.19999998807907104        0.0000000000000000     
+ +++ SphereManager: dr =  -0.39999998      -1.2000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2397603988647461     
+ +++ SphereManager: i =           49
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.19999998807907104      -0.19999998807907104        0.0000000000000000     
+ +++ SphereManager: dr =  -0.19999999      -1.2000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2588057518005371     
+ +++ SphereManager: i =           50
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    0.0000000000000000      -0.19999998807907104        0.0000000000000000     
+ +++ SphereManager: dr =    0.0000000      -1.2000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2655346393585205     
+ +++ SphereManager: i =           51
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.20000004768371582      -0.19999998807907104        0.0000000000000000     
+ +++ SphereManager: dr =   0.20000005      -1.2000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2588057518005371     
+ +++ SphereManager: i =           52
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.39999997615814209      -0.19999998807907104        0.0000000000000000     
+ +++ SphereManager: dr =   0.39999998      -1.2000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2397603988647461     
+ +++ SphereManager: i =           53
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.60000002384185791      -0.19999998807907104        0.0000000000000000     
+ +++ SphereManager: dr =   0.60000002      -1.2000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2113184928894043     
+ +++ SphereManager: i =           54
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.79999995231628418      -0.19999998807907104        0.0000000000000000     
+ +++ SphereManager: dr =   0.79999995      -1.2000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1770622730255127     
+ +++ SphereManager: i =           55
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    1.0000000000000000      -0.19999998807907104        0.0000000000000000     
+ +++ SphereManager: dr =    1.0000000      -1.2000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1402404308319092     
+ +++ SphereManager: i =           56
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   -1.0000000000000000        0.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   -1.0000000      -1.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1862759590148926     
+ +++ SphereManager: i =           57
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.80000001192092896        0.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =  -0.80000001      -1.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2337625026702881     
+ +++ SphereManager: i =           58
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.60000002384185791        0.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =  -0.60000002      -1.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2796244621276855     
+ +++ SphereManager: i =           59
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.39999997615814209        0.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =  -0.39999998      -1.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3191235065460205     
+ +++ SphereManager: i =           60
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.19999998807907104        0.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =  -0.19999999      -1.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3463897705078125     
+ +++ SphereManager: i =           61
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    0.0000000000000000        0.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =    0.0000000      -1.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3561944961547852     
+ +++ SphereManager: i =           62
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.20000004768371582        0.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   0.20000005      -1.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3463897705078125     
+ +++ SphereManager: i =           63
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.39999997615814209        0.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   0.39999998      -1.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3191235065460205     
+ +++ SphereManager: i =           64
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.60000002384185791        0.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   0.60000002      -1.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2796244621276855     
+ +++ SphereManager: i =           65
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.79999995231628418        0.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   0.79999995      -1.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2337625026702881     
+ +++ SphereManager: i =           66
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    1.0000000000000000        0.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =    1.0000000      -1.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.1862759590148926     
+ +++ SphereManager: i =           67
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   -1.0000000000000000       0.20000004768371582        0.0000000000000000     
+ +++ SphereManager: dr =   -1.0000000     -0.79999995      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2337625026702881     
+ +++ SphereManager: i =           68
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.80000001192092896       0.20000004768371582        0.0000000000000000     
+ +++ SphereManager: dr =  -0.80000001     -0.79999995      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2946355342864990     
+ +++ SphereManager: i =           69
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.60000002384185791       0.20000004768371582        0.0000000000000000     
+ +++ SphereManager: dr =  -0.60000002     -0.79999995      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3561944961547852     
+ +++ SphereManager: i =           70
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.39999997615814209       0.20000004768371582        0.0000000000000000     
+ +++ SphereManager: dr =  -0.39999998     -0.79999995      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.4118649959564209     
+ +++ SphereManager: i =           71
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.19999998807907104       0.20000004768371582        0.0000000000000000     
+ +++ SphereManager: dr =  -0.19999999     -0.79999995      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.4520182609558105     
+ +++ SphereManager: i =           72
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    0.0000000000000000       0.20000004768371582        0.0000000000000000     
+ +++ SphereManager: dr =    0.0000000     -0.79999995      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.4668519496917725     
+ +++ SphereManager: i =           73
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.20000004768371582       0.20000004768371582        0.0000000000000000     
+ +++ SphereManager: dr =   0.20000005     -0.79999995      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.4520182609558105     
+ +++ SphereManager: i =           74
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.39999997615814209       0.20000004768371582        0.0000000000000000     
+ +++ SphereManager: dr =   0.39999998     -0.79999995      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.4118649959564209     
+ +++ SphereManager: i =           75
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.60000002384185791       0.20000004768371582        0.0000000000000000     
+ +++ SphereManager: dr =   0.60000002     -0.79999995      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3561944961547852     
+ +++ SphereManager: i =           76
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.79999995231628418       0.20000004768371582        0.0000000000000000     
+ +++ SphereManager: dr =   0.79999995     -0.79999995      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2946355342864990     
+ +++ SphereManager: i =           77
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    1.0000000000000000       0.20000004768371582        0.0000000000000000     
+ +++ SphereManager: dr =    1.0000000     -0.79999995      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2337625026702881     
+ +++ SphereManager: i =           78
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   -1.0000000000000000       0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =   -1.0000000     -0.60000002      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2796244621276855     
+ +++ SphereManager: i =           79
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.80000001192092896       0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =  -0.80000001     -0.60000002      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3561944961547852     
+ +++ SphereManager: i =           80
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.60000002384185791       0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =  -0.60000002     -0.60000002      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.4379537105560303     
+ +++ SphereManager: i =           81
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.39999997615814209       0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =  -0.39999998     -0.60000002      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.5168387889862061     
+ +++ SphereManager: i =           82
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.19999998807907104       0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =  -0.19999999     -0.60000002      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.5776500701904297     
+ +++ SphereManager: i =           83
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    0.0000000000000000       0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =    0.0000000     -0.60000002      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.6011731624603271     
+ +++ SphereManager: i =           84
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.20000004768371582       0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =   0.20000005     -0.60000002      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.5776500701904297     
+ +++ SphereManager: i =           85
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.39999997615814209       0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =   0.39999998     -0.60000002      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.5168387889862061     
+ +++ SphereManager: i =           86
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.60000002384185791       0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =   0.60000002     -0.60000002      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.4379537105560303     
+ +++ SphereManager: i =           87
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.79999995231628418       0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =   0.79999995     -0.60000002      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3561944961547852     
+ +++ SphereManager: i =           88
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    1.0000000000000000       0.39999997615814209        0.0000000000000000     
+ +++ SphereManager: dr =    1.0000000     -0.60000002      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.2796244621276855     
+ +++ SphereManager: i =           89
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   -1.0000000000000000       0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =   -1.0000000     -0.39999998      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3191235065460205     
+ +++ SphereManager: i =           90
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.80000001192092896       0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =  -0.80000001     -0.39999998      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.4118649959564209     
+ +++ SphereManager: i =           91
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.60000002384185791       0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =  -0.60000002     -0.39999998      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.5168387889862061     
+ +++ SphereManager: i =           92
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.39999997615814209       0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =  -0.39999998     -0.39999998      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.6267867088317871     
+ +++ SphereManager: i =           93
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.19999998807907104       0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =  -0.19999999     -0.39999998      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.7210586071014404     
+ +++ SphereManager: i =           94
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    0.0000000000000000       0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =    0.0000000     -0.39999998      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.7610864639282227     
+ +++ SphereManager: i =           95
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.20000004768371582       0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =   0.20000005     -0.39999998      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.7210581302642822     
+ +++ SphereManager: i =           96
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.39999997615814209       0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =   0.39999998     -0.39999998      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.6267867088317871     
+ +++ SphereManager: i =           97
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.60000002384185791       0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =   0.60000002     -0.39999998      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.5168387889862061     
+ +++ SphereManager: i =           98
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.79999995231628418       0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =   0.79999995     -0.39999998      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.4118649959564209     
+ +++ SphereManager: i =           99
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    1.0000000000000000       0.60000002384185791        0.0000000000000000     
+ +++ SphereManager: dr =    1.0000000     -0.39999998      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3191235065460205     
+ +++ SphereManager: i =          100
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   -1.0000000000000000       0.79999995231628418        0.0000000000000000     
+ +++ SphereManager: dr =   -1.0000000     -0.20000005      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3463897705078125     
+ +++ SphereManager: i =          101
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.80000001192092896       0.79999995231628418        0.0000000000000000     
+ +++ SphereManager: dr =  -0.80000001     -0.20000005      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.4520180225372314     
+ +++ SphereManager: i =          102
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.60000002384185791       0.79999995231628418        0.0000000000000000     
+ +++ SphereManager: dr =  -0.60000002     -0.20000005      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.5776500701904297     
+ +++ SphereManager: i =          103
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.39999997615814209       0.79999995231628418        0.0000000000000000     
+ +++ SphereManager: dr =  -0.39999998     -0.20000005      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.7210581302642822     
+ +++ SphereManager: i =          104
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.19999998807907104       0.79999995231628418        0.0000000000000000     
+ +++ SphereManager: dr =  -0.19999999     -0.20000005      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.8659498691558838     
+ +++ SphereManager: i =          105
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    0.0000000000000000       0.79999995231628418        0.0000000000000000     
+ +++ SphereManager: dr =    0.0000000     -0.20000005      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.9441971778869629     
+ +++ SphereManager: i =          106
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.20000004768371582       0.79999995231628418        0.0000000000000000     
+ +++ SphereManager: dr =   0.20000005     -0.20000005      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.8659498691558838     
+ +++ SphereManager: i =          107
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.39999997615814209       0.79999995231628418        0.0000000000000000     
+ +++ SphereManager: dr =   0.39999998     -0.20000005      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.7210581302642822     
+ +++ SphereManager: i =          108
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.60000002384185791       0.79999995231628418        0.0000000000000000     
+ +++ SphereManager: dr =   0.60000002     -0.20000005      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.5776500701904297     
+ +++ SphereManager: i =          109
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.79999995231628418       0.79999995231628418        0.0000000000000000     
+ +++ SphereManager: dr =   0.79999995     -0.20000005      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.4520182609558105     
+ +++ SphereManager: i =          110
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    1.0000000000000000       0.79999995231628418        0.0000000000000000     
+ +++ SphereManager: dr =    1.0000000     -0.20000005      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3463897705078125     
+ +++ SphereManager: i =          111
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   -1.0000000000000000        1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   -1.0000000       0.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3561944961547852     
+ +++ SphereManager: i =          112
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.80000001192092896        1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =  -0.80000001       0.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.4668517112731934     
+ +++ SphereManager: i =          113
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.60000002384185791        1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =  -0.60000002       0.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.6011731624603271     
+ +++ SphereManager: i =          114
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.39999997615814209        1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =  -0.39999998       0.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.7610864639282227     
+ +++ SphereManager: i =          115
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =  -0.19999998807907104        1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =  -0.19999999       0.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.9441971778869629     
+ +++ SphereManager: i =          116
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    0.0000000000000000        1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =    0.0000000       0.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    3.1415927410125732     
+ +++ SphereManager: i =          117
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.20000004768371582        1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   0.20000005       0.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.9441971778869629     
+ +++ SphereManager: i =          118
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.39999997615814209        1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   0.39999998       0.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.7610864639282227     
+ +++ SphereManager: i =          119
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.60000002384185791        1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   0.60000002       0.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.6011731624603271     
+ +++ SphereManager: i =          120
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =   0.79999995231628418        1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =   0.79999995       0.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.4668519496917725     
+ +++ SphereManager: i =          121
+ +++ SphereManager: rsph =    0.0000000       1.0000000       1.0000000     ; r_trgt =    1.0000000000000000        1.0000000000000000        0.0000000000000000     
+ +++ SphereManager: dr =    1.0000000       0.0000000      -1.0000000    
+ +++ SphereManager: SAngles(i) = acos(<dr,khat>/<dr,dr>) =    2.3561944961547852     
+ +++ MieAlgorithmFF.scatter(): x, refrel =   1.22610028E-38 (  0.0000000    , 5.90841242E-39)
+ +++ MieAlgorithmFF.scatter(): SAngles = [
+   1.9913306236267090        2.0054275989532471        2.0174326896667480        2.0266461372375488        2.0324568748474121        2.0344438552856445        2.0324568748474121        2.0266461372375488        2.0174326896667480        2.0054275989532471        1.9913306236267090        2.0228924751281738        2.0405635833740234        2.0558459758758545        2.0677287578582764        2.0752944946289063        2.0778949260711670        2.0752944946289063        2.0677287578582764        2.0558459758758545        2.0405635833740234        2.0228924751281738        2.0581541061401367        2.0805358886718750        2.1002666950225830        2.1158638000488281        2.1259174346923828        2.1293957233428955        2.1259174346923828        2.1158638000488281        2.1002666950225830        2.0805361270904541        2.0581541061401367        2.0973060131072998        2.1259174346923828        2.1517498493194580        2.1726100444793701        2.1862759590148926        2.1910457611083984        2.1862759590148926        2.1726100444793701        2.1517498493194580        2.1259174346923828        2.0973060131072998        2.1402404308319092        2.1770622730255127        2.2113184928894043        2.2397603988647461        2.2588057518005371        2.2655346393585205        2.2588057518005371        2.2397603988647461        2.2113184928894043        2.1770622730255127        2.1402404308319092        2.1862759590148926        2.2337625026702881        2.2796244621276855        2.3191235065460205        2.3463897705078125        2.3561944961547852        2.3463897705078125        2.3191235065460205        2.2796244621276855        2.2337625026702881        2.1862759590148926        2.2337625026702881        2.2946355342864990        2.3561944961547852        2.4118649959564209        2.4520182609558105        2.4668519496917725        2.4520182609558105        2.4118649959564209        2.3561944961547852        2.2946355342864990        2.2337625026702881        2.2796244621276855        2.3561944961547852        2.4379537105560303        2.5168387889862061        2.5776500701904297        2.6011731624603271        2.5776500701904297        2.5168387889862061        2.4379537105560303        2.3561944961547852        2.2796244621276855        2.3191235065460205        2.4118649959564209        2.5168387889862061        2.6267867088317871        2.7210586071014404        2.7610864639282227        2.7210581302642822        2.6267867088317871        2.5168387889862061        2.4118649959564209        2.3191235065460205        2.3463897705078125        2.4520180225372314        2.5776500701904297        2.7210581302642822        2.8659498691558838        2.9441971778869629        2.8659498691558838        2.7210581302642822        2.5776500701904297        2.4520182609558105        2.3463897705078125        2.3561944961547852        2.4668517112731934        2.6011731624603271        2.7610864639282227        2.9441971778869629        3.1415927410125732        2.9441971778869629        2.7610864639282227        2.6011731624603271        2.4668519496917725        2.3561944961547852     
+ ];

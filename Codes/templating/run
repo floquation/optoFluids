@@ -1,0 +1,1 @@
+#python templateSubstitutor.py -t inputOptics.template -v inputOptics.tempvars -o test.out

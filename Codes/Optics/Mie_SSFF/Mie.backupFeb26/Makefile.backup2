@@ -1,0 +1,129 @@
+#$preamble
+#
+# Script initially inspired by:
+# http://www.webalice.it/o.drofa/davide/makefile-fortran/makefile-fortran.html
+# 
+# A simple hand-made makefile, optionally allowing to use different directories for SRC/BIN/MOD/OBJS.
+# - Kevin van As
+#
+#
+# This makefile works with the GNU make command, the one find on
+# GNU/Linux systems and often called gmake on non-GNU systems.
+#
+#
+# ======================================================================
+# PWDs Variables
+# ======================================================================
+#
+# Use "." to not use a separate directory for the given files:
+# WARNING: You might want to run 'make veryclean' before changing these,
+#          as it will affect the cleaning behaviour as well!
+# WARNING: Do NOT append the names with spacebars/tabs: you are asking for trouble.
+# .f90/.F90 files:
+SRCDIR = src
+# .o files:
+OBJDIR = objs
+# .mod files:
+MODDIR = mods
+# created executables:
+BINDIR = .
+
+
+# ======================================================================
+# 
+# Let's start with the declarations (flags etc.)
+#
+# ======================================================================
+
+# The compiler
+FC = gfortran
+# flags for debugging or for maximum performance, comment as necessary
+# FCFLAGS = -g -fbounds-check
+FCFLAGS = -O2
+# flags forall (e.g. look for system .mod files, required in gfortran)
+FCFLAGS +=	-I/usr/include
+
+# libraries needed for linking, unused in the examples
+#LDFLAGS = -li_need_this_lib
+
+# List of executables to be built within the package (prepend $(BINDIR) to each!)
+PROGRAMS = $(BINDIR)/mybhmie_start
+
+
+
+#$intro
+# ======================================================================
+# 
+# Rules for building (dependencies)
+#
+# (WARNING: Be careful to prepend the appropriate path variable!)
+# ======================================================================
+
+$(OBJDIR)/mybhmie_start.o: $(MODDIR)/mybhmie.mod
+$(BINDIR)/mybhmie_start: $(OBJDIR)/mybhmie.o
+
+#$conclusion
+#
+#
+#
+# ======================================================================
+# And now the general rules, these should NOT require MODIFIcation
+# ======================================================================
+#
+#
+#
+
+# "make" builds all
+all: $(PROGRAMS)
+
+# Create temp. directories
+ifneq ($(OBJDIR),.) # Only if OBJDIR is not the current directory.
+$(OBJDIR):
+	mkdir -p $(OBJDIR)
+endif
+
+ifneq ($(MODDIR),.) # Only if MODDIR is not the current directory.
+$(MODDIR):
+	mkdir -p $(MODDIR)
+endif
+
+ifneq ($(BINDIR),.) # Only if BINDIR is not the current directory.
+$(BINDIR):
+	mkdir -p $(BINDIR)
+endif
+
+# General rule for building prog from prog.o; $^ (GNU extension) is
+# used in order to list additional object files on which the
+# executable depends
+$(BINDIR)/%: $(OBJDIR)/%.o | $(BINDIR) 
+	$(FC) $(FCFLAGS) -o $@ $^ $(LDFLAGS)
+
+# General rules for building prog.o from prog.f90 or prog.F90; $< is
+# used in order to list only the first prerequisite (the source file)
+# and not the additional prerequisites such as module or include files
+$(MODDIR)/%.mod: $(OBJDIR)/%.o
+	
+# Note: There is a "TAB" on the line above this line, which is for-some-reason OBLIGATORY!
+# Otherwise: "no rule to make target `mods/*.mod' ..."
+
+$(OBJDIR)/%.o: $(SRCDIR)/%.f90 | $(OBJDIR) $(MODDIR)
+	$(FC) $(FCFLAGS) -c $< -o $@ -J$(MODDIR)
+
+$(OBJDIR)/%.o: $(SRCDIR)/%.F90 | $(OBJDIR) $(MODDIR)
+	$(FC) $(FCFLAGS) -c $< -o $@ -J$(MODDIR)
+
+# Utility targets
+.PHONY: clean veryclean
+
+ # Clean with "cannot remove current directory", hence the if statement.
+clean:
+	if [ "$(OBJDIR)" != "." ]; then rm -rf $(OBJDIR); else rm -f *.o; fi 
+	if [ "$(MODDIR)" != "." ]; then rm -rf $(MODDIR); else rm -f *.mod; fi 
+
+veryclean: clean
+	rm -f *~
+	if [ "$(BINDIR)" != "." ]; then rm -rf $(BINDIR); else rm -f $(PROGRAMS); fi 
+
+
+
+# EOF: Makefile

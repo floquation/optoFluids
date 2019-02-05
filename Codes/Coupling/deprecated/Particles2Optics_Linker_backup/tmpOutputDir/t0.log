@@ -1,0 +1,604 @@
+ +++ (0) MieAlgorithmFF +++: ************************************************************
+ +++ (0) MieAlgorithmFF +++: Starting to load from inputfile: 'tmpOutputDir/.kva_opticsinput_tmpfile'
+ +++ (0) MieAlgorithmFF +++: ************************************************************
+ +++ (3) IO +++: DebugLevel =           3
+ +++ (3) IO +++: File opened, starting reading: tmpOutputDir/.kva_opticsinput_tmpfile
+ +++ (3) IO +++: refre =   1.5200000    
+ +++ (3) IO +++: refim =   0.0000000    
+ +++ (3) IO +++: refmed =   1.0000000    
+ +++ (3) IO +++: wavel =  6.00000021E-07
+ +++ (3) IO +++: rad =  3.99999999E-06
+ +++ (3) IO +++: khat =   0.0000000       0.0000000       1.0000000    
+ +++ (3) IO +++: Eihat =   1.0000000       0.0000000       0.0000000    
+ +++ (3) IO +++: prtcPosFile = ./particlePositions_t0.txt
+ +++ (3) IO +++: nPixel1 =          50
+ +++ (3) IO +++: nPixel2 =          50
+ +++ (3) IO +++: r0 =   0.0000000       0.0000000      2.09999997E-02
+ +++ (3) IO +++: r1 =   0.0000000      8.70000012E-03   0.0000000    
+ +++ (3) IO +++: r2 =  8.70000012E-03   0.0000000       0.0000000    
+ +++ (3) IO +++: convergence min_p =          -1
+ +++ (3) IO +++: convergence max_p =           6
+ +++ (3) IO +++: Include p=0 term = F
+ +++ (3) IO +++: pixelCoordsOutFile = DONOTWRITE
+ +++ (3) IO +++: intensityOutFile = tmpOutputDir/Intensity_t0.out
+ +++ (3) IO +++: Finished reading. File closed: tmpOutputDir/.kva_opticsinput_tmpfile
+ +++ (2) IO +++: File opened, starting reading: ./particlePositions_t0.txt
+ +++ (2) IO +++: Finished reading. File closed: ./particlePositions_t0.txt
+ +++ (3) MieAlgorithmFF +++: refrel = (  1.5200000    ,  0.0000000    )
+ +++ (3) MieAlgorithmFF +++: k =   10471975.    
+ +++ (3) MieAlgorithmFF +++: x =   41.887901    
+ +++ (3) MieAlgorithmFF +++: kihat =   0.0000000       0.0000000       1.0000000    
+ +++ (3) MieAlgorithmFF +++: Eihat =   1.0000000       0.0000000       0.0000000    
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.13263100,0.80385548,-4.10052389E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.38719791,-0.81886309,-2.18808800E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-7.13124871E-02,-0.10507230,-0.12023320})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.47669071,0.77911580,-2.01981496E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.46368709,0.42996809,-7.32625425E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-9.75352526E-02,1.00259704E-03,-0.12104280})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.26963690,-6.96935579E-02,-0.11271110})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.29415199,0.46103579,-8.55951607E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.82334518,-0.48879650,-1.01324804E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.15805160,0.95185590,-8.40327702E-03})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={1.25477102E-03,-0.15760811,-0.11916600})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-3.10668200E-02,0.97009552,-7.05809798E-03})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.95649660,-3.58176902E-02,-1.02117900E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.15266471,-0.46074179,-9.33653787E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.61951178,-0.50661021,-4.38542999E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.13727030,-3.58971916E-02,-0.11974270})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.40333751,-0.12329410,-0.10042910})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.58978820,0.70051509,-1.96717698E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.46848619,0.63883728,-4.54248115E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-4.52479906E-02,0.95842493,-9.66862869E-03})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.35385501,-0.55207109,-6.95787221E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-9.60732577E-04,3.56987491E-02,-0.12205160})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.33372471,-0.78079981,-3.40152010E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={3.79879288E-02,0.93322039,-1.55537296E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.61279428,-0.29182979,-6.58259988E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.44532591,0.61307007,-5.19522317E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.24470641,0.70168698,-5.46316989E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-2.67107692E-03,0.39221790,-0.10337210})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.48882541,-0.43669331,-6.96208701E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.16878140,2.85957698E-02,-0.11861950})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.42093670,0.56684512,-6.12016208E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={1.54806199E-02,-2.78151091E-02,-0.12208360})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.23812500,-0.14136060,-0.11281820})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-4.39363085E-02,-1.41914701E-02,-0.12194670})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={8.42789412E-02,-4.82870899E-02,-0.12105250})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.18386570,0.80266821,-3.92578505E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={3.14235799E-02,-0.69411772,-6.31229579E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={7.42914807E-03,-0.31701240,-0.10989620})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.69450152,0.64852881,-1.18262097E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-3.13655585E-02,-1.42384702E-02,-0.12206240})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.38984931,0.20128120,-9.86401364E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.35984579,0.12687729,-0.10438270})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.75122911,-0.14720990,-5.05046397E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.14491640,-0.78188372,-4.48444895E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.17103860,-7.52806887E-02,-0.11793190})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.33547711,0.35682520,-9.28415731E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.40456969,-0.18673630,-9.78994966E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.63439667,0.12353680,-7.10801110E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.70738220,5.29989302E-02,-6.06273115E-02})
+ +++ (3) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.39279589,0.64440930,-5.25165983E-02})
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (1) MieAlgorithmFF +++: Starting scattering routine. Iterating over all spheres.
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (3) Sphere +++: Allocating [S] with size:        1176
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:           1
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere           1
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:           2
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere           2
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:           3
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere           3
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:           4
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere           4
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:           5
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere           5
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:           6
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere           6
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:           7
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere           7
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:           8
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere           8
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:           9
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere           9
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          10
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          10
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          11
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          11
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          12
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          12
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          13
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          13
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          14
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          14
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          15
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          15
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          16
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          16
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          17
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          17
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          18
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          18
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          19
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          19
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          20
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          20
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          21
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          21
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          22
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          22
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          23
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          23
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          24
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          24
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          25
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          25
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          26
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          26
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          27
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          27
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          28
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          28
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          29
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          29
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          30
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          30
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          31
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          31
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          32
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          32
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          33
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          33
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          34
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          34
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          35
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          35
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          36
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          36
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          37
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          37
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          38
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          38
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          39
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          39
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          40
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          40
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          41
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          41
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          42
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          42
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          43
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          43
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          44
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          44
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          45
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          45
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          46
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          46
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          47
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          47
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          48
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          48
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          49
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          49
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere:          50
+ +++ (3) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere          50
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (1) MieAlgorithmFF +++: Starting multiScatter routine. Iterating over all scattering orders.
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (1) MieAlgorithmFF +++: **** Scattering order p =           3
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           1
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           2
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           3
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           4
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           5
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           6
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           7
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           8
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           9
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          10
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          11
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          12
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          13
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          14
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          15
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          16
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          17
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          18
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          19
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          20
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          21
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          22
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          23
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          24
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          25
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          26
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          27
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          28
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          29
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          30
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          31
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          32
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          33
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          34
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          35
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          36
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          37
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          38
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          39
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          40
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          41
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          42
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          43
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          44
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          45
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          46
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          47
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          48
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          49
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          50
+ +++ (3) MieAlgorithmFF +++:  Finished the present MultiScattering iteration... Accumulating the result. p =           3
+ +++ (1) MieAlgorithmFF +++: **** Scattering order p =           4
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           1
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           2
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           3
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           4
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           5
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           6
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           7
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           8
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           9
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          10
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          11
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          12
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          13
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          14
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          15
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          16
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          17
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          18
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          19
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          20
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          21
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          22
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          23
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          24
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          25
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          26
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          27
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          28
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          29
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          30
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          31
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          32
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          33
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          34
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          35
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          36
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          37
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          38
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          39
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          40
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          41
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          42
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          43
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          44
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          45
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          46
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          47
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          48
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          49
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          50
+ +++ (3) MieAlgorithmFF +++:  Finished the present MultiScattering iteration... Accumulating the result. p =           4
+ +++ (1) MieAlgorithmFF +++: **** Scattering order p =           5
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           1
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           2
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           3
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           4
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           5
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           6
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           7
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           8
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           9
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          10
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          11
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          12
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          13
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          14
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          15
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          16
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          17
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          18
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          19
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          20
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          21
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          22
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          23
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          24
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          25
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          26
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          27
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          28
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          29
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          30
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          31
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          32
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          33
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          34
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          35
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          36
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          37
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          38
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          39
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          40
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          41
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          42
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          43
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          44
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          45
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          46
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          47
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          48
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          49
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          50
+ +++ (3) MieAlgorithmFF +++:  Finished the present MultiScattering iteration... Accumulating the result. p =           5
+ +++ (1) MieAlgorithmFF +++: **** Scattering order p =           6
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           1
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           2
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           3
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           4
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           5
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           6
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           7
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           8
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =           9
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          10
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          11
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          12
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          13
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          14
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          15
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          16
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          17
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          18
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          19
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          20
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          21
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          22
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          23
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          24
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          25
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          26
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          27
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          28
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          29
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          30
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          31
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          32
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          33
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          34
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          35
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          36
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          37
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          38
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          39
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          40
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          41
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          42
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          43
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          44
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          45
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          46
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          47
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          48
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          49
+ +++ (3) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i) =          50
+ +++ (3) MieAlgorithmFF +++:  Finished the present MultiScattering iteration... Accumulating the result. p =           6
+ +++ (2) MieAlgorithmFF +++: Finished multiscattering routine. Deallocating. p =           6
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.13263100,0.80385548,-4.10052389E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.38719791,-0.81886309,-2.18808800E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-7.13124871E-02,-0.10507230,-0.12023320})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.47669071,0.77911580,-2.01981496E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.46368709,0.42996809,-7.32625425E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-9.75352526E-02,1.00259704E-03,-0.12104280})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.26963690,-6.96935579E-02,-0.11271110})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.29415199,0.46103579,-8.55951607E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.82334518,-0.48879650,-1.01324804E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.15805160,0.95185590,-8.40327702E-03})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={1.25477102E-03,-0.15760811,-0.11916600})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-3.10668200E-02,0.97009552,-7.05809798E-03})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.95649660,-3.58176902E-02,-1.02117900E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.15266471,-0.46074179,-9.33653787E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.61951178,-0.50661021,-4.38542999E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.13727030,-3.58971916E-02,-0.11974270})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.40333751,-0.12329410,-0.10042910})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.58978820,0.70051509,-1.96717698E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.46848619,0.63883728,-4.54248115E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-4.52479906E-02,0.95842493,-9.66862869E-03})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.35385501,-0.55207109,-6.95787221E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-9.60732577E-04,3.56987491E-02,-0.12205160})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.33372471,-0.78079981,-3.40152010E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={3.79879288E-02,0.93322039,-1.55537296E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.61279428,-0.29182979,-6.58259988E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.44532591,0.61307007,-5.19522317E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.24470641,0.70168698,-5.46316989E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-2.67107692E-03,0.39221790,-0.10337210})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.48882541,-0.43669331,-6.96208701E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.16878140,2.85957698E-02,-0.11861950})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.42093670,0.56684512,-6.12016208E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={1.54806199E-02,-2.78151091E-02,-0.12208360})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.23812500,-0.14136060,-0.11281820})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-4.39363085E-02,-1.41914701E-02,-0.12194670})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={8.42789412E-02,-4.82870899E-02,-0.12105250})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.18386570,0.80266821,-3.92578505E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={3.14235799E-02,-0.69411772,-6.31229579E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={7.42914807E-03,-0.31701240,-0.10989620})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.69450152,0.64852881,-1.18262097E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-3.13655585E-02,-1.42384702E-02,-0.12206240})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.38984931,0.20128120,-9.86401364E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.35984579,0.12687729,-0.10438270})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.75122911,-0.14720990,-5.05046397E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.14491640,-0.78188372,-4.48444895E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.17103860,-7.52806887E-02,-0.11793190})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.33547711,0.35682520,-9.28415731E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.40456969,-0.18673630,-9.78994966E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.63439667,0.12353680,-7.10801110E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.70738220,5.29989302E-02,-6.06273115E-02})
+ +++ (3) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={-0.39279589,0.64440930,-5.25165983E-02})
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (1) MieAlgorithmFF +++: Starting scatter2Camera routine. Iterating over all spheres.
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=           1
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=           1
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=           2
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=           2
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=           3
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=           3
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=           4
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=           4
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=           5
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=           5
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=           6
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=           6
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=           7
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=           7
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=           8
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=           8
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=           9
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=           9
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          10
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          10
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          11
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          11
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          12
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          12
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          13
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          13
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          14
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          14
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          15
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          15
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          16
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          16
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          17
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          17
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          18
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          18
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          19
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          19
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          20
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          20
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          21
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          21
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          22
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          22
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          23
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          23
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          24
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          24
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          25
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          25
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          26
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          26
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          27
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          27
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          28
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          28
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          29
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          29
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          30
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          30
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          31
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          31
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          32
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          32
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          33
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          33
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          34
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          34
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          35
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          35
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          36
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          36
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          37
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          37
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          38
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          38
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          39
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          39
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          40
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          40
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          41
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          41
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          42
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          42
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          43
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          43
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          44
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          44
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          45
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          45
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          46
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          46
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          47
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          47
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          48
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          48
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          49
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          49
+ +++ (2) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=          50
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=          50
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (1) MieAlgorithmFF +++: Starting to write output to files... Calling iomod%writeOutput(cam).
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (2) IO +++: Obtaining intensity, and writing to file 'tmpOutputDir/Intensity_t0.out'
+ +++ (1) Starter +++: Done.

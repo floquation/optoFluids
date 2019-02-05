@@ -1,0 +1,18 @@
+#! /bin/bash
+
+outFileName=particlePositionsUnderSmallMembrane
+beamWidth=0.01
+beamHeight=0.0025
+beamLength=0.01
+origin='(-0.005, -0.005, -0.00125)'
+numParticles=100
+
+./genRectParticles.py -i AartsFig4_probAccum.dat -o $outFileName -W $beamWidth -H $beamHeight -L $beamLength -O "$origin" -N $numParticles
+sed -e "1 i (" $outFileName > $outFileName.edit
+sed -e "1 i $numParticles" $outFileName.edit > $outFileName.edit2
+sed -e "$ a )" $outFileName.edit2 > $outFileName.edit3
+mv $outFileName $outFileName.bak
+mv $outFileName.edit3 $outFileName
+'rm' $outFileName.edit*
+#Comment this last line if something goes wrong, and you want to see the backup
+'rm' $outFileName.bak

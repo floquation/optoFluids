@@ -1,0 +1,59 @@
+#! /usr/bin/env bash
+#
+#
+# Kevin van As
+#   ?? ?? 2018: Original
+#   13 12 2018: getTimeDirs now sorts numerically
+
+
+# Is this case parallel?
+isFoamCaseParallel() {
+    dirName="."
+    [ "$1" != "" ] && dirName="$1"
+    if [ -d "$dirName/processor0" ]; then
+    	# Assume this is a decomposed case if "processor0" exists.
+    	echo "true"
+    fi
+    # else echo "", which is the bash-equivalent of "false"
+}
+# Obtain a list of all time directories
+# Including: exponential notation
+# Excluding: decomposed directories
+getTimeDirs_serial() {
+    dirName="."
+    [ "$1" != "" ] && dirName="$1"
+    timeDirs=(`ls "$dirName" | grep -E "^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?$"`)
+    [ "${#timeDirs[@]}" == 0 ] && ( >&2 echo "No timedirs found." ) && return 1
+	# Sort times, including exponential notation
+	IFS=$'\n' sorted=($(sort -g <<<"${timeDirs[*]}"))
+	unset IFS
+	## Return sorted time array
+	echo "${sorted[@]}"
+}
+# Obtain a list of all time directories
+# Including: exponential notation & decomposed cases
+getTimeDirs() {
+    dirName="."
+    [ "$1" != "" ] && dirName="$1"
+    # Obtain all times
+    if [ $(isFoamCaseParallel $dirName) ]; then
+    	dirName="$dirName/processor0"
+    fi
+    timeDirs=(`ls "$dirName" | grep -E "^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?$"`)
+    [ "${#timeDirs[@]}" == 0 ] && ( >&2 echo "No timedirs found." ) && return 1
+	# Sort times, including exponential notation
+	IFS=$'\n' sorted=($(sort -g <<<"${timeDirs[*]}"))
+	unset IFS
+	## Return sorted time array
+	echo "${sorted[@]}"
+}
+# Obtain the name of the last time directory of an OpenFOAM case.
+# Including: exponential notation & decomposed cases
+getLatestTime() {
+    timeDirs=($(getTimeDirs $@))
+    # Sort times in reverse, taking exponential notation into account
+    IFS=$'\n' sorted=($(sort --reverse -g <<<"${timeDirs[*]}"))
+    unset IFS
+    # Show latest time
+    echo "${sorted[0]}"
+}

@@ -1,0 +1,41 @@
+#! /usr/bin/env python3
+
+import helpers.printFuncs as myPrint
+
+if __name__ == '__main__':
+	myPrint.Printer.push()
+	myPrint.Printer.vprint("test", verbose=True)
+	myPrint.Printer.push()
+	myPrint.Printer.vprint("test", verbose=True)
+	myPrint.Printer.pull()
+	myPrint.Printer.pull()
+	myPrint.Printer.vprint("test", verbose=True)
+	myPrint.Printer.pull()
+	myPrint.Printer.vprint("test", verbose=True)
+	myPrint.Printer.pull()
+	myPrint.Printer.pull()
+	myPrint.Printer.pull()
+	myPrint.Printer.vprint("test", verbose=True)
+	myPrint.Printer.push()
+	myPrint.Printer.vprint("test", verbose=True)
+	
+	myPrint.Printer.prefixer="a"
+	myPrint.Printer.vprint("test", verbose=True)
+	myPrint.Printer.push()
+	myPrint.Printer.vprint("test", verbose=True)
+	myPrint.Printer.prefixer="\t"
+	myPrint.Printer.vprint("test", verbose=True)
+	myPrint.Printer.pull()
+	myPrint.Printer.vprint("test", verbose=True)
+	myPrint.Printer.pull()
+	myPrint.Printer.vprint("test", verbose=True)
+
+	myPrint.Printer.verbose=False
+	myPrint.Printer.vprint("test automatic verbose?: This should not show.")
+	myPrint.Printer.verbose=True
+	myPrint.Printer.vprint("test automatic verbose?: This should show.")
+	myPrint.Printer.verbose=False
+
+
+
+# EOF

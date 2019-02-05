@@ -1,0 +1,13 @@
+booleanFunctions.o mods/booleanfunctions.mod: src/booleanFunctions.f90
+class_Camera.o mods/class_camera.mod: src/class_Camera.f90 mods/debug.mod
+class_Sphere.o mods/class_sphere.mod: src/class_Sphere.f90 mods/debug.mod
+class_SphereManager.o mods/class_spheremanager.mod: \
+ src/class_SphereManager.f90 mods/class_sphere.mod mods/debug.mod
+DEBUG.o mods/debug.mod: src/DEBUG.f90
+iomod.o mods/iomod.mod: src/iomod.f90 mods/debug.mod \
+ mods/class_camera.mod
+MieAlgorithmFF.o mods/miealgorithmff.mod: src/MieAlgorithmFF.f90 \
+ mods/debug.mod mods/class_camera.mod mods/class_spheremanager.mod \
+ mods/class_sphere.mod mods/iomod.mod mods/mymath.mod mods/mybhmie.mod
+MieAlgorithmFF_start.o: src/MieAlgorithmFF_start.f90 \
+ mods/miealgorithmff.mod

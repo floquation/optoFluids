@@ -1,0 +1,295 @@
+
+
+<html><head>
+<link href="../dav.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Makefile-Fortran</title></head><body>
+
+<h2>How to hand-make a makefile for a simple Fortran project</h2>
+
+<p>Here you can find a commented example of makefile, suitable to work
+with GNU make, for a simple Fortran project, it takes care of the most
+common situations generating non trivial dependencies, such as
+including files, calling subroutines in different source files, using
+modules.</p>
+
+<p>This can be used as a tutorial for makefile-beginners who do not
+want to learn all the peculiarities and misteries of creating a
+makefile.</p>
+
+<hr>
+<table frame="border"cellspacing="0" cellpadding="0">
+<tr>
+<th>Makefile</th><th colspan="2">Example source files</th>
+</tr>
+<tr>
+<td valign="bottom"><!-- Generator: GNU source-highlight 2.9
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><i><font color="#9A1900"># A simple hand-made makefile for a package including applications</font></i>
+<i><font color="#9A1900"># built from Fortran 90 sources, taking into account the usual</font></i>
+<i><font color="#9A1900"># dependency cases.</font></i>
+
+<i><font color="#9A1900"># This makefile works with the GNU make command, the one find on</font></i>
+<i><font color="#9A1900"># GNU/Linux systems and often called gmake on non-GNU systems, if you</font></i>
+<i><font color="#9A1900"># are using an old style make command, please see the file</font></i>
+<i><font color="#9A1900"># Makefile_oldstyle provided with the package.</font></i>
+
+<i><font color="#9A1900"># ======================================================================</font></i>
+<i><font color="#9A1900"># Let's start with the declarations</font></i>
+<i><font color="#9A1900"># ======================================================================</font></i>
+
+<i><font color="#9A1900"># The compiler</font></i>
+<font color="#009900">FC =</font> gfortran
+<i><font color="#9A1900"># flags for debugging or for maximum performance, comment as necessary</font></i>
+<font color="#009900">FCFLAGS =</font> -g -fbounds-check
+<font color="#009900">FCFLAGS =</font> -O<font color="#993399">2</font>
+<i><font color="#9A1900"># flags forall (e.g. look for system .mod files, required in gfortran)</font></i>
+FCFLAGS <font color="#990000">+=</font> -I/usr/include
+
+<i><font color="#9A1900"># libraries needed for linking, unused in the examples</font></i>
+<i><font color="#9A1900">#LDFLAGS = -li_need_this_lib</font></i>
+
+<i><font color="#9A1900"># List of executables to be built within the package</font></i>
+<font color="#009900">PROGRAMS =</font> prog1 prog2 prog3 prog4
+
+<i><font color="#9A1900"># "make" builds all</font></i>
+<font color="#990000">all:</font> <font color="#009900">$(PROGRAMS)</font>
+
+</tt></pre>
+</td></tr>
+<tr>
+<td valign="bottom"><!-- Generator: GNU source-highlight 2.9
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><i><font color="#9A1900"># ======================================================================</font></i>
+<i><font color="#9A1900"># Here comes the most interesting part: the rules for prog1, prog2,</font></i>
+<i><font color="#9A1900"># prog3 and prog4, modify to suit your needs</font></i>
+<i><font color="#9A1900"># ======================================================================</font></i>
+
+<i><font color="#9A1900"># In order to understand the next section, the process of building an</font></i>
+<i><font color="#9A1900"># executable has to be clear: this is typically done in two steps:</font></i>
+
+<i><font color="#9A1900"># 1.Compilation: every source file required for our program (tipically</font></i>
+<i><font color="#9A1900"># x.f90 or x.F90 in case of Fortran) is compiled into an object file</font></i>
+<i><font color="#9A1900"># (usually x.o)</font></i>
+<i><font color="#9A1900"># 2.Linking: the final executable file is built by "linking" together</font></i>
+<i><font color="#9A1900"># all the object files compiled in the previous step; in this step</font></i>
+<i><font color="#9A1900"># additional pre-compiled libraries of can be added, but this will not</font></i>
+<i><font color="#9A1900"># be treated here.</font></i>
+
+<i><font color="#9A1900"># These two steps are often performed through the same command and can</font></i>
+<i><font color="#9A1900"># be combined into a single operation, so it is easy to confuse them,</font></i>
+<i><font color="#9A1900"># but, in order to understand what comes further, one has to keep in</font></i>
+<i><font color="#9A1900"># mind that they are logically different operations.</font></i>
+
+<i><font color="#9A1900"># A general suggestion: when building an executable called "prog", a</font></i>
+<i><font color="#9A1900"># good practice is to put the main program, i.e. the procedure</font></i>
+<i><font color="#9A1900"># declared as "PROGRAM" in Fortran, in a file named "prog.f90" or</font></i>
+<i><font color="#9A1900"># "prog.F90", after the name of the executable, this will simplify the</font></i>
+<i><font color="#9A1900"># creation of the rules in the makefile.</font></i>
+
+</tt></pre>
+</td></tr>
+<tr>
+<td valign="bottom"><!-- Generator: GNU source-highlight 2.9
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><i><font color="#9A1900"># The simplest case: prog1 is simply built from prog1.f90 through</font></i>
+<i><font color="#9A1900"># prog1.o; there is nothing to specify for prog1, because this simple</font></i>
+<i><font color="#9A1900"># situation is already handled by the general rules for building</font></i>
+<i><font color="#9A1900"># executables from Fortran sources.</font></i>
+
+</tt></pre>
+</td><td valign="bottom"><h4>prog1.f90</h4>
+<pre>PROGRAM prog1
+
+PRINT*,'Hi, I am prog1'
+
+END PROGRAM prog1
+</pre></td></tr>
+<tr>
+<td valign="bottom"><!-- Generator: GNU source-highlight 2.9
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><i><font color="#9A1900"># Including a file: prog2, as before, is simply built from prog2.f90</font></i>
+<i><font color="#9A1900"># through prog2.o; however prog2.o, besides depending on prog2.f90,</font></i>
+<i><font color="#9A1900"># depends also on prog2.incf through inclusion, if prog2.incf is newer</font></i>
+<i><font color="#9A1900"># than prog2.o, prog2.o has to be rebuilt; this has to be specified in</font></i>
+<i><font color="#9A1900"># the makefile by means of a particular rule; it is not necessary to</font></i>
+<i><font color="#9A1900"># confirm the dependency of prog2.o on prog2.f90, as well as of prog2</font></i>
+<i><font color="#9A1900"># on prog2.o, since they are already handled by the general rules:</font></i>
+<font color="#990000">prog2.o:</font> prog2.incf
+
+</tt></pre>
+</td><td valign="bottom"><h4>prog2.f90</h4>
+<pre>PROGRAM prog2
+INCLUDE 'prog2.incf'
+
+PRINT*,'Hi, I am prog2, i=',i
+
+END PROGRAM prog2
+</pre></td><td valign="bottom"><h4>prog2.incf</h4>
+<pre>INTEGER :: i = 8
+</pre></td></tr>
+<tr>
+<td valign="bottom"><!-- Generator: GNU source-highlight 2.9
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><i><font color="#9A1900"># Calling external procedures: prog3 requires to link in not just</font></i>
+<i><font color="#9A1900"># prog3.o, as usual, but also aux.o, which contains a subroutine</font></i>
+<i><font color="#9A1900"># called from within prog3.f90; moreover prog3 has to be rebuilt if</font></i>
+<i><font color="#9A1900"># aux.o is newer than prog3 itself; both tasks are accomplished by</font></i>
+<i><font color="#9A1900"># adding an explicit dependency for the executable on aux.o; as</font></i>
+<i><font color="#9A1900"># before, there is no need to confirm that prog3 depends on prog3.o,</font></i>
+<i><font color="#9A1900"># that prog3.o depends on prog3.f90 and that aux.o depends on aux.f90</font></i>
+<i><font color="#9A1900"># since these dependencies are already handled by the general rules:</font></i>
+<font color="#990000">prog3:</font> aux.o
+
+</tt></pre>
+</td><td valign="bottom"><h4>prog3.f90</h4>
+<pre>PROGRAM prog3
+
+PRINT*,'Hi, I am prog3'
+CALL aux('prog3')
+
+END PROGRAM prog3
+</pre></td><td valign="bottom"><h4>aux.f90</h4>
+<pre>SUBROUTINE aux(who)
+CHARACTER(len=*) :: who
+
+PRINT*,'Called by ',who
+
+END SUBROUTINE aux
+</pre></td></tr>
+<tr>
+<td valign="bottom"><!-- Generator: GNU source-highlight 2.9
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><i><font color="#9A1900"># Using Fortran MODULES: prog4.f90 USEs a Fortran module defined</font></i>
+<i><font color="#9A1900"># inside mod.f90, this is similar to the include case (prog2), but,</font></i>
+<i><font color="#9A1900"># since there is no standard naming convention for compiled module</font></i>
+<i><font color="#9A1900"># files in f90, the dependency is more easily built on the object</font></i>
+<i><font color="#9A1900"># files, because when mod.o is generated, one is sure that</font></i>
+<i><font color="#9A1900"># any_module_inside_mod.mod has been newly generated as well; mod.o</font></i>
+<i><font color="#9A1900"># must also be linked in when building the executable, so the</font></i>
+<i><font color="#9A1900"># dependency on mod.o is added also for prog4, as in the external</font></i>
+<i><font color="#9A1900"># procedure case (prog3):</font></i>
+<font color="#990000">prog4.o:</font> mod.o
+<font color="#990000">prog4:</font> mod.o
+
+</tt></pre>
+</td><td valign="bottom"><h4>prog4.f90</h4>
+<pre>PROGRAM prog4
+USE mod
+
+PRINT*,'Hi, I am prog4, i=',i
+
+END PROGRAM prog4
+</pre></td><td valign="bottom"><h4>mod.f90</h4>
+<pre>MODULE mod
+INTEGER :: i=4
+END MODULE mod
+</pre></td></tr>
+<tr>
+<td valign="bottom"><!-- Generator: GNU source-highlight 2.9
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><i><font color="#9A1900"># Putting it all together: when an executable is built from many</font></i>
+<i><font color="#9A1900"># sources, ALL the object files have to be specified in the executable</font></i>
+<i><font color="#9A1900"># dependencies, not just those containing SUBROUTINEs, FUNCTIONs or</font></i>
+<i><font color="#9A1900"># MODULEs that are directly CALLed or USEd in the main program</font></i>
+<i><font color="#9A1900"># file. However among the dependencies of the main program object</font></i>
+<i><font color="#9A1900"># file, only those that are directly CALLed or USEd inside it have to</font></i>
+<i><font color="#9A1900"># be specified, the other object files have to be specified as</font></i>
+<i><font color="#9A1900"># dependencies of the relevant object files that require them and will</font></i>
+<i><font color="#9A1900"># be built by a chain rule.</font></i>
+
+</tt></pre>
+</td></tr>
+<tr>
+<td valign="bottom"><!-- Generator: GNU source-highlight 2.9
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><i><font color="#9A1900"># ======================================================================</font></i>
+<i><font color="#9A1900"># And now the general rules, these should not require modification</font></i>
+<i><font color="#9A1900"># ======================================================================</font></i>
+
+<i><font color="#9A1900"># General rule for building prog from prog.o; $^ (GNU extension) is</font></i>
+<i><font color="#9A1900"># used in order to list additional object files on which the</font></i>
+<i><font color="#9A1900"># executable depends</font></i>
+<font color="#990000">%:</font> <font color="#990000">%</font>.o
+	<font color="#009900">$(FC)</font> <font color="#009900">$(FCFLAGS)</font> -o <font color="#009900">$@</font> <font color="#009900">$^</font> <font color="#009900">$(LDFLAGS)</font>
+
+<i><font color="#9A1900"># General rules for building prog.o from prog.f90 or prog.F90; $&lt; is</font></i>
+<i><font color="#9A1900"># used in order to list only the first prerequisite (the source file)</font></i>
+<i><font color="#9A1900"># and not the additional prerequisites such as module or include files</font></i>
+<font color="#990000">%</font>.o<font color="#990000">:</font> <font color="#990000">%</font>.f90
+	<font color="#009900">$(FC)</font> <font color="#009900">$(FCFLAGS)</font> -c <font color="#009900">$&lt;</font>
+
+<font color="#990000">%</font>.o<font color="#990000">:</font> <font color="#990000">%</font>.F90
+	<font color="#009900">$(FC)</font> <font color="#009900">$(FCFLAGS)</font> -c <font color="#009900">$&lt;</font>
+
+<i><font color="#9A1900"># Utility targets</font></i>
+<b><font color="#000080">.PHONY:</font></b> clean veryclean
+
+<font color="#990000">clean:</font>
+	rm -f <font color="#990000">*</font>.o <font color="#990000">*</font>.mod <font color="#990000">*</font>.MOD
+
+<font color="#990000">veryclean:</font> clean
+	rm -f <font color="#990000">*~</font> <font color="#009900">$(PROGRAMS)</font>
+
+</tt></pre>
+</td></tr>
+</table>
+
+<hr>
+
+<h3>Download</h3>
+
+You can download the <a
+href="makefile-fortran.tar.gz">makefile-fortran package</a> with the
+Makefile and the example source code directly from this page.<p>
+
+If you are really interested, this is the <a
+href="makefile-fortran-maint.tar.gz">full maintainer's version</a> of
+the package<p>
+
+<hr>
+
+<h3>Support</h3>
+
+If you have questions, doubts or suggestions  concerning
+the makefile-fortran package, please address them to Davide Cesari
+(<tt>dcesari &lt;at&gt; arpa &lt;dot&gt; emr &lt;dot&gt; it</tt>).
+
+<hr>
+<h3>License</h3>
+
+Makefile-Fortran<br>
+A Makefile for a simple Fortran project<br>
+Copyright (C) 2009 Davide Cesari, dcesari &lt;at&gt; arpa.emr.it<br>
+The sources are distributed according to the GNU GPL license.<br>
+
+<hr>
+
+The code has been highlihted with <a
+href="http://www.lorenzobettini.it">source-highlight</a>, thanks to
+Lorenzo Bettini for the package.
+
+<hr>
+
+Last Update 19/05/2009
+
+<hr>
+
+Back to <a href="../">main page</a>.
+</body></html>

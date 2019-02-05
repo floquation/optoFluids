@@ -1,0 +1,27 @@
+objs/booleanFunctions.o mods/booleanfunctions.mod: src/booleanFunctions.f90
+objs/class_Camera.o mods/class_camera.mod: src/class_Camera.f90 mods/debug.mod
+objs/class_Sphere.o mods/class_sphere.mod: src/class_Sphere.f90 mods/debug.mod
+objs/class_SphereManager.o mods/class_spheremanager.mod: \
+ src/class_SphereManager.f90 mods/class_sphere.mod mods/debug.mod
+objs/DEBUG.o mods/debug.mod: src/DEBUG.f90
+objs/iomod.o mods/iomod.mod: src/iomod.f90 mods/debug.mod \
+ mods/class_camera.mod
+objs/MieAlgorithmFF.o mods/miealgorithmff.mod: src/MieAlgorithmFF.f90 \
+ mods/debug.mod mods/class_camera.mod mods/class_spheremanager.mod \
+ mods/class_sphere.mod mods/iomod.mod mods/mymath.mod mods/mybhmie.mod
+objs/MieAlgorithmFF_start.o: src/MieAlgorithmFF_start.f90 \
+ mods/miealgorithmff.mod
+objs/mybhmie.o mods/mybhmie.mod: src/mybhmie.f90
+objs/mybhmie_start.o: src/mybhmie_start.f90 mods/mybhmie.mod
+objs/mymath.o mods/mymath.mod: src/mymath.f90
+objs/test.o mods/polymers.mod: src/test.f90
+mods/booleanfunctions.mod: objs/booleanFunctions.o
+mods/class_camera.mod: objs/class_Camera.o
+mods/class_sphere.mod: objs/class_Sphere.o
+mods/class_spheremanager.mod: objs/class_SphereManager.o
+mods/debug.mod: objs/DEBUG.o
+mods/iomod.mod: objs/iomod.o
+mods/miealgorithmff.mod: objs/MieAlgorithmFF.o
+mods/mybhmie.mod: objs/mybhmie.o
+mods/mymath.mod: objs/mymath.o
+mods/polymers.mod: objs/test.o

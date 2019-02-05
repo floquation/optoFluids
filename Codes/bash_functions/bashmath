@@ -1,0 +1,49 @@
+####
+# Converts a given input string to an input format understood by "bc -l" by interpreting exponential notation
+#
+# Usage:
+#  exp2num "2.5e3/-5e3" | bc -l
+#    -.50000000000000
+#  exp2num "--3e2+-6*0.5e2" | bc -l
+#    0
+#  exp2num "((2e3+5e2)*6)/2.5e1" | bc -l
+#    600.00000000000000000000
+#
+# Kevin van As, June 01 2017
+exp2num()
+{
+    # First replace all exponential notations "a.bEc and a.bec" by "(a.b*10^(c))"
+    # Second, remove empty "*10^()", which will occur if "ec" is absent in "a.bec"
+    out=$(\
+        echo "$1" \
+        | sed -r 's/([-+]?)([0-9]*\.?[0-9]+)([eE]([-+]?[0-9]+))?/\1(\2*10^(\4))/g' \
+        | sed -r 's/\*10\^\(\)//g' \
+    )
+    out2=""
+    # Third, remove double operations iteratively: -- -> +, ++ -> + , -+ -> - and +- -> -.
+    while [ "$out2" != "$out" ]; do
+        out2="$out"
+        out=$(\
+            echo "$out2" \
+            | sed -e 's/--/+/g' | sed -e 's/++/+/g' | sed -r 's/(\+-|-\+)/-/g' \
+        )
+    done
+    # Fourth, remove trailing +-signs, e.g. +2=2. "bc -l" cannot handle those.
+    echo "$out" | sed -e 's/(+/(/g' | sed -e 's/^+//g'
+	unset out out2
+}
+mathPy()
+{
+    # Python
+    # WARNING: 1/1e5 = 0 in Python, but 0.000010000000 in "bc -l"!!
+    #expression="$(exp2num "$1" | sed -e 's/\^/**/g' )"
+    expression="$1"
+    python -c 'print('"$expression"')'
+    unset expression
+}
+mathBC()
+{
+    # bc -l
+    exp2num "$1" | bc -l # Does not support floating point powers: "2^0.5"
+}
+export -f exp2num mathPy mathBC

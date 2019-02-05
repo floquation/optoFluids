@@ -1,0 +1,1207 @@
+ +++ (1) IO +++: DebugLevel =           5
+ +++ (1) IO +++: File opened, starting reading: input.dat
+ +++ (1) IO +++: refre =   1.5200000    
+ +++ (1) IO +++: refim =   0.0000000    
+ +++ (1) IO +++: refmed =   1.0000000    
+ +++ (1) IO +++: wavel =  6.00000021E-07
+ +++ (1) IO +++: rad =  3.99999999E-06
+ +++ (1) IO +++: khat =   0.0000000       0.0000000       1.0000000    
+ +++ (1) IO +++: Eihat =   1.0000000       0.0000000       0.0000000    
+ +++ (1) IO +++: prtcPosFile = particlePositions
+ +++ (1) IO +++: nPixel1 =           2
+ +++ (1) IO +++: nPixel2 =           2
+ +++ (1) IO +++: r0 =   0.0000000       0.0000000      2.09999997E-02
+ +++ (1) IO +++: r1 =   0.0000000      8.70000012E-03   0.0000000    
+ +++ (1) IO +++: r2 =  8.70000012E-03   0.0000000       0.0000000    
+ +++ (1) IO +++: convergence min_p =          -1
+ +++ (1) IO +++: convergence max_p =           6
+ +++ (1) IO +++: Include p=0 term = F
+ +++ (1) IO +++: pixelCoordsOutFile = PixelCoords.out
+ +++ (1) IO +++: intensityOutFile = Intensity.out
+ +++ (1) IO +++: Finished reading. File closed: input.dat
+ +++ (1) IO +++: File opened, starting reading: particlePositions
+ +++ (1) IO +++: (first index horizontally) r =
+   0.0000000       0.0000000       0.0000000    
+   0.0000000       0.0000000      4.19999994E-02
+   0.0000000      2.09999997E-02   0.0000000    
+ +++ (1) IO +++: Finished reading. File closed: particlePositions
+ +++ (1) MieAlgorithmFF +++: refrel = (  1.5200000    ,  0.0000000    )
+ +++ (1) MieAlgorithmFF +++: k =   10471975.    
+ +++ (1) MieAlgorithmFF +++: x =   41.887901    
+ +++ (1) MieAlgorithmFF +++: kihat =   0.0000000       0.0000000       1.0000000    
+ +++ (1) MieAlgorithmFF +++: Eihat =   1.0000000       0.0000000       0.0000000    
+ +++ (1) Camera +++: (first index horizontally) r =
+ -8.70000012E-03 -8.70000012E-03  2.09999997E-02
+ -8.70000012E-03  8.70000012E-03  2.09999997E-02
+  8.70000012E-03 -8.70000012E-03  2.09999997E-02
+  8.70000012E-03  8.70000012E-03  2.09999997E-02
+ +++ (1) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,0.0000000,0.0000000})
+ +++ (3) SphereManager +++: Post-creation: Created the sphere Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,0.0000000,0.0000000})
+ +++ (1) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,0.0000000,4.19999994E-02})
+ +++ (3) SphereManager +++: Post-creation: Created the sphere Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,0.0000000,4.19999994E-02})
+ +++ (1) Sphere +++: New sphere created: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,2.09999997E-02,0.0000000})
+ +++ (3) SphereManager +++: Post-creation: Created the sphere Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,2.09999997E-02,0.0000000})
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (1) MieAlgorithmFF +++: Starting scattering routine. Iterating over all spheres.
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (5) Sphere +++: Allocating S with size:           1
+ +++ (5) Sphere +++:  --> Checksum = 2*size?:           2
+ +++ (5) Sphere +++:  --> this%S1 =
+  0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) Sphere +++:  --> this%S2 =
+  0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) Sphere +++: Allocating S with size:           1
+ +++ (5) Sphere +++:  --> Checksum = 2*size?:           2
+ +++ (5) Sphere +++:  --> this%S1 =
+  0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) Sphere +++:  --> this%S2 =
+  0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) Sphere +++: Allocating S with size:           1
+ +++ (5) Sphere +++:  --> Checksum = 2*size?:           2
+ +++ (5) Sphere +++:  --> this%S1 =
+  0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) Sphere +++:  --> this%S2 =
+  0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,0.0000000,0.0000000}) - with index           1
+ +++ (4) MieAlgorithmFF +++: eField_acm(:,i) [effect of incident wave, p=1] =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: --SAngles(fixed i, varying j) =   0.0000000000000000        89.999997495521910     
+ +++ (5) MieAlgorithmFF +++: The scattering matrix for this sphere is S1:
+  0.95942450E+03 + 0.11813334E+03 i     -0.52177131E+00 +-0.16862764E+02 i
+ +++ (5) MieAlgorithmFF +++: The scattering matrix for this sphere is S2:
+  0.95942450E+03 + 0.11813334E+03 i     -0.64846263E+01 +-0.62335091E+01 i
+ +++ (4) MieAlgorithmFF +++: Beginning S2E for spheres (i,j,arg) =           1           2           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.95942450E+03 + 0.11813334E+03 i      0.95942450E+03 + 0.11813334E+03 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.19427919E-03 + 0.21892583E-02 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF +++: psphj%eField_new(:,i) =
+ -0.19427919E-03 + 0.21892583E-02 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: psphj%eField_acm(:,i) =
+ -0.19427919E-03 + 0.21892583E-02 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Beginning S2E for spheres (i,j,arg) =           1           3           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.52177131E+00 +-0.16862764E+02 i     -0.64846263E+01 +-0.62335091E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.76628363E-04 +-0.36758918E-05 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF +++: psphj%eField_new(:,i) =
+  0.76628363E-04 +-0.36758918E-05 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: psphj%eField_acm(:,i) =
+  0.76628363E-04 +-0.36758918E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,0.0000000,0.0000000}) - with index           1
+ +++ (4) MieAlgorithmFF +++: --       (i,j,l,step,arg) =           1           3           2           2           1
+ +++ (4) MieAlgorithmFF +++: --SAngle(arg) =   89.999997495521910     
+ +++ (4) MieAlgorithmFF +++: The scattering angles for this sphere are:   89.999997495521910     
+ +++ (4) MieAlgorithmFF +++: The scattering matrix for this sphere is psphi%S1:
+ -0.52177131E+00 +-0.16862764E+02 i
+ +++ (4) MieAlgorithmFF +++: The scattering matrix for this sphere is psphi%S2:
+ -0.64846263E+01 +-0.62335091E+01 i
+ +++ (4) MieAlgorithmFF +++: The backscattering matrix for this sphere is (/S1, S2/):
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,0.0000000,4.19999994E-02}) - with index           2
+ +++ (4) MieAlgorithmFF +++: eField_acm(:,i) [effect of incident wave, p=1] =
+  0.99942195E+00 +-0.33996020E-01 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: --SAngles(fixed i, varying j) =   179.99999499104382        153.43495081749325     
+ +++ (5) MieAlgorithmFF +++: The scattering matrix for this sphere is S1:
+ -0.59325180E+01 +-0.11658821E+02 i      0.80351057E+01 + 0.24936314E+01 i
+ +++ (5) MieAlgorithmFF +++: The scattering matrix for this sphere is S2:
+  0.59325180E+01 + 0.11658821E+02 i     -0.43173056E+01 +-0.18809359E+02 i
+ +++ (4) MieAlgorithmFF +++: Beginning S2E for spheres (i,j,arg) =           2           1           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.99942195E+00 +-0.33996020E-01 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.26507985E-04 +-0.13488422E-04 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF +++: psphj%eField_new(:,i) =
+  0.26507985E-04 +-0.13488422E-04 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: psphj%eField_acm(:,i) =
+  0.26507985E-04 +-0.13488422E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Beginning S2E for spheres (i,j,arg) =           2           3           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.99942195E+00 +-0.33996020E-01 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.80351057E+01 + 0.24936314E+01 i     -0.43173056E+01 +-0.18809359E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.75215921E-05 +-0.15367017E-04 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF +++: psphj%eField_new(:,i) =
+ -0.75215921E-05 +-0.15367017E-04 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: psphj%eField_acm(:,i) =
+ -0.75215921E-05 +-0.15367017E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,0.0000000,4.19999994E-02}) - with index           2
+ +++ (4) MieAlgorithmFF +++: --       (i,j,l,step,arg) =           2           3           1           1           1
+ +++ (4) MieAlgorithmFF +++: --SAngle(arg) =   153.43495081749325     
+ +++ (4) MieAlgorithmFF +++: The scattering angles for this sphere are:   153.43495081749325     
+ +++ (4) MieAlgorithmFF +++: The scattering matrix for this sphere is psphi%S1:
+  0.80351057E+01 + 0.24936314E+01 i
+ +++ (4) MieAlgorithmFF +++: The scattering matrix for this sphere is psphi%S2:
+ -0.43173056E+01 +-0.18809359E+02 i
+ +++ (4) MieAlgorithmFF +++: The backscattering matrix for this sphere is (/S1, S2/):
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (2) MieAlgorithmFF +++: Starting initialScattering routine for sphere: Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,2.09999997E-02,0.0000000}) - with index           3
+ +++ (4) MieAlgorithmFF +++: eField_acm(:,i) [effect of incident wave, p=1] =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: --SAngles(fixed i, varying j) =   89.999997495521910        26.565044173550554     
+ +++ (5) MieAlgorithmFF +++: The scattering matrix for this sphere is S1:
+ -0.52177131E+00 +-0.16862764E+02 i      0.25047508E+02 + 0.49683281E+02 i
+ +++ (5) MieAlgorithmFF +++: The scattering matrix for this sphere is S2:
+ -0.64846263E+01 +-0.62335091E+01 i      0.28819744E+02 + 0.50937180E+02 i
+ +++ (4) MieAlgorithmFF +++: Beginning S2E for spheres (i,j,arg) =           3           1           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.52177131E+00 +-0.16862764E+02 i     -0.64846263E+01 +-0.62335091E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.76628363E-04 +-0.36758918E-05 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF +++: psphj%eField_new(:,i) =
+  0.76628363E-04 +-0.36758918E-05 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: psphj%eField_acm(:,i) =
+  0.76628363E-04 +-0.36758918E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Beginning S2E for spheres (i,j,arg) =           3           2           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.25047508E+02 + 0.49683281E+02 i      0.28819744E+02 + 0.50937180E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.34919700E-04 +-0.10762669E-03 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF +++: psphj%eField_new(:,i) =
+  0.34919700E-04 +-0.10762669E-03 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 + 0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: psphj%eField_acm(:,i) =
+  0.34919700E-04 +-0.10762669E-03 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: -Starting to compute all intersphere scattering matrices involving sphere Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,2.09999997E-02,0.0000000}) - with index           3
+ +++ (4) MieAlgorithmFF +++: --       (i,j,l,step,arg) =           3           2           1           0           1
+ +++ (4) MieAlgorithmFF +++: --SAngle(arg) =   116.56504949943175     
+ +++ (4) MieAlgorithmFF +++: The scattering angles for this sphere are:   116.56504949943175     
+ +++ (4) MieAlgorithmFF +++: The scattering matrix for this sphere is psphi%S1:
+  0.52616801E+01 +-0.66788554E+01 i
+ +++ (4) MieAlgorithmFF +++: The scattering matrix for this sphere is psphi%S2:
+  0.11811609E-01 + 0.20244558E+01 i
+ +++ (4) MieAlgorithmFF +++: The backscattering matrix for this sphere is (/S1, S2/):
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (1) MieAlgorithmFF +++: Starting multiScatter routine. Iterating over all scattering orders.
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (1) MieAlgorithmFF +++: **** Scattering order p =           3
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           1           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.26507985E-04 +-0.13488422E-04 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.88409952E-09 +-0.30073249E-10 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i,j,l,step,arg) =           1           3           2           2           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.26507985E-04 +-0.13488422E-04 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.52177131E+00 +-0.16862764E+02 i     -0.64846263E+01 +-0.62335091E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.20808455E-08 + 0.93615526E-09 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Interchanging role of j and l: 'l>j'. Storage: +=psphl%eField_new(:,i).
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.76628363E-04 +-0.36758918E-05 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.52177131E+00 +-0.16862764E+02 i     -0.64846263E+01 +-0.62335091E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.29422837E-08 +-0.50027434E-10 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           1           3
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.76628363E-04 +-0.36758918E-05 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.41292596E-08 +-0.19427908E-08 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           2           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.19427919E-03 + 0.21892583E-02 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.36543344E-07 +-0.54201312E-07 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i,j,l,step,arg) =           2           3           1           1           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.19427919E-03 + 0.21892583E-02 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.80351057E+01 + 0.24936314E+01 i     -0.43173056E+01 +-0.18809359E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.31501180E-07 + 0.20534982E-07 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Interchanging role of j and l: 'l>j'. Storage: +=psphl%eField_new(:,i).
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.34919700E-04 +-0.10762669E-03 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.80351057E+01 + 0.24936314E+01 i     -0.43173056E+01 +-0.18809359E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.21620146E-08 + 0.10130186E-09 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           2           3
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.34919700E-04 +-0.10762669E-03 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.30100389E-08 + 0.11259145E-10 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           3           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.76628363E-04 +-0.36758918E-05 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.41292596E-08 +-0.19427908E-08 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i,j,l,step,arg) =           3           2           1           0           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.76628363E-04 +-0.36758918E-05 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.52616801E+01 +-0.66788554E+01 i      0.11811609E-01 + 0.20244558E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.13227646E-08 + 0.99267136E-10 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Interchanging role of j and l: 'l>j'. Storage: +=psphl%eField_new(:,i).
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.75215921E-05 +-0.15367017E-04 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.52616801E+01 +-0.66788554E+01 i      0.11811609E-01 + 0.20244558E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.59115146E-09 + 0.29683483E-09 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           3           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.75215921E-05 +-0.15367017E-04 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.32827524E-09 +-0.31526134E-09 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Multiscattering result: i  =           1
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^new(xyz,l)  =
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ -0.38705359E-07 +-0.54100010E-07 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.35381080E-08 +-0.16459560E-08 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^acm(xyz,l)  =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.26469281E-04 +-0.13542523E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.76631899E-04 +-0.36775377E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Multiscattering result: i  =           2
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^new(xyz,l)  =
+  0.38263832E-08 +-0.80100683E-10 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ -0.16510397E-08 +-0.21599421E-09 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^acm(xyz,l)  =
+ -0.19427536E-03 + 0.21892583E-02 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.99942195E+00 +-0.33996020E-01 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.34918048E-04 +-0.10762691E-03 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Multiscattering result: i  =           3
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^new(xyz,l)  =
+  0.62101053E-08 +-0.10066356E-08 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ -0.34511221E-07 + 0.20546240E-07 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^acm(xyz,l)  =
+  0.76634577E-04 +-0.36768984E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ -0.75561034E-05 +-0.15346472E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (1) MieAlgorithmFF +++: **** Scattering order p =           4
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           1           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.38705359E-07 +-0.54100010E-07 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.22960450E-12 + 0.19650982E-11 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i,j,l,step,arg) =           1           3           2           2           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.38705359E-07 +-0.54100010E-07 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.52177131E+00 +-0.16862764E+02 i     -0.64846263E+01 +-0.62335091E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.27670626E-11 + 0.42878721E-11 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Interchanging role of j and l: 'l>j'. Storage: +=psphl%eField_new(:,i).
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.35381080E-08 +-0.16459560E-08 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.52177131E+00 +-0.16862764E+02 i     -0.64846263E+01 +-0.62335091E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.13952641E-12 + 0.54196434E-13 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           1           3
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.35381080E-08 +-0.16459560E-08 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.23180625E-12 +-0.12127599E-13 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           2           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.38263832E-08 +-0.80100683E-10 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.10076849E-12 +-0.52944902E-13 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i,j,l,step,arg) =           2           3           1           1           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.38263832E-08 +-0.80100683E-10 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.80351057E+01 + 0.24936314E+01 i     -0.43173056E+01 +-0.18809359E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.29553108E-13 +-0.58431667E-13 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Interchanging role of j and l: 'l>j'. Storage: +=psphl%eField_new(:,i).
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.16510397E-08 +-0.21599421E-09 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.80351057E+01 + 0.24936314E+01 i     -0.43173056E+01 +-0.18809359E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.43446128E-14 +-0.31553316E-13 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           2           3
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.16510397E-08 +-0.21599421E-09 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.79264132E-14 +-0.43580956E-13 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           3           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.62101053E-08 +-0.10066356E-08 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.35439837E-12 +-0.12020360E-12 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i,j,l,step,arg) =           3           2           1           0           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.62101053E-08 +-0.10066356E-08 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.52616801E+01 +-0.66788554E+01 i      0.11811609E-01 + 0.20244558E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.10870085E-12 +-0.41174098E-14 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Interchanging role of j and l: 'l>j'. Storage: +=psphl%eField_new(:,i).
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.34511221E-07 + 0.20546240E-07 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.52616801E+01 +-0.66788554E+01 i      0.11811609E-01 + 0.20244558E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.58109740E-12 +-0.14400598E-11 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           3           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.34511221E-07 + 0.20546240E-07 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.80059191E-12 +-0.70758482E-12 i     -0.00000000E+00 + 0.00000000E+00 i     -0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Multiscattering result: i  =           1
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^new(xyz,l)  =
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.10511310E-12 +-0.84498218E-13 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ -0.22669903E-12 +-0.15602634E-11 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^acm(xyz,l)  =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.26469281E-04 +-0.13542523E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.76631899E-04 +-0.36775393E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Multiscattering result: i  =           2
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^new(xyz,l)  =
+ -0.90078091E-13 + 0.20192947E-11 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.69189104E-12 +-0.71170224E-12 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^acm(xyz,l)  =
+ -0.19427536E-03 + 0.21892583E-02 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.99942195E+00 +-0.33996020E-01 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.34918048E-04 +-0.10762691E-03 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Multiscattering result: i  =           3
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^new(xyz,l)  =
+ -0.25352563E-11 + 0.42757447E-11 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ -0.21626696E-13 +-0.10201262E-12 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^acm(xyz,l)  =
+  0.76634577E-04 +-0.36768940E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ -0.75561034E-05 +-0.15346472E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (1) MieAlgorithmFF +++: **** Scattering order p =           5
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           1           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10511310E-12 +-0.84498218E-13 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.39517623E-17 + 0.68812111E-18 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i,j,l,step,arg) =           1           3           2           2           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10511310E-12 +-0.84498218E-13 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.52177131E+00 +-0.16862764E+02 i     -0.64846263E+01 +-0.62335091E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.83652519E-17 + 0.60885762E-17 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Interchanging role of j and l: 'l>j'. Storage: +=psphl%eField_new(:,i).
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.22669903E-12 +-0.15602634E-11 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.52177131E+00 +-0.16862764E+02 i     -0.64846263E+01 +-0.62335091E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.47938930E-17 + 0.60287094E-16 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           1           3
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.22669903E-12 +-0.15602634E-11 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.31578202E-16 + 0.88310424E-16 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           2           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.90078091E-13 + 0.20192947E-11 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.31386177E-16 +-0.51275057E-16 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i,j,l,step,arg) =           2           3           1           1           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.90078091E-13 + 0.20192947E-11 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.80351057E+01 + 0.24936314E+01 i     -0.43173056E+01 +-0.18809359E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.29772060E-16 + 0.17594843E-16 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Interchanging role of j and l: 'l>j'. Storage: +=psphl%eField_new(:,i).
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.69189104E-12 +-0.71170224E-12 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.80351057E+01 + 0.24936314E+01 i     -0.43173056E+01 +-0.18809359E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.16622499E-16 + 0.91754422E-17 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           2           3
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.69189104E-12 +-0.71170224E-12 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.23645386E-16 + 0.11753057E-16 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           3           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.25352563E-11 + 0.42757447E-11 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.25241007E-15 +-0.15402073E-15 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i,j,l,step,arg) =           3           2           1           0           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.25352563E-11 + 0.42757447E-11 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.52616801E+01 +-0.66788554E+01 i      0.11811609E-01 + 0.20244558E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.52564840E-16 + 0.68002412E-16 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Interchanging role of j and l: 'l>j'. Storage: +=psphl%eField_new(:,i).
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.21626696E-13 +-0.10201262E-12 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.52616801E+01 +-0.66788554E+01 i      0.11811609E-01 + 0.20244558E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.30532860E-17 + 0.26330298E-17 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           3           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.21626696E-13 +-0.10201262E-12 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.24089255E-17 +-0.13757514E-17 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Multiscattering result: i  =           1
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^new(xyz,l)  =
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ -0.48008676E-16 +-0.42099615E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ -0.25546336E-15 +-0.15138770E-15 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^acm(xyz,l)  =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.26469281E-04 +-0.13542523E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.76631899E-04 +-0.36775393E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Multiscattering result: i  =           2
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^new(xyz,l)  =
+ -0.84213066E-18 + 0.60975215E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.50155914E-16 + 0.66626659E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^acm(xyz,l)  =
+ -0.19427536E-03 + 0.21892583E-02 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.99942195E+00 +-0.33996020E-01 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.34918048E-04 +-0.10762691E-03 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Multiscattering result: i  =           3
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^new(xyz,l)  =
+  0.39943453E-16 + 0.94399003E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ -0.53417445E-16 + 0.29347898E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^acm(xyz,l)  =
+  0.76634577E-04 +-0.36768940E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ -0.75561034E-05 +-0.15346472E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (1) MieAlgorithmFF +++: **** Scattering order p =           6
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           1           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.48008676E-16 +-0.42099615E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.64439531E-21 + 0.17864769E-20 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i,j,l,step,arg) =           1           3           2           2           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.48008676E-16 +-0.42099615E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.52177131E+00 +-0.16862764E+02 i     -0.64846263E+01 +-0.62335091E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.35240729E-20 + 0.34024992E-20 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Interchanging role of j and l: 'l>j'. Storage: +=psphl%eField_new(:,i).
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.25546336E-15 +-0.15138770E-15 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.52177131E+00 +-0.16862764E+02 i     -0.64846263E+01 +-0.62335091E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.94016638E-20 + 0.64305861E-20 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           1           3
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.25546336E-15 +-0.15138770E-15 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.92047035E-20 + 0.15076225E-19 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           2           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.84213066E-18 + 0.60975215E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.89885704E-21 +-0.15753243E-20 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i,j,l,step,arg) =           2           3           1           1           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.84213066E-18 + 0.60975215E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.80351057E+01 + 0.24936314E+01 i     -0.43173056E+01 +-0.18809359E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.91410334E-21 + 0.50293823E-21 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Interchanging role of j and l: 'l>j'. Storage: +=psphl%eField_new(:,i).
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.50155914E-16 + 0.66626659E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.80351057E+01 + 0.24936314E+01 i     -0.43173056E+01 +-0.18809359E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.97628739E-21 + 0.12615837E-20 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           2           3
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.50155914E-16 + 0.66626659E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.12809225E-20 + 0.18113585E-20 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           3           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.39943453E-16 + 0.94399003E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.53228456E-21 +-0.60740325E-20 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j>l) Storage: +=psphj%eField_new(:,i). (i,j,l,step,arg) =           3           2           1           0           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.39943453E-16 + 0.94399003E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.52616801E+01 +-0.66788554E+01 i      0.11811609E-01 + 0.20244558E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.48545097E-21 + 0.17045541E-20 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: Interchanging role of j and l: 'l>j'. Storage: +=psphl%eField_new(:,i).
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.53417445E-16 + 0.29347898E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.52616801E+01 +-0.66788554E+01 i      0.11811609E-01 + 0.20244558E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.95688237E-21 +-0.21534434E-20 i     -0.00000000E+00 +-0.00000000E+00 i     -0.00000000E+00 +-0.00000000E+00 i
+ +++ (4) MieAlgorithmFF +++: -- (j=l) Storage: +=psphj%eField_new(:,i). (i,j) =           3           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.53417445E-16 + 0.29347898E-16 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.59325180E+01 +-0.11658821E+02 i      0.59325180E+01 + 0.11658821E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.11770044E-20 +-0.11151359E-20 i     -0.00000000E+00 + 0.00000000E+00 i     -0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Multiscattering result: i  =           1
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^new(xyz,l)  =
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.77430346E-22 +-0.31374056E-21 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ -0.14891669E-20 +-0.82274760E-20 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^acm(xyz,l)  =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.26469281E-04 +-0.13542523E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.76631899E-04 +-0.36775393E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Multiscattering result: i  =           2
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^new(xyz,l)  =
+ -0.10046059E-19 + 0.82170628E-20 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.69155344E-21 + 0.58941819E-21 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^acm(xyz,l)  =
+ -0.19427536E-03 + 0.21892583E-02 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.99942195E+00 +-0.33996020E-01 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.34918048E-04 +-0.10762691E-03 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Multiscattering result: i  =           3
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^new(xyz,l)  =
+ -0.12728776E-19 + 0.18478724E-19 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.36681916E-21 + 0.23142967E-20 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: (first index horizontally) Multiscattering result: E_il^acm(xyz,l)  =
+  0.76634577E-04 +-0.36768940E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ -0.75561034E-05 +-0.15346472E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (2) MieAlgorithmFF +++: Finished multiscattering routine with (inclusive) scattering order p =           6
+ +++ (5) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,0.0000000,0.0000000})
+ +++ (5) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,0.0000000,4.19999994E-02})
+ +++ (5) Sphere +++: Deallocating S for Sphere(x=41.887901,refrel=(  1.5200000    ,  0.0000000    ),r={0.0000000,2.09999997E-02,0.0000000})
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (1) MieAlgorithmFF +++: Starting scatter2Camera routine. Iterating over all spheres.
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (4) MieAlgorithmFF +++: numPixels =           4
+ +++ (3) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=           1
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           1           1           1
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           2           1           2
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           3           1           3
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           4           1           4
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           1           2           5
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           2           2           6
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           3           2           7
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           4           2           8
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           1           3           9
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           2           3          10
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           3           3          11
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           4           3          12
+ +++ (4) MieAlgorithmFF +++: The i2c scat. angles for this sphere are:   30.365550272418321        30.365550272418321        30.365550272418321        30.365550272418321        149.63445147429891        149.63445147429891        149.63445147429891        149.63445147429891        69.056135105217180        110.94385988582663        69.056135105217180        110.94385988582663     
+ +++ (4) MieAlgorithmFF +++: The i2c scat. matrix for this sphere is S1_cil (i cnst):
+  -30.499811     + 0.85625398     i
+  -30.499811     + 0.85625398     i
+  -30.499811     + 0.85625398     i
+  -30.499811     + 0.85625398     i
+  -4.6791992     +  1.3568189     i
+  -4.6791992     +  1.3568189     i
+  -4.6791992     +  1.3568189     i
+  -4.6791992     +  1.3568189     i
+ -0.15699632     +  4.9503317     i
+  0.42329681     +  9.1054897     i
+ -0.15699632     +  4.9503317     i
+  0.42329681     +  9.1054897     i
+ +++ (4) MieAlgorithmFF +++: The i2c scat. matrix for this sphere is S2_cil (i cnst):
+  -38.706963     +  5.6016579     i
+  -38.706963     +  5.6016579     i
+  -38.706963     +  5.6016579     i
+  -38.706963     +  5.6016579     i
+   4.5497313     +  6.3941007     i
+   4.5497313     +  6.3941007     i
+   4.5497313     +  6.3941007     i
+   4.5497313     +  6.3941007     i
+   2.7081776     +  16.861841     i
+   3.1066678     +  1.3552032     i
+   2.7081776     +  16.861841     i
+   3.1066678     +  1.3552032     i
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=           1
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           1           1           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.30499811E+02 + 0.85625398E+00 i     -0.38706963E+02 + 0.56016579E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.12584073E-03 + 0.10220461E-05 i     -0.62939539E-05 + 0.73182769E-05 i     -0.54741515E-04 + 0.34552772E-05 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           2           1           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.30499811E+02 + 0.85625398E+00 i     -0.38706963E+02 + 0.56016579E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.12584073E-03 + 0.10220461E-05 i      0.62939539E-05 +-0.73182769E-05 i     -0.54741515E-04 + 0.34552772E-05 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           3           1           3
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.30499811E+02 + 0.85625398E+00 i     -0.38706963E+02 + 0.56016579E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.12584073E-03 + 0.10220461E-05 i      0.62939539E-05 +-0.73182769E-05 i      0.54741515E-04 +-0.34552772E-05 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           4           1           4
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.30499811E+02 + 0.85625398E+00 i     -0.38706963E+02 + 0.56016579E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.12584073E-03 + 0.10220461E-05 i     -0.62939539E-05 + 0.73182769E-05 i      0.54741515E-04 +-0.34552772E-05 i
+ +++ (5) MieAlgorithmFF +++: (first index horizontally) eField(xyz,{c}) for present i,l =
+ -0.12584073E-03 + 0.10220461E-05 i     -0.62939539E-05 + 0.73182769E-05 i     -0.54741515E-04 + 0.34552772E-05 i
+ -0.12584073E-03 + 0.10220461E-05 i      0.62939539E-05 +-0.73182769E-05 i     -0.54741515E-04 + 0.34552772E-05 i
+ -0.12584073E-03 + 0.10220461E-05 i      0.62939539E-05 +-0.73182769E-05 i      0.54741515E-04 +-0.34552772E-05 i
+ -0.12584073E-03 + 0.10220461E-05 i     -0.62939539E-05 + 0.73182769E-05 i      0.54741515E-04 +-0.34552772E-05 i
+ +++ (4) Camera +++: eField_in   size1 =           3
+ +++ (4) Camera +++: eField_in   size2 =           4
+ +++ (4) Camera +++: eField_this size1 =           3
+ +++ (4) Camera +++: eField_this size2 =           4
+ +++ (4) Camera +++: (first index horizontally) eField_before =
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+  0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (4) Camera +++: (first index horizontally) eField_after =
+ -0.12584073E-03 + 0.10220461E-05 i     -0.62939539E-05 + 0.73182769E-05 i     -0.54741515E-04 + 0.34552772E-05 i
+ -0.12584073E-03 + 0.10220461E-05 i      0.62939539E-05 +-0.73182769E-05 i     -0.54741515E-04 + 0.34552772E-05 i
+ -0.12584073E-03 + 0.10220461E-05 i      0.62939539E-05 +-0.73182769E-05 i      0.54741515E-04 +-0.34552772E-05 i
+ -0.12584073E-03 + 0.10220461E-05 i     -0.62939539E-05 + 0.73182769E-05 i      0.54741515E-04 +-0.34552772E-05 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           1           2           5
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.26469281E-04 +-0.13542523E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.46791992E+01 + 0.13568189E+01 i      0.45497313E+01 + 0.63941007E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.29935943E-09 +-0.47027809E-09 i      0.24817878E-09 +-0.31793629E-09 i     -0.21203423E-10 +-0.32654596E-09 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           2           2           6
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.26469281E-04 +-0.13542523E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.46791992E+01 + 0.13568189E+01 i      0.45497313E+01 + 0.63941007E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.29935943E-09 +-0.47027809E-09 i     -0.24817878E-09 + 0.31793629E-09 i     -0.21203423E-10 +-0.32654596E-09 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           3           2           7
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.26469281E-04 +-0.13542523E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.46791992E+01 + 0.13568189E+01 i      0.45497313E+01 + 0.63941007E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.29935943E-09 +-0.47027809E-09 i     -0.24817878E-09 + 0.31793629E-09 i      0.21203423E-10 + 0.32654596E-09 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           4           2           8
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.26469281E-04 +-0.13542523E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.46791992E+01 + 0.13568189E+01 i      0.45497313E+01 + 0.63941007E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.29935943E-09 +-0.47027809E-09 i      0.24817878E-09 +-0.31793629E-09 i      0.21203423E-10 + 0.32654596E-09 i
+ +++ (5) MieAlgorithmFF +++: (first index horizontally) eField(xyz,{c}) for present i,l =
+ -0.29935943E-09 +-0.47027809E-09 i      0.24817878E-09 +-0.31793629E-09 i     -0.21203423E-10 +-0.32654596E-09 i
+ -0.29935943E-09 +-0.47027809E-09 i     -0.24817878E-09 + 0.31793629E-09 i     -0.21203423E-10 +-0.32654596E-09 i
+ -0.29935943E-09 +-0.47027809E-09 i     -0.24817878E-09 + 0.31793629E-09 i      0.21203423E-10 + 0.32654596E-09 i
+ -0.29935943E-09 +-0.47027809E-09 i      0.24817878E-09 +-0.31793629E-09 i      0.21203423E-10 + 0.32654596E-09 i
+ +++ (4) Camera +++: eField_in   size1 =           3
+ +++ (4) Camera +++: eField_in   size2 =           4
+ +++ (4) Camera +++: eField_this size1 =           3
+ +++ (4) Camera +++: eField_this size2 =           4
+ +++ (4) Camera +++: (first index horizontally) eField_before =
+ -0.12584073E-03 + 0.10220461E-05 i     -0.62939539E-05 + 0.73182769E-05 i     -0.54741515E-04 + 0.34552772E-05 i
+ -0.12584073E-03 + 0.10220461E-05 i      0.62939539E-05 +-0.73182769E-05 i     -0.54741515E-04 + 0.34552772E-05 i
+ -0.12584073E-03 + 0.10220461E-05 i      0.62939539E-05 +-0.73182769E-05 i      0.54741515E-04 +-0.34552772E-05 i
+ -0.12584073E-03 + 0.10220461E-05 i     -0.62939539E-05 + 0.73182769E-05 i      0.54741515E-04 +-0.34552772E-05 i
+ +++ (4) Camera +++: (first index horizontally) eField_after =
+ -0.12584103E-03 + 0.10215758E-05 i     -0.62937056E-05 + 0.73179590E-05 i     -0.54741537E-04 + 0.34549507E-05 i
+ -0.12584103E-03 + 0.10215758E-05 i      0.62937056E-05 +-0.73179590E-05 i     -0.54741537E-04 + 0.34549507E-05 i
+ -0.12584103E-03 + 0.10215758E-05 i      0.62937056E-05 +-0.73179590E-05 i      0.54741537E-04 +-0.34549507E-05 i
+ -0.12584103E-03 + 0.10215758E-05 i     -0.62937056E-05 + 0.73179590E-05 i      0.54741537E-04 +-0.34549507E-05 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           1           3           9
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.76631899E-04 +-0.36775393E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.15699632E+00 + 0.49503317E+01 i      0.27081776E+01 + 0.16861841E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.19491589E-09 + 0.15251841E-08 i     -0.56240530E-10 +-0.18366705E-08 i     -0.10405051E-09 +-0.12904434E-09 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           2           3          10
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.76631899E-04 +-0.36775393E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.42329681E+00 + 0.91054897E+01 i      0.31066678E+01 + 0.13552032E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.23806851E-09 + 0.23064899E-08 i     -0.31279979E-09 +-0.18749188E-09 i      0.30960113E-10 + 0.10332207E-08 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           3           3          11
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.76631899E-04 +-0.36775393E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.15699632E+00 + 0.49503317E+01 i      0.27081776E+01 + 0.16861841E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.19491589E-09 + 0.15251841E-08 i      0.56240530E-10 + 0.18366705E-08 i      0.10405051E-09 + 0.12904434E-09 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           1           4           3          12
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.76631899E-04 +-0.36775393E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.42329681E+00 + 0.91054897E+01 i      0.31066678E+01 + 0.13552032E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.23806851E-09 + 0.23064899E-08 i      0.31279979E-09 + 0.18749188E-09 i     -0.30960113E-10 +-0.10332207E-08 i
+ +++ (5) MieAlgorithmFF +++: (first index horizontally) eField(xyz,{c}) for present i,l =
+ -0.19491589E-09 + 0.15251841E-08 i     -0.56240530E-10 +-0.18366705E-08 i     -0.10405051E-09 +-0.12904434E-09 i
+ -0.23806851E-09 + 0.23064899E-08 i     -0.31279979E-09 +-0.18749188E-09 i      0.30960113E-10 + 0.10332207E-08 i
+ -0.19491589E-09 + 0.15251841E-08 i      0.56240530E-10 + 0.18366705E-08 i      0.10405051E-09 + 0.12904434E-09 i
+ -0.23806851E-09 + 0.23064899E-08 i      0.31279979E-09 + 0.18749188E-09 i     -0.30960113E-10 +-0.10332207E-08 i
+ +++ (4) Camera +++: eField_in   size1 =           3
+ +++ (4) Camera +++: eField_in   size2 =           4
+ +++ (4) Camera +++: eField_this size1 =           3
+ +++ (4) Camera +++: eField_this size2 =           4
+ +++ (4) Camera +++: (first index horizontally) eField_before =
+ -0.12584103E-03 + 0.10215758E-05 i     -0.62937056E-05 + 0.73179590E-05 i     -0.54741537E-04 + 0.34549507E-05 i
+ -0.12584103E-03 + 0.10215758E-05 i      0.62937056E-05 +-0.73179590E-05 i     -0.54741537E-04 + 0.34549507E-05 i
+ -0.12584103E-03 + 0.10215758E-05 i      0.62937056E-05 +-0.73179590E-05 i      0.54741537E-04 +-0.34549507E-05 i
+ -0.12584103E-03 + 0.10215758E-05 i     -0.62937056E-05 + 0.73179590E-05 i      0.54741537E-04 +-0.34549507E-05 i
+ +++ (4) Camera +++: (first index horizontally) eField_after =
+ -0.12584122E-03 + 0.10231010E-05 i     -0.62937620E-05 + 0.73161223E-05 i     -0.54741642E-04 + 0.34548216E-05 i
+ -0.12584127E-03 + 0.10238823E-05 i      0.62933927E-05 +-0.73181463E-05 i     -0.54741504E-04 + 0.34559839E-05 i
+ -0.12584122E-03 + 0.10231010E-05 i      0.62937620E-05 +-0.73161223E-05 i      0.54741642E-04 +-0.34548216E-05 i
+ -0.12584127E-03 + 0.10238823E-05 i     -0.62933927E-05 + 0.73181463E-05 i      0.54741504E-04 +-0.34559839E-05 i
+ +++ (3) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=           2
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           1           1           1
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           2           1           2
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           3           1           3
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           4           1           4
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           1           2           5
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           2           2           6
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           3           2           7
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           4           2           8
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           1           3           9
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           2           3          10
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           3           3          11
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           4           3          12
+ +++ (4) MieAlgorithmFF +++: The i2c scat. angles for this sphere are:   149.63445147429891        149.63445147429891        149.63445147429891        149.63445147429891        149.63444471862550        149.63444471862550        149.63444471862550        149.63444471862550        127.72482213375761        158.68334266827370        127.72482213375761        158.68334266827370     
+ +++ (4) MieAlgorithmFF +++: The i2c scat. matrix for this sphere is S1_cil (i cnst):
+  -4.6791992     +  1.3568189     i
+  -4.6791992     +  1.3568189     i
+  -4.6791992     +  1.3568189     i
+  -4.6791992     +  1.3568189     i
+  -4.6792259     +  1.3568460     i
+  -4.6792259     +  1.3568460     i
+  -4.6792259     +  1.3568460     i
+  -4.6792259     +  1.3568460     i
+  0.46466818     +  5.3694019     i
+  -15.982717     +  2.4232709     i
+  0.46466818     +  5.3694019     i
+  -15.982717     +  2.4232709     i
+ +++ (4) MieAlgorithmFF +++: The i2c scat. matrix for this sphere is S2_cil (i cnst):
+   4.5497313     +  6.3941007     i
+   4.5497313     +  6.3941007     i
+   4.5497313     +  6.3941007     i
+   4.5497313     +  6.3941007     i
+   4.5497394     +  6.3941264     i
+   4.5497394     +  6.3941264     i
+   4.5497394     +  6.3941264     i
+   4.5497394     +  6.3941264     i
+   1.0885315     + -3.4933765     i
+   7.4367580     +  12.476473     i
+   1.0885315     + -3.4933765     i
+   7.4367580     +  12.476473     i
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=           2
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           1           1           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.19427536E-03 + 0.21892583E-02 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.46791992E+01 + 0.13568189E+01 i      0.45497313E+01 + 0.63941007E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.17646141E-07 + 0.37239843E-07 i     -0.29661635E-07 +-0.30173446E-08 i      0.19598938E-07 +-0.14177894E-07 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           2           1           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.19427536E-03 + 0.21892583E-02 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.46791992E+01 + 0.13568189E+01 i      0.45497313E+01 + 0.63941007E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.17646141E-07 + 0.37239843E-07 i      0.29661635E-07 + 0.30173446E-08 i      0.19598938E-07 +-0.14177894E-07 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           3           1           3
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.19427536E-03 + 0.21892583E-02 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.46791992E+01 + 0.13568189E+01 i      0.45497313E+01 + 0.63941007E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.17646141E-07 + 0.37239843E-07 i      0.29661635E-07 + 0.30173446E-08 i     -0.19598938E-07 + 0.14177894E-07 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           4           1           4
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.19427536E-03 + 0.21892583E-02 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.46791992E+01 + 0.13568189E+01 i      0.45497313E+01 + 0.63941007E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.17646141E-07 + 0.37239843E-07 i     -0.29661635E-07 +-0.30173446E-08 i     -0.19598938E-07 + 0.14177894E-07 i
+ +++ (5) MieAlgorithmFF +++: (first index horizontally) eField(xyz,{c}) for present i,l =
+ -0.17646141E-07 + 0.37239843E-07 i     -0.29661635E-07 +-0.30173446E-08 i      0.19598938E-07 +-0.14177894E-07 i
+ -0.17646141E-07 + 0.37239843E-07 i      0.29661635E-07 + 0.30173446E-08 i      0.19598938E-07 +-0.14177894E-07 i
+ -0.17646141E-07 + 0.37239843E-07 i      0.29661635E-07 + 0.30173446E-08 i     -0.19598938E-07 + 0.14177894E-07 i
+ -0.17646141E-07 + 0.37239843E-07 i     -0.29661635E-07 +-0.30173446E-08 i     -0.19598938E-07 + 0.14177894E-07 i
+ +++ (4) Camera +++: eField_in   size1 =           3
+ +++ (4) Camera +++: eField_in   size2 =           4
+ +++ (4) Camera +++: eField_this size1 =           3
+ +++ (4) Camera +++: eField_this size2 =           4
+ +++ (4) Camera +++: (first index horizontally) eField_before =
+ -0.12584122E-03 + 0.10231010E-05 i     -0.62937620E-05 + 0.73161223E-05 i     -0.54741642E-04 + 0.34548216E-05 i
+ -0.12584127E-03 + 0.10238823E-05 i      0.62933927E-05 +-0.73181463E-05 i     -0.54741504E-04 + 0.34559839E-05 i
+ -0.12584122E-03 + 0.10231010E-05 i      0.62937620E-05 +-0.73161223E-05 i      0.54741642E-04 +-0.34548216E-05 i
+ -0.12584127E-03 + 0.10238823E-05 i     -0.62933927E-05 + 0.73181463E-05 i      0.54741504E-04 +-0.34559839E-05 i
+ +++ (4) Camera +++: (first index horizontally) eField_after =
+ -0.12585887E-03 + 0.10603409E-05 i     -0.63234238E-05 + 0.73131050E-05 i     -0.54722044E-04 + 0.34406437E-05 i
+ -0.12585892E-03 + 0.10611221E-05 i      0.63230545E-05 +-0.73151291E-05 i     -0.54721906E-04 + 0.34418060E-05 i
+ -0.12585887E-03 + 0.10603409E-05 i      0.63234238E-05 +-0.73131050E-05 i      0.54722044E-04 +-0.34406437E-05 i
+ -0.12585892E-03 + 0.10611221E-05 i     -0.63230545E-05 + 0.73151291E-05 i      0.54721906E-04 +-0.34418060E-05 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           1           2           5
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.99942195E+00 +-0.33996020E-01 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.46792259E+01 + 0.13568460E+01 i      0.45497394E+01 + 0.63941264E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.15835589E-04 +-0.10039195E-04 i      0.30118504E-05 +-0.13226850E-04 i      0.53126919E-05 + 0.96387912E-05 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           2           2           6
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.99942195E+00 +-0.33996020E-01 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.46792259E+01 + 0.13568460E+01 i      0.45497394E+01 + 0.63941264E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.15835589E-04 +-0.10039195E-04 i     -0.30118504E-05 + 0.13226850E-04 i      0.53126919E-05 + 0.96387912E-05 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           3           2           7
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.99942195E+00 +-0.33996020E-01 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.46792259E+01 + 0.13568460E+01 i      0.45497394E+01 + 0.63941264E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.15835589E-04 +-0.10039195E-04 i     -0.30118504E-05 + 0.13226850E-04 i     -0.53126919E-05 +-0.96387912E-05 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           4           2           8
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.99942195E+00 +-0.33996020E-01 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.46792259E+01 + 0.13568460E+01 i      0.45497394E+01 + 0.63941264E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.15835589E-04 +-0.10039195E-04 i      0.30118504E-05 +-0.13226850E-04 i     -0.53126919E-05 +-0.96387912E-05 i
+ +++ (5) MieAlgorithmFF +++: (first index horizontally) eField(xyz,{c}) for present i,l =
+ -0.15835589E-04 +-0.10039195E-04 i      0.30118504E-05 +-0.13226850E-04 i      0.53126919E-05 + 0.96387912E-05 i
+ -0.15835589E-04 +-0.10039195E-04 i     -0.30118504E-05 + 0.13226850E-04 i      0.53126919E-05 + 0.96387912E-05 i
+ -0.15835589E-04 +-0.10039195E-04 i     -0.30118504E-05 + 0.13226850E-04 i     -0.53126919E-05 +-0.96387912E-05 i
+ -0.15835589E-04 +-0.10039195E-04 i      0.30118504E-05 +-0.13226850E-04 i     -0.53126919E-05 +-0.96387912E-05 i
+ +++ (4) Camera +++: eField_in   size1 =           3
+ +++ (4) Camera +++: eField_in   size2 =           4
+ +++ (4) Camera +++: eField_this size1 =           3
+ +++ (4) Camera +++: eField_this size2 =           4
+ +++ (4) Camera +++: (first index horizontally) eField_before =
+ -0.12585887E-03 + 0.10603409E-05 i     -0.63234238E-05 + 0.73131050E-05 i     -0.54722044E-04 + 0.34406437E-05 i
+ -0.12585892E-03 + 0.10611221E-05 i      0.63230545E-05 +-0.73151291E-05 i     -0.54721906E-04 + 0.34418060E-05 i
+ -0.12585887E-03 + 0.10603409E-05 i      0.63234238E-05 +-0.73131050E-05 i      0.54722044E-04 +-0.34406437E-05 i
+ -0.12585892E-03 + 0.10611221E-05 i     -0.63230545E-05 + 0.73151291E-05 i      0.54721906E-04 +-0.34418060E-05 i
+ +++ (4) Camera +++: (first index horizontally) eField_after =
+ -0.14169446E-03 +-0.89788546E-05 i     -0.33115734E-05 +-0.59137446E-05 i     -0.49409351E-04 + 0.13079435E-04 i
+ -0.14169450E-03 +-0.89780733E-05 i      0.33112042E-05 + 0.59117206E-05 i     -0.49409213E-04 + 0.13080597E-04 i
+ -0.14169446E-03 +-0.89788546E-05 i      0.33115734E-05 + 0.59137446E-05 i      0.49409351E-04 +-0.13079435E-04 i
+ -0.14169450E-03 +-0.89780733E-05 i     -0.33112042E-05 +-0.59117206E-05 i      0.49409213E-04 +-0.13080597E-04 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           1           3           9
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.34918048E-04 +-0.10762691E-03 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.46466818E+00 + 0.53694019E+01 i      0.10885315E+01 +-0.34933765E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.20101851E-08 + 0.58376221E-09 i      0.20251512E-09 +-0.31349062E-09 i      0.74889189E-09 +-0.11196966E-09 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           2           3          10
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.34918048E-04 +-0.10762691E-03 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.15982717E+02 + 0.24232709E+01 i      0.74367580E+01 + 0.12476473E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.40785135E-08 +-0.42658721E-08 i      0.18591300E-08 +-0.32250866E-09 i     -0.91945906E-09 + 0.16336793E-08 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           3           3          11
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.34918048E-04 +-0.10762691E-03 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.46466818E+00 + 0.53694019E+01 i      0.10885315E+01 +-0.34933765E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.20101851E-08 + 0.58376221E-09 i     -0.20251512E-09 + 0.31349062E-09 i     -0.74889189E-09 + 0.11196966E-09 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           2           4           3          12
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.34918048E-04 +-0.10762691E-03 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.15982717E+02 + 0.24232709E+01 i      0.74367580E+01 + 0.12476473E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.40785135E-08 +-0.42658721E-08 i     -0.18591300E-08 + 0.32250866E-09 i      0.91945906E-09 +-0.16336793E-08 i
+ +++ (5) MieAlgorithmFF +++: (first index horizontally) eField(xyz,{c}) for present i,l =
+ -0.20101851E-08 + 0.58376221E-09 i      0.20251512E-09 +-0.31349062E-09 i      0.74889189E-09 +-0.11196966E-09 i
+  0.40785135E-08 +-0.42658721E-08 i      0.18591300E-08 +-0.32250866E-09 i     -0.91945906E-09 + 0.16336793E-08 i
+ -0.20101851E-08 + 0.58376221E-09 i     -0.20251512E-09 + 0.31349062E-09 i     -0.74889189E-09 + 0.11196966E-09 i
+  0.40785135E-08 +-0.42658721E-08 i     -0.18591300E-08 + 0.32250866E-09 i      0.91945906E-09 +-0.16336793E-08 i
+ +++ (4) Camera +++: eField_in   size1 =           3
+ +++ (4) Camera +++: eField_in   size2 =           4
+ +++ (4) Camera +++: eField_this size1 =           3
+ +++ (4) Camera +++: eField_this size2 =           4
+ +++ (4) Camera +++: (first index horizontally) eField_before =
+ -0.14169446E-03 +-0.89788546E-05 i     -0.33115734E-05 +-0.59137446E-05 i     -0.49409351E-04 + 0.13079435E-04 i
+ -0.14169450E-03 +-0.89780733E-05 i      0.33112042E-05 + 0.59117206E-05 i     -0.49409213E-04 + 0.13080597E-04 i
+ -0.14169446E-03 +-0.89788546E-05 i      0.33115734E-05 + 0.59137446E-05 i      0.49409351E-04 +-0.13079435E-04 i
+ -0.14169450E-03 +-0.89780733E-05 i     -0.33112042E-05 +-0.59117206E-05 i      0.49409213E-04 +-0.13080597E-04 i
+ +++ (4) Camera +++: (first index horizontally) eField_after =
+ -0.14169647E-03 +-0.89782707E-05 i     -0.33113708E-05 +-0.59140580E-05 i     -0.49408602E-04 + 0.13079323E-04 i
+ -0.14169043E-03 +-0.89823388E-05 i      0.33130634E-05 + 0.59113981E-05 i     -0.49410133E-04 + 0.13082231E-04 i
+ -0.14169647E-03 +-0.89782707E-05 i      0.33113708E-05 + 0.59140580E-05 i      0.49408602E-04 +-0.13079323E-04 i
+ -0.14169043E-03 +-0.89823388E-05 i     -0.33130634E-05 +-0.59113981E-05 i      0.49410133E-04 +-0.13082231E-04 i
+ +++ (3) MieAlgorithmFF +++: Computing scattering matrices (sphere l via sphere i to camera pixel c), i=           3
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           1           1           1
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           2           1           2
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           3           1           3
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           4           1           4
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           1           2           5
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           2           2           6
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           3           2           7
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           4           2           8
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           1           3           9
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           2           3          10
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           3           3          11
+ +++ (5) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           4           3          12
+ +++ (4) MieAlgorithmFF +++: The i2c scat. angles for this sphere are:   142.57144940541750        118.41851090834497        142.57144940541750        118.41851090834497        149.02060411556735        159.98090212811454        149.02060411556735        159.98090212811454        55.840867580012564        35.656473870300076        55.840867580012564        35.656473870300076     
+ +++ (4) MieAlgorithmFF +++: The i2c scat. matrix for this sphere is S1_cil (i cnst):
+  -1.2642272     + -5.5617056     i
+   3.3808768     + -5.2500982     i
+  -1.2642272     + -5.5617056     i
+   3.3808768     + -5.2500982     i
+  -6.8188205     +  3.5654449     i
+  -10.059587     + -20.587193     i
+  -6.8188205     +  3.5654449     i
+  -10.059587     + -20.587193     i
+   14.212299     + -20.264101     i
+   26.125444     + -16.654827     i
+   14.212299     + -20.264101     i
+   26.125444     + -16.654827     i
+ +++ (4) MieAlgorithmFF +++: The i2c scat. matrix for this sphere is S2_cil (i cnst):
+   6.0008388     +  4.2071743     i
+   2.9351203     +  6.8577099     i
+   6.0008388     +  4.2071743     i
+   2.9351203     +  6.8577099     i
+   4.9401188     +  7.6133695     i
+  -4.7798996     +  4.5536780     i
+   4.9401188     +  7.6133695     i
+  -4.7798996     +  4.5536780     i
+   6.5367799     + -26.868423     i
+   27.804098     + -22.613382     i
+   6.5367799     + -26.868423     i
+   27.804098     + -22.613382     i
+ +++ (3) MieAlgorithmFF +++: Computing electric fields on the camera. i=           3
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           1           1           1
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.76634577E-04 +-0.36768940E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.12642272E+01 +-0.55617056E+01 i      0.60008388E+01 + 0.42071743E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.13518989E-09 +-0.10747703E-08 i      0.22941354E-09 + 0.24269051E-09 i      0.26844904E-09 +-0.10202823E-09 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           2           1           2
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.76634577E-04 +-0.36768940E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.33808768E+01 +-0.52500982E+01 i      0.29351203E+01 + 0.68577099E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.13179378E-08 +-0.90379154E-09 i      0.68023415E-09 +-0.20961498E-09 i     -0.14757992E-09 +-0.49720233E-09 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           3           1           3
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.76634577E-04 +-0.36768940E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.12642272E+01 +-0.55617056E+01 i      0.60008388E+01 + 0.42071743E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.13518989E-09 +-0.10747703E-08 i     -0.22941354E-09 +-0.24269051E-09 i     -0.26844904E-09 + 0.10202823E-09 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           4           1           4
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.76634577E-04 +-0.36768940E-05 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.33808768E+01 +-0.52500982E+01 i      0.29351203E+01 + 0.68577099E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.13179378E-08 +-0.90379154E-09 i     -0.68023415E-09 + 0.20961498E-09 i      0.14757992E-09 + 0.49720233E-09 i
+ +++ (5) MieAlgorithmFF +++: (first index horizontally) eField(xyz,{c}) for present i,l =
+ -0.13518989E-09 +-0.10747703E-08 i      0.22941354E-09 + 0.24269051E-09 i      0.26844904E-09 +-0.10202823E-09 i
+ -0.13179378E-08 +-0.90379154E-09 i      0.68023415E-09 +-0.20961498E-09 i     -0.14757992E-09 +-0.49720233E-09 i
+ -0.13518989E-09 +-0.10747703E-08 i     -0.22941354E-09 +-0.24269051E-09 i     -0.26844904E-09 + 0.10202823E-09 i
+ -0.13179378E-08 +-0.90379154E-09 i     -0.68023415E-09 + 0.20961498E-09 i      0.14757992E-09 + 0.49720233E-09 i
+ +++ (4) Camera +++: eField_in   size1 =           3
+ +++ (4) Camera +++: eField_in   size2 =           4
+ +++ (4) Camera +++: eField_this size1 =           3
+ +++ (4) Camera +++: eField_this size2 =           4
+ +++ (4) Camera +++: (first index horizontally) eField_before =
+ -0.14169647E-03 +-0.89782707E-05 i     -0.33113708E-05 +-0.59140580E-05 i     -0.49408602E-04 + 0.13079323E-04 i
+ -0.14169043E-03 +-0.89823388E-05 i      0.33130634E-05 + 0.59113981E-05 i     -0.49410133E-04 + 0.13082231E-04 i
+ -0.14169647E-03 +-0.89782707E-05 i      0.33113708E-05 + 0.59140580E-05 i      0.49408602E-04 +-0.13079323E-04 i
+ -0.14169043E-03 +-0.89823388E-05 i     -0.33130634E-05 +-0.59113981E-05 i      0.49410133E-04 +-0.13082231E-04 i
+ +++ (4) Camera +++: (first index horizontally) eField_after =
+ -0.14169660E-03 +-0.89793457E-05 i     -0.33111414E-05 +-0.59138151E-05 i     -0.49408332E-04 + 0.13079221E-04 i
+ -0.14169175E-03 +-0.89832429E-05 i      0.33137437E-05 + 0.59111885E-05 i     -0.49410282E-04 + 0.13081733E-04 i
+ -0.14169660E-03 +-0.89793457E-05 i      0.33111414E-05 + 0.59138151E-05 i      0.49408332E-04 +-0.13079221E-04 i
+ -0.14169175E-03 +-0.89832429E-05 i     -0.33137437E-05 +-0.59111885E-05 i      0.49410282E-04 +-0.13081733E-04 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           1           2           5
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.75561034E-05 +-0.15346472E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.68188205E+01 + 0.35654449E+01 i      0.49401188E+01 + 0.76133695E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.10399079E-09 +-0.26268202E-09 i      0.65561431E-10 + 0.12309154E-09 i      0.13580449E-09 + 0.65261199E-10 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           2           2           6
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.75561034E-05 +-0.15346472E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.10059587E+02 +-0.20587193E+02 i     -0.47798996E+01 + 0.45536780E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.37053829E-09 +-0.14020710E-09 i     -0.14097192E-10 + 0.23135584E-09 i      0.14525182E-09 + 0.77422617E-10 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           3           2           7
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.75561034E-05 +-0.15346472E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.68188205E+01 + 0.35654449E+01 i      0.49401188E+01 + 0.76133695E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.10399079E-09 +-0.26268202E-09 i     -0.65561431E-10 +-0.12309154E-09 i     -0.13580449E-09 +-0.65261199E-10 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           4           2           8
+ +++ (5) MieAlgorithmFF +++: Ei =
+ -0.75561034E-05 +-0.15346472E-04 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+ -0.10059587E+02 +-0.20587193E+02 i     -0.47798996E+01 + 0.45536780E+01 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.37053829E-09 +-0.14020710E-09 i      0.14097192E-10 +-0.23135584E-09 i     -0.14525182E-09 +-0.77422617E-10 i
+ +++ (5) MieAlgorithmFF +++: (first index horizontally) eField(xyz,{c}) for present i,l =
+  0.10399079E-09 +-0.26268202E-09 i      0.65561431E-10 + 0.12309154E-09 i      0.13580449E-09 + 0.65261199E-10 i
+  0.37053829E-09 +-0.14020710E-09 i     -0.14097192E-10 + 0.23135584E-09 i      0.14525182E-09 + 0.77422617E-10 i
+  0.10399079E-09 +-0.26268202E-09 i     -0.65561431E-10 +-0.12309154E-09 i     -0.13580449E-09 +-0.65261199E-10 i
+  0.37053829E-09 +-0.14020710E-09 i      0.14097192E-10 +-0.23135584E-09 i     -0.14525182E-09 +-0.77422617E-10 i
+ +++ (4) Camera +++: eField_in   size1 =           3
+ +++ (4) Camera +++: eField_in   size2 =           4
+ +++ (4) Camera +++: eField_this size1 =           3
+ +++ (4) Camera +++: eField_this size2 =           4
+ +++ (4) Camera +++: (first index horizontally) eField_before =
+ -0.14169660E-03 +-0.89793457E-05 i     -0.33111414E-05 +-0.59138151E-05 i     -0.49408332E-04 + 0.13079221E-04 i
+ -0.14169175E-03 +-0.89832429E-05 i      0.33137437E-05 + 0.59111885E-05 i     -0.49410282E-04 + 0.13081733E-04 i
+ -0.14169660E-03 +-0.89793457E-05 i      0.33111414E-05 + 0.59138151E-05 i      0.49408332E-04 +-0.13079221E-04 i
+ -0.14169175E-03 +-0.89832429E-05 i     -0.33137437E-05 +-0.59111885E-05 i      0.49410282E-04 +-0.13081733E-04 i
+ +++ (4) Camera +++: (first index horizontally) eField_after =
+ -0.14169650E-03 +-0.89796085E-05 i     -0.33110759E-05 +-0.59136919E-05 i     -0.49408198E-04 + 0.13079287E-04 i
+ -0.14169139E-03 +-0.89833829E-05 i      0.33137296E-05 + 0.59114200E-05 i     -0.49410137E-04 + 0.13081811E-04 i
+ -0.14169650E-03 +-0.89796085E-05 i      0.33110759E-05 + 0.59136919E-05 i      0.49408198E-04 +-0.13079287E-04 i
+ -0.14169139E-03 +-0.89833829E-05 i     -0.33137296E-05 +-0.59114200E-05 i      0.49410137E-04 +-0.13081811E-04 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           1           3           9
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.14212299E+02 +-0.20264101E+02 i      0.65367799E+01 +-0.26868423E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.41537522E-04 +-0.44850542E-04 i     -0.77229097E-05 + 0.24095791E-05 i      0.62860013E-05 +-0.15173106E-04 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           2           3          10
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.26125444E+02 +-0.16654827E+02 i      0.27804098E+02 +-0.22613382E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.58247093E-04 +-0.95682699E-04 i     -0.33437157E-05 + 0.59732665E-05 i     -0.26089401E-04 +-0.36141348E-04 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           3           3          11
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.14212299E+02 +-0.20264101E+02 i      0.65367799E+01 +-0.26868423E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+  0.41537522E-04 +-0.44850542E-04 i      0.77229097E-05 +-0.24095791E-05 i     -0.62860013E-05 + 0.15173106E-04 i
+ +++ (4) MieAlgorithmFF +++: --       (i,c,l,arg) =           3           4           3          12
+ +++ (5) MieAlgorithmFF +++: Ei =
+  0.10000000E+01 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i      0.00000000E+00 + 0.00000000E+00 i
+ +++ (5) MieAlgorithmFF.S2E +++: (S1(p),S2(l)) =
+  0.26125444E+02 +-0.16654827E+02 i      0.27804098E+02 +-0.22613382E+02 i
+ +++ (5) MieAlgorithmFF +++: Es =
+ -0.58247093E-04 +-0.95682699E-04 i      0.33437157E-05 +-0.59732665E-05 i      0.26089401E-04 + 0.36141348E-04 i
+ +++ (5) MieAlgorithmFF +++: (first index horizontally) eField(xyz,{c}) for present i,l =
+  0.41537522E-04 +-0.44850542E-04 i     -0.77229097E-05 + 0.24095791E-05 i      0.62860013E-05 +-0.15173106E-04 i
+ -0.58247093E-04 +-0.95682699E-04 i     -0.33437157E-05 + 0.59732665E-05 i     -0.26089401E-04 +-0.36141348E-04 i
+  0.41537522E-04 +-0.44850542E-04 i      0.77229097E-05 +-0.24095791E-05 i     -0.62860013E-05 + 0.15173106E-04 i
+ -0.58247093E-04 +-0.95682699E-04 i      0.33437157E-05 +-0.59732665E-05 i      0.26089401E-04 + 0.36141348E-04 i
+ +++ (4) Camera +++: eField_in   size1 =           3
+ +++ (4) Camera +++: eField_in   size2 =           4
+ +++ (4) Camera +++: eField_this size1 =           3
+ +++ (4) Camera +++: eField_this size2 =           4
+ +++ (4) Camera +++: (first index horizontally) eField_before =
+ -0.14169650E-03 +-0.89796085E-05 i     -0.33110759E-05 +-0.59136919E-05 i     -0.49408198E-04 + 0.13079287E-04 i
+ -0.14169139E-03 +-0.89833829E-05 i      0.33137296E-05 + 0.59114200E-05 i     -0.49410137E-04 + 0.13081811E-04 i
+ -0.14169650E-03 +-0.89796085E-05 i      0.33110759E-05 + 0.59136919E-05 i      0.49408198E-04 +-0.13079287E-04 i
+ -0.14169139E-03 +-0.89833829E-05 i     -0.33137296E-05 +-0.59114200E-05 i      0.49410137E-04 +-0.13081811E-04 i
+ +++ (4) Camera +++: (first index horizontally) eField_after =
+ -0.10015897E-03 +-0.53830150E-04 i     -0.11033986E-04 +-0.35041128E-05 i     -0.43122196E-04 +-0.20938196E-05 i
+ -0.19993848E-03 +-0.10466608E-03 i     -0.29986040E-07 + 0.11884687E-04 i     -0.75499542E-04 +-0.23059536E-04 i
+ -0.10015897E-03 +-0.53830150E-04 i      0.11033986E-04 + 0.35041128E-05 i      0.43122196E-04 + 0.20938196E-05 i
+ -0.19993848E-03 +-0.10466608E-03 i      0.29986040E-07 +-0.11884687E-04 i      0.75499542E-04 + 0.23059536E-04 i
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (1) MieAlgorithmFF +++: Starting to write output to files... Calling iomod%writeOutput(cam).
+ +++ (2) MieAlgorithmFF +++: ************************************************************
+ +++ (2) IO +++: Obtaining intensity, and writing to file 'Intensity.out'
+ +++ (5) Camera +++: eField(xyz,pixel) =
+ -0.10015897E-03 +-0.53830150E-04 i     -0.11033986E-04 +-0.35041128E-05 i     -0.43122196E-04 +-0.20938196E-05 i
+ +++ (5) Camera +++: intensity(pixel) =  1.49274388E-08
+ +++ (5) Camera +++: eField(xyz,pixel) =
+ -0.19993848E-03 +-0.10466608E-03 i     -0.29986040E-07 + 0.11884687E-04 i     -0.75499542E-04 +-0.23059536E-04 i
+ +++ (5) Camera +++: intensity(pixel) =  5.73035521E-08
+ +++ (5) Camera +++: eField(xyz,pixel) =
+ -0.10015897E-03 +-0.53830150E-04 i      0.11033986E-04 + 0.35041128E-05 i      0.43122196E-04 + 0.20938196E-05 i
+ +++ (5) Camera +++: intensity(pixel) =  1.49274388E-08
+ +++ (5) Camera +++: eField(xyz,pixel) =
+ -0.19993848E-03 +-0.10466608E-03 i      0.29986040E-07 +-0.11884687E-04 i      0.75499542E-04 + 0.23059536E-04 i
+ +++ (5) Camera +++: intensity(pixel) =  5.73035521E-08
+ +++ (2) Camera +++: intensity =  1.49274388E-08  5.73035521E-08  1.49274388E-08  5.73035521E-08
+ +++ (2) IO +++: Obtaining pixel coordinates, and writing to file 'PixelCoords.out'

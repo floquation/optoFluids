@@ -1,0 +1,20 @@
+#! /bin/bash
+
+outFileName=particlePositions
+cylRadius=0.001
+cylLength=0.005
+origin='(0, 0, -0.0025)'
+numParticles=500
+
+scriptDir=$(dirname $0)
+
+"$scriptDir/genCylParticles.py" -i "$scriptDir/AartsFig4_probAccum.dat" -o $outFileName -R $cylRadius -L $cylLength -O "$origin" -N $numParticles
+echo "pre sed"
+sed -e "1 i (" $outFileName > $outFileName.edit
+sed -e "1 i $numParticles" $outFileName.edit > $outFileName.edit2
+sed -e "$ a )" $outFileName.edit2 > $outFileName.edit3
+mv $outFileName $outFileName.bak
+mv $outFileName.edit3 $outFileName
+'rm' $outFileName.edit*
+#Comment this last line if something goes wrong, and you want to see the backup
+#'rm' $outFileName.bak

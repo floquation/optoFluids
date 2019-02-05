@@ -1,0 +1,18 @@
+# Source this file to load everything required for the OptoFluids project.
+# Adjust this file if you have different dependencies / need different aliases / etc.
+thisDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+export OPTOFLUIDS_DIR="$thisDir"
+
+## Dependencies
+# Load python 3
+pathprepend "$OPTOFLUIDS_DIR/Dependencies/anaconda3/bin"
+
+## OptoFluids
+# Add the codes to the path
+source "$OPTOFLUIDS_DIR/Codes/.bashrc" 
+
+# Declare convenient commands
+alias gotoOptoFluids="cd \"$OPTOFLUIDS_DIR\""
+#alias gotoOptoFluidsSim="cd \"$OPTOFLUIDS_DIR/Simulations\""
+alias gotoOptoFluidsCode="cd \"$OPTOFLUIDS_DIR/Codes\"" 
+#alias gotoOptoFluidsDoc="cd \"$OPTOFLUIDS_DIR/Documents\"" 

@@ -1,0 +1,9 @@
+! Filename of the file holding the particle positions:
+ParticlePositionsFileName=particlePositions
+
+! Filename of the intensity-out file: (Use DONOTWRITE to surpress output.)
+IntensityFileName=Intensity.out
+
+! Filename of the pixelcoords-out file: (Use DONOTWRITE to surpress output.)
+PixelCoordsFileName=PixelCoords.out
+

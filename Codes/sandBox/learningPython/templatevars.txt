@@ -1,0 +1,8 @@
+SomeNumber=42
+! This line is a comment
+
+faultyLine
+
+   SomeOtherNumber    =    5123      
+
+

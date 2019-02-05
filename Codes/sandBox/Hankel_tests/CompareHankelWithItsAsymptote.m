@@ -1,0 +1,223 @@
+% Small script to plot the Hankel1 function and its asymptote.
+%
+% May also be used to generate a table, giving the first value of 'r' for
+% which the error as given by "error = (h1(z)-h1_asym(z))/h1(z)" is less
+% than a specified threshold 'err_thr'.
+
+
+
+% ........................................................................
+% .                            INPUT                                     .
+% ........................................................................
+
+% PARAMETERS:
+r_max = 10e-3; % Maximum plotting radius [m]
+r_cutoff = 50e-6; % Do not plot the asymptote for r<r_cutoff
+lambda = 600e-9; % Wavelength [m]
+n_range = 1:1:150; % Range of n (nu) of the Hankel functions
+r_RBC = 2.64*4e-6; % Intermediate distance between RBC (used for plot)
+
+err_thr = 1e-2; % Maximum allowed error of the asymptote (used for table)
+
+% SWITCHES:
+doPlot = 0; % Make plots?
+doTable = 1; % Make table?
+
+% OPTIONAL CUSTOMISATIONS:
+% ........................................................................
+% .  As a reminder:
+% .          b     blue          .     point              -     solid    .
+% .          g     green         o     circle             :     dotted   .
+% .          r     red           x     x-mark             -.    dashdot  .
+% .          c     cyan          +     plus               --    dashed   .
+% .          m     magenta       *     star             (none)  no line  .
+% .          y     yellow        s     square                            .
+% .          k     black         d     diamond                           .
+% .          w     white         v     triangle (down)                   .
+% .                              ^     triangle (up)                     .
+% .                              <     triangle (left)                   .
+% .                              >     triangle (right)                  .
+% .                              p     pentagram                         .
+% .                              h     hexagram                          .
+% ........................................................................
+colorsHankel = {
+    'r.','b.','g.','k.','m.','c.','y.', ...
+    'r+','b+','g+','k+','m+','c+','y+', ...
+    'r.','b.','g.','k.','m.','c.','y.', ...
+    'r+','b+','g+','k+','m+','c+','y+', ...
+    'r.','b.','g.','k.','m.','c.','y.', ...
+    'r+','b+','g+','k+','m+','c+','y+', ...
+    'r.','b.','g.','k.','m.','c.','y.', ...
+    'r+','b+','g+','k+','m+','c+','y+', ...
+    'r.','b.','g.','k.','m.','c.','y.', ...
+    'r+','b+','g+','k+','m+','c+','y+', ...
+    'r.','b.','g.','k.','m.','c.','y.', ...
+    'r+','b+','g+','k+','m+','c+','y+', ...
+    'r.','b.','g.','k.','m.','c.','y.', ...
+    'r+','b+','g+','k+','m+','c+','y+', ...
+    'r.','b.','g.','k.','m.','c.','y.', ...
+    'r+','b+','g+','k+','m+','c+','y+', ...
+    'r.','b.','g.','k.','m.','c.','y.', ...
+    'r+','b+','g+','k+','m+','c+','y+', ...
+    'r.','b.','g.','k.','m.','c.','y.', ...
+    'r+','b+','g+','k+','m+','c+','y+', ...
+    'r.','b.','g.','k.','m.','c.','y.', ...
+    'r+','b+','g+','k+','m+','c+','y+', ...
+    'r.','b.','g.','k.','m.','c.','y.', ...
+    'r+','b+','g+','k+','m+','c+','y+', ...
+    'r.','b.','g.','k.','m.','c.','y.', ...
+    'r+','b+','g+','k+','m+','c+','y+'
+};
+colorsAsympt = {
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--', ...
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--', ...
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--', ...
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--', ...
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--', ...
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--', ...
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--', ...
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--', ...
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--', ...
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--', ...
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--', ...
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--', ...
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--', ...
+    'k-','b-','g-','k-','m-','c-','y-', ...
+    'r--','b--','g--','k--','m--','c--','y--'
+};
+r_numPoints = 500000; % resolution of the abscissa (horizontal axis) for both plotting and computations
+
+
+
+% ........................................................................
+% .                             CODE                                     .
+% ........................................................................
+
+% Initialise convenience parameters
+k = 2*pi/lambda;
+r = 0:r_max/(r_numPoints-1):r_max;
+z = k*r;
+
+% Cut-off:
+r_co = r(r>r_cutoff);
+z_co = z(r>r_cutoff);
+
+% Functions: 
+SPHERBESSELH1 = @(n,z) sqrt(pi./(2*z)).*BESSELH(n+0.5,1,z);
+SPHERBESSELH1ASYM = @(n,z) (-1i).^n.*exp(1i*z).*(1./(1i*z));
+% Asymptote WolframA: Limit[SphericalHankelH1[n, z], z -> Infinity]
+
+if(doPlot)
+% Plot:
+
+if(ishandle(1)); close(1); else end
+figure(1)
+hax=axes;
+hold on
+for ii=1:length(n_range)
+    plot(r_co,real(SPHERBESSELH1(n_range(ii),z_co)),colorsHankel{ii});
+    plot(r_co,real(SPHERBESSELH1ASYM(n_range(ii),z_co)),colorsAsympt{ii});
+end
+line([r_RBC r_RBC],get(hax,'YLim'),'Color',[1 0 0]) % vertical line at RBC intermediate distance
+hold off
+xlabel('r')
+ylabel('Re\{h^{(1)}_n(kr)\}')
+
+
+if(ishandle(2)); close(2); else end
+figure(2)
+hax=axes;
+hold on
+for ii=1:length(n_range)
+    plot(r_co,imag(SPHERBESSELH1(n_range(ii),z_co)),colorsHankel{ii});
+    plot(r_co,imag(SPHERBESSELH1ASYM(n_range(ii),z_co)),colorsAsympt{ii});
+end
+line([r_RBC r_RBC],get(hax,'YLim'),'Color',[1 0 0]) % vertical line at RBC intermediate distance
+hold off
+xlabel('r')
+ylabel('Re\{h^{(1)}_n(kr)\}')
+
+
+if(ishandle(3)); close(3); else end
+figure(3)
+hax=axes;
+hold on
+for ii=1:length(n_range)
+    plot(r_co,real(SPHERBESSELH1(n_range(ii),z_co)-SPHERBESSELH1ASYM(n_range(ii),z_co)),colorsAsympt{ii});
+end
+line([r_RBC r_RBC],get(hax,'YLim'),'Color',[1 0 0]) % vertical line at RBC intermediate distance
+hold off
+xlabel('r')
+ylabel('Re\{h^{(1)}_n(kr)-h^{(1)}_n(kr\rightarrow\infty)\}')
+
+
+if(ishandle(4)); close(4); else end
+figure(4)
+hax=axes;
+hold on
+for ii=1:length(n_range)
+    data = real( ...
+                (SPHERBESSELH1(n_range(ii),z_co)-SPHERBESSELH1ASYM(n_range(ii),z_co)) ...
+                ./ ...
+                SPHERBESSELH1(n_range(ii),z_co) ...
+            );
+    plot(r_co,data,colorsAsympt{ii});
+end
+line([r_RBC r_RBC],get(hax,'YLim'),'Color',[1 0 0]) % vertical line at RBC intermediate distance
+hold off
+xlabel('r')
+ylabel('Re\{(h^{(1)}_n(kr)-h^{(1)}_n(kr\rightarrow\infty))/h^{(1)}_n(kr)\}')
+end %if(doPlot)
+
+if(doTable)
+% Table:
+% Find for each value of n, which value of r gives an error below a given
+% threshold
+
+fprintf('\n')
+disp('==================================================')
+fprintf('Table for the lowest value of r for which the asymptote makes an error smaller than err_thr=%e\n',err_thr);
+disp('====')
+for ii=1:length(n_range)
+    error = real( ...
+                (SPHERBESSELH1(n_range(ii),z)-SPHERBESSELH1ASYM(n_range(ii),z)) ...
+                ./ ...
+                SPHERBESSELH1(n_range(ii),z) ...
+            );
+    % Find the last 'bad' index (rather than the first 'good' one), because
+    % the error may oscillate before it starts converging.
+    % WARNING: This implicitely assumes that convergence is contained
+    % within the tested range (i.e. of r)!
+    % WARNING: This implicitely assumes that r starts at a value which has
+    % erroneous values (at least 1) for low r.
+    lastBadIndex = find(error>=err_thr,1,'last');
+    if(lastBadIndex<length(r));
+        % Linearly interpolate to find the match for error=error_thr:
+        fraction = (err_thr-error(lastBadIndex+1))/(error(lastBadIndex)-error(lastBadIndex+1));
+        the_r_value = r(lastBadIndex)*fraction+(1-fraction)*r(lastBadIndex+1);
+        fprintf('n=%i -> r=%e and kr=%e >>? n^2=%i so kr/n^2=%f\n', ...
+            n_range(ii),the_r_value,k*the_r_value,n_range(ii)^2,k*the_r_value/n_range(ii)^2);
+    end
+end
+disp('==================================================')
+fprintf('\n')
+
+end %if(doTable)
+
+
+
+
+

@@ -1,0 +1,6 @@
+This is the first silly line.
+This is the second silly line.
+call debugmsg(4,"This is a debug silly line")
+call debugmsg(3,"This is a multi&
+    line silly debugmsg")
+And this is the 6th line, but the 5th message cause of line continuation.

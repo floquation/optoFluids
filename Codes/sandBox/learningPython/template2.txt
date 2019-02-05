@@ -1,0 +1,13 @@
+This is a sentence with a variable to be substituted.
+\$varname\$ is used to substitute a variable.
+For example, varname=SomeNumber will be substituted as follows:
+blabla \$SomeNumber\$ = $SomeNumber$ blabla $SomeOtherNumber$$SomeNumber$
+Interesting concept, right?
+
+If one wishes to print "backslash dollar", one may simply type "\\$".
+! This line is a comment, because the FIRST CHARACTER is "!". Escape using: "\!".
+\! So this line is not a comment and will appear in the substituted file. This is NOT escaped: \!.
+\! Only "\!" as the first two characters will be escaped.
+
+!$NotExistingVariableName$ will raise a fatal error.
+!$varName$=$ Dollar-sign mismatch will raise a fatal error.

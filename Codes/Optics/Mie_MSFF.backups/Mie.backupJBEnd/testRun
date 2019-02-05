@@ -1,0 +1,5 @@
+#! /bin/bash
+
+./MieAlgorithmFF_start input.dat
+./convertDataTo2D.py -c tmpOut/PixelCoords.out -i tmpOut/Intensity.out -o tmpOut/2D -f
+./plotImagesWDistr.py -i tmpOut/2D/ -c tmpOut/2D/PixelCoords2D.out

@@ -1,0 +1,8 @@
+Notes on the here given strategy pattern implementation:
+
+	The actual implementations moveAggressive, moveDefensive and moveNormal are public subroutines, and as such can be called independently...
+	The strategy stuff works (the procedure pointer stuff) to 'link' those subroutines to an object, which is nice, but to me it seems weird that the functions can be called in general publically as well..
+	It seems however that this is the case in the strategy pattern in a true OO environment as well, see www.oodesign.com. There the strategy example used an interface IBehavior, and makes three
+	classes implementing the IBehavior interface. The Robot class has a class member (variable) of type IBehavior called 'behavior' : (IBehavior behavior).. and the move() method of the Robot class
+	simply calls the behavior.moveCommand() method.. I guess nothing stops one from declaring an IBehavior type in the main for example, and call the moveCommand() afterward anyway.. 
+	so perhaps the 'public' problem is a problem anyway.

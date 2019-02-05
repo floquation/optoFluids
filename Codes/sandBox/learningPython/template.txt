@@ -1,0 +1,8 @@
+This is a sentence with a variable to be substituted.
+\$varname\$ is used to substitute a variable.
+For example, varname=SomeNumber will be substituted as follows:
+blabla \$SomeNumber\$ = $SomeNumber$ blabla
+Interesting concept, right?
+
+If one wishes to print "backslash dollar", one may simply type \\$. The backslash is not an escape character. Only a single blackslash followed by a single dollar sign means something.
+! This line is a comment, because the FIRST CHARACTER is an exclamation mark.

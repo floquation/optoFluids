@@ -1,0 +1,77 @@
+! Rules:
+! All items should be on a separate line.
+! Vectors start with a '(' and end with a ')', space-separated.
+! A line starting with a '!' indicates a comment-line
+! Half-way a line, a comment may be started with a '!', escaped with a '\': '\!'
+! Maximum length of a line = 250, but no line continuation is supported. The same applies to filenames.
+
+! This inputfile has Gyllion's experimental values.
+
+! /-------------\
+! | DEBUG |
+! \-------------/
+
+1                             ! Debug level (0 = off, 5 = max)
+
+! /----------------\
+! | Constants |
+! \----------------/
+
+1.52                    ! Refre
+0.0                     ! Refim
+1.00                    ! Refmed
+
+532E-9                       ! Wavelength        [a.u.]
+4E-6                       ! a (sphere radius) [same a.u. as wavelength]
+
+! /-----------------\
+! | Directions |
+! \-----------------/
+! Note: unit vectors are automatically normalised by the code, so don't bother yourself.
+
+( 0 1 0 )               ! khat, direction of propagation of the incident plane wave
+( 1 0 0 )               ! Eihat, direction of polarisation of the electric field. Linearly polarised per definition. MUST BE ORTHOGONAL TO khat!
+
+! /--------------------------\
+! | Sphere Positions |
+! \--------------------------/
+
+particlePositions1000      ! Filename of the file holding the particle positions
+
+! /-------------\
+! | Camera |
+! \-------------/
+! Note that the origin is the reference for all phases at t=0.
+
+256                            ! nPixels in direction r1
+256                             ! nPixels in direction r2
+(      0       25E-2	0      )               ! r0, the center position of the camera
+(      0	   0	    2.19E-4 )               ! r1, the first direction of pixel increments, half the width of total camera surface
+(  2.19E-4	   0		0      )               ! r2, the second direction of pixel increments, half the width of total camera surface
+
+! /---------------------\
+! | Convergence |
+! \---------------------/
+
+! Set these to -1 (min) resp. a very high value (max) to 'turn them off'
+-1                               ! MINimum multiscattering order (priority over maximum if max>=3, otherwise ignored)
+1000                          ! MAXimum multiscattering order
+! TODO: Relative convergence criterion
+
+! /------------\
+! | Output |
+! \------------/
+
+false                       ! Include p=0 term (direct arrival of incident wave on the camera)?
+
+! Use "DONOTWRITE" to disable the output:
+tmpOut/PixelCoords.out         ! Output the pixel positions in which the data is gathered. Columns = xyz, Rows = pixelId.
+tmpOut/Intensity.out           ! Output the intensity. Rows = intensity(pixelId)
+
+! /--------------------------\
+! | Scatter strategy |
+! \--------------------------/
+
+Interpolate                  ! Keyword to describe what algorithm to use. "FullBHMie": does old style full bhmie scatter() every time | "Interpolate": calcs bhmie for set of angles, stores, from then on interpolates for any angle
+
+!EOF
