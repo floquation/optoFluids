@@ -2,10 +2,12 @@
 #
 # This module contains several spatial (velocity) profiles, to-be-used by "moveParticles.py".
 #  All profiles are callables with the same arguments.
-#  All profiles are scaled between a velocity of 0 and 1.
+#  All profiles are scaled to a mean of one.
 #
 # Kevin van As
 #	23 11 2018: Original
+#	05 02 2019: "constant" is now overloaded with the name "plug"
+#	06 02 2019: Now gives a profile with mean one, instead of maximum one.
 #
 
 # Misc imports
@@ -39,12 +41,16 @@ def Poiseuille(pos, shape: 'Cylinder'):
 	except: # Single: make them into an array of size 1
 		x = [pos[0]]
 		y = [pos[1]]
-	# Calculate profile
+	# Calculate profile:
 	profile = (
 			( shape.R ** 2 - (np.square(x) + np.square(y)) )  # Poseuille like = R ^ 2 - r ^ 2
 			/ (shape.R ** 2)	# Normalize = 1 - (r ^ 2) / (R ^ 2).
-			) 
+			)
+	# Make its mean zero:
+	profile = profile * 2
+	# Give it direction and appropriate matrix shape:
 	profile = np.reshape(profile,(len(profile),1)) * shape.orientation
+	# Done:
 	return profile
 	
 

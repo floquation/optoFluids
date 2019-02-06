@@ -15,6 +15,7 @@
 #	29 11 2018: repeatEvolve, outputDN
 #	06 12 2018: t_int, n_int, T and n via CLI and its sanity checks
 #	01 02 2019: t=0 now also obeys the (periodic) BC, which prevents t=0 from having completely different speckles than t=veryveryshort.
+#	05 02 2019: Now uses MEAN velocity, instead of MAXimum velocity.
 #
 # TODO:
 #	Set origin, orientation from CLI
@@ -66,7 +67,7 @@ class MoveParticles(object):
 	## Constructors
 	####
 
-	def __init__(self, umax: float, spatialProfile, geometry, temporalModulation="none", outputDN="pos", starttime=0, verbose=False, overwrite=False):
+	def __init__(self, umean: float, spatialProfile, geometry, temporalModulation="none", outputDN="pos", starttime=0, verbose=False, overwrite=False):
 	#def __init__(self, particlePosFileName: str, outputFolder: str, t_total: float, t_start: float, u: float, n_samples: int,
 	#			 flow_type: str, z_min: float, z_max: float, cyl_radius: float, overwrite, verbose=False):
 		"""
@@ -94,9 +95,9 @@ class MoveParticles(object):
 		# Then set the other member variables 
 		self.data = None # List of particle position vectors
 		try:
-			self.umax = float(umax) # Maximum velocity
+			self.umean = float(umean) # Mean velocity
 		except:
-			sys.exit("Velocity umax must be numeric, but received: " + str(type(umax)))
+			sys.exit("Velocity umean must be numeric, but received: " + str(type(umean)))
 		self.setSpatialProfile(spatialProfile) # Callable that gives u(\vec{r})
 		self.setTemporalModulation(temporalModulation) # Callable that gives F(t) such that v(r,t)=u(r)F(t)
 		self.geometry = geometry
@@ -166,11 +167,11 @@ class MoveParticles(object):
 		Ft = self.temporalModulation( self.time )
 		self.vprint("    Ft = " + str(Ft))
 		#print(self.data)
-		self.data = self.data + profile * self.umax * Ft * dt # update position dx = u * dt
+		self.data = self.data + profile * self.umean * Ft * dt # update position dx = u * dt
 		self.time = self.time + dt # tick
 		#print(self.data)
 		#profile = self.spatialProfile( (0,0,0), self.geometry )
-		#print( profile * self.umax * dt )
+		#print( profile * self.umean * dt )
 		self.applyBC(periodic=True) # constrain in geometry
 
 	# Evolve particle positions (self.data) from t00 to t00+T with step dt
@@ -360,8 +361,8 @@ if __name__ == '__main__':
 						   help="name of the output directory")
 #	parser.add_option('--t_start', dest='t_start',
 #						   help="start time of the simulation")
-	parser.add_option('-u', dest='umax',
-						   help="maximum speed of the flow")
+	parser.add_option('-u', dest='umean',
+						   help="mean speed of the flow (both in space and time)")
 	parser.add_option('-d', '--dt', dest='dt', type="float",
 						   help="Timestep used for numerical integration. If the writeInterval is lower than dt, then a lower dt is automatically used.")
 	parser.add_option('-T', dest='t_total', type="float",
@@ -399,7 +400,7 @@ if __name__ == '__main__':
 
 	# Prepare moveParticles
 	mover = MoveParticles(
-		umax=opt.umax,
+		umean=opt.umean,
 		spatialProfile=opt.spatProf,
 		geometry=myGeom,
 		outputDN=opt.outputDN,
