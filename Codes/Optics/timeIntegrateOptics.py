@@ -30,6 +30,7 @@ import numpy as np # Matrices
 # Import from optoFluids:
 import helpers.regex as myRE
 import helpers.nameConventions as names
+import helpers.IO as optoFluidsIO
 
 
 
@@ -50,7 +51,7 @@ def computeTimeRange(timeList):
 	tmax=-float('inf')
 	for time in timeList : 
 		time=float(time)
-		print("time = " + str(time))
+		#print("time = " + str(time))
 		tmin = min(tmin,time)
 		tmax = max(tmax,time)
 	step = (tmax-tmin)/(len(timeList)-1)
@@ -82,7 +83,7 @@ def findValidResolutions(numFiles):
 	return res
 
 def getFilesThatSatisfyRes(fileList, T, timeRange):
-	print("Getting files that satisfy period: " + str(T) + ".")
+	#print("Getting files that satisfy period: " + str(T) + ".")
 	outList=[]
 	tmin = timeRange[0]
 	step = timeRange[1]
@@ -91,11 +92,11 @@ def getFilesThatSatisfyRes(fileList, T, timeRange):
 	numFiles=len(okFileList)
 	for (intensityFN, time) in okFileList :
 		time=float(time)
-		print(" Now analysing file: '"+intensityFN+"' with t=" + str(time) + ".")
+		#print(" Now analysing file: '"+intensityFN+"' with t=" + str(time) + ".")
 		# Only use the times that satisfy (t-tmin)/T=integer:
 		x=(time-tmin)/T # normalised & origin-shifted coordinate
 		xstep=step/T #=Tm
-		print(" xstep=",xstep)
+		#print(" xstep=",xstep)
 		if ( not x == 0 ):
 			#print("error=",abs(x-float(int(x)))/xstep)
 			if ( abs(x-float(int(x+1e-6)))/xstep > 1e-5 ): # approximately an integer, due to rounding errors
@@ -115,7 +116,7 @@ def averageFiles(DN, fileList):
 		groups = myRE.getMatchingGroups(os.path.basename(intensityFN), intensityFNRO)
 		if groups: # If filename matches the regex
 			(index, time) = names.extractTimeAndIndexFromMatch(groups)
-			print("Now trying to read file: '"+intensityFN+"' with t=",time)
+			#print("Now trying to read file: '"+intensityFN+"' with t=",time)
 			dataIn = np.loadtxt(open(DN+"/"+intensityFN,"rb"),dtype=float)
 			if firstFile:
 				# Store info about first file to check whether the subsequent files are consistent
@@ -198,7 +199,7 @@ def timeIntegrateOptics(intensityDN, outputName, doResolution=False, overwrite=F
 	else:
 		outputFN = outputName
 	## Prepare output
-	print("outputName = " + str(outputName))
+	#print("outputName = " + str(outputName))
 	if ( os.path.exists(outputName) and overwrite ) :
 		if os.path.isfile(outputName) :
 			os.remove(outputName)
@@ -214,7 +215,7 @@ def timeIntegrateOptics(intensityDN, outputName, doResolution=False, overwrite=F
 		print("Output directory '" + outputDN + "' was created.")
 	### Algorithm
 	## Analyse which times we have
-	intFilesAndTimes = getIntensityFiles(os.listdir(intensityDN))
+	intFilesAndTimes = optoFluidsIO.getIntensityFilesAndGroups(os.listdir(intensityDN))
 	intFilesList = myRE.untupleList(intFilesAndTimes,index=0)
 	timesList = myRE.untupleList(intFilesAndTimes,index=1)
 	intFilesAndTimes = None

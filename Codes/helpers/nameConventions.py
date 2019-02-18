@@ -30,8 +30,8 @@ def basename(FN):
 	return os.path.basename(FN)
 
 
-# Expression for the time suffix RE, including optional index
-# (e.g., "_t0_0.500", "_t2.4", or "_t1e-06")
+# Expression for the time suffix RE, including optional integer index
+# (e.g., "_t3_0.500", "_t2.4", or "_t1e-06")
 timePrefix = "_t"
 timeRE = timePrefix + \
 	myRE.group( myRE.group(myRE.intRE, False)+"_" , False) + "?" + \
@@ -65,6 +65,11 @@ pixelCoordsFNRE = "PixelCoords.out"
 pixelCoords2DFNRE = "PixelCoords2D.out"
 pixelCoords2DxFNRE = "PixelCoords2D_x.out"
 pixelCoords2DyFNRE = "PixelCoords2D_y.out"
+# TODO: Make optional. Difficulty: has a consequence for all files, because they now need to regex-search for pixelCoords.
+#pixelCoordsFNRE = "PixelCoords" + myRE.optional(".out")
+#pixelCoords2DFNRE = "PixelCoords2D" + myRE.optional(".out")
+#pixelCoords2DxFNRE = "PixelCoords2D_x" + myRE.optional(".out")
+#pixelCoords2DyFNRE = "PixelCoords2D_y" + myRE.optional(".out")
 
 # Log directory & filenames
 logDNRE = "log"

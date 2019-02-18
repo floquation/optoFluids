@@ -1,0 +1,1311 @@
+Fri Feb 15 17:18:33 CET 2019
+Using nodes (20):
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+
+Number of valid ParticlePositions files found in "../fluids/particles" (rel. to total number) = 231/231
+[Master] Obtaining pixel coordinates.
+Converting ../optics/results to 2D
+(restructureInputDir) Moving files: ['PixelCoords.out', 'Intensity_t0.00015.out', 'Intensity_t0.1006.out', 'Intensity_t0.0009.out', 'Intensity_t0.1003.out', 'Intensity_t0.1009.out', 'Intensity_t0.10075.out', 'Intensity_t0.0006.out', 'Intensity_t0.20045.out', 'Intensity_t0.00045.out', 'Intensity_t0.2003.out', 'Intensity_t0.10015.out', 'Intensity_t0.00075.out', 'Intensity_t0.0.out', 'Intensity_t0.20075.out', 'Intensity_t0.2.out', 'Intensity_t0.2006.out', 'Intensity_t0.1.out', 'Intensity_t0.0003.out', 'Intensity_t0.10045.out', 'Intensity_t0.20015.out', 'Intensity_t0.00095.out', 'Intensity_t0.00065.out', 'Intensity_t0.10065.out', 'Intensity_t0.10035.out', 'Intensity_t0.0002.out', 'Intensity_t0.20035.out', 'Intensity_t0.1008.out', 'Intensity_t0.2005.out', 'Intensity_t0.10095.out', 'Intensity_t0.1002.out', 'Intensity_t0.10005.out', 'Intensity_t0.0005.out', 'Intensity_t0.1005.out', 'Intensity_t0.0008.out', 'Intensity_t0.00035.out', 'Intensity_t0.20065.out', 'Intensity_t0.2008.out', 'Intensity_t5e-05.out', 'Intensity_t0.20005.out', 'Intensity_t0.2002.out', 'Intensity_t0.001.out', 'Intensity_t0.0007.out', 'Intensity_t0.1004.out', 'Intensity_t0.1007.out', 'Intensity_t0.2004.out', 'Intensity_t0.10025.out', 'Intensity_t0.10085.out', 'Intensity_t0.101.out', 'Intensity_t0.20055.out', 'Intensity_t0.00085.out', 'Intensity_t0.1001.out', 'Intensity_t0.00025.out', 'Intensity_t0.0004.out', 'Intensity_t0.00055.out', 'Intensity_t0.0001.out', 'Intensity_t0.2001.out', 'Intensity_t0.20085.out', 'Intensity_t0.2007.out', 'Intensity_t0.20025.out', 'Intensity_t0.10055.out', 'Intensity_t0.2009.out', 'Intensity_t0.3.out', 'Intensity_t0.3003.out', 'Intensity_t0.30015.out', 'Intensity_t0.30045.out', 'Intensity_t0.30075.out', 'Intensity_t0.4003.out', 'Intensity_t0.3006.out', 'Intensity_t0.3009.out', 'Intensity_t0.4.out', 'Intensity_t0.40015.out', 'Intensity_t0.40075.out', 'Intensity_t0.4009.out', 'Intensity_t0.5003.out', 'Intensity_t0.50015.out', 'Intensity_t0.4006.out', 'Intensity_t0.50045.out', 'Intensity_t0.40045.out', 'Intensity_t0.5.out', 'Intensity_t0.5006.out', 'Intensity_t0.20095.out', 'Intensity_t0.30005.out', 'Intensity_t0.30035.out', 'Intensity_t0.3008.out', 'Intensity_t0.3002.out', 'Intensity_t0.40005.out', 'Intensity_t0.50005.out', 'Intensity_t0.5005.out', 'Intensity_t0.4002.out', 'Intensity_t0.3005.out', 'Intensity_t0.40035.out', 'Intensity_t0.5002.out', 'Intensity_t0.30095.out', 'Intensity_t0.4008.out', 'Intensity_t0.50065.out', 'Intensity_t0.40065.out', 'Intensity_t0.50035.out', 'Intensity_t0.40095.out', 'Intensity_t0.30065.out', 'Intensity_t0.4005.out', 'Intensity_t0.201.out', 'Intensity_t0.3001.out', 'Intensity_t0.4001.out', 'Intensity_t0.3004.out', 'Intensity_t0.30085.out', 'Intensity_t0.5001.out', 'Intensity_t0.30025.out', 'Intensity_t0.50055.out', 'Intensity_t0.30055.out', 'Intensity_t0.40025.out', 'Intensity_t0.50025.out', 'Intensity_t0.5004.out', 'Intensity_t0.5007.out', 'Intensity_t0.301.out', 'Intensity_t0.4004.out', 'Intensity_t0.4007.out', 'Intensity_t0.3007.out', 'Intensity_t0.40085.out', 'Intensity_t0.401.out', 'Intensity_t0.40055.out', 'Intensity_t0.50075.out', 'Intensity_t0.5009.out', 'Intensity_t0.60015.out', 'Intensity_t0.60045.out', 'Intensity_t0.6006.out', 'Intensity_t0.6.out', 'Intensity_t0.6003.out', 'Intensity_t0.60075.out', 'Intensity_t0.70015.out', 'Intensity_t0.7009.out', 'Intensity_t0.70045.out', 'Intensity_t0.7006.out', 'Intensity_t0.7.out', 'Intensity_t0.8.out', 'Intensity_t0.80015.out', 'Intensity_t0.7003.out', 'Intensity_t0.70075.out', 'Intensity_t0.6009.out', 'Intensity_t0.8003.out', 'Intensity_t0.5008.out', 'Intensity_t0.50095.out', 'Intensity_t0.80045.out', 'Intensity_t0.60065.out', 'Intensity_t0.6002.out', 'Intensity_t0.6005.out', 'Intensity_t0.70065.out', 'Intensity_t0.80035.out', 'Intensity_t0.7002.out', 'Intensity_t0.7005.out', 'Intensity_t0.8002.out', 'Intensity_t0.60095.out', 'Intensity_t0.70005.out', 'Intensity_t0.7008.out', 'Intensity_t0.70035.out', 'Intensity_t0.60005.out', 'Intensity_t0.70095.out', 'Intensity_t0.80005.out', 'Intensity_t0.60035.out', 'Intensity_t0.6008.out', 'Intensity_t0.501.out', 'Intensity_t0.50085.out', 'Intensity_t0.8005.out', 'Intensity_t0.60055.out', 'Intensity_t0.7001.out', 'Intensity_t0.6007.out', 'Intensity_t0.70055.out', 'Intensity_t0.7007.out', 'Intensity_t0.60025.out', 'Intensity_t0.70085.out', 'Intensity_t0.7004.out', 'Intensity_t0.70025.out', 'Intensity_t0.601.out', 'Intensity_t0.8004.out', 'Intensity_t0.8001.out', 'Intensity_t0.6004.out', 'Intensity_t0.80025.out', 'Intensity_t0.6001.out', 'Intensity_t0.701.out', 'Intensity_t0.60085.out', 'Intensity_t0.80075.out', 'Intensity_t0.8006.out', 'Intensity_t0.80055.out', 'Intensity_t0.8009.out', 'Intensity_t0.90015.out', 'Intensity_t0.90075.out', 'Intensity_t0.9.out', 'Intensity_t0.90045.out', 'Intensity_t0.9006.out', 'Intensity_t0.9003.out', 'Intensity_t1.0003.out', 'Intensity_t1.00015.out', 'Intensity_t1.0.out', 'Intensity_t0.9009.out', 'Intensity_t1.0009.out', 'Intensity_t1.00075.out', 'Intensity_t1.0006.out', 'Intensity_t0.8008.out', 'Intensity_t1.00045.out', 'Intensity_t0.80065.out', 'Intensity_t0.90005.out', 'Intensity_t0.9005.out', 'Intensity_t0.90035.out', 'Intensity_t0.9002.out', 'Intensity_t1.00095.out', 'Intensity_t0.9008.out', 'Intensity_t0.80095.out', 'Intensity_t0.90095.out', 'Intensity_t1.0002.out', 'Intensity_t1.00005.out', 'Intensity_t0.90065.out', 'Intensity_t1.00035.out', 'Intensity_t1.0005.out', 'Intensity_t1.0008.out', 'Intensity_t0.80085.out', 'Intensity_t1.00065.out', 'Intensity_t0.8007.out', 'Intensity_t0.90085.out', 'Intensity_t0.90025.out', 'Intensity_t0.9004.out', 'Intensity_t0.9001.out', 'Intensity_t0.90055.out', 'Intensity_t1.001.out', 'Intensity_t1.00025.out', 'Intensity_t0.801.out', 'Intensity_t0.901.out', 'Intensity_t0.9007.out', 'Intensity_t1.0001.out', 'Intensity_t1.0004.out', 'Intensity_t1.00085.out', 'Intensity_t1.00055.out', 'Intensity_t1.0007.out']
+data3D original =  [[ 2.5000000e-01 -9.9999997e-05 -9.9999997e-05]
+ [ 2.5000000e-01 -9.9999997e-05 -9.3750001e-05]
+ [ 2.5000000e-01 -9.9999997e-05 -8.7499997e-05]
+ ...
+ [ 2.5000000e-01  9.9999997e-05  8.7500004e-05]
+ [ 2.5000000e-01  9.9999997e-05  9.3749994e-05]
+ [ 2.5000000e-01  9.9999997e-05  9.9999997e-05]]
+data3D or.shift =  [[0.0000000e+00 0.0000000e+00 0.0000000e+00]
+ [0.0000000e+00 0.0000000e+00 6.2499967e-06]
+ [0.0000000e+00 0.0000000e+00 1.2500001e-05]
+ ...
+ [0.0000000e+00 1.9999999e-04 1.8750000e-04]
+ [0.0000000e+00 1.9999999e-04 1.9374999e-04]
+ [0.0000000e+00 1.9999999e-04 1.9999999e-04]]
+data2D =  [[0.         0.        ]
+ [0.03124999 0.        ]
+ [0.06250001 0.        ]
+ ...
+ [0.93750006 1.        ]
+ [0.96875006 1.        ]
+ [1.         1.        ]]
+data2D bounded =  [[0.         0.        ]
+ [0.03124999 0.        ]
+ [0.06250001 0.        ]
+ ...
+ [0.93750006 1.        ]
+ [0.96875006 1.        ]
+ [1.         1.        ]]
+npix =  (33, 17)
+Number of valid Intensity files found in "../optics/results/1D" (rel. to total number) = 231/232
+Sorting directory ../optics/results
+Found "2D" directory. Using it as input: ../optics/results/2D
+Found (sorted) times: 0.0 5e-05 0.0001 0.00015 0.0002 0.00025 0.0003 0.00035 0.0004 0.00045 0.0005 0.00055 0.0006 0.00065 0.0007 0.00075 0.0008 0.00085 0.0009 0.00095 0.001 0.1 0.10005 0.1001 0.10015 0.1002 0.10025 0.1003 0.10035 0.1004 0.10045 0.1005 0.10055 0.1006 0.10065 0.1007 0.10075 0.1008 0.10085 0.1009 0.10095 0.101 0.2 0.20005 0.2001 0.20015 0.2002 0.20025 0.2003 0.20035 0.2004 0.20045 0.2005 0.20055 0.2006 0.20065 0.2007 0.20075 0.2008 0.20085 0.2009 0.20095 0.201 0.3 0.30005 0.3001 0.30015 0.3002 0.30025 0.3003 0.30035 0.3004 0.30045 0.3005 0.30055 0.3006 0.30065 0.3007 0.30075 0.3008 0.30085 0.3009 0.30095 0.301 0.4 0.40005 0.4001 0.40015 0.4002 0.40025 0.4003 0.40035 0.4004 0.40045 0.4005 0.40055 0.4006 0.40065 0.4007 0.40075 0.4008 0.40085 0.4009 0.40095 0.401 0.5 0.50005 0.5001 0.50015 0.5002 0.50025 0.5003 0.50035 0.5004 0.50045 0.5005 0.50055 0.5006 0.50065 0.5007 0.50075 0.5008 0.50085 0.5009 0.50095 0.501 0.6 0.60005 0.6001 0.60015 0.6002 0.60025 0.6003 0.60035 0.6004 0.60045 0.6005 0.60055 0.6006 0.60065 0.6007 0.60075 0.6008 0.60085 0.6009 0.60095 0.601 0.7 0.70005 0.7001 0.70015 0.7002 0.70025 0.7003 0.70035 0.7004 0.70045 0.7005 0.70055 0.7006 0.70065 0.7007 0.70075 0.7008 0.70085 0.7009 0.70095 0.701 0.8 0.80005 0.8001 0.80015 0.8002 0.80025 0.8003 0.80035 0.8004 0.80045 0.8005 0.80055 0.8006 0.80065 0.8007 0.80075 0.8008 0.80085 0.8009 0.80095 0.801 0.9 0.90005 0.9001 0.90015 0.9002 0.90025 0.9003 0.90035 0.9004 0.90045 0.9005 0.90055 0.9006 0.90065 0.9007 0.90075 0.9008 0.90085 0.9009 0.90095 0.901 1.0 1.00005 1.0001 1.00015 1.0002 1.00025 1.0003 1.00035 1.0004 1.00045 1.0005 1.00055 1.0006 1.00065 1.0007 1.00075 1.0008 1.00085 1.0009 1.00095 1.001 
+Resulting dts are:  [5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 0.099, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 0.099, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 0.099, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 0.099, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 0.099, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 0.099, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 0.099, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 0.099, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 0.099, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 0.099, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05, 5e-05]
+Big-step starting indices: [0, 21, 42, 63, 84, 105, 126, 147, 168, 189, 210]
+Big-step data lengths:     [21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21]
+(1) Found major dt = 0.1
+(2) Found major dt = 0.1
+(3) Found major dt = 0.1
+(4) Found major dt = 0.1
+(5) Found major dt = 0.1
+(6) Found major dt = 0.1
+(7) Found major dt = 0.1
+(8) Found major dt = 0.1
+(9) Found major dt = 0.1
+(10) Found major dt = 0.1
+Sorted filenames: 
+ ('Intensity2D_t0.0', 'Intensity2D_t5e-05', 'Intensity2D_t0.0001', 'Intensity2D_t0.00015', 'Intensity2D_t0.0002', 'Intensity2D_t0.00025', 'Intensity2D_t0.0003', 'Intensity2D_t0.00035', 'Intensity2D_t0.0004', 'Intensity2D_t0.00045', 'Intensity2D_t0.0005', 'Intensity2D_t0.00055', 'Intensity2D_t0.0006', 'Intensity2D_t0.00065', 'Intensity2D_t0.0007', 'Intensity2D_t0.00075', 'Intensity2D_t0.0008', 'Intensity2D_t0.00085', 'Intensity2D_t0.0009', 'Intensity2D_t0.00095', 'Intensity2D_t0.001')
+ ('Intensity2D_t0.1', 'Intensity2D_t0.10005', 'Intensity2D_t0.1001', 'Intensity2D_t0.10015', 'Intensity2D_t0.1002', 'Intensity2D_t0.10025', 'Intensity2D_t0.1003', 'Intensity2D_t0.10035', 'Intensity2D_t0.1004', 'Intensity2D_t0.10045', 'Intensity2D_t0.1005', 'Intensity2D_t0.10055', 'Intensity2D_t0.1006', 'Intensity2D_t0.10065', 'Intensity2D_t0.1007', 'Intensity2D_t0.10075', 'Intensity2D_t0.1008', 'Intensity2D_t0.10085', 'Intensity2D_t0.1009', 'Intensity2D_t0.10095', 'Intensity2D_t0.101')
+ ('Intensity2D_t0.2', 'Intensity2D_t0.20005', 'Intensity2D_t0.2001', 'Intensity2D_t0.20015', 'Intensity2D_t0.2002', 'Intensity2D_t0.20025', 'Intensity2D_t0.2003', 'Intensity2D_t0.20035', 'Intensity2D_t0.2004', 'Intensity2D_t0.20045', 'Intensity2D_t0.2005', 'Intensity2D_t0.20055', 'Intensity2D_t0.2006', 'Intensity2D_t0.20065', 'Intensity2D_t0.2007', 'Intensity2D_t0.20075', 'Intensity2D_t0.2008', 'Intensity2D_t0.20085', 'Intensity2D_t0.2009', 'Intensity2D_t0.20095', 'Intensity2D_t0.201')
+ ('Intensity2D_t0.3', 'Intensity2D_t0.30005', 'Intensity2D_t0.3001', 'Intensity2D_t0.30015', 'Intensity2D_t0.3002', 'Intensity2D_t0.30025', 'Intensity2D_t0.3003', 'Intensity2D_t0.30035', 'Intensity2D_t0.3004', 'Intensity2D_t0.30045', 'Intensity2D_t0.3005', 'Intensity2D_t0.30055', 'Intensity2D_t0.3006', 'Intensity2D_t0.30065', 'Intensity2D_t0.3007', 'Intensity2D_t0.30075', 'Intensity2D_t0.3008', 'Intensity2D_t0.30085', 'Intensity2D_t0.3009', 'Intensity2D_t0.30095', 'Intensity2D_t0.301')
+ ('Intensity2D_t0.4', 'Intensity2D_t0.40005', 'Intensity2D_t0.4001', 'Intensity2D_t0.40015', 'Intensity2D_t0.4002', 'Intensity2D_t0.40025', 'Intensity2D_t0.4003', 'Intensity2D_t0.40035', 'Intensity2D_t0.4004', 'Intensity2D_t0.40045', 'Intensity2D_t0.4005', 'Intensity2D_t0.40055', 'Intensity2D_t0.4006', 'Intensity2D_t0.40065', 'Intensity2D_t0.4007', 'Intensity2D_t0.40075', 'Intensity2D_t0.4008', 'Intensity2D_t0.40085', 'Intensity2D_t0.4009', 'Intensity2D_t0.40095', 'Intensity2D_t0.401')
+ ('Intensity2D_t0.5', 'Intensity2D_t0.50005', 'Intensity2D_t0.5001', 'Intensity2D_t0.50015', 'Intensity2D_t0.5002', 'Intensity2D_t0.50025', 'Intensity2D_t0.5003', 'Intensity2D_t0.50035', 'Intensity2D_t0.5004', 'Intensity2D_t0.50045', 'Intensity2D_t0.5005', 'Intensity2D_t0.50055', 'Intensity2D_t0.5006', 'Intensity2D_t0.50065', 'Intensity2D_t0.5007', 'Intensity2D_t0.50075', 'Intensity2D_t0.5008', 'Intensity2D_t0.50085', 'Intensity2D_t0.5009', 'Intensity2D_t0.50095', 'Intensity2D_t0.501')
+ ('Intensity2D_t0.6', 'Intensity2D_t0.60005', 'Intensity2D_t0.6001', 'Intensity2D_t0.60015', 'Intensity2D_t0.6002', 'Intensity2D_t0.60025', 'Intensity2D_t0.6003', 'Intensity2D_t0.60035', 'Intensity2D_t0.6004', 'Intensity2D_t0.60045', 'Intensity2D_t0.6005', 'Intensity2D_t0.60055', 'Intensity2D_t0.6006', 'Intensity2D_t0.60065', 'Intensity2D_t0.6007', 'Intensity2D_t0.60075', 'Intensity2D_t0.6008', 'Intensity2D_t0.60085', 'Intensity2D_t0.6009', 'Intensity2D_t0.60095', 'Intensity2D_t0.601')
+ ('Intensity2D_t0.7', 'Intensity2D_t0.70005', 'Intensity2D_t0.7001', 'Intensity2D_t0.70015', 'Intensity2D_t0.7002', 'Intensity2D_t0.70025', 'Intensity2D_t0.7003', 'Intensity2D_t0.70035', 'Intensity2D_t0.7004', 'Intensity2D_t0.70045', 'Intensity2D_t0.7005', 'Intensity2D_t0.70055', 'Intensity2D_t0.7006', 'Intensity2D_t0.70065', 'Intensity2D_t0.7007', 'Intensity2D_t0.70075', 'Intensity2D_t0.7008', 'Intensity2D_t0.70085', 'Intensity2D_t0.7009', 'Intensity2D_t0.70095', 'Intensity2D_t0.701')
+ ('Intensity2D_t0.8', 'Intensity2D_t0.80005', 'Intensity2D_t0.8001', 'Intensity2D_t0.80015', 'Intensity2D_t0.8002', 'Intensity2D_t0.80025', 'Intensity2D_t0.8003', 'Intensity2D_t0.80035', 'Intensity2D_t0.8004', 'Intensity2D_t0.80045', 'Intensity2D_t0.8005', 'Intensity2D_t0.80055', 'Intensity2D_t0.8006', 'Intensity2D_t0.80065', 'Intensity2D_t0.8007', 'Intensity2D_t0.80075', 'Intensity2D_t0.8008', 'Intensity2D_t0.80085', 'Intensity2D_t0.8009', 'Intensity2D_t0.80095', 'Intensity2D_t0.801')
+ ('Intensity2D_t0.9', 'Intensity2D_t0.90005', 'Intensity2D_t0.9001', 'Intensity2D_t0.90015', 'Intensity2D_t0.9002', 'Intensity2D_t0.90025', 'Intensity2D_t0.9003', 'Intensity2D_t0.90035', 'Intensity2D_t0.9004', 'Intensity2D_t0.90045', 'Intensity2D_t0.9005', 'Intensity2D_t0.90055', 'Intensity2D_t0.9006', 'Intensity2D_t0.90065', 'Intensity2D_t0.9007', 'Intensity2D_t0.90075', 'Intensity2D_t0.9008', 'Intensity2D_t0.90085', 'Intensity2D_t0.9009', 'Intensity2D_t0.90095', 'Intensity2D_t0.901')
+ ('Intensity2D_t1.0', 'Intensity2D_t1.00005', 'Intensity2D_t1.0001', 'Intensity2D_t1.00015', 'Intensity2D_t1.0002', 'Intensity2D_t1.00025', 'Intensity2D_t1.0003', 'Intensity2D_t1.00035', 'Intensity2D_t1.0004', 'Intensity2D_t1.00045', 'Intensity2D_t1.0005', 'Intensity2D_t1.00055', 'Intensity2D_t1.0006', 'Intensity2D_t1.00065', 'Intensity2D_t1.0007', 'Intensity2D_t1.00075', 'Intensity2D_t1.0008', 'Intensity2D_t1.00085', 'Intensity2D_t1.0009', 'Intensity2D_t1.00095', 'Intensity2D_t1.001')
+Major start times: ['0.0', '0.1', '0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '0.8', '0.9', '1.0']
+Moving: Intensity2D_t0.0 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t5e-05 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.0001 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.00015 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.0002 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.00025 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.0003 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.00035 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.0004 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.00045 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.0005 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.00055 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.0006 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.00065 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.0007 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.00075 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.0008 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.00085 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.0009 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.00095 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.001 --> ../optics/results/2D/0.0
+Moving: Intensity2D_t0.1 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.10005 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.1001 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.10015 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.1002 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.10025 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.1003 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.10035 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.1004 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.10045 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.1005 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.10055 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.1006 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.10065 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.1007 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.10075 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.1008 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.10085 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.1009 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.10095 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.101 --> ../optics/results/2D/0.1
+Moving: Intensity2D_t0.2 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.20005 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.2001 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.20015 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.2002 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.20025 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.2003 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.20035 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.2004 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.20045 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.2005 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.20055 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.2006 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.20065 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.2007 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.20075 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.2008 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.20085 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.2009 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.20095 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.201 --> ../optics/results/2D/0.2
+Moving: Intensity2D_t0.3 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.30005 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.3001 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.30015 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.3002 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.30025 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.3003 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.30035 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.3004 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.30045 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.3005 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.30055 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.3006 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.30065 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.3007 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.30075 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.3008 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.30085 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.3009 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.30095 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.301 --> ../optics/results/2D/0.3
+Moving: Intensity2D_t0.4 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.40005 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.4001 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.40015 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.4002 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.40025 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.4003 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.40035 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.4004 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.40045 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.4005 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.40055 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.4006 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.40065 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.4007 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.40075 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.4008 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.40085 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.4009 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.40095 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.401 --> ../optics/results/2D/0.4
+Moving: Intensity2D_t0.5 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.50005 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.5001 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.50015 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.5002 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.50025 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.5003 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.50035 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.5004 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.50045 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.5005 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.50055 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.5006 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.50065 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.5007 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.50075 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.5008 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.50085 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.5009 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.50095 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.501 --> ../optics/results/2D/0.5
+Moving: Intensity2D_t0.6 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.60005 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.6001 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.60015 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.6002 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.60025 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.6003 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.60035 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.6004 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.60045 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.6005 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.60055 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.6006 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.60065 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.6007 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.60075 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.6008 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.60085 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.6009 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.60095 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.601 --> ../optics/results/2D/0.6
+Moving: Intensity2D_t0.7 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.70005 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.7001 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.70015 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.7002 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.70025 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.7003 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.70035 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.7004 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.70045 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.7005 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.70055 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.7006 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.70065 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.7007 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.70075 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.7008 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.70085 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.7009 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.70095 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.701 --> ../optics/results/2D/0.7
+Moving: Intensity2D_t0.8 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.80005 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.8001 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.80015 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.8002 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.80025 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.8003 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.80035 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.8004 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.80045 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.8005 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.80055 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.8006 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.80065 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.8007 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.80075 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.8008 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.80085 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.8009 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.80095 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.801 --> ../optics/results/2D/0.8
+Moving: Intensity2D_t0.9 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.90005 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.9001 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.90015 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.9002 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.90025 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.9003 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.90035 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.9004 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.90045 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.9005 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.90055 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.9006 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.90065 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.9007 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.90075 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.9008 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.90085 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.9009 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.90095 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t0.901 --> ../optics/results/2D/0.9
+Moving: Intensity2D_t1.0 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.00005 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.0001 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.00015 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.0002 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.00025 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.0003 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.00035 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.0004 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.00045 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.0005 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.00055 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.0006 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.00065 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.0007 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.00075 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.0008 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.00085 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.0009 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.00095 --> ../optics/results/2D/1.0
+Moving: Intensity2D_t1.001 --> ../optics/results/2D/1.0
+Time-integrating ../optics/results
+Found "2D" directory. Using it as input: ../optics/results/2D
+Found the following major timesteps: ['0.0', '0.1', '0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '0.8', '0.9', '1.0']
+Found for time ../optics/results/2D/0.0:
+num1D = 0; num2D = 21; numTot = 21
+../optics/results/2D/0.0 --> ../optics/results/2D/blurred/Intensity2D_t0.0
+outputName = ../optics/results/2D/blurred/Intensity2D_t0.0
+time = 0.0
+time = 5e-05
+time = 0.0001
+time = 0.00015
+time = 0.0002
+time = 0.00025
+time = 0.0003
+time = 0.00035
+time = 0.0004
+time = 0.00045
+time = 0.0005
+time = 0.00055
+time = 0.0006
+time = 0.00065
+time = 0.0007
+time = 0.00075
+time = 0.0008
+time = 0.00085
+time = 0.0009
+time = 0.00095
+time = 0.001
+Getting files that satisfy period: 5e-05.
+ Now analysing file: 'Intensity2D_t0.0' with t=0.0.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t5e-05' with t=5e-05.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.0001' with t=0.0001.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.00015' with t=0.00015.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.0002' with t=0.0002.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.00025' with t=0.00025.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.0003' with t=0.0003.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.00035' with t=0.00035.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.0004' with t=0.0004.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.00045' with t=0.00045.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.0005' with t=0.0005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.00055' with t=0.00055.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.0006' with t=0.0006.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.00065' with t=0.00065.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.0007' with t=0.0007.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.00075' with t=0.00075.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.0008' with t=0.0008.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.00085' with t=0.00085.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.0009' with t=0.0009.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.00095' with t=0.00095.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.001' with t=0.001.
+ xstep= 1.0
+intFiles = ['Intensity2D_t0.0', 'Intensity2D_t5e-05', 'Intensity2D_t0.0001', 'Intensity2D_t0.00015', 'Intensity2D_t0.0002', 'Intensity2D_t0.00025', 'Intensity2D_t0.0003', 'Intensity2D_t0.00035', 'Intensity2D_t0.0004', 'Intensity2D_t0.00045', 'Intensity2D_t0.0005', 'Intensity2D_t0.00055', 'Intensity2D_t0.0006', 'Intensity2D_t0.00065', 'Intensity2D_t0.0007', 'Intensity2D_t0.00075', 'Intensity2D_t0.0008', 'Intensity2D_t0.00085', 'Intensity2D_t0.0009', 'Intensity2D_t0.00095', 'Intensity2D_t0.001']
+Now trying to read file: 'Intensity2D_t0.0' with t= 0.0
+Now trying to read file: 'Intensity2D_t5e-05' with t= 5e-05
+Now trying to read file: 'Intensity2D_t0.0001' with t= 0.0001
+Now trying to read file: 'Intensity2D_t0.00015' with t= 0.00015
+Now trying to read file: 'Intensity2D_t0.0002' with t= 0.0002
+Now trying to read file: 'Intensity2D_t0.00025' with t= 0.00025
+Now trying to read file: 'Intensity2D_t0.0003' with t= 0.0003
+Now trying to read file: 'Intensity2D_t0.00035' with t= 0.00035
+Now trying to read file: 'Intensity2D_t0.0004' with t= 0.0004
+Now trying to read file: 'Intensity2D_t0.00045' with t= 0.00045
+Now trying to read file: 'Intensity2D_t0.0005' with t= 0.0005
+Now trying to read file: 'Intensity2D_t0.00055' with t= 0.00055
+Now trying to read file: 'Intensity2D_t0.0006' with t= 0.0006
+Now trying to read file: 'Intensity2D_t0.00065' with t= 0.00065
+Now trying to read file: 'Intensity2D_t0.0007' with t= 0.0007
+Now trying to read file: 'Intensity2D_t0.00075' with t= 0.00075
+Now trying to read file: 'Intensity2D_t0.0008' with t= 0.0008
+Now trying to read file: 'Intensity2D_t0.00085' with t= 0.00085
+Now trying to read file: 'Intensity2D_t0.0009' with t= 0.0009
+Now trying to read file: 'Intensity2D_t0.00095' with t= 0.00095
+Now trying to read file: 'Intensity2D_t0.001' with t= 0.001
+Found for time ../optics/results/2D/0.1:
+num1D = 0; num2D = 21; numTot = 21
+../optics/results/2D/0.1 --> ../optics/results/2D/blurred/Intensity2D_t0.1
+outputName = ../optics/results/2D/blurred/Intensity2D_t0.1
+time = 0.1
+time = 0.10005
+time = 0.1001
+time = 0.10015
+time = 0.1002
+time = 0.10025
+time = 0.1003
+time = 0.10035
+time = 0.1004
+time = 0.10045
+time = 0.1005
+time = 0.10055
+time = 0.1006
+time = 0.10065
+time = 0.1007
+time = 0.10075
+time = 0.1008
+time = 0.10085
+time = 0.1009
+time = 0.10095
+time = 0.101
+Getting files that satisfy period: 5.000000000000004e-05.
+ Now analysing file: 'Intensity2D_t0.1' with t=0.1.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.10005' with t=0.10005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.1001' with t=0.1001.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.10015' with t=0.10015.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.1002' with t=0.1002.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.10025' with t=0.10025.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.1003' with t=0.1003.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.10035' with t=0.10035.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.1004' with t=0.1004.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.10045' with t=0.10045.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.1005' with t=0.1005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.10055' with t=0.10055.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.1006' with t=0.1006.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.10065' with t=0.10065.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.1007' with t=0.1007.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.10075' with t=0.10075.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.1008' with t=0.1008.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.10085' with t=0.10085.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.1009' with t=0.1009.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.10095' with t=0.10095.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.101' with t=0.101.
+ xstep= 1.0
+intFiles = ['Intensity2D_t0.1', 'Intensity2D_t0.10005', 'Intensity2D_t0.1001', 'Intensity2D_t0.10015', 'Intensity2D_t0.1002', 'Intensity2D_t0.10025', 'Intensity2D_t0.1003', 'Intensity2D_t0.10035', 'Intensity2D_t0.1004', 'Intensity2D_t0.10045', 'Intensity2D_t0.1005', 'Intensity2D_t0.10055', 'Intensity2D_t0.1006', 'Intensity2D_t0.10065', 'Intensity2D_t0.1007', 'Intensity2D_t0.10075', 'Intensity2D_t0.1008', 'Intensity2D_t0.10085', 'Intensity2D_t0.1009', 'Intensity2D_t0.10095', 'Intensity2D_t0.101']
+Now trying to read file: 'Intensity2D_t0.1' with t= 0.1
+Now trying to read file: 'Intensity2D_t0.10005' with t= 0.10005
+Now trying to read file: 'Intensity2D_t0.1001' with t= 0.1001
+Now trying to read file: 'Intensity2D_t0.10015' with t= 0.10015
+Now trying to read file: 'Intensity2D_t0.1002' with t= 0.1002
+Now trying to read file: 'Intensity2D_t0.10025' with t= 0.10025
+Now trying to read file: 'Intensity2D_t0.1003' with t= 0.1003
+Now trying to read file: 'Intensity2D_t0.10035' with t= 0.10035
+Now trying to read file: 'Intensity2D_t0.1004' with t= 0.1004
+Now trying to read file: 'Intensity2D_t0.10045' with t= 0.10045
+Now trying to read file: 'Intensity2D_t0.1005' with t= 0.1005
+Now trying to read file: 'Intensity2D_t0.10055' with t= 0.10055
+Now trying to read file: 'Intensity2D_t0.1006' with t= 0.1006
+Now trying to read file: 'Intensity2D_t0.10065' with t= 0.10065
+Now trying to read file: 'Intensity2D_t0.1007' with t= 0.1007
+Now trying to read file: 'Intensity2D_t0.10075' with t= 0.10075
+Now trying to read file: 'Intensity2D_t0.1008' with t= 0.1008
+Now trying to read file: 'Intensity2D_t0.10085' with t= 0.10085
+Now trying to read file: 'Intensity2D_t0.1009' with t= 0.1009
+Now trying to read file: 'Intensity2D_t0.10095' with t= 0.10095
+Now trying to read file: 'Intensity2D_t0.101' with t= 0.101
+Found for time ../optics/results/2D/0.2:
+num1D = 0; num2D = 21; numTot = 21
+../optics/results/2D/0.2 --> ../optics/results/2D/blurred/Intensity2D_t0.2
+outputName = ../optics/results/2D/blurred/Intensity2D_t0.2
+time = 0.2
+time = 0.20005
+time = 0.2001
+time = 0.20015
+time = 0.2002
+time = 0.20025
+time = 0.2003
+time = 0.20035
+time = 0.2004
+time = 0.20045
+time = 0.2005
+time = 0.20055
+time = 0.2006
+time = 0.20065
+time = 0.2007
+time = 0.20075
+time = 0.2008
+time = 0.20085
+time = 0.2009
+time = 0.20095
+time = 0.201
+Getting files that satisfy period: 5.000000000000004e-05.
+ Now analysing file: 'Intensity2D_t0.2' with t=0.2.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.20005' with t=0.20005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.2001' with t=0.2001.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.20015' with t=0.20015.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.2002' with t=0.2002.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.20025' with t=0.20025.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.2003' with t=0.2003.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.20035' with t=0.20035.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.2004' with t=0.2004.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.20045' with t=0.20045.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.2005' with t=0.2005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.20055' with t=0.20055.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.2006' with t=0.2006.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.20065' with t=0.20065.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.2007' with t=0.2007.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.20075' with t=0.20075.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.2008' with t=0.2008.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.20085' with t=0.20085.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.2009' with t=0.2009.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.20095' with t=0.20095.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.201' with t=0.201.
+ xstep= 1.0
+intFiles = ['Intensity2D_t0.2', 'Intensity2D_t0.20005', 'Intensity2D_t0.2001', 'Intensity2D_t0.20015', 'Intensity2D_t0.2002', 'Intensity2D_t0.20025', 'Intensity2D_t0.2003', 'Intensity2D_t0.20035', 'Intensity2D_t0.2004', 'Intensity2D_t0.20045', 'Intensity2D_t0.2005', 'Intensity2D_t0.20055', 'Intensity2D_t0.2006', 'Intensity2D_t0.20065', 'Intensity2D_t0.2007', 'Intensity2D_t0.20075', 'Intensity2D_t0.2008', 'Intensity2D_t0.20085', 'Intensity2D_t0.2009', 'Intensity2D_t0.20095', 'Intensity2D_t0.201']
+Now trying to read file: 'Intensity2D_t0.2' with t= 0.2
+Now trying to read file: 'Intensity2D_t0.20005' with t= 0.20005
+Now trying to read file: 'Intensity2D_t0.2001' with t= 0.2001
+Now trying to read file: 'Intensity2D_t0.20015' with t= 0.20015
+Now trying to read file: 'Intensity2D_t0.2002' with t= 0.2002
+Now trying to read file: 'Intensity2D_t0.20025' with t= 0.20025
+Now trying to read file: 'Intensity2D_t0.2003' with t= 0.2003
+Now trying to read file: 'Intensity2D_t0.20035' with t= 0.20035
+Now trying to read file: 'Intensity2D_t0.2004' with t= 0.2004
+Now trying to read file: 'Intensity2D_t0.20045' with t= 0.20045
+Now trying to read file: 'Intensity2D_t0.2005' with t= 0.2005
+Now trying to read file: 'Intensity2D_t0.20055' with t= 0.20055
+Now trying to read file: 'Intensity2D_t0.2006' with t= 0.2006
+Now trying to read file: 'Intensity2D_t0.20065' with t= 0.20065
+Now trying to read file: 'Intensity2D_t0.2007' with t= 0.2007
+Now trying to read file: 'Intensity2D_t0.20075' with t= 0.20075
+Now trying to read file: 'Intensity2D_t0.2008' with t= 0.2008
+Now trying to read file: 'Intensity2D_t0.20085' with t= 0.20085
+Now trying to read file: 'Intensity2D_t0.2009' with t= 0.2009
+Now trying to read file: 'Intensity2D_t0.20095' with t= 0.20095
+Now trying to read file: 'Intensity2D_t0.201' with t= 0.201
+Found for time ../optics/results/2D/0.3:
+num1D = 0; num2D = 21; numTot = 21
+../optics/results/2D/0.3 --> ../optics/results/2D/blurred/Intensity2D_t0.3
+outputName = ../optics/results/2D/blurred/Intensity2D_t0.3
+time = 0.3
+time = 0.30005
+time = 0.3001
+time = 0.30015
+time = 0.3002
+time = 0.30025
+time = 0.3003
+time = 0.30035
+time = 0.3004
+time = 0.30045
+time = 0.3005
+time = 0.30055
+time = 0.3006
+time = 0.30065
+time = 0.3007
+time = 0.30075
+time = 0.3008
+time = 0.30085
+time = 0.3009
+time = 0.30095
+time = 0.301
+Getting files that satisfy period: 5.000000000000004e-05.
+ Now analysing file: 'Intensity2D_t0.3' with t=0.3.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.30005' with t=0.30005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.3001' with t=0.3001.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.30015' with t=0.30015.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.3002' with t=0.3002.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.30025' with t=0.30025.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.3003' with t=0.3003.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.30035' with t=0.30035.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.3004' with t=0.3004.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.30045' with t=0.30045.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.3005' with t=0.3005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.30055' with t=0.30055.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.3006' with t=0.3006.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.30065' with t=0.30065.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.3007' with t=0.3007.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.30075' with t=0.30075.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.3008' with t=0.3008.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.30085' with t=0.30085.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.3009' with t=0.3009.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.30095' with t=0.30095.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.301' with t=0.301.
+ xstep= 1.0
+intFiles = ['Intensity2D_t0.3', 'Intensity2D_t0.30005', 'Intensity2D_t0.3001', 'Intensity2D_t0.30015', 'Intensity2D_t0.3002', 'Intensity2D_t0.30025', 'Intensity2D_t0.3003', 'Intensity2D_t0.30035', 'Intensity2D_t0.3004', 'Intensity2D_t0.30045', 'Intensity2D_t0.3005', 'Intensity2D_t0.30055', 'Intensity2D_t0.3006', 'Intensity2D_t0.30065', 'Intensity2D_t0.3007', 'Intensity2D_t0.30075', 'Intensity2D_t0.3008', 'Intensity2D_t0.30085', 'Intensity2D_t0.3009', 'Intensity2D_t0.30095', 'Intensity2D_t0.301']
+Now trying to read file: 'Intensity2D_t0.3' with t= 0.3
+Now trying to read file: 'Intensity2D_t0.30005' with t= 0.30005
+Now trying to read file: 'Intensity2D_t0.3001' with t= 0.3001
+Now trying to read file: 'Intensity2D_t0.30015' with t= 0.30015
+Now trying to read file: 'Intensity2D_t0.3002' with t= 0.3002
+Now trying to read file: 'Intensity2D_t0.30025' with t= 0.30025
+Now trying to read file: 'Intensity2D_t0.3003' with t= 0.3003
+Now trying to read file: 'Intensity2D_t0.30035' with t= 0.30035
+Now trying to read file: 'Intensity2D_t0.3004' with t= 0.3004
+Now trying to read file: 'Intensity2D_t0.30045' with t= 0.30045
+Now trying to read file: 'Intensity2D_t0.3005' with t= 0.3005
+Now trying to read file: 'Intensity2D_t0.30055' with t= 0.30055
+Now trying to read file: 'Intensity2D_t0.3006' with t= 0.3006
+Now trying to read file: 'Intensity2D_t0.30065' with t= 0.30065
+Now trying to read file: 'Intensity2D_t0.3007' with t= 0.3007
+Now trying to read file: 'Intensity2D_t0.30075' with t= 0.30075
+Now trying to read file: 'Intensity2D_t0.3008' with t= 0.3008
+Now trying to read file: 'Intensity2D_t0.30085' with t= 0.30085
+Now trying to read file: 'Intensity2D_t0.3009' with t= 0.3009
+Now trying to read file: 'Intensity2D_t0.30095' with t= 0.30095
+Now trying to read file: 'Intensity2D_t0.301' with t= 0.301
+Found for time ../optics/results/2D/0.4:
+num1D = 0; num2D = 21; numTot = 21
+../optics/results/2D/0.4 --> ../optics/results/2D/blurred/Intensity2D_t0.4
+outputName = ../optics/results/2D/blurred/Intensity2D_t0.4
+time = 0.4
+time = 0.40005
+time = 0.4001
+time = 0.40015
+time = 0.4002
+time = 0.40025
+time = 0.4003
+time = 0.40035
+time = 0.4004
+time = 0.40045
+time = 0.4005
+time = 0.40055
+time = 0.4006
+time = 0.40065
+time = 0.4007
+time = 0.40075
+time = 0.4008
+time = 0.40085
+time = 0.4009
+time = 0.40095
+time = 0.401
+Getting files that satisfy period: 5.000000000000004e-05.
+ Now analysing file: 'Intensity2D_t0.4' with t=0.4.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.40005' with t=0.40005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.4001' with t=0.4001.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.40015' with t=0.40015.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.4002' with t=0.4002.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.40025' with t=0.40025.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.4003' with t=0.4003.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.40035' with t=0.40035.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.4004' with t=0.4004.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.40045' with t=0.40045.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.4005' with t=0.4005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.40055' with t=0.40055.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.4006' with t=0.4006.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.40065' with t=0.40065.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.4007' with t=0.4007.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.40075' with t=0.40075.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.4008' with t=0.4008.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.40085' with t=0.40085.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.4009' with t=0.4009.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.40095' with t=0.40095.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.401' with t=0.401.
+ xstep= 1.0
+intFiles = ['Intensity2D_t0.4', 'Intensity2D_t0.40005', 'Intensity2D_t0.4001', 'Intensity2D_t0.40015', 'Intensity2D_t0.4002', 'Intensity2D_t0.40025', 'Intensity2D_t0.4003', 'Intensity2D_t0.40035', 'Intensity2D_t0.4004', 'Intensity2D_t0.40045', 'Intensity2D_t0.4005', 'Intensity2D_t0.40055', 'Intensity2D_t0.4006', 'Intensity2D_t0.40065', 'Intensity2D_t0.4007', 'Intensity2D_t0.40075', 'Intensity2D_t0.4008', 'Intensity2D_t0.40085', 'Intensity2D_t0.4009', 'Intensity2D_t0.40095', 'Intensity2D_t0.401']
+Now trying to read file: 'Intensity2D_t0.4' with t= 0.4
+Now trying to read file: 'Intensity2D_t0.40005' with t= 0.40005
+Now trying to read file: 'Intensity2D_t0.4001' with t= 0.4001
+Now trying to read file: 'Intensity2D_t0.40015' with t= 0.40015
+Now trying to read file: 'Intensity2D_t0.4002' with t= 0.4002
+Now trying to read file: 'Intensity2D_t0.40025' with t= 0.40025
+Now trying to read file: 'Intensity2D_t0.4003' with t= 0.4003
+Now trying to read file: 'Intensity2D_t0.40035' with t= 0.40035
+Now trying to read file: 'Intensity2D_t0.4004' with t= 0.4004
+Now trying to read file: 'Intensity2D_t0.40045' with t= 0.40045
+Now trying to read file: 'Intensity2D_t0.4005' with t= 0.4005
+Now trying to read file: 'Intensity2D_t0.40055' with t= 0.40055
+Now trying to read file: 'Intensity2D_t0.4006' with t= 0.4006
+Now trying to read file: 'Intensity2D_t0.40065' with t= 0.40065
+Now trying to read file: 'Intensity2D_t0.4007' with t= 0.4007
+Now trying to read file: 'Intensity2D_t0.40075' with t= 0.40075
+Now trying to read file: 'Intensity2D_t0.4008' with t= 0.4008
+Now trying to read file: 'Intensity2D_t0.40085' with t= 0.40085
+Now trying to read file: 'Intensity2D_t0.4009' with t= 0.4009
+Now trying to read file: 'Intensity2D_t0.40095' with t= 0.40095
+Now trying to read file: 'Intensity2D_t0.401' with t= 0.401
+Found for time ../optics/results/2D/0.5:
+num1D = 0; num2D = 21; numTot = 21
+../optics/results/2D/0.5 --> ../optics/results/2D/blurred/Intensity2D_t0.5
+outputName = ../optics/results/2D/blurred/Intensity2D_t0.5
+time = 0.5
+time = 0.50005
+time = 0.5001
+time = 0.50015
+time = 0.5002
+time = 0.50025
+time = 0.5003
+time = 0.50035
+time = 0.5004
+time = 0.50045
+time = 0.5005
+time = 0.50055
+time = 0.5006
+time = 0.50065
+time = 0.5007
+time = 0.50075
+time = 0.5008
+time = 0.50085
+time = 0.5009
+time = 0.50095
+time = 0.501
+Getting files that satisfy period: 5.000000000000004e-05.
+ Now analysing file: 'Intensity2D_t0.5' with t=0.5.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.50005' with t=0.50005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.5001' with t=0.5001.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.50015' with t=0.50015.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.5002' with t=0.5002.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.50025' with t=0.50025.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.5003' with t=0.5003.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.50035' with t=0.50035.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.5004' with t=0.5004.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.50045' with t=0.50045.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.5005' with t=0.5005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.50055' with t=0.50055.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.5006' with t=0.5006.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.50065' with t=0.50065.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.5007' with t=0.5007.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.50075' with t=0.50075.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.5008' with t=0.5008.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.50085' with t=0.50085.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.5009' with t=0.5009.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.50095' with t=0.50095.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.501' with t=0.501.
+ xstep= 1.0
+intFiles = ['Intensity2D_t0.5', 'Intensity2D_t0.50005', 'Intensity2D_t0.5001', 'Intensity2D_t0.50015', 'Intensity2D_t0.5002', 'Intensity2D_t0.50025', 'Intensity2D_t0.5003', 'Intensity2D_t0.50035', 'Intensity2D_t0.5004', 'Intensity2D_t0.50045', 'Intensity2D_t0.5005', 'Intensity2D_t0.50055', 'Intensity2D_t0.5006', 'Intensity2D_t0.50065', 'Intensity2D_t0.5007', 'Intensity2D_t0.50075', 'Intensity2D_t0.5008', 'Intensity2D_t0.50085', 'Intensity2D_t0.5009', 'Intensity2D_t0.50095', 'Intensity2D_t0.501']
+Now trying to read file: 'Intensity2D_t0.5' with t= 0.5
+Now trying to read file: 'Intensity2D_t0.50005' with t= 0.50005
+Now trying to read file: 'Intensity2D_t0.5001' with t= 0.5001
+Now trying to read file: 'Intensity2D_t0.50015' with t= 0.50015
+Now trying to read file: 'Intensity2D_t0.5002' with t= 0.5002
+Now trying to read file: 'Intensity2D_t0.50025' with t= 0.50025
+Now trying to read file: 'Intensity2D_t0.5003' with t= 0.5003
+Now trying to read file: 'Intensity2D_t0.50035' with t= 0.50035
+Now trying to read file: 'Intensity2D_t0.5004' with t= 0.5004
+Now trying to read file: 'Intensity2D_t0.50045' with t= 0.50045
+Now trying to read file: 'Intensity2D_t0.5005' with t= 0.5005
+Now trying to read file: 'Intensity2D_t0.50055' with t= 0.50055
+Now trying to read file: 'Intensity2D_t0.5006' with t= 0.5006
+Now trying to read file: 'Intensity2D_t0.50065' with t= 0.50065
+Now trying to read file: 'Intensity2D_t0.5007' with t= 0.5007
+Now trying to read file: 'Intensity2D_t0.50075' with t= 0.50075
+Now trying to read file: 'Intensity2D_t0.5008' with t= 0.5008
+Now trying to read file: 'Intensity2D_t0.50085' with t= 0.50085
+Now trying to read file: 'Intensity2D_t0.5009' with t= 0.5009
+Now trying to read file: 'Intensity2D_t0.50095' with t= 0.50095
+Now trying to read file: 'Intensity2D_t0.501' with t= 0.501
+Found for time ../optics/results/2D/0.6:
+num1D = 0; num2D = 21; numTot = 21
+../optics/results/2D/0.6 --> ../optics/results/2D/blurred/Intensity2D_t0.6
+outputName = ../optics/results/2D/blurred/Intensity2D_t0.6
+time = 0.6
+time = 0.60005
+time = 0.6001
+time = 0.60015
+time = 0.6002
+time = 0.60025
+time = 0.6003
+time = 0.60035
+time = 0.6004
+time = 0.60045
+time = 0.6005
+time = 0.60055
+time = 0.6006
+time = 0.60065
+time = 0.6007
+time = 0.60075
+time = 0.6008
+time = 0.60085
+time = 0.6009
+time = 0.60095
+time = 0.601
+Getting files that satisfy period: 5.000000000000004e-05.
+ Now analysing file: 'Intensity2D_t0.6' with t=0.6.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.60005' with t=0.60005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.6001' with t=0.6001.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.60015' with t=0.60015.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.6002' with t=0.6002.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.60025' with t=0.60025.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.6003' with t=0.6003.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.60035' with t=0.60035.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.6004' with t=0.6004.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.60045' with t=0.60045.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.6005' with t=0.6005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.60055' with t=0.60055.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.6006' with t=0.6006.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.60065' with t=0.60065.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.6007' with t=0.6007.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.60075' with t=0.60075.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.6008' with t=0.6008.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.60085' with t=0.60085.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.6009' with t=0.6009.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.60095' with t=0.60095.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.601' with t=0.601.
+ xstep= 1.0
+intFiles = ['Intensity2D_t0.6', 'Intensity2D_t0.60005', 'Intensity2D_t0.6001', 'Intensity2D_t0.60015', 'Intensity2D_t0.6002', 'Intensity2D_t0.60025', 'Intensity2D_t0.6003', 'Intensity2D_t0.60035', 'Intensity2D_t0.6004', 'Intensity2D_t0.60045', 'Intensity2D_t0.6005', 'Intensity2D_t0.60055', 'Intensity2D_t0.6006', 'Intensity2D_t0.60065', 'Intensity2D_t0.6007', 'Intensity2D_t0.60075', 'Intensity2D_t0.6008', 'Intensity2D_t0.60085', 'Intensity2D_t0.6009', 'Intensity2D_t0.60095', 'Intensity2D_t0.601']
+Now trying to read file: 'Intensity2D_t0.6' with t= 0.6
+Now trying to read file: 'Intensity2D_t0.60005' with t= 0.60005
+Now trying to read file: 'Intensity2D_t0.6001' with t= 0.6001
+Now trying to read file: 'Intensity2D_t0.60015' with t= 0.60015
+Now trying to read file: 'Intensity2D_t0.6002' with t= 0.6002
+Now trying to read file: 'Intensity2D_t0.60025' with t= 0.60025
+Now trying to read file: 'Intensity2D_t0.6003' with t= 0.6003
+Now trying to read file: 'Intensity2D_t0.60035' with t= 0.60035
+Now trying to read file: 'Intensity2D_t0.6004' with t= 0.6004
+Now trying to read file: 'Intensity2D_t0.60045' with t= 0.60045
+Now trying to read file: 'Intensity2D_t0.6005' with t= 0.6005
+Now trying to read file: 'Intensity2D_t0.60055' with t= 0.60055
+Now trying to read file: 'Intensity2D_t0.6006' with t= 0.6006
+Now trying to read file: 'Intensity2D_t0.60065' with t= 0.60065
+Now trying to read file: 'Intensity2D_t0.6007' with t= 0.6007
+Now trying to read file: 'Intensity2D_t0.60075' with t= 0.60075
+Now trying to read file: 'Intensity2D_t0.6008' with t= 0.6008
+Now trying to read file: 'Intensity2D_t0.60085' with t= 0.60085
+Now trying to read file: 'Intensity2D_t0.6009' with t= 0.6009
+Now trying to read file: 'Intensity2D_t0.60095' with t= 0.60095
+Now trying to read file: 'Intensity2D_t0.601' with t= 0.601
+Found for time ../optics/results/2D/0.7:
+num1D = 0; num2D = 21; numTot = 21
+../optics/results/2D/0.7 --> ../optics/results/2D/blurred/Intensity2D_t0.7
+outputName = ../optics/results/2D/blurred/Intensity2D_t0.7
+time = 0.7
+time = 0.70005
+time = 0.7001
+time = 0.70015
+time = 0.7002
+time = 0.70025
+time = 0.7003
+time = 0.70035
+time = 0.7004
+time = 0.70045
+time = 0.7005
+time = 0.70055
+time = 0.7006
+time = 0.70065
+time = 0.7007
+time = 0.70075
+time = 0.7008
+time = 0.70085
+time = 0.7009
+time = 0.70095
+time = 0.701
+Getting files that satisfy period: 5.000000000000004e-05.
+ Now analysing file: 'Intensity2D_t0.7' with t=0.7.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.70005' with t=0.70005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.7001' with t=0.7001.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.70015' with t=0.70015.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.7002' with t=0.7002.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.70025' with t=0.70025.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.7003' with t=0.7003.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.70035' with t=0.70035.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.7004' with t=0.7004.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.70045' with t=0.70045.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.7005' with t=0.7005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.70055' with t=0.70055.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.7006' with t=0.7006.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.70065' with t=0.70065.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.7007' with t=0.7007.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.70075' with t=0.70075.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.7008' with t=0.7008.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.70085' with t=0.70085.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.7009' with t=0.7009.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.70095' with t=0.70095.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.701' with t=0.701.
+ xstep= 1.0
+intFiles = ['Intensity2D_t0.7', 'Intensity2D_t0.70005', 'Intensity2D_t0.7001', 'Intensity2D_t0.70015', 'Intensity2D_t0.7002', 'Intensity2D_t0.70025', 'Intensity2D_t0.7003', 'Intensity2D_t0.70035', 'Intensity2D_t0.7004', 'Intensity2D_t0.70045', 'Intensity2D_t0.7005', 'Intensity2D_t0.70055', 'Intensity2D_t0.7006', 'Intensity2D_t0.70065', 'Intensity2D_t0.7007', 'Intensity2D_t0.70075', 'Intensity2D_t0.7008', 'Intensity2D_t0.70085', 'Intensity2D_t0.7009', 'Intensity2D_t0.70095', 'Intensity2D_t0.701']
+Now trying to read file: 'Intensity2D_t0.7' with t= 0.7
+Now trying to read file: 'Intensity2D_t0.70005' with t= 0.70005
+Now trying to read file: 'Intensity2D_t0.7001' with t= 0.7001
+Now trying to read file: 'Intensity2D_t0.70015' with t= 0.70015
+Now trying to read file: 'Intensity2D_t0.7002' with t= 0.7002
+Now trying to read file: 'Intensity2D_t0.70025' with t= 0.70025
+Now trying to read file: 'Intensity2D_t0.7003' with t= 0.7003
+Now trying to read file: 'Intensity2D_t0.70035' with t= 0.70035
+Now trying to read file: 'Intensity2D_t0.7004' with t= 0.7004
+Now trying to read file: 'Intensity2D_t0.70045' with t= 0.70045
+Now trying to read file: 'Intensity2D_t0.7005' with t= 0.7005
+Now trying to read file: 'Intensity2D_t0.70055' with t= 0.70055
+Now trying to read file: 'Intensity2D_t0.7006' with t= 0.7006
+Now trying to read file: 'Intensity2D_t0.70065' with t= 0.70065
+Now trying to read file: 'Intensity2D_t0.7007' with t= 0.7007
+Now trying to read file: 'Intensity2D_t0.70075' with t= 0.70075
+Now trying to read file: 'Intensity2D_t0.7008' with t= 0.7008
+Now trying to read file: 'Intensity2D_t0.70085' with t= 0.70085
+Now trying to read file: 'Intensity2D_t0.7009' with t= 0.7009
+Now trying to read file: 'Intensity2D_t0.70095' with t= 0.70095
+Now trying to read file: 'Intensity2D_t0.701' with t= 0.701
+Found for time ../optics/results/2D/0.8:
+num1D = 0; num2D = 21; numTot = 21
+../optics/results/2D/0.8 --> ../optics/results/2D/blurred/Intensity2D_t0.8
+outputName = ../optics/results/2D/blurred/Intensity2D_t0.8
+time = 0.8
+time = 0.80005
+time = 0.8001
+time = 0.80015
+time = 0.8002
+time = 0.80025
+time = 0.8003
+time = 0.80035
+time = 0.8004
+time = 0.80045
+time = 0.8005
+time = 0.80055
+time = 0.8006
+time = 0.80065
+time = 0.8007
+time = 0.80075
+time = 0.8008
+time = 0.80085
+time = 0.8009
+time = 0.80095
+time = 0.801
+Getting files that satisfy period: 5.000000000000004e-05.
+ Now analysing file: 'Intensity2D_t0.8' with t=0.8.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.80005' with t=0.80005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.8001' with t=0.8001.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.80015' with t=0.80015.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.8002' with t=0.8002.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.80025' with t=0.80025.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.8003' with t=0.8003.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.80035' with t=0.80035.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.8004' with t=0.8004.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.80045' with t=0.80045.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.8005' with t=0.8005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.80055' with t=0.80055.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.8006' with t=0.8006.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.80065' with t=0.80065.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.8007' with t=0.8007.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.80075' with t=0.80075.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.8008' with t=0.8008.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.80085' with t=0.80085.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.8009' with t=0.8009.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.80095' with t=0.80095.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.801' with t=0.801.
+ xstep= 1.0
+intFiles = ['Intensity2D_t0.8', 'Intensity2D_t0.80005', 'Intensity2D_t0.8001', 'Intensity2D_t0.80015', 'Intensity2D_t0.8002', 'Intensity2D_t0.80025', 'Intensity2D_t0.8003', 'Intensity2D_t0.80035', 'Intensity2D_t0.8004', 'Intensity2D_t0.80045', 'Intensity2D_t0.8005', 'Intensity2D_t0.80055', 'Intensity2D_t0.8006', 'Intensity2D_t0.80065', 'Intensity2D_t0.8007', 'Intensity2D_t0.80075', 'Intensity2D_t0.8008', 'Intensity2D_t0.80085', 'Intensity2D_t0.8009', 'Intensity2D_t0.80095', 'Intensity2D_t0.801']
+Now trying to read file: 'Intensity2D_t0.8' with t= 0.8
+Now trying to read file: 'Intensity2D_t0.80005' with t= 0.80005
+Now trying to read file: 'Intensity2D_t0.8001' with t= 0.8001
+Now trying to read file: 'Intensity2D_t0.80015' with t= 0.80015
+Now trying to read file: 'Intensity2D_t0.8002' with t= 0.8002
+Now trying to read file: 'Intensity2D_t0.80025' with t= 0.80025
+Now trying to read file: 'Intensity2D_t0.8003' with t= 0.8003
+Now trying to read file: 'Intensity2D_t0.80035' with t= 0.80035
+Now trying to read file: 'Intensity2D_t0.8004' with t= 0.8004
+Now trying to read file: 'Intensity2D_t0.80045' with t= 0.80045
+Now trying to read file: 'Intensity2D_t0.8005' with t= 0.8005
+Now trying to read file: 'Intensity2D_t0.80055' with t= 0.80055
+Now trying to read file: 'Intensity2D_t0.8006' with t= 0.8006
+Now trying to read file: 'Intensity2D_t0.80065' with t= 0.80065
+Now trying to read file: 'Intensity2D_t0.8007' with t= 0.8007
+Now trying to read file: 'Intensity2D_t0.80075' with t= 0.80075
+Now trying to read file: 'Intensity2D_t0.8008' with t= 0.8008
+Now trying to read file: 'Intensity2D_t0.80085' with t= 0.80085
+Now trying to read file: 'Intensity2D_t0.8009' with t= 0.8009
+Now trying to read file: 'Intensity2D_t0.80095' with t= 0.80095
+Now trying to read file: 'Intensity2D_t0.801' with t= 0.801
+Found for time ../optics/results/2D/0.9:
+num1D = 0; num2D = 21; numTot = 21
+../optics/results/2D/0.9 --> ../optics/results/2D/blurred/Intensity2D_t0.9
+outputName = ../optics/results/2D/blurred/Intensity2D_t0.9
+time = 0.9
+time = 0.90005
+time = 0.9001
+time = 0.90015
+time = 0.9002
+time = 0.90025
+time = 0.9003
+time = 0.90035
+time = 0.9004
+time = 0.90045
+time = 0.9005
+time = 0.90055
+time = 0.9006
+time = 0.90065
+time = 0.9007
+time = 0.90075
+time = 0.9008
+time = 0.90085
+time = 0.9009
+time = 0.90095
+time = 0.901
+Getting files that satisfy period: 5.000000000000004e-05.
+ Now analysing file: 'Intensity2D_t0.9' with t=0.9.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.90005' with t=0.90005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.9001' with t=0.9001.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.90015' with t=0.90015.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.9002' with t=0.9002.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.90025' with t=0.90025.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.9003' with t=0.9003.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.90035' with t=0.90035.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.9004' with t=0.9004.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.90045' with t=0.90045.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.9005' with t=0.9005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.90055' with t=0.90055.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.9006' with t=0.9006.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.90065' with t=0.90065.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.9007' with t=0.9007.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.90075' with t=0.90075.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.9008' with t=0.9008.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.90085' with t=0.90085.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.9009' with t=0.9009.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.90095' with t=0.90095.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t0.901' with t=0.901.
+ xstep= 1.0
+intFiles = ['Intensity2D_t0.9', 'Intensity2D_t0.90005', 'Intensity2D_t0.9001', 'Intensity2D_t0.90015', 'Intensity2D_t0.9002', 'Intensity2D_t0.90025', 'Intensity2D_t0.9003', 'Intensity2D_t0.90035', 'Intensity2D_t0.9004', 'Intensity2D_t0.90045', 'Intensity2D_t0.9005', 'Intensity2D_t0.90055', 'Intensity2D_t0.9006', 'Intensity2D_t0.90065', 'Intensity2D_t0.9007', 'Intensity2D_t0.90075', 'Intensity2D_t0.9008', 'Intensity2D_t0.90085', 'Intensity2D_t0.9009', 'Intensity2D_t0.90095', 'Intensity2D_t0.901']
+Now trying to read file: 'Intensity2D_t0.9' with t= 0.9
+Now trying to read file: 'Intensity2D_t0.90005' with t= 0.90005
+Now trying to read file: 'Intensity2D_t0.9001' with t= 0.9001
+Now trying to read file: 'Intensity2D_t0.90015' with t= 0.90015
+Now trying to read file: 'Intensity2D_t0.9002' with t= 0.9002
+Now trying to read file: 'Intensity2D_t0.90025' with t= 0.90025
+Now trying to read file: 'Intensity2D_t0.9003' with t= 0.9003
+Now trying to read file: 'Intensity2D_t0.90035' with t= 0.90035
+Now trying to read file: 'Intensity2D_t0.9004' with t= 0.9004
+Now trying to read file: 'Intensity2D_t0.90045' with t= 0.90045
+Now trying to read file: 'Intensity2D_t0.9005' with t= 0.9005
+Now trying to read file: 'Intensity2D_t0.90055' with t= 0.90055
+Now trying to read file: 'Intensity2D_t0.9006' with t= 0.9006
+Now trying to read file: 'Intensity2D_t0.90065' with t= 0.90065
+Now trying to read file: 'Intensity2D_t0.9007' with t= 0.9007
+Now trying to read file: 'Intensity2D_t0.90075' with t= 0.90075
+Now trying to read file: 'Intensity2D_t0.9008' with t= 0.9008
+Now trying to read file: 'Intensity2D_t0.90085' with t= 0.90085
+Now trying to read file: 'Intensity2D_t0.9009' with t= 0.9009
+Now trying to read file: 'Intensity2D_t0.90095' with t= 0.90095
+Now trying to read file: 'Intensity2D_t0.901' with t= 0.901
+Found for time ../optics/results/2D/1.0:
+num1D = 0; num2D = 21; numTot = 21
+../optics/results/2D/1.0 --> ../optics/results/2D/blurred/Intensity2D_t1.0
+outputName = ../optics/results/2D/blurred/Intensity2D_t1.0
+time = 1.0
+time = 1.00005
+time = 1.0001
+time = 1.00015
+time = 1.0002
+time = 1.00025
+time = 1.0003
+time = 1.00035
+time = 1.0004
+time = 1.00045
+time = 1.0005
+time = 1.00055
+time = 1.0006
+time = 1.00065
+time = 1.0007
+time = 1.00075
+time = 1.0008
+time = 1.00085
+time = 1.0009
+time = 1.00095
+time = 1.001
+Getting files that satisfy period: 4.999999999999449e-05.
+ Now analysing file: 'Intensity2D_t1.0' with t=1.0.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.00005' with t=1.00005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.0001' with t=1.0001.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.00015' with t=1.00015.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.0002' with t=1.0002.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.00025' with t=1.00025.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.0003' with t=1.0003.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.00035' with t=1.00035.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.0004' with t=1.0004.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.00045' with t=1.00045.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.0005' with t=1.0005.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.00055' with t=1.00055.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.0006' with t=1.0006.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.00065' with t=1.00065.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.0007' with t=1.0007.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.00075' with t=1.00075.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.0008' with t=1.0008.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.00085' with t=1.00085.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.0009' with t=1.0009.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.00095' with t=1.00095.
+ xstep= 1.0
+ Now analysing file: 'Intensity2D_t1.001' with t=1.001.
+ xstep= 1.0
+intFiles = ['Intensity2D_t1.0', 'Intensity2D_t1.00005', 'Intensity2D_t1.0001', 'Intensity2D_t1.00015', 'Intensity2D_t1.0002', 'Intensity2D_t1.00025', 'Intensity2D_t1.0003', 'Intensity2D_t1.00035', 'Intensity2D_t1.0004', 'Intensity2D_t1.00045', 'Intensity2D_t1.0005', 'Intensity2D_t1.00055', 'Intensity2D_t1.0006', 'Intensity2D_t1.00065', 'Intensity2D_t1.0007', 'Intensity2D_t1.00075', 'Intensity2D_t1.0008', 'Intensity2D_t1.00085', 'Intensity2D_t1.0009', 'Intensity2D_t1.00095', 'Intensity2D_t1.001']
+Now trying to read file: 'Intensity2D_t1.0' with t= 1.0
+Now trying to read file: 'Intensity2D_t1.00005' with t= 1.00005
+Now trying to read file: 'Intensity2D_t1.0001' with t= 1.0001
+Now trying to read file: 'Intensity2D_t1.00015' with t= 1.00015
+Now trying to read file: 'Intensity2D_t1.0002' with t= 1.0002
+Now trying to read file: 'Intensity2D_t1.00025' with t= 1.00025
+Now trying to read file: 'Intensity2D_t1.0003' with t= 1.0003
+Now trying to read file: 'Intensity2D_t1.00035' with t= 1.00035
+Now trying to read file: 'Intensity2D_t1.0004' with t= 1.0004
+Now trying to read file: 'Intensity2D_t1.00045' with t= 1.00045
+Now trying to read file: 'Intensity2D_t1.0005' with t= 1.0005
+Now trying to read file: 'Intensity2D_t1.00055' with t= 1.00055
+Now trying to read file: 'Intensity2D_t1.0006' with t= 1.0006
+Now trying to read file: 'Intensity2D_t1.00065' with t= 1.00065
+Now trying to read file: 'Intensity2D_t1.0007' with t= 1.0007
+Now trying to read file: 'Intensity2D_t1.00075' with t= 1.00075
+Now trying to read file: 'Intensity2D_t1.0008' with t= 1.0008
+Now trying to read file: 'Intensity2D_t1.00085' with t= 1.00085
+Now trying to read file: 'Intensity2D_t1.0009' with t= 1.0009
+Now trying to read file: 'Intensity2D_t1.00095' with t= 1.00095
+Now trying to read file: 'Intensity2D_t1.001' with t= 1.001
+Fri Feb 15 17:21:27 CET 2019

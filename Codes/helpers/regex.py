@@ -1,14 +1,10 @@
 #! /usr/bin/env python3
 
-#import re
+import re
 
 ########
 ## Convenient regex generators
 ####
-
-floatRE=r"[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?"
-intRE=r"[0-9]+"
-floatREx3 = "(?m)^\s*("+floatRE+")\s+("+floatRE+")\s+("+floatRE+")\s*$" # Matches exactly three floats, space-separated
 
 def group(inner,store=True):
 	if ( store ) :
@@ -22,9 +18,17 @@ def optional(expr):
 def either(expr1, expr2):
 	return group( group(expr1, False) + "|" + group(expr2, False) , False)
 
-#def compile(expr):
-#    return re.compile(expr)
+def withinSpaces(expr):
+	return "\s*" + expr + "\s*"
 
+def compile(expr):
+    return re.compile(expr)
+
+floatRE=r"[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?"
+floatRE=either(floatRE,r"[-+]?[0-9]+\.?[0-9]*(?:[eE][-+]?[0-9]+)?") # "0." and "1." are also numbers, but the original floatRE could not recognise them. This is important, because Python writes floats in that manner by default when it does not need any following zeroes.
+intRE=r"[0-9]+"
+#floatREx3 = "(?m)^\s*("+floatRE+")\s+("+floatRE+")\s+("+floatRE+")\s*$" # Matches exactly three floats, space-separated
+floatREx3 = group(floatRE)+"\s+"+group(floatRE)+"\s+"+group(floatRE) # Matches exactly three floats, space-separated
 
 
 ########

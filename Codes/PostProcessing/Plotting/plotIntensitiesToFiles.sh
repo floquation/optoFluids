@@ -26,11 +26,15 @@ fi
 
 pixelCoordsFN="$inputDN/../PixelCoords2D.out" # Hacked location, valid for a sorted optoFluids case
 
+num=1
+maxNum=$(ls "$inputDN"/* | wc -l)
 for inputFN in "$inputDN"/*
 do
+	echo "[$num/$maxNum]"
 	outputFN="$outputDN/$(basename $inputFN)"
 	#echo "outputFN = $outputFN"
 	plotIntensityToFile.py -i "$inputFN" -o "$outputFN" -c "$pixelCoordsFN" $@ || exit 1
+	num=$((num+1))
 done
 
 

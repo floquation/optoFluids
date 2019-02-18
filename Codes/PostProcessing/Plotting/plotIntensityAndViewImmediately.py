@@ -55,9 +55,13 @@ if intensity2DDir == "" :
 	sys.exit(2)
 
 if pixelCoordsFileName == "":
-	print("Checking if 'pixelCoords2D.out' file available in "+intensity2DDir)
-	if(os.path.isfile(intensity2DDir+"/PixelCoords.out")):
-		pixelCoords = np.loadtxt(intensity2DDir+"/PixelCoords.out",delimiter=' ', skiprows=2)
+	print("Checking if 'PixelCoords2D.out' file available in "+intensity2DDir+" or its parent directory.")
+	if(os.path.isfile(intensity2DDir+"/PixelCoords2D.out")): # In the same directory?
+		pixelCoords = np.loadtxt(intensity2DDir+"/PixelCoords2D.out",delimiter=' ', skiprows=2)
+		if(len(pixelCoords[0,:]) != 2):
+			print("   Warning, pixelCoords file seems to be irregular. Errors are unwaranted.")
+	elif(os.path.isfile(intensity2DDir+"/../PixelCoords2D.out")): # In parent directory?
+		pixelCoords = np.loadtxt(intensity2DDir+"/../PixelCoords2D.out",delimiter=' ', skiprows=2)
 		if(len(pixelCoords[0,:]) != 2):
 			print("   Warning, pixelCoords file seems to be irregular. Errors are unwaranted.")
 	else:

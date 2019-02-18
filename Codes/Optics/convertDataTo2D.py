@@ -6,6 +6,7 @@
 #				To Python3.
 #				Parallel.
 #	16 10 2018: Works with outputDir=inputDir --> restructure Intensity & Coord files in "1D" and "2D" directories
+#	12 02 2019: Implemented the helpers.IO I/O-handler module.
 #
 
 # Misc imports
@@ -25,6 +26,7 @@ from functools import partial
 # OptoFluids imports
 import helpers.regex as myRE
 import helpers.nameConventions as names
+import helpers.IO as optoFluidsIO
 
 
 #filename = inspect.getframeinfo(inspect.currentframe()).filename
@@ -40,10 +42,12 @@ def shiftOrigin(data3D):
 	data3D -= data3D[0,:]
 #
 # Find the span vectors (a and b)
+# Assert: First point MUST be the origin.
 #
 def spanVectors(data3D):
+	assert (np.all(data3D[0,:] == 0)), "First datapoint MUST be the origin, but was \""+str(data3D[0,:])+"\". Use \"shiftOrigin\"."
 	# Define the horizontal and the diagonal
-	v_01 = data3D[1,:]
+	v_01 = data3D[1,:] # Vector from origin to second point. Note: origin = first point due to shiftOrigin.
 	#print(v_01)
 	#print(data3D.shape)
 	v_0N = data3D[data3D.shape[0]-1,:]
@@ -126,68 +130,19 @@ def bound01(data, eps):
 	data[data>1-eps]=1
 	data[data<0+eps]=0
 
-#
-# Reshape it such that x increases with column number and y increases with row number:
-#  To flip these, use: data2Dx=np.transpose(data2Dx) and data2Dy=np.transpose(data2Dy).
-def get2DCoordsComp(data2D, npix, index):
-	data2Di = np.reshape(data2D[:,index],(npix[1],npix[0]))
-	return np.transpose(data2Di)
-
-## Output functions
-def write2DCoordsToFile(data2D, npix, span):
-	FN = names.joinPaths(outputDN,names.pixelCoords2DFN)
-	a=span[0]
-	b=span[1]
-	outputFile = open(FN, "w")
-	outputFile.write("a= "+str(a/np.linalg.norm(a)) + "\n" )
-	outputFile.write("b= "+str(b/np.linalg.norm(b)) + "\n" )
-	outputFile.write(str(npix[0]) + " " + str(npix[1]) + "\n" )
-	for elem in data2D :
-		line = ""
-		for elemm in elem :
-			line = line + str(elemm) + " "
-		outputFile.write(line[0:-1] + "\n")
-	outputFile.close()
-def write2DCoordsCompToFile(data2Dx, npix, which):
-	if which == "x":
-		FN = names.joinPaths(outputDN,names.pixelCoords2DxFN)
-	elif which == "y":
-		FN = names.joinPaths(outputDN,names.pixelCoords2DyFN)
-	else:
-		return #TODO: throw error
-	outputFile = open(FN, "w")
-	for i_x in range(0, npix[0]) : # x goes into different rows
-		#(note: this is row-column convention, not an x-y-axis convention)
-		line = ""
-		for i_y in range(0, npix[1]) : # y goes into different columns
-			line = line + str(data2Dx[i_x,i_y]) + " "
-		outputFile.write(line[0:-1] + "\n")
-	outputFile.close()
-def writeIntensity2DToFile(data2D, npix, time, index=None):
-	outputFile = open(names.joinPaths(outputDN,names.intensity2DFN(time,index)), "w")
-	for i_x in range(0, npix[0]) : # x goes into different rows
-	#(note: this is row-column convention, not an x-y-axis convention)
-		line = ""
-		for i_y in range(0, npix[1]) : # y goes into different columns
-			line = line + str(data2D[i_x,i_y]) + " "
-		outputFile.write(line[0:-1] + "\n")
-	outputFile.close()
-	
 # Worker function which converts the 1D intensity vector to a 2D array
 # The tuple npix determines the number of pixels in the a,b directions (in that order)
 def processIntensityFile(npix, i_file):
-	#proc_id="["+multiprocessing.current_process().name+"] "
-	groups = myRE.getMatchingGroups(os.path.basename(i_file), intensityFNRO)
-	if groups: # If filename matches the regex
-		(index, time) = names.extractTimeAndIndexFromMatch(groups)
-		#print("index = " + str(index) + "; time = " + str(time))
-		dataLin = np.fromfile(i_file,dtype=float,count=-1,sep=" ")
-		#print(dataLin)
-		data2D = np.reshape(dataLin,(npix[1],npix[0]))
-		data2D = np.transpose(data2D) # After this line, the first index of data2D refers to the a-coordinate and the second to the b-coordinate
+#	#proc_id="["+multiprocessing.current_process().name+"] "
+	try:
+		# Read from file
+		(data2D, time, index) = optoFluidsIO.readFromFile_Intensity1D(i_file, npix)
+	except Exception as error:
+		print("Skipping file \"" + str(i_file) + "\":\n" + str(error))
+		pass
+	else: # no exception occured, so:
 		# Output to file
-		writeIntensity2DToFile(data2D, npix, time, index)
-
+		optoFluidsIO.writeToFile_Intensity2D(data2D, outputDN, time, index=index, overwrite=overwrite)
 
 
 # Restructure the input directory such that all Intensity files & the PixelCoordinates file
@@ -226,11 +181,12 @@ outputIsInput = False
 #
 usageString = "This script automatically loops over all intensity files in the given directory (-i) and then writes them to a different format in the output directory (-o)\n" \
 			+ "Filename for coordinates: 'PixelCoords.out'. Filename for intensity: 'Intensity_tFLOAT.out'\n" \
-			+ "   usage: " + sys.argv[0] + " -i <intensity and pixelCoords dirName> -o <outputDir for 2D data> " \
+			+ "   usage: " + sys.argv[0] + " -i <intensity and pixelCoords dirName> [-o <outputDir for 2D data>] " \
 			+ "[-f]" \
 			+ "[-C <number of cores to use>]" \
 			+ "\n" \
 			+ "		where:\n" \
+			+ "		  -o := output directory. If omitted, uses the input directory by creating a 1D (for the original data) and 2D (for the new data) folder into it." \
 			+ "		  -f := force overwrite. WARNING: This will remove any existing directory specified using the -o option\n" \
 			+ "		  -C defaults to '1' (serial run). Use '0' to use all available system cores\n"
 try:
@@ -331,8 +287,7 @@ else: # OutputDir = InputDir
 ####
 
 # Read
-dataRegex = re.compile(myRE.floatREx3)
-data3D = np.fromregex(pixelCoordsFN,dataRegex,dtype='f')
+data3D = optoFluidsIO.readFromFile_CoordsXYZ(pixelCoordsFN)
 print("data3D original = ", data3D)
 shiftOrigin(data3D)
 print("data3D or.shift = ", data3D)
@@ -345,12 +300,12 @@ bound01(data2D, eps(data2D)*0.999)
 print("data2D bounded = ", data2D)
 npix = getCamSize(data2D)
 print("npix = ", npix)
-data2Dx = get2DCoordsComp(data2D, npix, 0)
-data2Dy = get2DCoordsComp(data2D, npix, 1)
 # Write
-write2DCoordsToFile(data2D, npix, span)
-write2DCoordsCompToFile(data2Dx, npix, "x")
-write2DCoordsCompToFile(data2Dy, npix, "y")
+optoFluidsIO.writeToFile_Coords2D(data2D, outputDN, span, npix, overwrite=overwrite) 
+optoFluidsIO.writeToFile_CoordsComps2D(data2D, outputDN, npix, overwrite=overwrite) 
+#write2DCoordsToFile(data2D, npix, span)
+#write2DCoordsCompToFile(data2Dx, npix, "x")
+#write2DCoordsCompToFile(data2Dy, npix, "y")
 
 
 

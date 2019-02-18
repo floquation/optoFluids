@@ -4,6 +4,9 @@
 #   ?? ?? ????: plotIntensityAndViewImmediately.py
 # Kevin van As
 #	17 12 2018: Quick hack to plot intensity to file
+#	15 02 2019: Using optoFluidsIO, and cleaner script overall.
+# Stephan van Kleef
+#	18 02 2019: plt.switch_backend('agg'): No longer needs an X-server to plot.
 #
 
 import sys, getopt # Command-Line options
@@ -13,10 +16,12 @@ import numpy as np # Matrices
 import matplotlib
 
 import matplotlib.pyplot as plt
+plt.switch_backend('agg') # Then we do not need an X-server to plot.
 
 # Import from optoFluids:
 import helpers.regex as myRE
 import helpers.nameConventions as names
+import helpers.IO as optoFluidsIO
 
 
 # Command-Line Options
@@ -25,7 +30,7 @@ intensity2DFN = ""
 outputFN = ""
 extension = "png"
 overwrite = False
-pixelCoordsFileName = ""
+pixelCoordsFN = ""
 pixelCoords=0
 setVMin=None
 setVMax=None
@@ -50,7 +55,7 @@ for opt, arg in opts:
 	elif opt == '-o':
 		outputFN = arg
 	elif opt == '-c':
-		pixelCoordsFileName = arg
+		pixelCoordsFN = arg
 	elif opt == '-n':
 		setVMin = float(arg)
 	elif opt == '-m':
@@ -79,30 +84,21 @@ if outputFN == "" :
 elif os.path.exists(outputFN) and not overwrite:
 	sys.exit("Outputfile already exists, but overwrite=False. Use -f to overwrite.")
 
-if pixelCoordsFileName == "":
-	print("Checking if 'pixelCoords2D.out' file available in "+intensity2DFN)
-	if(os.path.isfile(intensity2DFN+"/PixelCoords.out")):
-		pixelCoords = np.loadtxt(intensity2DFN+"/PixelCoords.out",delimiter=' ', skiprows=2)
-		if(len(pixelCoords[0,:]) != 2):
-			print("   Warning, pixelCoords file seems to be irregular. Errors are unwaranted.")
-	else:
-		sys.exit("Error, no PixelCoords2D file specified and none found in "+intensity2DFN+", cannot continue with the plotting");
-else:
-	print("Loading pixelCoords2D from ",pixelCoordsFileName)
-	if(os.path.isfile(pixelCoordsFileName)):
-		pixelCoords = np.loadtxt(pixelCoordsFileName,delimiter=' ', skiprows=2)
-		if(len(pixelCoords[0,:]) != 2):
-			print("   Warning, pixelCoords file seems to be irregular. Errors are unwaranted.")
-	else:
-		sys.exit("Error, pixelCoords2D file specified as "+pixelCoordsFileName+"does not seem to be a file, cannot continue with the plotting");
+if pixelCoordsFN == "":
+	intensity2DDir=os.path.dirname(intensity2DFN)
+	print("Checking if 'PixelCoords2D.out' file available in "+intensity2DDir+" or its parent directory.")
+	pixelCoordsFN=intensity2DDir+"/PixelCoords2D.out" # In the same directory?
+	if(not os.path.isfile(pixelCoordsFN)):
+		pixelCoordsFN=intensity2DDir+"/../PixelCoords2D.out" # In the same directory?
+		if(not os.path.isfile(pixelCoordsFN)):
+			sys.exit("Error, no PixelCoords2D file specified and none found in the usual locations ("+intensity2DDir+"), so cannot continue with the plotting.");
 
 #
 ###########################
 # Algorithm:
 ##########
 
-plt.rc('text', usetex=False) #Let's TeXify the labels and what not
-
+# TODO: Call separate module to compute speckle contrast
 def computeContrastByLocalContrast(img):
 	blockSizeX = 8
 	blockSizeY = 8
@@ -116,62 +112,42 @@ def computeContrastByLocalContrast(img):
 	return C/float(n)
 
 
+## Read pixel coordinates
+print("Loading pixelCoords2D from ",pixelCoordsFN)
+(A,B) = optoFluidsIO.readFromFile_CoordsAB(pixelCoordsFN)
+npix=np.shape(A) # first index = a direction, second index = b direction
 
-floatRE=r"[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?"
-myRegex = "Intensity2D_t("+floatRE+")\.out"
-intensityFileNameRE = re.compile(myRegex)
-npixa = int(pixelCoords[0,0])
-npixb = int(pixelCoords[0,1])
-X = pixelCoords[1:,0].reshape((npixb,npixa))
-Y = pixelCoords[1:,1].reshape((npixb,npixa))
-X = X.T
-Y = Y.T
+## Read intensity file
+(image, *irrelevant) = optoFluidsIO.readFromFile_Intensity(intensity2DFN, npix)
+if(image.ndim != 2):
+	sys.exit("Intensityfile \""+str(intensity2DFN)+"\" does not contain 2D data. Cannot plot.")
 
-teller = 0
-intensityFNRO = re.compile(names.intensity2DFNRE)
-#print(names.intensity2DFNRE)
-#print(intensity2DFN)
-
-#intensityFiles = myRE.getMatchingItemsAndGroups(os.listdir(intensity2DFN), intensityFNRO)
-
-if myRE.doesItemMatch(names.basename(intensity2DFN),intensityFNRO):
-	image = np.loadtxt(intensity2DFN)
-	if(image.ndim != 2):
-		print("This intensity2D file did not contain 2D information somehow. Use your panzerschreck to destroy this half-track\n")
-		print("Nah but seriously, this file "+str(intensity2DFN)+" is skipped.")
-	else: #have correct dimensions at least, let's plot these bitches
-		# Plot figure:
-		print("Plotting figure " + str(intensity2DFN))
-		dpi=72.0
-		if not noAxis:
-			fig = plt.figure()
-		else:
-			fig = plt.figure(figsize=(1024/dpi,1024/dpi), dpi=dpi)
-		plt.pcolormesh(X,Y, image, edgecolor='face')#,shading="gouraud")
-		# Overwrite color range:
-		if setVMin != None:
-			plt.clim(vmin=setVMin)
-		if setVMax != None:
-			plt.clim(vmax=setVMax)
-		# Axis / Legend:
-		plt.axis("off")
-		if not noAxis:
-			cb=plt.colorbar()
-			cb.set_label(r"$I$ [a.u]")
-			plt.title(r"$\langle C \rangle _{window} =$ "+str(computeContrastByLocalContrast(image)))
-		else:
-			plt.subplots_adjust(left=0, right=1.0, top=1.0, bottom=0)
-		# Output:
-		fig.savefig(outputFN)
-		plt.close(fig) # TODO: Needed?
+## Plot figure:
+print("Plotting figure " + str(intensity2DFN))
+plt.rc('text', usetex=False) # TeXify axis/labels/title
+dpi=72.0
+if not noAxis:
+	fig = plt.figure()
 else:
-	sys.exit("Inputfile '" + str(intensity2DFN) + "' is not an intensity2D file")
+	fig = plt.figure(figsize=(1024/dpi,1024/dpi), dpi=dpi)
+plt.pcolormesh(A,B, image, edgecolor='face')#,shading="gouraud")
+# Overwrite color range:
+if setVMin != None:
+	plt.clim(vmin=setVMin)
+if setVMax != None:
+	plt.clim(vmax=setVMax)
+# Axis / Legend / Title:
+plt.axis("off")
+if not noAxis:
+	cb=plt.colorbar()
+	cb.set_label(r"$I$ [a.u]")
+	plt.title(r"$\langle C \rangle _{window} =$ "+str(computeContrastByLocalContrast(image)))
+else:
+	plt.subplots_adjust(left=0, right=1.0, top=1.0, bottom=0)
+# Output:
+fig.savefig(outputFN)
 
-
-#plt.show(block=True)
-#sys.exit("Done")
-
-
+#plt.show(block=True) # to show figure immediately
 
 
 

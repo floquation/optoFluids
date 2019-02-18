@@ -7,6 +7,7 @@
 #
 # Kevin van As
 #	17 10 2018: Original
+#	18 02 2019: Added progress bar with tdqm
 #			
 
 # Misc imports
@@ -14,6 +15,9 @@ import re # Regular-Expressions
 import sys, getopt # Command-Line options
 import os.path
 from shutil import rmtree
+
+# Progress bar
+from tqdm import tqdm
 
 # Import from optoFluids:
 import helpers.regex as myRE
@@ -93,15 +97,15 @@ def timeIntegrateOptics(inputDN, outputDN, overwrite=False):
 	os.makedirs(outputDN)
 
 	## Process every timestep
-	for timeDN in timeDNList:
+	for timeDN in tqdm(timeDNList):
 		time = timeDN
 		timeDN = names.joinPaths(inputDN,timeDN)
 		# Count #1D intensities:
 		num1D = myRE.countMatchingItems(os.listdir(timeDN),re.compile(names.intensity1DFNRE))
 		num2D = myRE.countMatchingItems(os.listdir(timeDN),re.compile(names.intensity2DFNRE))
 		numTot = len(os.listdir(timeDN))
-		print("Found for time " + str(timeDN) + ":\n" + \
-				"num1D = " + str(num1D) + "; num2D = " + str(num2D) + "; numTot = " + str(numTot))
+		#print("Found for time " + str(timeDN) + ":\n" + \
+		#		"num1D = " + str(num1D) + "; num2D = " + str(num2D) + "; numTot = " + str(numTot))
 		if(num1D > 0 and num2D == 0):
 			outputFN = names.intensity1DFN(time)
 		elif(num2D > 0 and num1D == 0):

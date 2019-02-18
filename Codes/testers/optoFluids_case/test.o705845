@@ -1,0 +1,988 @@
+Fri Feb 15 11:43:23 CET 2019
+Using nodes (20):
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+n11-27
+
+####
+##Fluids done.
+Fri Feb 15 12:45:55 CET 2019
+########
+Number of valid ParticlePositions files found in "../fluids/particles" (rel. to total number) = 231/231
+[Master] Obtaining pixel coordinates.
+[ForkPoolWorker-17] Calling optics code for ParticlePositions file 'pos_t0.2003'
+[ForkPoolWorker-17] 5.194805194805195% Done
+[ForkPoolWorker-17] Calling optics code for ParticlePositions file 'pos_t0.20035'
+[ForkPoolWorker-17] 13.41991341991342% Done
+[ForkPoolWorker-17] Calling optics code for ParticlePositions file 'pos_t0.2004'
+[ForkPoolWorker-17] 25.541125541125542% Done
+[ForkPoolWorker-17] Calling optics code for ParticlePositions file 'pos_t0.50045'
+[ForkPoolWorker-17] 33.76623376623377% Done
+[ForkPoolWorker-17] Calling optics code for ParticlePositions file 'pos_t0.5005'
+[ForkPoolWorker-17] 40.692640692640694% Done
+[ForkPoolWorker-17] Calling optics code for ParticlePositions file 'pos_t0.50055'
+[ForkPoolWorker-17] 51.082251082251084% Done
+[ForkPoolWorker-17] Calling optics code for ParticlePositions file 'pos_t0.80015'
+[ForkPoolWorker-17] 58.44155844155844% Done
+[ForkPoolWorker-17] Calling optics code for ParticlePositions file 'pos_t0.8002'
+[ForkPoolWorker-17] 68.3982683982684% Done
+[ForkPoolWorker-17] Calling optics code for ParticlePositions file 'pos_t0.80025'
+[ForkPoolWorker-17] 77.05627705627705% Done
+[ForkPoolWorker-18] Calling optics code for ParticlePositions file 'pos_t0.20045'
+[ForkPoolWorker-18] 3.463203463203463% Done
+[ForkPoolWorker-18] Calling optics code for ParticlePositions file 'pos_t0.2005'
+[ForkPoolWorker-18] 12.987012987012987% Done
+[ForkPoolWorker-18] Calling optics code for ParticlePositions file 'pos_t0.20055'
+[ForkPoolWorker-18] 22.51082251082251% Done
+[ForkPoolWorker-18] Calling optics code for ParticlePositions file 'pos_t0.40045'
+[ForkPoolWorker-18] 29.004329004329005% Done
+[ForkPoolWorker-18] Calling optics code for ParticlePositions file 'pos_t0.4005'
+[ForkPoolWorker-18] 41.125541125541126% Done
+[ForkPoolWorker-18] Calling optics code for ParticlePositions file 'pos_t0.40055'
+[ForkPoolWorker-18] 49.78354978354978% Done
+[ForkPoolWorker-18] Calling optics code for ParticlePositions file 'pos_t0.70075'
+[ForkPoolWorker-18] 55.84415584415584% Done
+[ForkPoolWorker-18] Calling optics code for ParticlePositions file 'pos_t0.7008'
+[ForkPoolWorker-18] 64.93506493506493% Done
+[ForkPoolWorker-18] Calling optics code for ParticlePositions file 'pos_t0.70085'
+[ForkPoolWorker-18] 71.86147186147186% Done
+[ForkPoolWorker-18] Calling optics code for ParticlePositions file 'pos_t0.9003'
+[ForkPoolWorker-18] 80.51948051948052% Done
+[ForkPoolWorker-18] Calling optics code for ParticlePositions file 'pos_t0.90035'
+[ForkPoolWorker-18] 85.71428571428571% Done
+[ForkPoolWorker-18] Calling optics code for ParticlePositions file 'pos_t0.9004'
+[ForkPoolWorker-18] 93.07359307359307% Done
+[ForkPoolWorker-15] Calling optics code for ParticlePositions file 'pos_t0.2'
+[ForkPoolWorker-15] 1.2987012987012987% Done
+[ForkPoolWorker-15] Calling optics code for ParticlePositions file 'pos_t0.20005'
+[ForkPoolWorker-15] 11.255411255411255% Done
+[ForkPoolWorker-15] Calling optics code for ParticlePositions file 'pos_t0.2001'
+[ForkPoolWorker-15] 22.07792207792208% Done
+[ForkPoolWorker-15] Calling optics code for ParticlePositions file 'pos_t0.4003'
+[ForkPoolWorker-15] 30.735930735930737% Done
+[ForkPoolWorker-15] Calling optics code for ParticlePositions file 'pos_t0.40035'
+[ForkPoolWorker-15] 38.095238095238095% Done
+[ForkPoolWorker-15] Calling optics code for ParticlePositions file 'pos_t0.4004'
+[ForkPoolWorker-15] 48.917748917748916% Done
+[ForkPoolWorker-15] Calling optics code for ParticlePositions file 'pos_t0.70045'
+[ForkPoolWorker-15] 59.307359307359306% Done
+[ForkPoolWorker-15] Calling optics code for ParticlePositions file 'pos_t0.7005'
+[ForkPoolWorker-15] 68.83116883116882% Done
+[ForkPoolWorker-15] Calling optics code for ParticlePositions file 'pos_t0.70055'
+[ForkPoolWorker-15] 77.4891774891775% Done
+[ForkPoolWorker-10] Calling optics code for ParticlePositions file 'pos_t0.1003'
+[ForkPoolWorker-10] 7.792207792207792% Done
+[ForkPoolWorker-10] Calling optics code for ParticlePositions file 'pos_t0.10035'
+[ForkPoolWorker-10] 17.316017316017316% Done
+[ForkPoolWorker-10] Calling optics code for ParticlePositions file 'pos_t0.1004'
+[ForkPoolWorker-10] 25.974025974025974% Done
+[ForkPoolWorker-10] Calling optics code for ParticlePositions file 'pos_t0.5006'
+[ForkPoolWorker-10] 34.63203463203463% Done
+[ForkPoolWorker-10] Calling optics code for ParticlePositions file 'pos_t0.50065'
+[ForkPoolWorker-10] 43.29004329004329% Done
+[ForkPoolWorker-10] Calling optics code for ParticlePositions file 'pos_t0.5007'
+[ForkPoolWorker-10] 51.94805194805195% Done
+[ForkPoolWorker-10] Calling optics code for ParticlePositions file 'pos_t0.80045'
+[ForkPoolWorker-10] 60.60606060606061% Done
+[ForkPoolWorker-10] Calling optics code for ParticlePositions file 'pos_t0.8005'
+[ForkPoolWorker-10] 69.26406926406926% Done
+[ForkPoolWorker-10] Calling optics code for ParticlePositions file 'pos_t0.80055'
+[ForkPoolWorker-10] 77.92207792207792% Done
+[ForkPoolWorker-7] Calling optics code for ParticlePositions file 'pos_t0.1'
+[ForkPoolWorker-7] 8.658008658008658% Done
+[ForkPoolWorker-7] Calling optics code for ParticlePositions file 'pos_t0.10005'
+[ForkPoolWorker-7] 14.285714285714286% Done
+[ForkPoolWorker-7] Calling optics code for ParticlePositions file 'pos_t0.1001'
+[ForkPoolWorker-7] 20.77922077922078% Done
+[ForkPoolWorker-7] Calling optics code for ParticlePositions file 'pos_t0.3009'
+[ForkPoolWorker-7] 28.571428571428573% Done
+[ForkPoolWorker-7] Calling optics code for ParticlePositions file 'pos_t0.30095'
+[ForkPoolWorker-7] 38.96103896103896% Done
+[ForkPoolWorker-7] Calling optics code for ParticlePositions file 'pos_t0.301'
+[ForkPoolWorker-7] 46.32034632034632% Done
+[ForkPoolWorker-7] Calling optics code for ParticlePositions file 'pos_t0.6006'
+[ForkPoolWorker-7] 54.112554112554115% Done
+[ForkPoolWorker-7] Calling optics code for ParticlePositions file 'pos_t0.60065'
+[ForkPoolWorker-7] 62.33766233766234% Done
+[ForkPoolWorker-7] Calling optics code for ParticlePositions file 'pos_t0.6007'
+[ForkPoolWorker-7] 69.6969696969697% Done
+[ForkPoolWorker-7] Calling optics code for ParticlePositions file 'pos_t0.8006'
+[ForkPoolWorker-7] 78.35497835497836% Done
+[ForkPoolWorker-7] Calling optics code for ParticlePositions file 'pos_t0.80065'
+[ForkPoolWorker-7] 86.14718614718615% Done
+[ForkPoolWorker-7] Calling optics code for ParticlePositions file 'pos_t0.8007'
+[ForkPoolWorker-7] 93.50649350649351% Done
+[ForkPoolWorker-6] Calling optics code for ParticlePositions file 'pos_t0.0006'
+[ForkPoolWorker-6] 0.8658008658008658% Done
+[ForkPoolWorker-6] Calling optics code for ParticlePositions file 'pos_t0.00065'
+[ForkPoolWorker-6] 12.121212121212121% Done
+[ForkPoolWorker-6] Calling optics code for ParticlePositions file 'pos_t0.0007'
+[ForkPoolWorker-6] 21.21212121212121% Done
+[ForkPoolWorker-6] Calling optics code for ParticlePositions file 'pos_t0.4'
+[ForkPoolWorker-6] 31.6017316017316% Done
+[ForkPoolWorker-6] Calling optics code for ParticlePositions file 'pos_t0.40005'
+[ForkPoolWorker-6] 38.52813852813853% Done
+[ForkPoolWorker-6] Calling optics code for ParticlePositions file 'pos_t0.4001'
+[ForkPoolWorker-6] 47.18614718614719% Done
+[ForkPoolWorker-6] Calling optics code for ParticlePositions file 'pos_t0.6009'
+[ForkPoolWorker-6] 56.277056277056275% Done
+[ForkPoolWorker-6] Calling optics code for ParticlePositions file 'pos_t0.60095'
+[ForkPoolWorker-6] 61.03896103896104% Done
+[ForkPoolWorker-6] Calling optics code for ParticlePositions file 'pos_t0.601'
+[ForkPoolWorker-6] 71.42857142857143% Done
+[ForkPoolWorker-6] Calling optics code for ParticlePositions file 'pos_t0.90015'
+[ForkPoolWorker-6] 79.22077922077922% Done
+[ForkPoolWorker-6] Calling optics code for ParticlePositions file 'pos_t0.9002'
+[ForkPoolWorker-6] 86.58008658008659% Done
+[ForkPoolWorker-6] Calling optics code for ParticlePositions file 'pos_t0.90025'
+[ForkPoolWorker-6] 93.93939393939394% Done
+[ForkPoolWorker-4] Calling optics code for ParticlePositions file 'pos_t0.00045'
+[ForkPoolWorker-4] 0.4329004329004329% Done
+[ForkPoolWorker-4] Calling optics code for ParticlePositions file 'pos_t0.0005'
+[ForkPoolWorker-4] 10.822510822510823% Done
+[ForkPoolWorker-4] Calling optics code for ParticlePositions file 'pos_t0.00055'
+[ForkPoolWorker-4] 19.913419913419915% Done
+[ForkPoolWorker-4] Calling optics code for ParticlePositions file 'pos_t0.3006'
+[ForkPoolWorker-4] 30.303030303030305% Done
+[ForkPoolWorker-4] Calling optics code for ParticlePositions file 'pos_t0.30065'
+[ForkPoolWorker-4] 37.66233766233766% Done
+[ForkPoolWorker-4] Calling optics code for ParticlePositions file 'pos_t0.3007'
+[ForkPoolWorker-4] 45.887445887445885% Done
+[ForkPoolWorker-4] Calling optics code for ParticlePositions file 'pos_t0.60045'
+[ForkPoolWorker-4] 54.97835497835498% Done
+[ForkPoolWorker-4] Calling optics code for ParticlePositions file 'pos_t0.6005'
+[ForkPoolWorker-4] 61.904761904761905% Done
+[ForkPoolWorker-4] Calling optics code for ParticlePositions file 'pos_t0.60055'
+[ForkPoolWorker-4] 70.56277056277057% Done
+[ForkPoolWorker-4] Calling optics code for ParticlePositions file 'pos_t0.8009'
+[ForkPoolWorker-4] 80.08658008658008% Done
+[ForkPoolWorker-4] Calling optics code for ParticlePositions file 'pos_t0.80095'
+[ForkPoolWorker-4] 87.44588744588745% Done
+[ForkPoolWorker-4] Calling optics code for ParticlePositions file 'pos_t0.801'
+[ForkPoolWorker-4] 94.37229437229438% Done
+[ForkPoolWorker-14] Calling optics code for ParticlePositions file 'pos_t0.1009'
+[ForkPoolWorker-14] 6.4935064935064934% Done
+[ForkPoolWorker-14] Calling optics code for ParticlePositions file 'pos_t0.10095'
+[ForkPoolWorker-14] 11.688311688311689% Done
+[ForkPoolWorker-14] Calling optics code for ParticlePositions file 'pos_t0.101'
+[ForkPoolWorker-14] 19.047619047619047% Done
+[ForkPoolWorker-14] Calling optics code for ParticlePositions file 'pos_t0.3003'
+[ForkPoolWorker-14] 28.138528138528137% Done
+[ForkPoolWorker-14] Calling optics code for ParticlePositions file 'pos_t0.30035'
+[ForkPoolWorker-14] 36.36363636363637% Done
+[ForkPoolWorker-14] Calling optics code for ParticlePositions file 'pos_t0.3004'
+[ForkPoolWorker-14] 45.02164502164502% Done
+[ForkPoolWorker-14] Calling optics code for ParticlePositions file 'pos_t0.60015'
+[ForkPoolWorker-14] 54.54545454545455% Done
+[ForkPoolWorker-14] Calling optics code for ParticlePositions file 'pos_t0.6002'
+[ForkPoolWorker-14] 63.63636363636363% Done
+[ForkPoolWorker-14] Calling optics code for ParticlePositions file 'pos_t0.60025'
+[ForkPoolWorker-14] 70.12987012987013% Done
+[ForkPoolWorker-14] Calling optics code for ParticlePositions file 'pos_t0.80075'
+[ForkPoolWorker-14] 78.78787878787878% Done
+[ForkPoolWorker-14] Calling optics code for ParticlePositions file 'pos_t0.8008'
+[ForkPoolWorker-14] 87.01298701298701% Done
+[ForkPoolWorker-14] Calling optics code for ParticlePositions file 'pos_t0.80085'
+[ForkPoolWorker-14] 94.8051948051948% Done
+[ForkPoolWorker-1] Calling optics code for ParticlePositions file 'pos_t0.0'
+[ForkPoolWorker-1] 3.0303030303030303% Done
+[ForkPoolWorker-1] Calling optics code for ParticlePositions file 'pos_t5e-05'
+[ForkPoolWorker-1] 9.523809523809524% Done
+[ForkPoolWorker-1] Calling optics code for ParticlePositions file 'pos_t0.0001'
+[ForkPoolWorker-1] 17.748917748917748% Done
+[ForkPoolWorker-1] Calling optics code for ParticlePositions file 'pos_t0.2009'
+[ForkPoolWorker-1] 26.406926406926406% Done
+[ForkPoolWorker-1] Calling optics code for ParticlePositions file 'pos_t0.20095'
+[ForkPoolWorker-1] 35.497835497835496% Done
+[ForkPoolWorker-1] Calling optics code for ParticlePositions file 'pos_t0.201'
+[ForkPoolWorker-1] 43.722943722943725% Done
+[ForkPoolWorker-1] Calling optics code for ParticlePositions file 'pos_t0.50075'
+[ForkPoolWorker-1] 53.246753246753244% Done
+[ForkPoolWorker-1] Calling optics code for ParticlePositions file 'pos_t0.5008'
+[ForkPoolWorker-1] 64.5021645021645% Done
+[ForkPoolWorker-1] Calling optics code for ParticlePositions file 'pos_t0.50085'
+[ForkPoolWorker-1] 70.99567099567099% Done
+[ForkPoolWorker-1] Calling optics code for ParticlePositions file 'pos_t0.9'
+[ForkPoolWorker-1] 79.65367965367966% Done
+[ForkPoolWorker-1] Calling optics code for ParticlePositions file 'pos_t0.90005'
+[ForkPoolWorker-1] 87.87878787878788% Done
+[ForkPoolWorker-1] Calling optics code for ParticlePositions file 'pos_t0.9001'
+[ForkPoolWorker-1] 95.23809523809524% Done
+[ForkPoolWorker-20] Calling optics code for ParticlePositions file 'pos_t0.20075'
+[ForkPoolWorker-20] 8.225108225108226% Done
+[ForkPoolWorker-20] Calling optics code for ParticlePositions file 'pos_t0.2008'
+[ForkPoolWorker-20] 16.883116883116884% Done
+[ForkPoolWorker-20] Calling optics code for ParticlePositions file 'pos_t0.20085'
+[ForkPoolWorker-20] 21.645021645021647% Done
+[ForkPoolWorker-20] Calling optics code for ParticlePositions file 'pos_t0.40015'
+[ForkPoolWorker-20] 29.437229437229437% Done
+[ForkPoolWorker-20] Calling optics code for ParticlePositions file 'pos_t0.4002'
+[ForkPoolWorker-20] 37.22943722943723% Done
+[ForkPoolWorker-20] Calling optics code for ParticlePositions file 'pos_t0.40025'
+[ForkPoolWorker-20] 48.484848484848484% Done
+[ForkPoolWorker-20] Calling optics code for ParticlePositions file 'pos_t0.7003'
+[ForkPoolWorker-20] 56.70995670995671% Done
+[ForkPoolWorker-20] Calling optics code for ParticlePositions file 'pos_t0.70035'
+[ForkPoolWorker-20] 63.2034632034632% Done
+[ForkPoolWorker-20] Calling optics code for ParticlePositions file 'pos_t0.7004'
+[ForkPoolWorker-20] 74.02597402597402% Done
+[ForkPoolWorker-20] Calling optics code for ParticlePositions file 'pos_t1.0'
+[ForkPoolWorker-20] 83.54978354978356% Done
+[ForkPoolWorker-20] Calling optics code for ParticlePositions file 'pos_t1.00005'
+[ForkPoolWorker-20] 91.77489177489177% Done
+[ForkPoolWorker-20] Calling optics code for ParticlePositions file 'pos_t1.0001'
+[ForkPoolWorker-20] 95.67099567099567% Done
+[ForkPoolWorker-2] Calling optics code for ParticlePositions file 'pos_t0.00015'
+[ForkPoolWorker-2] 4.329004329004329% Done
+[ForkPoolWorker-2] Calling optics code for ParticlePositions file 'pos_t0.0002'
+[ForkPoolWorker-2] 9.956709956709958% Done
+[ForkPoolWorker-2] Calling optics code for ParticlePositions file 'pos_t0.00025'
+[ForkPoolWorker-2] 18.614718614718615% Done
+[ForkPoolWorker-2] Calling optics code for ParticlePositions file 'pos_t0.30015'
+[ForkPoolWorker-2] 26.83982683982684% Done
+[ForkPoolWorker-2] Calling optics code for ParticlePositions file 'pos_t0.3002'
+[ForkPoolWorker-2] 35.064935064935064% Done
+[ForkPoolWorker-2] Calling optics code for ParticlePositions file 'pos_t0.30025'
+[ForkPoolWorker-2] 45.45454545454545% Done
+[ForkPoolWorker-2] Calling optics code for ParticlePositions file 'pos_t0.6003'
+[ForkPoolWorker-2] 52.81385281385281% Done
+[ForkPoolWorker-2] Calling optics code for ParticlePositions file 'pos_t0.60035'
+[ForkPoolWorker-2] 67.0995670995671% Done
+[ForkPoolWorker-2] Calling optics code for ParticlePositions file 'pos_t0.6004'
+[ForkPoolWorker-2] 75.75757575757575% Done
+[ForkPoolWorker-2] Calling optics code for ParticlePositions file 'pos_t1.0006'
+[ForkPoolWorker-2] 81.38528138528139% Done
+[ForkPoolWorker-2] Calling optics code for ParticlePositions file 'pos_t1.00065'
+[ForkPoolWorker-2] 90.47619047619048% Done
+[ForkPoolWorker-2] Calling optics code for ParticlePositions file 'pos_t1.0007'
+[ForkPoolWorker-2] 96.1038961038961% Done
+[ForkPoolWorker-13] Calling optics code for ParticlePositions file 'pos_t0.10075'
+[ForkPoolWorker-13] 4.761904761904762% Done
+[ForkPoolWorker-13] Calling optics code for ParticlePositions file 'pos_t0.1008'
+[ForkPoolWorker-13] 15.151515151515152% Done
+[ForkPoolWorker-13] Calling optics code for ParticlePositions file 'pos_t0.10085'
+[ForkPoolWorker-13] 19.48051948051948% Done
+[ForkPoolWorker-13] Calling optics code for ParticlePositions file 'pos_t0.30045'
+[ForkPoolWorker-13] 27.705627705627705% Done
+[ForkPoolWorker-13] Calling optics code for ParticlePositions file 'pos_t0.3005'
+[ForkPoolWorker-13] 36.7965367965368% Done
+[ForkPoolWorker-13] Calling optics code for ParticlePositions file 'pos_t0.30055'
+[ForkPoolWorker-13] 44.58874458874459% Done
+[ForkPoolWorker-13] Calling optics code for ParticlePositions file 'pos_t0.6'
+[ForkPoolWorker-13] 53.67965367965368% Done
+[ForkPoolWorker-13] Calling optics code for ParticlePositions file 'pos_t0.60005'
+[ForkPoolWorker-13] 62.77056277056277% Done
+[ForkPoolWorker-13] Calling optics code for ParticlePositions file 'pos_t0.6001'
+[ForkPoolWorker-13] 73.16017316017316% Done
+[ForkPoolWorker-13] Calling optics code for ParticlePositions file 'pos_t0.90075'
+[ForkPoolWorker-13] 83.11688311688312% Done
+[ForkPoolWorker-13] Calling optics code for ParticlePositions file 'pos_t0.9008'
+[ForkPoolWorker-13] 90.04329004329004% Done
+[ForkPoolWorker-13] Calling optics code for ParticlePositions file 'pos_t0.90085'
+[ForkPoolWorker-13] 96.53679653679653% Done
+[ForkPoolWorker-8] Calling optics code for ParticlePositions file 'pos_t0.0009'
+[ForkPoolWorker-8] 6.0606060606060606% Done
+[ForkPoolWorker-8] Calling optics code for ParticlePositions file 'pos_t0.00095'
+[ForkPoolWorker-8] 16.017316017316016% Done
+[ForkPoolWorker-8] Calling optics code for ParticlePositions file 'pos_t0.001'
+[ForkPoolWorker-8] 24.675324675324674% Done
+[ForkPoolWorker-8] Calling optics code for ParticlePositions file 'pos_t0.50015'
+[ForkPoolWorker-8] 32.03463203463203% Done
+[ForkPoolWorker-8] Calling optics code for ParticlePositions file 'pos_t0.5002'
+[ForkPoolWorker-8] 39.82683982683983% Done
+[ForkPoolWorker-8] Calling optics code for ParticlePositions file 'pos_t0.50025'
+[ForkPoolWorker-8] 48.05194805194805% Done
+[ForkPoolWorker-8] Calling optics code for ParticlePositions file 'pos_t0.70015'
+[ForkPoolWorker-8] 55.41125541125541% Done
+[ForkPoolWorker-8] Calling optics code for ParticlePositions file 'pos_t0.7002'
+[ForkPoolWorker-8] 61.47186147186147% Done
+[ForkPoolWorker-8] Calling optics code for ParticlePositions file 'pos_t0.70025'
+[ForkPoolWorker-8] 72.72727272727273% Done
+[ForkPoolWorker-8] Calling optics code for ParticlePositions file 'pos_t0.9006'
+[ForkPoolWorker-8] 84.41558441558442% Done
+[ForkPoolWorker-8] Calling optics code for ParticlePositions file 'pos_t0.90065'
+[ForkPoolWorker-8] 90.9090909090909% Done
+[ForkPoolWorker-8] Calling optics code for ParticlePositions file 'pos_t0.9007'
+[ForkPoolWorker-8] 96.96969696969697% Done
+[ForkPoolWorker-16] Calling optics code for ParticlePositions file 'pos_t0.20015'
+[ForkPoolWorker-16] 5.627705627705628% Done
+[ForkPoolWorker-16] Calling optics code for ParticlePositions file 'pos_t0.2002'
+[ForkPoolWorker-16] 15.584415584415584% Done
+[ForkPoolWorker-16] Calling optics code for ParticlePositions file 'pos_t0.20025'
+[ForkPoolWorker-16] 25.10822510822511% Done
+[ForkPoolWorker-16] Calling optics code for ParticlePositions file 'pos_t0.5003'
+[ForkPoolWorker-16] 31.16883116883117% Done
+[ForkPoolWorker-16] Calling optics code for ParticlePositions file 'pos_t0.50035'
+[ForkPoolWorker-16] 42.42424242424242% Done
+[ForkPoolWorker-16] Calling optics code for ParticlePositions file 'pos_t0.5004'
+[ForkPoolWorker-16] 51.515151515151516% Done
+[ForkPoolWorker-16] Calling optics code for ParticlePositions file 'pos_t0.8003'
+[ForkPoolWorker-16] 58.00865800865801% Done
+[ForkPoolWorker-16] Calling optics code for ParticlePositions file 'pos_t0.80035'
+[ForkPoolWorker-16] 65.80086580086581% Done
+[ForkPoolWorker-16] Calling optics code for ParticlePositions file 'pos_t0.8004'
+[ForkPoolWorker-16] 73.5930735930736% Done
+[ForkPoolWorker-16] Calling optics code for ParticlePositions file 'pos_t0.9009'
+[ForkPoolWorker-16] 82.68398268398268% Done
+[ForkPoolWorker-16] Calling optics code for ParticlePositions file 'pos_t0.90095'
+[ForkPoolWorker-16] 89.17748917748918% Done
+[ForkPoolWorker-16] Calling optics code for ParticlePositions file 'pos_t0.901'
+[ForkPoolWorker-16] 97.40259740259741% Done
+[ForkPoolWorker-3] Calling optics code for ParticlePositions file 'pos_t0.0003'
+[ForkPoolWorker-3] 6.926406926406926% Done
+[ForkPoolWorker-3] Calling optics code for ParticlePositions file 'pos_t0.00035'
+[ForkPoolWorker-3] 16.450216450216452% Done
+[ForkPoolWorker-3] Calling optics code for ParticlePositions file 'pos_t0.0004'
+[ForkPoolWorker-3] 24.242424242424242% Done
+[ForkPoolWorker-3] Calling optics code for ParticlePositions file 'pos_t0.5'
+[ForkPoolWorker-3] 33.333333333333336% Done
+[ForkPoolWorker-3] Calling optics code for ParticlePositions file 'pos_t0.50005'
+[ForkPoolWorker-3] 41.55844155844156% Done
+[ForkPoolWorker-3] Calling optics code for ParticlePositions file 'pos_t0.5001'
+[ForkPoolWorker-3] 49.35064935064935% Done
+[ForkPoolWorker-3] Calling optics code for ParticlePositions file 'pos_t0.7006'
+[ForkPoolWorker-3] 58.874458874458874% Done
+[ForkPoolWorker-3] Calling optics code for ParticlePositions file 'pos_t0.70065'
+[ForkPoolWorker-3] 66.66666666666667% Done
+[ForkPoolWorker-3] Calling optics code for ParticlePositions file 'pos_t0.7007'
+[ForkPoolWorker-3] 74.45887445887446% Done
+[ForkPoolWorker-3] Calling optics code for ParticlePositions file 'pos_t1.00015'
+[ForkPoolWorker-3] 84.84848484848484% Done
+[ForkPoolWorker-3] Calling optics code for ParticlePositions file 'pos_t1.0002'
+[ForkPoolWorker-3] 88.74458874458874% Done
+[ForkPoolWorker-3] Calling optics code for ParticlePositions file 'pos_t1.00025'
+[ForkPoolWorker-3] 97.83549783549783% Done
+[ForkPoolWorker-5] Calling optics code for ParticlePositions file 'pos_t0.00075'
+[ForkPoolWorker-5] 2.5974025974025974% Done
+[ForkPoolWorker-5] Calling optics code for ParticlePositions file 'pos_t0.0008'
+[ForkPoolWorker-5] 14.718614718614718% Done
+[ForkPoolWorker-5] Calling optics code for ParticlePositions file 'pos_t0.00085'
+[ForkPoolWorker-5] 23.376623376623378% Done
+[ForkPoolWorker-5] Calling optics code for ParticlePositions file 'pos_t0.40075'
+[ForkPoolWorker-5] 32.900432900432904% Done
+[ForkPoolWorker-5] Calling optics code for ParticlePositions file 'pos_t0.4008'
+[ForkPoolWorker-5] 41.99134199134199% Done
+[ForkPoolWorker-5] Calling optics code for ParticlePositions file 'pos_t0.40085'
+[ForkPoolWorker-5] 47.61904761904762% Done
+[ForkPoolWorker-5] Calling optics code for ParticlePositions file 'pos_t0.7'
+[ForkPoolWorker-5] 57.57575757575758% Done
+[ForkPoolWorker-5] Calling optics code for ParticlePositions file 'pos_t0.70005'
+[ForkPoolWorker-5] 67.53246753246754% Done
+[ForkPoolWorker-5] Calling optics code for ParticlePositions file 'pos_t0.7001'
+[ForkPoolWorker-5] 76.19047619047619% Done
+[ForkPoolWorker-5] Calling optics code for ParticlePositions file 'pos_t1.00075'
+[ForkPoolWorker-5] 80.95238095238095% Done
+[ForkPoolWorker-5] Calling optics code for ParticlePositions file 'pos_t1.0008'
+[ForkPoolWorker-5] 89.6103896103896% Done
+[ForkPoolWorker-5] Calling optics code for ParticlePositions file 'pos_t1.00085'
+[ForkPoolWorker-5] 98.7012987012987% Done
+[ForkPoolWorker-9] Calling optics code for ParticlePositions file 'pos_t0.10015'
+[ForkPoolWorker-9] 7.359307359307359% Done
+[ForkPoolWorker-9] Calling optics code for ParticlePositions file 'pos_t0.1002'
+[ForkPoolWorker-9] 12.554112554112555% Done
+[ForkPoolWorker-9] Calling optics code for ParticlePositions file 'pos_t0.10025'
+[ForkPoolWorker-9] 23.80952380952381% Done
+[ForkPoolWorker-9] Calling optics code for ParticlePositions file 'pos_t0.4009'
+[ForkPoolWorker-9] 34.1991341991342% Done
+[ForkPoolWorker-9] Calling optics code for ParticlePositions file 'pos_t0.40095'
+[ForkPoolWorker-9] 40.25974025974026% Done
+[ForkPoolWorker-9] Calling optics code for ParticlePositions file 'pos_t0.401'
+[ForkPoolWorker-9] 50.21645021645022% Done
+[ForkPoolWorker-9] Calling optics code for ParticlePositions file 'pos_t0.7009'
+[ForkPoolWorker-9] 57.142857142857146% Done
+[ForkPoolWorker-9] Calling optics code for ParticlePositions file 'pos_t0.70095'
+[ForkPoolWorker-9] 65.36796536796537% Done
+[ForkPoolWorker-9] Calling optics code for ParticlePositions file 'pos_t0.701'
+[ForkPoolWorker-9] 75.32467532467533% Done
+[ForkPoolWorker-9] Calling optics code for ParticlePositions file 'pos_t1.00045'
+[ForkPoolWorker-9] 83.98268398268398% Done
+[ForkPoolWorker-9] Calling optics code for ParticlePositions file 'pos_t1.0005'
+[ForkPoolWorker-9] 88.31168831168831% Done
+[ForkPoolWorker-9] Calling optics code for ParticlePositions file 'pos_t1.00055'
+[ForkPoolWorker-9] 99.13419913419914% Done
+[ForkPoolWorker-19] Calling optics code for ParticlePositions file 'pos_t0.2006'
+[ForkPoolWorker-19] 1.7316017316017316% Done
+[ForkPoolWorker-19] Calling optics code for ParticlePositions file 'pos_t0.20065'
+[ForkPoolWorker-19] 9.090909090909092% Done
+[ForkPoolWorker-19] Calling optics code for ParticlePositions file 'pos_t0.2007'
+[ForkPoolWorker-19] 18.181818181818183% Done
+[ForkPoolWorker-19] Calling optics code for ParticlePositions file 'pos_t0.3'
+[ForkPoolWorker-19] 27.272727272727273% Done
+[ForkPoolWorker-19] Calling optics code for ParticlePositions file 'pos_t0.30005'
+[ForkPoolWorker-19] 35.93073593073593% Done
+[ForkPoolWorker-19] Calling optics code for ParticlePositions file 'pos_t0.3001'
+[ForkPoolWorker-19] 44.15584415584416% Done
+[ForkPoolWorker-19] Calling optics code for ParticlePositions file 'pos_t0.5009'
+[ForkPoolWorker-19] 52.38095238095238% Done
+[ForkPoolWorker-19] Calling optics code for ParticlePositions file 'pos_t0.50095'
+[ForkPoolWorker-19] 64.06926406926407% Done
+[ForkPoolWorker-19] Calling optics code for ParticlePositions file 'pos_t0.501'
+[ForkPoolWorker-19] 72.2943722943723% Done
+[ForkPoolWorker-19] Calling optics code for ParticlePositions file 'pos_t0.90045'
+[ForkPoolWorker-19] 82.25108225108225% Done
+[ForkPoolWorker-19] Calling optics code for ParticlePositions file 'pos_t0.9005'
+[ForkPoolWorker-19] 92.20779220779221% Done
+[ForkPoolWorker-19] Calling optics code for ParticlePositions file 'pos_t0.90055'
+[ForkPoolWorker-19] 98.26839826839827% Done
+[ForkPoolWorker-11] Calling optics code for ParticlePositions file 'pos_t0.10045'
+[ForkPoolWorker-11] 2.1645021645021645% Done
+[ForkPoolWorker-11] Calling optics code for ParticlePositions file 'pos_t0.1005'
+[ForkPoolWorker-11] 13.852813852813853% Done
+[ForkPoolWorker-11] Calling optics code for ParticlePositions file 'pos_t0.10055'
+[ForkPoolWorker-11] 22.943722943722943% Done
+[ForkPoolWorker-11] Calling optics code for ParticlePositions file 'pos_t0.4006'
+[ForkPoolWorker-11] 29.87012987012987% Done
+[ForkPoolWorker-11] Calling optics code for ParticlePositions file 'pos_t0.40065'
+[ForkPoolWorker-11] 39.39393939393939% Done
+[ForkPoolWorker-11] Calling optics code for ParticlePositions file 'pos_t0.4007'
+[ForkPoolWorker-11] 46.753246753246756% Done
+[ForkPoolWorker-11] Calling optics code for ParticlePositions file 'pos_t0.60075'
+[ForkPoolWorker-11] 59.74025974025974% Done
+[ForkPoolWorker-11] Calling optics code for ParticlePositions file 'pos_t0.6008'
+[ForkPoolWorker-11] 66.23376623376623% Done
+[ForkPoolWorker-11] Calling optics code for ParticlePositions file 'pos_t0.60085'
+[ForkPoolWorker-11] 74.89177489177489% Done
+[ForkPoolWorker-11] Calling optics code for ParticlePositions file 'pos_t1.0003'
+[ForkPoolWorker-11] 85.28138528138528% Done
+[ForkPoolWorker-11] Calling optics code for ParticlePositions file 'pos_t1.00035'
+[ForkPoolWorker-11] 91.34199134199135% Done
+[ForkPoolWorker-11] Calling optics code for ParticlePositions file 'pos_t1.0004'
+[ForkPoolWorker-11] 99.56709956709956% Done
+[ForkPoolWorker-12] Calling optics code for ParticlePositions file 'pos_t0.1006'
+[ForkPoolWorker-12] 3.896103896103896% Done
+[ForkPoolWorker-12] Calling optics code for ParticlePositions file 'pos_t0.10065'
+[ForkPoolWorker-12] 10.38961038961039% Done
+[ForkPoolWorker-12] Calling optics code for ParticlePositions file 'pos_t0.1007'
+[ForkPoolWorker-12] 20.346320346320347% Done
+[ForkPoolWorker-12] Calling optics code for ParticlePositions file 'pos_t0.30075'
+[ForkPoolWorker-12] 32.467532467532465% Done
+[ForkPoolWorker-12] Calling optics code for ParticlePositions file 'pos_t0.3008'
+[ForkPoolWorker-12] 42.857142857142854% Done
+[ForkPoolWorker-12] Calling optics code for ParticlePositions file 'pos_t0.30085'
+[ForkPoolWorker-12] 50.64935064935065% Done
+[ForkPoolWorker-12] Calling optics code for ParticlePositions file 'pos_t0.8'
+[ForkPoolWorker-12] 60.17316017316017% Done
+[ForkPoolWorker-12] Calling optics code for ParticlePositions file 'pos_t0.80005'
+[ForkPoolWorker-12] 67.96536796536796% Done
+[ForkPoolWorker-12] Calling optics code for ParticlePositions file 'pos_t0.8001'
+[ForkPoolWorker-12] 76.62337662337663% Done
+[ForkPoolWorker-12] Calling optics code for ParticlePositions file 'pos_t1.0009'
+[ForkPoolWorker-12] 81.81818181818181% Done
+[ForkPoolWorker-12] Calling optics code for ParticlePositions file 'pos_t1.00095'
+[ForkPoolWorker-12] 92.64069264069263% Done
+[ForkPoolWorker-12] Calling optics code for ParticlePositions file 'pos_t1.001'
+[ForkPoolWorker-12] 100.0% Done
+Converting ../optics/results to 2D
+(restructureInputDir) Moving files: ['PixelCoords.out', 'Intensity_t0.00045.out', 'Intensity_t0.0006.out', 'Intensity_t0.2.out', 'Intensity_t0.2006.out', 'Intensity_t0.10045.out', 'Intensity_t0.00075.out', 'Intensity_t0.0.out', 'Intensity_t0.20045.out', 'Intensity_t0.1006.out', 'Intensity_t0.00015.out', 'Intensity_t0.10075.out', 'Intensity_t0.2003.out', 'Intensity_t0.20015.out', 'Intensity_t0.1009.out', 'Intensity_t0.0009.out', 'Intensity_t0.0003.out', 'Intensity_t0.10015.out', 'Intensity_t0.1003.out', 'Intensity_t0.20075.out', 'Intensity_t0.1.out', 'Intensity_t0.20065.out', 'Intensity_t5e-05.out', 'Intensity_t0.0002.out', 'Intensity_t0.10065.out', 'Intensity_t0.20005.out', 'Intensity_t0.0005.out', 'Intensity_t0.10095.out', 'Intensity_t0.00065.out', 'Intensity_t0.1002.out', 'Intensity_t0.2005.out', 'Intensity_t0.20035.out', 'Intensity_t0.1005.out', 'Intensity_t0.10005.out', 'Intensity_t0.0008.out', 'Intensity_t0.2002.out', 'Intensity_t0.1008.out', 'Intensity_t0.00095.out', 'Intensity_t0.00035.out', 'Intensity_t0.2008.out', 'Intensity_t0.10035.out', 'Intensity_t0.0001.out', 'Intensity_t0.2007.out', 'Intensity_t0.00025.out', 'Intensity_t0.101.out', 'Intensity_t0.10085.out', 'Intensity_t0.00055.out', 'Intensity_t0.1007.out', 'Intensity_t0.1001.out', 'Intensity_t0.0007.out', 'Intensity_t0.20085.out', 'Intensity_t0.2001.out', 'Intensity_t0.20055.out', 'Intensity_t0.10055.out', 'Intensity_t0.00085.out', 'Intensity_t0.10025.out', 'Intensity_t0.0004.out', 'Intensity_t0.001.out', 'Intensity_t0.20025.out', 'Intensity_t0.2004.out', 'Intensity_t0.1004.out', 'Intensity_t0.2009.out', 'Intensity_t0.30015.out', 'Intensity_t0.3.out', 'Intensity_t0.30045.out', 'Intensity_t0.3003.out', 'Intensity_t0.3009.out', 'Intensity_t0.40045.out', 'Intensity_t0.40015.out', 'Intensity_t0.4006.out', 'Intensity_t0.3006.out', 'Intensity_t0.4003.out', 'Intensity_t0.5003.out', 'Intensity_t0.4.out', 'Intensity_t0.50015.out', 'Intensity_t0.30075.out', 'Intensity_t0.40075.out', 'Intensity_t0.5.out', 'Intensity_t0.50045.out', 'Intensity_t0.4009.out', 'Intensity_t0.5006.out', 'Intensity_t0.3002.out', 'Intensity_t0.20095.out', 'Intensity_t0.30005.out', 'Intensity_t0.30035.out', 'Intensity_t0.3005.out', 'Intensity_t0.4002.out', 'Intensity_t0.30065.out', 'Intensity_t0.40035.out', 'Intensity_t0.30095.out', 'Intensity_t0.40005.out', 'Intensity_t0.40065.out', 'Intensity_t0.5002.out', 'Intensity_t0.40095.out', 'Intensity_t0.5005.out', 'Intensity_t0.4005.out', 'Intensity_t0.50005.out', 'Intensity_t0.4008.out', 'Intensity_t0.50035.out', 'Intensity_t0.3008.out', 'Intensity_t0.50065.out', 'Intensity_t0.201.out', 'Intensity_t0.3001.out', 'Intensity_t0.30055.out', 'Intensity_t0.3004.out', 'Intensity_t0.30025.out', 'Intensity_t0.3007.out', 'Intensity_t0.301.out', 'Intensity_t0.4007.out', 'Intensity_t0.4001.out', 'Intensity_t0.40085.out', 'Intensity_t0.50025.out', 'Intensity_t0.4004.out', 'Intensity_t0.40025.out', 'Intensity_t0.5001.out', 'Intensity_t0.40055.out', 'Intensity_t0.50055.out', 'Intensity_t0.30085.out', 'Intensity_t0.401.out', 'Intensity_t0.5004.out', 'Intensity_t0.5007.out', 'Intensity_t0.5009.out', 'Intensity_t0.6003.out', 'Intensity_t0.50075.out', 'Intensity_t0.6.out', 'Intensity_t0.6006.out', 'Intensity_t0.60015.out', 'Intensity_t0.60045.out', 'Intensity_t0.70015.out', 'Intensity_t0.70075.out', 'Intensity_t0.6009.out', 'Intensity_t0.7003.out', 'Intensity_t0.7009.out', 'Intensity_t0.7.out', 'Intensity_t0.8003.out', 'Intensity_t0.80015.out', 'Intensity_t0.7006.out', 'Intensity_t0.70045.out', 'Intensity_t0.60075.out', 'Intensity_t0.8.out', 'Intensity_t0.80045.out', 'Intensity_t0.60095.out', 'Intensity_t0.7002.out', 'Intensity_t0.6005.out', 'Intensity_t0.60065.out', 'Intensity_t0.60005.out', 'Intensity_t0.70035.out', 'Intensity_t0.6002.out', 'Intensity_t0.50095.out', 'Intensity_t0.5008.out', 'Intensity_t0.7008.out', 'Intensity_t0.70095.out', 'Intensity_t0.80035.out', 'Intensity_t0.6008.out', 'Intensity_t0.70065.out', 'Intensity_t0.60035.out', 'Intensity_t0.70005.out', 'Intensity_t0.80005.out', 'Intensity_t0.8002.out', 'Intensity_t0.7005.out', 'Intensity_t0.8005.out', 'Intensity_t0.6007.out', 'Intensity_t0.60025.out', 'Intensity_t0.60055.out', 'Intensity_t0.50085.out', 'Intensity_t0.601.out', 'Intensity_t0.70085.out', 'Intensity_t0.501.out', 'Intensity_t0.70025.out', 'Intensity_t0.6001.out', 'Intensity_t0.8004.out', 'Intensity_t0.7004.out', 'Intensity_t0.7007.out', 'Intensity_t0.60085.out', 'Intensity_t0.701.out', 'Intensity_t0.6004.out', 'Intensity_t0.7001.out', 'Intensity_t0.8001.out', 'Intensity_t0.80025.out', 'Intensity_t0.70055.out', 'Intensity_t0.80055.out', 'Intensity_t0.8006.out', 'Intensity_t0.80075.out', 'Intensity_t0.9.out', 'Intensity_t0.8009.out', 'Intensity_t0.90015.out', 'Intensity_t0.9003.out', 'Intensity_t1.00075.out', 'Intensity_t1.0006.out', 'Intensity_t1.0009.out', 'Intensity_t0.90045.out', 'Intensity_t0.9009.out', 'Intensity_t0.90075.out', 'Intensity_t0.9006.out', 'Intensity_t1.0.out', 'Intensity_t1.00045.out', 'Intensity_t1.0003.out', 'Intensity_t1.00015.out', 'Intensity_t0.90035.out', 'Intensity_t0.80065.out', 'Intensity_t0.9002.out', 'Intensity_t0.8008.out', 'Intensity_t0.80095.out', 'Intensity_t0.90005.out', 'Intensity_t1.0005.out', 'Intensity_t1.0002.out', 'Intensity_t0.90095.out', 'Intensity_t1.0008.out', 'Intensity_t0.9008.out', 'Intensity_t1.00065.out', 'Intensity_t1.00035.out', 'Intensity_t0.90065.out', 'Intensity_t1.00005.out', 'Intensity_t0.9005.out', 'Intensity_t1.00095.out', 'Intensity_t0.9004.out', 'Intensity_t0.8007.out', 'Intensity_t0.90025.out', 'Intensity_t0.801.out', 'Intensity_t0.9001.out', 'Intensity_t0.80085.out', 'Intensity_t1.0001.out', 'Intensity_t1.0007.out', 'Intensity_t0.90085.out', 'Intensity_t0.9007.out', 'Intensity_t0.901.out', 'Intensity_t1.00025.out', 'Intensity_t0.90055.out', 'Intensity_t1.00085.out', 'Intensity_t1.00055.out', 'Intensity_t1.0004.out', 'Intensity_t1.001.out']
+data3D original =  [[ 0.25     -0.002    -0.002   ]
+ [ 0.25     -0.002    -0.001875]
+ [ 0.25     -0.002    -0.00175 ]
+ ...
+ [ 0.25      0.002     0.00175 ]
+ [ 0.25      0.002     0.001875]
+ [ 0.25      0.002     0.002   ]]
+data3D or.shift =  [[0.       0.       0.      ]
+ [0.       0.       0.000125]
+ [0.       0.       0.00025 ]
+ ...
+ [0.       0.004    0.00375 ]
+ [0.       0.004    0.003875]
+ [0.       0.004    0.004   ]]
+data2D =  [[0.         0.        ]
+ [0.03125    0.        ]
+ [0.06250001 0.        ]
+ ...
+ [0.9375     1.        ]
+ [0.96875    1.        ]
+ [1.         1.        ]]
+data2D bounded =  [[0.         0.        ]
+ [0.03125    0.        ]
+ [0.06250001 0.        ]
+ ...
+ [0.9375     1.        ]
+ [0.96875    1.        ]
+ [1.         1.        ]]
+npix =  (33, 17)
+Number of valid Intensity files found in "../optics/results/1D" (rel. to total number) = 231/232
+Skipping file "../optics/results/1D/Intensity_t0.00045.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.0006.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.2.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.2006.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.10045.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.00075.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.0.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.20045.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.1006.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.00015.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.10075.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.2003.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.20015.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.1009.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.0009.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.0003.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.10015.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.1003.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.20075.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.1.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.20065.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t5e-05.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.0002.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.10065.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.20005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.0005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.10095.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.00065.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.1002.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.2005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.20035.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.1005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.10005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.0008.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.2002.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.1008.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.00095.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.00035.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.2008.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.10035.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.0001.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.2007.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.00025.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.101.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.10085.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.00055.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.1007.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.1001.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.0007.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.20085.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.2001.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.20055.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.10055.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.00085.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.10025.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.0004.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.001.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.20025.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.2004.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.1004.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.2009.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.30015.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.3.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.30045.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.3003.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.3009.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.40045.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.40015.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.4006.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.3006.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.4003.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.5003.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.4.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.50015.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.30075.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.40075.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.5.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.50045.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.4009.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.5006.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.3002.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.20095.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.30005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.30035.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.3005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.4002.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.30065.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.40035.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.30095.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.40005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.40065.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.5002.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.40095.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.5005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.4005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.50005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.4008.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.50035.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.3008.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.50065.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.201.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.3001.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.30055.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.3004.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.30025.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.3007.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.301.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.4007.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.4001.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.40085.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.50025.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.4004.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.40025.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.5001.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.40055.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.50055.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.30085.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.401.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.5004.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.5007.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.5009.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.6003.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.50075.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.6.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.6006.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.60015.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.60045.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.70015.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.70075.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.6009.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.7003.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.7009.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.7.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.8003.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.80015.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.7006.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.70045.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.60075.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.8.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.80045.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.60095.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.7002.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.6005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.60065.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.60005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.70035.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.6002.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.50095.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.5008.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.7008.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.70095.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.80035.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.6008.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.70065.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.60035.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.70005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.80005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.8002.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.7005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.8005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.6007.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.60025.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.60055.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.50085.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.601.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.70085.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.501.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.70025.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.6001.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.8004.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.7004.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.7007.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.60085.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.701.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.6004.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.7001.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.8001.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.80025.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.70055.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.80055.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.8006.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.80075.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.9.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.8009.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.90015.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.9003.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.00075.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.0006.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.0009.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.90045.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.9009.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.90075.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.9006.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.0.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.00045.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.0003.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.00015.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.90035.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.80065.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.9002.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.8008.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.80095.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.90005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.0005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.0002.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.90095.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.0008.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.9008.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.00065.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.00035.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.90065.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.00005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.9005.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.00095.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.9004.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.8007.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.90025.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.801.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.9001.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.80085.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.0001.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.0007.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.90085.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.9007.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.901.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.00025.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t0.90055.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.00085.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.00055.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.0004.out":
+name 'Nb' is not defined
+Skipping file "../optics/results/1D/Intensity_t1.001.out":
+name 'Nb' is not defined
+Sorting directory ../optics/results
+Found "2D" directory. Using it as input: ../optics/results/2D
+Found (sorted) times: 
