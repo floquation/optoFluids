@@ -1,0 +1,6 @@
+#! /bin/bash
+
+make veryclean
+make depend
+make depend
+make

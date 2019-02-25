@@ -1,0 +1,5 @@
+1) Compile with -pg flag
+2) Execute code
+3) gprof ./MieAlgorithmFF_start
+3*) For output to textfile "profile"
+			gprof ./MieAlgorithmFF_start gmon.out > profile

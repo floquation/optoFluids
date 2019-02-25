@@ -1,0 +1,13 @@
+! Rules:
+! All items should be on a separate line.
+! A line starting with a '!' indicates a comment-line
+! End-of-line commenting is not really supported
+
+! /----------------------\
+! | oo  Angle  oo  |
+! | sampling rate |
+! \----------------------/
+
+1000							! Angular sampling rate
+
+!EOF
