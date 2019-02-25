@@ -59,4 +59,16 @@ def multiArgStringToArgs(argIn):
 			args.append(arg)
 	return args, dict(arg.split('=') for arg in kwargs)
 
+# like multiArgStringToArgs, but now reads
+# "(a,b,c)" and converts it to a float vector: [a,b,c]
+def strToFloatVec(argIn):
+	# Validity
+	if argIn == None: return [], dict() # no input -> no args
+	# String to array:
+	if argIn[0] == "(" and argIn[-1] == ")":
+		argIn=argIn[1:-1]
+	argsIn = argIn.split(',')
+	for i, arg in enumerate(argsIn):
+		argsIn[i]=float(arg)
+	return argsIn
 

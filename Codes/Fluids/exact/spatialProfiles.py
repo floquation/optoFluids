@@ -41,13 +41,18 @@ def Poiseuille(pos, shape: 'Cylinder'):
 	except: # Single: make them into an array of size 1
 		x = [pos[0]]
 		y = [pos[1]]
+	#print(shape.origin)
 	# Calculate profile:
 	profile = (
-			( shape.R ** 2 - (np.square(x) + np.square(y)) )  # Poseuille like = R ^ 2 - r ^ 2
+			( shape.R ** 2 - (np.square(x-shape.origin[0]) + np.square(y-shape.origin[1])) )  # Poseuille like = R ^ 2 - r ^ 2
 			/ (shape.R ** 2)	# Normalize = 1 - (r ^ 2) / (R ^ 2).
 			)
-	# Make its mean zero:
+	# Make its mean one:
+	#print(profile)
 	profile = profile * 2
+	#print(pos/shape.R)
+	#print(profile)
+	#print("mean = " + str(np.mean(profile)))
 	# Give it direction and appropriate matrix shape:
 	profile = np.reshape(profile,(len(profile),1)) * shape.orientation
 	# Done:

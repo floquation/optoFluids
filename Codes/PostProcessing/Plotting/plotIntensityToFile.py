@@ -86,12 +86,12 @@ elif os.path.exists(outputFN) and not overwrite:
 
 if pixelCoordsFN == "":
 	intensity2DDir=os.path.dirname(intensity2DFN)
-	print("Checking if 'PixelCoords2D.out' file available in "+intensity2DDir+" or its parent directory.")
+	#print("Checking if 'PixelCoords2D.out' file available in "+intensity2DDir+" or its parent directory.")
 	pixelCoordsFN=intensity2DDir+"/PixelCoords2D.out" # In the same directory?
 	if(not os.path.isfile(pixelCoordsFN)):
 		pixelCoordsFN=intensity2DDir+"/../PixelCoords2D.out" # In the same directory?
 		if(not os.path.isfile(pixelCoordsFN)):
-			sys.exit("Error, no PixelCoords2D file specified and none found in the usual locations ("+intensity2DDir+"), so cannot continue with the plotting.");
+			sys.exit("Error, no \"PixelCoords2D.out\" file specified and none found in \""+intensity2DDir+"\" or its parent directory, so cannot continue with the plotting.");
 
 #
 ###########################

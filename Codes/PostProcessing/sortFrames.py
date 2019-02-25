@@ -36,6 +36,8 @@ def sortDir(dirName, numberPrefix="t"):
 	files = os.listdir(dirName)
 	numMaxFiles=len(files)
 
+	myPrint.Printer.vprint("Applying regex to files: " + str(files) + ".")
+
 	# Analyse files
 	regex = r'.*' + str(numberPrefix) + myRE.group(myRE.floatRE) + r'.*'
 	regex = re.compile(regex)
@@ -98,6 +100,8 @@ if __name__ == '__main__':
 						   help="Name of the directory which contains the to-be-numerically-sorted files."),
 	parser.add_option('-o', dest='outputDN',
 						   help="Name of the output directory.")
+	parser.add_option("-p", dest="prefix", default="t",
+						   help="Prefix before the number. For example, if \"fig_t1e-5\", then choose \"t\".")
 	parser.add_option("-v", action="store_true", dest="verbose", default=False,
 						   help="verbose [default: %default]")
 	parser.add_option("-f", action="store_true", dest="overwrite", default=False,
@@ -106,7 +110,7 @@ if __name__ == '__main__':
 
 	myPrint.Printer.verbose = opt.verbose
 
-	writeWithFrameNumber(sortDir(opt.inputDN), opt.inputDN, opt.outputDN, overwrite=opt.overwrite)
+	writeWithFrameNumber(sortDir(opt.inputDN, opt.prefix), opt.inputDN, opt.outputDN, overwrite=opt.overwrite)
 
 
 

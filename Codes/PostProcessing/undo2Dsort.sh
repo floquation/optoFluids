@@ -8,6 +8,11 @@
 # Kevin van As
 #	12 10 2019: Original
 #
+# TODO: If 1D does not exist, but 2D does exist, then execute convertDataTo1D.py (or something).
+# 		That script does not yet exist, but would do the opposite of convertDataTo2D.py
+#		That way, we can get rid of the 1D directory everywhere: saves system space.
+#		Not a high priority, though.
+#
 
 DN=$1
 

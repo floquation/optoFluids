@@ -381,6 +381,8 @@ if __name__ == '__main__':
 						   help="Required arguments for the temporal flow modulation (if any). Separate the parameters with a comma (e.g., --modargs \"a,b\").")
 	parser.add_option('-L', dest='cyl_length',
 						   help="length of cylinder")
+	parser.add_option('--origin', dest='origin', default="(0,0,0)",
+						   help="origin '(x,y,z)' of cylinder")
 	parser.add_option('-R', dest='cyl_radius',
 						   help="radius of cylinder")
 	parser.add_option("-v", action="store_true", dest="verbose", default=False,
@@ -388,9 +390,10 @@ if __name__ == '__main__':
 	parser.add_option("-f", action="store_true", dest="overwrite", default=False,
 						   help="force overwrite output? [default: %default]")
 	(opt, args) = parser.parse_args()
-
+	
 	# Define geometry
-	myGeom = geom.Cylinder(R=opt.cyl_radius, L=opt.cyl_length) # TODO: origin, orientation, optional shape (i.e., other than cylinder)
+	origin=RTS.strToFloatVec(opt.origin)
+	myGeom = geom.Cylinder(R=opt.cyl_radius, L=opt.cyl_length, origin=origin) # TODO: orientation, optional shape (i.e., other than cylinder)
 
 	#myGeom = geom.Cylinder(R=opt.cyl_radius, L=opt.cyl_length, origin=[0, 0 ,0], orientation=[1, 2, 0])
 	#particle = [-1e-3, 0, 0]

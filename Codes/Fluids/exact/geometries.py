@@ -7,6 +7,7 @@
 #	26 11 2018: Added "constrain", also for arbitrary orientation
 #
 
+
 # Numerics
 import numpy as np # Matrices
 
@@ -16,9 +17,9 @@ class Shape(object):
 		self.orientation = orientation/np.linalg.norm(orientation) # Unit vector parallel to cylinder axis
 		self.origin = origin # Center point of bottom circle
 		if ( len(orientation) != 3 ):
-			sys.exit("InvalidArgument: \"orientation\" should be a vector of size 3, but was: " + str(orientation) + ".")
+			raise Exception("InvalidArgument: \"orientation\" should be a vector of size 3, but was: " + str(orientation) + ".")
 		if ( len(origin) != 3 ):
-			sys.exit("InvalidArgument: \"origin\" should be a vector of size 3, but was: " + str(origin) + ".")
+			raise Exception("InvalidArgument: \"origin\" should be a vector of size 3, but was: " + str(origin) + ".")
 		#print("orientation = " + str(self.orientation))
 
 class Cylinder(Shape):
@@ -67,6 +68,7 @@ class Cylinder(Shape):
 		return pos
 
 
+	# @Deprecated:
 	def constrainOld(self,particle,periodic=True): # Only works with orientation = (0,0,1)
 		print(particle)
 		z_min = self.origin[2]
