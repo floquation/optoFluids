@@ -7,6 +7,9 @@
 #	15 02 2019: Using optoFluidsIO, and cleaner script overall.
 # Stephan van Kleef
 #	18 02 2019: plt.switch_backend('agg'): No longer needs an X-server to plot.
+# Kevin van As
+#	04 03 2019: Doubled dpi for bigger figures.
+#				Fixed bug: -o was default ".png".
 #
 
 import sys, getopt # Command-Line options
@@ -38,7 +41,7 @@ noAxis=False
 #
 usageString = "   usage: " + sys.argv[0] + " -i <intensity2D filename> -o <output filename>" + "[-c <pixelCoords2D file>] [-n minColorValue] [-m maxColorValue] [-f] [-a] \n" \
 			  + "	where:\n" \
-			  + "	-c: By default tries to locate pixelCoords2D file inside the dir specified at -i" \
+			  + "	-c: By default tries to locate pixelCoords2D file inside the dir specified at -i\n" \
 			  + "	-a: Do not show title/colorbar"
 
 try:
@@ -68,7 +71,6 @@ for opt, arg in opts:
 		print(usageString)
 		sys.exit(2)
 
-outputFN = outputFN + "." + extension
 
 if intensity2DFN == "" :
 	print(usageString)
@@ -81,7 +83,9 @@ if outputFN == "" :
 	print("    Note: dir-/filenames cannot be an empty string:")
 	print("     outputFileName="+outputFN )
 	sys.exit(2)
-elif os.path.exists(outputFN) and not overwrite:
+
+outputFN = outputFN + "." + extension
+if os.path.exists(outputFN) and not overwrite:
 	sys.exit("Outputfile already exists, but overwrite=False. Use -f to overwrite.")
 
 if pixelCoordsFN == "":
@@ -125,11 +129,11 @@ if(image.ndim != 2):
 ## Plot figure:
 print("Plotting figure " + str(intensity2DFN))
 plt.rc('text', usetex=False) # TeXify axis/labels/title
-dpi=72.0
+dpi=160
 if not noAxis:
-	fig = plt.figure()
+	fig = plt.figure(dpi=dpi)
 else:
-	fig = plt.figure(figsize=(1024/dpi,1024/dpi), dpi=dpi)
+	fig = plt.figure(figsize=(750/dpi,750/dpi), dpi=dpi)
 plt.pcolormesh(A,B, image, edgecolor='face')#,shading="gouraud")
 # Overwrite color range:
 if setVMin != None:
