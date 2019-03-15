@@ -4,6 +4,10 @@
 # 
 # Kevin van As
 #	13 12 2018: Original: Printer class and writeNColFile
+#	04 03 2019: Added "addSpaces" which may be used to better align output, for example:
+#				myPrint.addSpaces(":",
+#					30 - len(str(thing_with_variable_length))
+#				)
 #
 #
 # TODO: Write in arbitrary file format in writeNColFile
@@ -54,6 +58,10 @@ class Printer:
 		if(verbose==None): verbose=Printer.verbose
 		if(verbose): Printer.print(msg)
 
+def addSpaces(string, num):
+	for i in range(0,num):
+		string = string + " "
+	return string
 
 def writeNColFile(FN, *colArrays, sep=" ", writePrecision=10, writeStyle='e', overwrite=False):
 	## Prepare / Checks

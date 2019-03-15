@@ -10,6 +10,7 @@
 # Kevin van As
 #	04 03 2019: Doubled dpi for bigger figures.
 #				Fixed bug: -o was default ".png".
+#				Now uses speckleContrast.py to compute C.
 #
 
 import sys, getopt # Command-Line options
@@ -25,6 +26,7 @@ plt.switch_backend('agg') # Then we do not need an X-server to plot.
 import helpers.regex as myRE
 import helpers.nameConventions as names
 import helpers.IO as optoFluidsIO
+import PostProcessing.speckleContrast as SC
 
 
 # Command-Line Options
@@ -102,19 +104,9 @@ if pixelCoordsFN == "":
 # Algorithm:
 ##########
 
-# TODO: Call separate module to compute speckle contrast
 def computeContrastByLocalContrast(img):
-	blockSizeX = 8
-	blockSizeY = 8
-	C = 0.
-	n = 0
-	for i in range(0, int(len(img[:,0])/blockSizeX)):
-		for j in range(0, int(len(img[0,:])/blockSizeY)):
-			localImage = img[i*blockSizeX:(i+1)*blockSizeX-1,j*blockSizeY:(j+1)*blockSizeY-1]
-			C += np.std(localImage)/np.mean(localImage)
-			n+=1
-	return C/float(n)
-
+	SCfunc = SC.grid() # Use grid-method with default settings to compute the speckle contrast.
+	return SCfunc(img)
 
 ## Read pixel coordinates
 print("Loading pixelCoords2D from ",pixelCoordsFN)

@@ -8,133 +8,82 @@
 # Kevin van As
 #	15 11 2018: Original
 #
+# TODO:
+# - If intensity1D is read, windowing cannot be used, unless we automatically detect pixelCoords and reshape.
+#	--> Enforce 2D read? Raise warning if 1D is found, as "basic" SCfunc may still be used?
+#
 
 # Misc imports
-#import re # Regular-Expressions
 import sys, getopt # Command-Line options
 import os.path
-#from shutil import rmtree
+import traceback
 
 # Numerics
 import numpy as np # Matrices
 
 # Import from optoFluids:
-#import helpers.regex as myRE
-#import helpers.nameConventions as names
+import helpers.IO as optoFluidsIO
+import helpers.RTS as RTS
+import speckleContrast as SC
+import helpers.printFuncs as myPrint
 
+def select(name, *args, **kwargs):
+	myPrint.Printer.vprint("selecting: " + str(name))
+	if (isinstance(name,str)):
+		# String input
+		try:
+			return RTS.select(SC, str(name), *args, **kwargs)
+		except:
+			traceback.print_exc()
+			raise Exception("Specified \"" + str(name) + "\", which could not be interpreted as a speckleContrast function.\n" + 
+							"Valid options are: " + str(RTS.getFunctions(SC)) + ".")
+	elif (callable(name)):
+		# Callable input
+		return name
+	else:
+		raise Exception("Could not interpret the type (" + type(name) + ") of \"" + str(name) + "\".")
 
-
-########
-## Define functions
-####
-
-def speckleContrast(data):
-	return np.std(data) / np.mean(data)
-
-blockSize_default=(8,8)
-def speckleContrast_Windowing(data, blockSize=None):
-	if (blockSize == None): blockSize=blockSize_default
-	if (len(blockSize) != 2):
-		sys.exit("ERROR: speckleContrast_Windowing requires a tuple of length two for blockSize, but received length "
-				+ len(blockSize) + ": " + str(blockSize) + ".")
-	C = 0.
-	n = 0
-	for i in range(0, int( len(data[:, 0]) / blockSize[0] ) ):
-		for j in range(0, int( len(data[0, :]) / blockSize[1] ) ):
-			# TODO: if len(data) not a multiple of blockSize, then a part of data will currently be ignored.
-			dataLocal = data[i * blockSize[0] : (i + 1) * blockSize[0] , j * blockSize[1] : (j + 1) * blockSize[1] ]
-			C += speckleContrast(dataLocal)
-			n += 1
-	return C / float(n)
-
-def readIntensityFile(intFN):
-	## None checks:
-	if ( intFN == None or intFN == "" ):
-		print(usageString )
-		sys.exit("    ERROR: input intensity filename cannot be an empty string!")
-	## Existence checks:
-	if ( not os.path.exists(intFN) ) :
-		sys.exit("\nERROR: Inputfile '" + intFN + "' does not exist.\n" + \
-				 "Terminating program.\n" )
-
-	data = np.loadtxt(open(intFN,"rb"),dtype=float)
-	return data
-
-########
-## MAIN
-####
-
-def fileSpeckleContrast_Windowing(intFN, blockSize=None):
-	data = readIntensityFile(intFN)
-	return speckleContrast_Windowing(data=data, blockSize=blockSize)
-
-
-
-
-
-
-
-
-
-
-
+def computeSpeckleContrast(data, SC_func, *args, **kwargs):
+	SCfunc = select(SC_func, *args, **kwargs) # RTS
+	SC = SCfunc(data) # Call computing function
+	return SC
 
 
 ##############
 ## Command-Line Interface (CLI)
 ####
-usageString = "Takes an intensity file (in 1D or 2D float format), and computes the speckle contrast: K = STD(I)/<I>.\n" \
-			+ "   usage: " + sys.argv[0] + " -i <intensity file name>" \
-			+ "[-x blockSizeX -y blockSizeY]\n" \
-			+ "   If either -x or -y is omitted, the same value for -x and -y is chosen. If both are omitted, choosing default:" + str(blockSize_default) + "."
 
 if __name__=='__main__':
-	### Read input arguments
-	## Command-Line Options
-	intFN = ""
-	blockX = ""
-	blockY = ""
-	## Read
-	try:
-		opts, args = getopt.getopt(sys.argv[1:],"hi:x:y:")
-	except getopt.GetoptError:
-		print(usageString )
-		sys.exit(2)
-	for opt, arg in opts:
-		if opt == '-h':
-			print(usageString )
-			sys.exit(0)
-		elif opt == '-i':
-			intFN = arg
-		elif opt == '-x':
-			blockX = arg
-		elif opt == '-y':
-			blockY = arg
-		else :
-			print(usageString )
-			sys.exit(2)
+	import optparse
+
+	usageString = "usage: %prog -i <intensity filename> [options]"
+
+	# Init
+	parser = optparse.OptionParser(usage=usageString)
+	(opt, args) = (None, None)
+
+	# Parse options
+	parser.add_option('-i', dest='intFN',
+						   help="Filename of intensity file"),
+	parser.add_option('-t', dest='SC_func', default="basic",
+						   help="Name of the speckle contrast function: " + str(RTS.getFunctions(SC)) + ". [default: %default]"),
+	parser.add_option('--args', dest='SC_args',
+						   help="Required arguments for the chosen speckle contrast function (if any). " +
+							"Separate the parameters with a semicolon (e.g., --args \"a;b\").")
+	parser.add_option("-v", action="store_true", dest="verbose", default=False,
+						   help="verbose [default: %default]")
+	(opt, args) = parser.parse_args()
+	myPrint.Printer.verbose = opt.verbose
 	
-	if( blockX == "" and blockY == ""):
-		blockSize=None
-	elif ( blockX == "" ):
-		if(blockY.isdigit()):
-			blockSize=(int(blockY),int(blockY))
-		else:
-			sys.exit("-y requires a positive integer, but received: " + str(blockY))
-	elif ( blockY == "" ):
-		if(blockX.isdigit()):
-			blockSize=(int(blockX),int(blockX))
-		else:
-			sys.exit("-x requires a positive integer, but received: " + str(blockX))
-	else:
-		if(blockX.isdigit() and blockY.isdigit()):
-			blockSize=(int(blockX),int(blockY))
-		else:
-			sys.exit("-x and -y require positive integers, but received: (" + str(blockX) + "," + str(blockY) + ")")
+	# Pre-parse arguments
+	(SC_args, SC_kwargs) = RTS.multiArgStringToArgs(opt.SC_args)
 
-	### Call main function
-	print(fileSpeckleContrast_Windowing(intFN=intFN, blockSize=blockSize))
+	# Compute
+	(data, time, index) = optoFluidsIO.readFromFile_Intensity(opt.intFN)
+	SC = computeSpeckleContrast(data, opt.SC_func, *SC_args, **SC_kwargs)
 
+	# Output
+	print(SC)
 
 
 

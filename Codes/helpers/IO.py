@@ -3,8 +3,6 @@
 # This file handles all logic regarding reading and writing optoFluids files,
 # taking care automatically of all nameConventions.
 #
-# TODO: Move all read operations to this file.
-# TODO: Write intensity 1D
 #
 # Some notes:
 # - helpers.nameConventions holds the conventional filename formats etc.; this script performs the I/O operations.
@@ -16,6 +14,9 @@
 #	18 02 2019: writeToFile_Coords2D now takes either (N,2) 1D vector format or (A,B) tuple of two meshgrids format.
 #				readFromFile_Coords2D_header reads the span (a and b direction vector) and npix.
 #
+# TODO:
+# - Write intensity 1D?
+# - auto detect pixelCcoords location?
 #
 
 # Misc imports

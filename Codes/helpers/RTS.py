@@ -12,8 +12,12 @@
 #	03 12 2018: multiArgStringToArgs
 #
 # TODO: Return meaningful error when construction fails in select(): What parameters did the constructor require?
+# TODO: getFunctionRequiredArguments to see what arguments are missing in case of "too few arguments given" exception
 
 import inspect
+
+# Import from optoFluids:
+import helpers.strConversions as str2
 
 def getFunctions(obj, verbose=False, onlyPublic=True):
 	funcs=[]
@@ -44,31 +48,16 @@ def select(module, name, *args, **kwargs):
 # and converts it to *args and **kwargs:
 # ['a', 'b', 'c', 'f'] and {'d': '1', 'e': '2'}
 # N.B.: "=" is always interpreted as a kwarg marker, so no element may contain "=".
+# @Deprecated
 def multiArgStringToArgs(argIn):
-	# Validity
-	if argIn == None: return [], dict() # no input -> no args
-	# String to array:
-	argsIn = argIn.split(',')
-	# Split required and keyword arguments
-	args=[]
-	kwargs=[]
-	for arg in argsIn:
-		if "=" in arg:
-			kwargs.append(arg)
-		else:
-			args.append(arg)
-	return args, dict(arg.split('=') for arg in kwargs)
+	return str2.multiArgStringToArgs(argIn) # backwards-compatibility link-forward
 
 # like multiArgStringToArgs, but now reads
 # "(a,b,c)" and converts it to a float vector: [a,b,c]
+# @Deprecated
 def strToFloatVec(argIn):
-	# Validity
-	if argIn == None: return [], dict() # no input -> no args
-	# String to array:
-	if argIn[0] == "(" and argIn[-1] == ")":
-		argIn=argIn[1:-1]
-	argsIn = argIn.split(',')
-	for i, arg in enumerate(argsIn):
-		argsIn[i]=float(arg)
-	return argsIn
+	return str2.strToFloatVec(argIn) # backwards-compatibility link-forward
+
+
+
 
