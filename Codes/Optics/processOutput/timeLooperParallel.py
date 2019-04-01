@@ -47,7 +47,7 @@ scriptDir = os.path.dirname(os.path.abspath(filename))
 #
 partPosDir = ""
 outputDir = ""
-opticsCode = scriptDir+"/Mie_MSFF/MieAlgorithmFF_start.out"
+opticsCode = scriptDir+"/../Mie_MSFF/MieAlgorithmFF_start.out"
 #opticsInputTemplateFN=scriptDir+"/inputOptics.template"
 opticsInputTemplateFN="./inputOptics.tmplt"
 opticsInputInterpolConfig="./interpolConfig.dat"

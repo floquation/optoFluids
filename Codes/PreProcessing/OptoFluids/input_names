@@ -1,0 +1,7 @@
+# Non-executable shell script, holding only the required variables
+# It should be sourced to obtain these variables in another shell script.
+# Should be placed in the "<main>" directory.
+
+particlesDN="fluids/particles"
+opticsResultsDN="optics/results"
+

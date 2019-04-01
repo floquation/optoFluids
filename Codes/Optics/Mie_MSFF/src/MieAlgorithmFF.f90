@@ -270,10 +270,10 @@ contains
         class(Sphere), pointer :: psphi, psphl, psphj ! From sphere l via sphere i to sphere j
         real*4 :: rsphi(3)                     ! position of sphere i
         real*4 :: dr(3), dr_in(3)                 ! direction and magnitude from source via scatterer to target
-        complex :: eField_tmp(3)           ! Temporarily store the eField in this variable for accumulation
-	double precision :: maxENew				 ! To do automagical convergence criterion
-	double precision, parameter :: maxENewCriterion = 1d-8 ! Set to some number. 1d-4 would be 0.01% of incident light.
-	!OLD: complex(8) :: temp(3)										! Temp for maxENew
+        complex :: eField_tmp(3)             ! Temporarily store the eField in this variable for accumulation
+        double precision :: maxENew          ! To do automagical convergence criterion
+        double precision, parameter :: maxENewCriterion = 1d-8 ! Set to some number. 1d-4 would be 0.01% of incident light.
+        !OLD: complex(8) :: temp(3)										! Temp for maxENew
         logical :: continueIterating       
 
         Nsph = sphmgr%getNumSpheres()
@@ -286,17 +286,17 @@ contains
 
         call startSubClock()
 
-		maxENew = 0
+        maxENew = 0
         do i = 1, Nsph; psphi => sphmgr%getSphere(i)  ! Iterator loop over all spheres: scatterer
-		maxENew = max(maxENew, maxval(sqrt(real(sum(psphi%eField_new*conjg(psphi%eField_new), dim=1))))) ! Maximum value of modulus of new E field over spheres ! OLD: sum(..,dim=2)/dble(Nsph-1) ! Average over other spheres of new Ex, Ey, and Ez scattering via this sphere.
+            maxENew = max(maxENew, maxval(sqrt(real(sum(psphi%eField_new*conjg(psphi%eField_new), dim=1))))) ! Maximum value of modulus of new E field over spheres ! OLD: sum(..,dim=2)/dble(Nsph-1) ! Average over other spheres of new Ex, Ey, and Ez scattering via this sphere.
         end do; nullify(psphi)
-		!OLD: maxENew = maxENew/dble(Nsph) ! Average over spheres of new light scattering via each sphere
-	call debugmsg(3,"MieAlgorithmFF","MaxENew = ",maxENew)
-	
-	! Check new contributions and divide by the amplitude of incoming light which is now just 1. Currently, the demand is that the bounced-around light is not yet reduced to (maxENewCriterion*100)% of the incoming light 
-	continueIterating = maxENew > maxENewCriterion
+        !OLD: maxENew = maxENew/dble(Nsph) ! Average over spheres of new light scattering via each sphere
+        call debugmsg(3,"MieAlgorithmFF","MaxENew = ",maxENew)
 
-    ! Iterate until convergence
+        ! Check new contributions and divide by the amplitude of incoming light which is now just 1. Currently, the demand is that the bounced-around light is not yet reduced to (maxENewCriterion*100)% of the incoming light 
+        continueIterating = maxENew > maxENewCriterion
+
+        ! Iterate until convergence
         itNum = 0
         do while (continueIterating)
         ! Prepare iteration
