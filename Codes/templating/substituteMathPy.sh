@@ -47,7 +47,7 @@ if [ ! -f "$inFN" ]; then
 	exit 1
 fi
 if [ -e "$outFN" ] && [ "$overwrite" == "0" ] ; then
-	>&2 echo "\$2 is the output file, but it already exists: \"$inFN\", but \$3 was not \"-f\"."
+	>&2 echo "\$2 is the output file, but it already exists: \"$outFN\", but \$3 was not \"-f\"."
 	>&2 echo "$usage"
 	exit 1
 fi
