@@ -10,6 +10,7 @@
 # Kevin van As
 #	23 11 2018: Original
 #	03 12 2018: multiArgStringToArgs
+#	05 04 2019: added "callable" type as valid input to "select"
 #
 # TODO: Return meaningful error when construction fails in select(): What parameters did the constructor require?
 # TODO: getFunctionRequiredArguments to see what arguments are missing in case of "too few arguments given" exception
@@ -18,6 +19,7 @@ import inspect
 
 # Import from optoFluids:
 import helpers.strConversions as str2
+import helpers.printFuncs as myPrint
 
 def getFunctions(obj, verbose=False, onlyPublic=True):
 	funcs=[]
@@ -34,13 +36,33 @@ def getFunctions(obj, verbose=False, onlyPublic=True):
 				funcs.append(i[0])
 	return(funcs)
 
-def select(module, name, *args, **kwargs):
+# Select method that works on strings:
+def selectStr(module, name, *args, **kwargs):
 	attr = getattr(module, str(name))
-	#print("type = " + str(type(attr)))
 	if inspect.isclass(attr):
-		#print("is a ClassType")
+		myPrint.Printer.vprint("... is a class.")
 		return attr(*args, **kwargs)
+	myPrint.Printer.vprint("... is a function.")
 	return attr
+
+# Generic select method that works on all (implemented) types:
+def select(module, name, *args, **kwargs):
+	myPrint.Printer.vprint("Selecting \"" + str(name) + "\" from module \"" + str(module) + "\".")
+	if (isinstance(name,str)):
+		# String input
+		try:
+			return selectStr(module, str(name), *args, **kwargs)
+		except:
+			traceback.print_exc()
+			raise Exception("Specified \"" + str(name) + "\", which is not a selectable from the module \"" + str(module) + "\".\n" + 
+							"Valid options are: " + str(getFunctions(module)) + ".")
+	elif (callable(name)):
+		# Callable input -> was probably already selected.
+		return name
+	else:
+		raise Exception("Could not interpret the type (" + type(name) + ") of \"" + str(name) +
+						"\" for selection from module \"" + str(module) + "\".")
+
 	
 # This function creates a CLI-interface for RTS with a non-constant arbitrary number of args and kwargs.
 # Takes an input string of the form

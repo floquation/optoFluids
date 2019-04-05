@@ -16,6 +16,7 @@
 #	06 12 2018: t_int, n_int, T and n via CLI and its sanity checks
 #	01 02 2019: t=0 now also obeys the (periodic) BC, which prevents t=0 from having completely different speckles than t=veryveryshort.
 #	05 02 2019: Now uses MEAN velocity, instead of MAXimum velocity.
+#	05 04 2019: Implemented enhanced RTS "select" functionality by deleting lines that are now no longer necessary.
 #
 # TODO:
 #	Set origin, orientation from CLI
@@ -279,33 +280,11 @@ class MoveParticles(object):
 	####
 	def setSpatialProfile(self, prof):
 		self.vprint("setSpatialProfile: " + str(prof))
-		if (isinstance(prof,str)):
-			# String input
-			try:
-				self.spatialProfile = RTS.select(spatialProfiles, str(opt.spatProf))
-			except:
-				traceback.print_exc()
-				sys.exit("Invalid flow profile or invalid arguments to a valid profile. Valid profiles are: " + str(RTS.getFunctions(spatialProfiles)) + ", but received: \"" + str(prof) + "\".")
-		elif (callable(prof)):
-			# Callable input
-			self.spatialProfile = prof
-		else:
-			sys.exit("Must set the spatial flow profile using either a string or a callable object. Was: " + str(type(prof)))
+		self.spatialProfile = RTS.select(spatialProfiles, str(opt.spatProf))
 
 	def setTemporalModulation(self, mod, *args, **kwargs):
 		self.vprint("setTemporalModulation: " + str(mod))
-		if (isinstance(mod,str)):
-			# String input
-			try:
-				self.temporalModulation = RTS.select(temporalModulation, str(mod), *args, **kwargs)
-			except:
-				traceback.print_exc()
-				sys.exit("Invalid flow modulation or invalid arguments to a valid modulation. Valid modulations are: " + str(RTS.getFunctions(temporalModulation)))
-		elif (callable(mod)):
-			# Callable input
-			self.temporalModulation = mod
-		else:
-			sys.exit("Must set the temporal flow modulation using either a string or a callable object. Was: " + str(type(mod)))
+		self.temporalModulation = RTS.select(temporalModulation, str(mod), *args, **kwargs)
 
 	def setOutputDN(self, DN):
 		# Check for existence of the files

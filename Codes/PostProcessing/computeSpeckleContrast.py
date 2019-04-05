@@ -7,6 +7,7 @@
 #
 # Kevin van As
 #	15 11 2018: Original
+#	05 04 2019: Implemented enhanced RTS "select" functionality by deleting lines that are now no longer necessary.
 #
 # TODO:
 # - If intensity1D is read, windowing cannot be used, unless we automatically detect pixelCoords and reshape.
@@ -28,20 +29,7 @@ import speckleContrast as SC
 import helpers.printFuncs as myPrint
 
 def select(name, *args, **kwargs):
-	myPrint.Printer.vprint("selecting: " + str(name))
-	if (isinstance(name,str)):
-		# String input
-		try:
-			return RTS.select(SC, str(name), *args, **kwargs)
-		except:
-			traceback.print_exc()
-			raise Exception("Specified \"" + str(name) + "\", which could not be interpreted as a speckleContrast function.\n" + 
-							"Valid options are: " + str(RTS.getFunctions(SC)) + ".")
-	elif (callable(name)):
-		# Callable input
-		return name
-	else:
-		raise Exception("Could not interpret the type (" + type(name) + ") of \"" + str(name) + "\".")
+	return RTS.select(SC, str(name), *args, **kwargs)
 
 def computeSpeckleContrast(data, SC_func, *args, **kwargs):
 	SCfunc = select(SC_func, *args, **kwargs) # RTS
