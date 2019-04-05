@@ -81,12 +81,14 @@ if __name__ == '__main__':
 	# TODO: CL input
 	dpi=160
 	extention="png"
-	if False:
+	#signal="heartbeat"
+	signal="sinus"
+	if signal=="heartbeat":
 		signal_T=0.835 # Baker 2017 heartbeat signal
 		signal_mins=[0, 0.39] # Baker 2017 heartbeat signal
 		signal_maxs=[0.115, 0.51] # Baker 2017 heartbeat signal
 		title_suffix = ": heartbeat"
-	else:
+	elif signal=="sinus":
 		signal_T=1
 		signal_mins=[0.75]
 		signal_maxs=[0.25]
@@ -103,8 +105,18 @@ if __name__ == '__main__':
 	plt.plot(t, y, 'k-')
 	plt.xlabel(r'$t$')
 	plt.ylabel(r'$F(t)$')
-	plt.title("Temporal modulation" + str(title_suffix))
+#	plt.title("Temporal modulation" + str(title_suffix))
 	add_xvline((t[0],t[-1]),signal_T,signal_mins,signal_maxs)
+	if signal=="heartbeat":
+		ticks=np.array([0.115, 0.39, 0.51, 0.835])
+		#ticks=np.append(ticks, tickets+0.835)
+		ticks=np.append([0], ticks)
+		plt.xticks(ticks)
+		ax = plt.gca()
+#		for tick in ax.xaxis.get_major_ticks():
+#			tick.label.set_fontsize(9)
+	elif signal=="sinus":
+		pass
 
 	# Output:
 	if opt.outputFN == None or opt.outputFN == "" or (os.path.exists(opt.outputFN) and (not opt.overwrite)):
