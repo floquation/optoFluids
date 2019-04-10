@@ -13,10 +13,11 @@
 #	11 02 2019: Original
 #	18 02 2019: writeToFile_Coords2D now takes either (N,2) 1D vector format or (A,B) tuple of two meshgrids format.
 #				readFromFile_Coords2D_header reads the span (a and b direction vector) and npix.
+#	04 04 2019: Added readCSV functionality
+#	10 04 2019:	Added writeCSV functionality
 #
 # TODO:
-# - Write intensity 1D?
-# - auto detect pixelCcoords location?
+# - auto detect pixelCoords location?
 #
 
 # Misc imports
@@ -25,6 +26,8 @@ import re # Regular-Expressions
 #import getopt # Command-Line options
 import os.path#, inspect
 #import shutil
+
+import csv
 
 # Numerics
 import numpy as np # Matrices
@@ -391,6 +394,86 @@ def readFromFile_Intensity(FN, N=None, forceRead=False):
 	
 
 
+
+
+
+
+
+####
+## CSV files
+########
+
+
+## Writing
+
+
+# Write a 1D or 2D array data to (csv) file, including:
+# - optional prepend of a first (x) column
+# - optional header
+def writeCSV(data, outputFN, dataCol1=None, header=None, delimiter=';', overwrite=False):
+	# Sanity:
+	assert (fileNotAlreadyExists(outputFN,overwrite))
+	assert ( dataCol1 is None or np.shape(data)[0]==len(dataCol1) ), "dataCol1 does not have the same number of entires / the same length as \"data\"."
+
+	# Work with tuples, instead of (1D/2D) arrays:
+	data = tuple(data.T)
+	if dataCol1 is not None:
+		if len(np.shape(data))==1:
+			data = (dataCol1, data)
+		elif len(np.shape(data))==2:
+			data = (dataCol1, *data)
+		else:
+			raise Exception("Cannot write data with " + 
+							str(len(np.shape(data))) + " dimensions.")
+	if len(np.shape(data)) > 1:
+		data=tuple(zip(*data)) # Tranpose
+
+	# Write data to file:
+	# (1D data)
+	if len(np.shape(data)) == 1:
+		# Treat writing a vector differently, as "csv" library cannot handle it:
+		writeVector(data, outputFN, header=header, overwrite=overwrite)
+		return
+	# (2D data)
+	with open(outputFN, mode='w') as outputFile:
+		writer = csv.writer(outputFile, delimiter=delimiter)
+		# Write header (if it's there):
+		if header is not None and not (type(header) is str and header == ""):
+			writer.writerow(header)
+		# Write data rows:
+		for row in data:
+			writer.writerow( row )
+
+# Write a 1D array (=vector) to a datafile:
+def writeVector(vector, outputFN, header=None, overwrite=False):
+	# Sanity:
+	assert (fileNotAlreadyExists(outputFN,overwrite))
+	assert (len(np.shape(vector))==1), "\"writeVector\" requires a 1D array (=vector) input."
+	if header is None: # np.savetxt requires empty string; not NoneType.
+		header=""
+	# Write data to file:
+	np.savetxt(outputFN, vector, header=header)
+
+
+## Reading
+
+
+# Reads a CSV file
+def readCSV(FN, delimiter=';', skip_header=1):
+	data = np.genfromtxt(FN, delimiter=delimiter, dtype=float, skip_header=skip_header)
+	header = np.genfromtxt(FN, delimiter=delimiter, dtype=str, skip_footer=len(data))
+	return (data, header)
+def readCSVs(FNs, delimiter=';', skip_header=1): #TODO: Test
+	data=() # Read multiple data sets into a list (n-tuple); convert to 3D array later.
+	header=()
+	for i, inFN in enumerate(FNs):
+		# Read single file:
+		data0, header0 = readCSV(inFN, delimiter=delimiter, skip_header=skip_header)
+		# Collest multiple files in tuple:
+		data = data + (data0,)
+		header = header + (header0,)
+	data = np.dstack(data) # Convert list of 2D arrays to a 3D array
+	return (data, header)
 
 
 
