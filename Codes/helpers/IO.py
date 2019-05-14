@@ -15,6 +15,7 @@
 #				readFromFile_Coords2D_header reads the span (a and b direction vector) and npix.
 #	04 04 2019: Added readCSV functionality
 #	10 04 2019:	Added writeCSV functionality
+#	14 05 2019: Added getResultDirs function, and sorting functionality
 #
 # TODO:
 # - auto detect pixelCoords location?
@@ -85,9 +86,12 @@ def sortArray(array):
 		try:
 			return float(text)
 		except:
-			return None 
+			return float("inf")
 	def natural_keys(text):
-		return atof( myRE.getMatchingGroups(text, myRE.compile(r"[^\d]*" + myRE.group(myRE.floatRE)))[0] )
+		try:
+			return atof( myRE.getMatchingGroups(text, myRE.compile(r"[^\d]*" + myRE.group(myRE.floatRE)))[0] )
+		except:
+			return float("inf")
 	#print("array = " + str(array))
 	#print("nat_keys = " + str(natural_keys("results_5")))
 	#print("nat_keys = " + str(natural_keys("results_10")))
@@ -505,7 +509,7 @@ def getResultDirs(mainDir):
 
 	# List content of mainDir:
 	content = sortArray(os.listdir(mainDir))
-	print("content = " + str(content))
+	#print("content = " + str(content))
 	innerResDNs = myRE.getMatchingItems(content, myRE.compile(names.resInnerDNRE))
 	if (len(innerResDNs) > 0):
 		# We must have inner result directories
