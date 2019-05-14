@@ -24,8 +24,7 @@
 import re # Regular-Expressions
 #import sys
 #import getopt # Command-Line options
-import os.path#, inspect
-import os.listdir
+import os
 #import shutil
 
 import csv
