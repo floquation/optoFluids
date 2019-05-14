@@ -78,6 +78,21 @@ def reshapeTo2D(data, N):
 	data2D = np.reshape(data,(N[1],N[0]))
 	data2D = np.transpose(data2D)
 	return data2D 
+
+# Sort text-sorted output to number-sorted output:
+def sortArray(array):
+	def atof(text):
+		try:
+			return float(text)
+		except:
+			return None 
+	def natural_keys(text):
+		return atof( myRE.getMatchingGroups(text, myRE.compile(r"[^\d]*" + myRE.group(myRE.floatRE)))[0] )
+	#print("array = " + str(array))
+	#print("nat_keys = " + str(natural_keys("results_5")))
+	#print("nat_keys = " + str(natural_keys("results_10")))
+	#print(sorted(array,key=natural_keys))
+	return sorted(array,key=natural_keys)
 	
 ####
 ## Pixel Coordinates
@@ -489,11 +504,15 @@ def getResultDirs(mainDir):
 	# TODO
 
 	# List content of mainDir:
-	content = sorted(os.listdir(mainDir))
+	content = sortArray(os.listdir(mainDir))
+	print("content = " + str(content))
 	innerResDNs = myRE.getMatchingItems(content, myRE.compile(names.resInnerDNRE))
 	if (len(innerResDNs) > 0):
 		# We must have inner result directories
 		# so return an array of them
+		# First prepend mainDir:
+		for i, item in enumerate(innerResDNs):
+			innerResDNs[i] = os.path.join(mainDir, item)
 		return innerResDNs
 	else:
 		# There are no inner result directories
