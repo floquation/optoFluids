@@ -8,6 +8,7 @@
 # Kevin van As
 #	15 11 2018: Original
 #	05 04 2019: Implemented enhanced RTS "select" functionality by deleting lines that are now no longer necessary.
+#	14 05 2019:	Now accepts a result directory as -i, as well as an intensity file. --> Bram Simons
 #
 # TODO:
 # - If intensity1D is read, windowing cannot be used, unless we automatically detect pixelCoords and reshape.
@@ -25,6 +26,8 @@ import numpy as np # Matrices
 # Import from optoFluids:
 import helpers.IO as optoFluidsIO
 import helpers.RTS as RTS
+import helpers.regex as myRE
+import helpers.nameConventions as names
 import speckleContrast as SC
 import helpers.printFuncs as myPrint
 
@@ -51,8 +54,8 @@ if __name__=='__main__':
 	(opt, args) = (None, None)
 
 	# Parse options
-	parser.add_option('-i', dest='intFN',
-						   help="Filename of intensity file"),
+	parser.add_option('-i', dest='inFDN',
+						   help="Name of results directory, or single intensity filename"),
 	parser.add_option('-t', dest='SC_func', default="basic",
 						   help="Name of the speckle contrast function: " + str(RTS.getFunctions(SC)) + ". [default: %default]"),
 	parser.add_option('--args', dest='SC_args',
@@ -66,12 +69,30 @@ if __name__=='__main__':
 	# Pre-parse arguments
 	(SC_args, SC_kwargs) = RTS.multiArgStringToArgs(opt.SC_args)
 
-	# Compute
-	(data, time, index) = optoFluidsIO.readFromFile_Intensity(opt.intFN)
-	SC = computeSpeckleContrast(data, opt.SC_func, *SC_args, **SC_kwargs)
-
-	# Output
-	print(SC)
+	# Detect whether input is an intensity file or a directory:
+	if myRE.doesItemMatch(os.path.basename(opt.inFDN), myRE.compile(names.intensityFNRE)):
+		# Then input is an intensity filename
+		# Read input:
+		(data, time, index) = optoFluidsIO.readFromFile_Intensity(opt.inFDN)
+		# Compute and output:
+		print( computeSpeckleContrast(data, opt.SC_func, *SC_args, **SC_kwargs) )
+	else:
+		# Else input is not an intensity filename. Check whether it is a result directory.
+		# Get multiple result directories (if any):
+		resultDNs = optoFluidsIO.getResultDirs(opt.inFDN)
+		# Compute:
+		SCarray = []
+		for resDN in resultDNs:
+			# TODO: How to select the appropriate intensity file? CLI?
+			try: # Prioritize blurred:
+				argument = resDN + '/2D/blurred/Intensity2D_t0.0'
+				(data, time, index) = optoFluidsIO.readFromFile_Intensity(argument)
+			except: # No blurred, so unsorted:
+				argument = resDN + '/2D/Intensity2D_t0.0'
+				(data, time, index) = optoFluidsIO.readFromFile_Intensity(argument)
+			SCarray.append(computeSpeckleContrast(data, opt.SC_func, *SC_args, **SC_kwargs))
+		# Output
+		print(*SCarray,sep=';')
 
 
 
