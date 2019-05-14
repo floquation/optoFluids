@@ -77,6 +77,16 @@ logFNRE = "log" + \
 	timeRE + \
 	myRE.optional(".out")
 
+## Result directories
+# Outer result directories (regular result directory)
+resDNRE = "results" + \
+	myRE.optional( \
+		"_" + \
+		myRE.group(r".+") \
+	)
+# Inner result directories (different instantiations for std calculation)
+resInnerDNRE = "results_" + \
+	myRE.group(myRE.intRE)
 
 
 
@@ -135,6 +145,23 @@ def logFN(time, index=None, logDir=logDN):
 		return joinPaths(logDir,fn)
 	else:
 		return fn
+
+## Result directories
+# Outer result directories (regular result directory)
+def resDN(suffix=None):
+	if suffix:
+		return "results_"+str(suffix)
+	else:
+		return "results"
+# Inner result directories (different instantiations for std calculation)
+def resInnerDN(suffix):
+	errmsg = "Inner result directory requires an integer identifier, but received: "
+	assert suffix, errmsg + "None"
+	try:
+		int(suffix)
+	except:
+		print(errmsg + str(suffix))
+	return "results_"+str(suffix)
 
 # Sorting names
 input1DDN="1D"

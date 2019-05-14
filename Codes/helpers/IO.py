@@ -24,7 +24,7 @@
 import re # Regular-Expressions
 #import sys
 #import getopt # Command-Line options
-import os.path#, inspect
+import os
 #import shutil
 
 import csv
@@ -474,6 +474,32 @@ def readCSVs(FNs, delimiter=';', skip_header=1):
 		header = header + (header0,)
 	data = np.dstack(data) # Convert list of 2D arrays to a 3D array
 	return (data, header)
+
+
+
+####
+## Result directories
+########
+
+
+## Reading
+
+def getResultDirs(mainDir):
+	# Sanity:
+	# TODO
+
+	# List content of mainDir:
+	content = sorted(os.listdir(mainDir))
+	innerResDNs = myRE.getMatchingItems(content, myRE.compile(names.resInnerDNRE))
+	if (len(innerResDNs) > 0):
+		# We must have inner result directories
+		# so return an array of them
+		return innerResDNs
+	else:
+		# There are no inner result directories
+		# so just return the main one
+		return [mainDir]
+
 
 
 
