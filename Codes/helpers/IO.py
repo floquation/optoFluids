@@ -463,7 +463,7 @@ def readCSV(FN, delimiter=';', skip_header=1):
 	data = np.genfromtxt(FN, delimiter=delimiter, dtype=float, skip_header=skip_header)
 	header = np.genfromtxt(FN, delimiter=delimiter, dtype=str, skip_footer=len(data))
 	return (data, header)
-def readCSVs(FNs, delimiter=';', skip_header=1): #TODO: Test
+def readCSVs(FNs, delimiter=';', skip_header=1):
 	data=() # Read multiple data sets into a list (n-tuple); convert to 3D array later.
 	header=()
 	for i, inFN in enumerate(FNs):

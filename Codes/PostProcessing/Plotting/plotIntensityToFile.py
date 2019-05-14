@@ -11,6 +11,7 @@
 #	04 03 2019: Doubled dpi for bigger figures.
 #				Fixed bug: -o was default ".png".
 #				Now uses speckleContrast.py to compute C.
+#	07 05 2019: Compute speckle contrast with argument to grid method.
 #
 
 import sys, getopt # Command-Line options
@@ -40,14 +41,16 @@ pixelCoords=0
 setVMin=None
 setVMax=None
 noAxis=False
+gridSize="(8,8)"
 #
-usageString = "   usage: " + sys.argv[0] + " -i <intensity2D filename> -o <output filename>" + "[-c <pixelCoords2D file>] [-n minColorValue] [-m maxColorValue] [-f] [-a] \n" \
+usageString = "   usage: " + sys.argv[0] + " -i <intensity2D filename> -o <output filename>" + "[-c <pixelCoords2D file>] [-n minColorValue] [-m maxColorValue] [-f] [-a] [-g <gridSize>] \n" \
 			  + "	where:\n" \
 			  + "	-c: By default tries to locate pixelCoords2D file inside the dir specified at -i\n" \
-			  + "	-a: Do not show title/colorbar"
+			  + "	-a: Do not show title/colorbar\n" \
+			  + "	-g: What grid to use to compute speckle contrast? [default: \"" + str(gridSize) + "\"]"
 
 try:
-	opts, args = getopt.getopt(sys.argv[1:],"hfi:o:c:n:m:a")
+	opts, args = getopt.getopt(sys.argv[1:],"hfi:o:c:n:m:ag:")
 except getopt.GetoptError:
 	print(usageString)
 	sys.exit(2)
@@ -67,6 +70,8 @@ for opt, arg in opts:
 		setVMax = float(arg)
 	elif opt == '-a':
 		noAxis = True
+	elif opt == '-g':
+		gridSize = str(arg)
 	elif opt == '-f':
 		overwrite = True
 	else :
@@ -105,7 +110,7 @@ if pixelCoordsFN == "":
 ##########
 
 def computeContrastByLocalContrast(img):
-	SCfunc = SC.grid() # Use grid-method with default settings to compute the speckle contrast.
+	SCfunc = SC.grid(gridSize) # Use grid-method with default settings to compute the speckle contrast.
 	return SCfunc(img)
 
 ## Read pixel coordinates

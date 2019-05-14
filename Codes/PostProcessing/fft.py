@@ -24,7 +24,7 @@ import helpers.IO as optoFluidsIO
 #import speckleContrast as SC
 import helpers.printFuncs as myPrint
 
-def myfftfreq(t, half=True):
+def fftfreq(t, half=True):
 	#print(t)
 	#print("dt = " + str(t[1]-t[0]))
 	f = np.fft.fftfreq( len(t), d=(t[1]-t[0]) )
@@ -43,8 +43,8 @@ def myfftfreq(t, half=True):
 		f = np.fft.fftshift(f)
 	return f
 
-def myfft(y, half=True, zeroMean=False):
-	# TODO: Sanity check on type of y.
+def fft_dim1(y, half=True, zeroMean=False, scale2max1=False):
+	assert len(np.shape(y))==1, "The function \"fft_dim1\" only works for a 1D array (=vector), but shape="+str(np.shape(y))+"."
 	# Remove constant term?
 	if zeroMean: y = y - np.mean(y)
 	# FFT:
@@ -55,7 +55,45 @@ def myfft(y, half=True, zeroMean=False):
 		Y = Y[ : int( len(Y)/2.0-0.25 )+1 ]
 	else:
 		Y = np.fft.fftshift(Y)
+	# Scale to maximum 1:
+	if scale2max1:
+		Ymax = np.max(abs(Y))
+		myPrint.Printer.vprint("Maximum value of fft = " + str(Ymax)) # TODO: info on at what index?
+		Y = Y/Ymax
 	# Return:
+	return Y
+def fft_dim2(y, half=True, zeroMean=False, skip_col=None, scale2max1=False):
+	assert len(np.shape(y))==2, "The function \"fft_dim2\" only works for a 2D array, but shape="+str(np.shape(y))+"."
+	# TODO: Implement multiple axis / directions
+	numCols=np.shape(y)[1]
+	myPrint.Printer.vprint("fft_dim2: Found " + str(numCols) + " columns to iterate over.")
+	Y=() # Collect results in a tuple
+	for col in range(numCols):
+		if skip_col is not None and col==skip_col:
+			myPrint.Printer.vprint("fft_dim2: Skipping column " + str(skip_col) + ".")
+			continue # Skip the time/x column
+		Ynew = fft_dim1(y[:,col], half=half, zeroMean=zeroMean, scale2max1=scale2max1)
+		Y = ( *Y, Ynew )
+	Y = np.vstack( Y ).T # Convert tuple-result into 2D numpy array
+		# Transposed, because:
+		# First index corresponds to "row": iterate over dataset
+		# Second index corresponds to "column": which column from dataset
+		# Result does not contain the "skip_col" column.
+	return Y
+
+def fft(y, half=True, zeroMean=False, skip_col=None, scale2max1=False):
+	# TODO: Sanity check on type of y.
+	dim=len(np.shape(y))
+	myPrint.Printer.vprint("fft: Computing fft with dataset of " + str(dim) + " dimensions:" + str(np.shape(y)) + ".")
+	# FFT:
+	myPrint.Printer.push()
+	if dim==1:
+		Y = fft_dim1(y, half=half, zeroMean=zeroMean, scale2max1=scale2max1)
+	elif dim==2:
+		Y = fft_dim2(y, half=half, zeroMean=zeroMean, skip_col=skip_col, scale2max1=scale2max1)
+	else:
+		raise Exception("Not yet implemented: fft with an array of more than two dimensions. Received shape = " + str(np.shape(y)) + ".")
+	myPrint.Printer.pull()
 	return Y
 
 
@@ -103,23 +141,15 @@ if __name__=='__main__':
 
 	# Compute time->freq
 	t = data[:,opt.colx]
-	f = myfftfreq(t, half = not opt.whole)
+	f = fftfreq(t, half = not opt.whole)
 	header[opt.colx]="f"
 	# Compute data->fft
 	if opt.coly is None: # If coly is missing, then use all columns
-		numCols=np.shape(data)[1]
-		Y=() # Collect results in a tuple
-		for col in range(numCols):
-			if col==opt.colx: continue # Skip the time/x column
-			y = data[:,col]
-			Y = ( *Y, myfft(y, half = not opt.whole, zeroMean=opt.zeroMean) )
-		Y = np.vstack( Y ).T # Convert tuple-result into 2D numpy array
-			# Transposed, because:
-			# First index corresponds to "row": iterate over dataset
-			# Second index corresponds to "column": which column from dataset
+		y = data
+		Y = fft(y, half = not opt.whole, zeroMean=opt.zeroMean)
 	else: # only compute for coly
 		y = data[:,opt.coly]
-		Y = myfft(y, half = not opt.whole, zeroMean=opt.zeroMean)
+		Y = fft_dim2(y, half = not opt.whole, zeroMean=opt.zeroMean, skip_col=opt.colx)
 		header = [header[opt.colx], header[opt.coly]]
 	dataFFT=Y
 
@@ -134,3 +164,16 @@ if __name__=='__main__':
 
 
 # EOF
+#! /usr/bin/env python3
+#
+# fft.py
+#
+# Computes the FFT of a temporal signal.
+# Signal may be read from a .csv file from the terminal.
+#
+# Kevin van As
+#	10 04 2019: Original
+#
+#
+
+# Misc imports

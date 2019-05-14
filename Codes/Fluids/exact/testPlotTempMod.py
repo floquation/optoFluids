@@ -37,7 +37,7 @@ def add_xvline(t_range, signal_T, signal_mins, signal_maxs, signal_toffset=0):
 		for mint in signal_mins:
 			xplot = x + mint
 			if is_in_range(xplot,t_range):
-				plt.axvline(x=xplot,color='r',linestyle='--') # minimum velocity
+				plt.axvline(x=xplot,color='r',linestyle='-.') # minimum velocity
 			#else:
 				#print("out of range: xplot="+str(xplot))
 		x += signal_T

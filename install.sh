@@ -1,3 +1,6 @@
+# TODO: Automatically recompile the optics code
+
+
 # Get script dir
 scriptDir=${0%/*}
 if [ "$scriptDir" == "bash" ]; then

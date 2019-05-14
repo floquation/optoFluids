@@ -1,4 +1,4 @@
-# N.B.: Edit testPlotTempMod.py manually to set appropriate min/max lines!plug
+# N.B.: Edit testPlotTempMod.py manually to set appropriate min/max lines
 
 # Sinusoidal:
 python3 testPlotTempMod.py --mod="sin" --modargs="amplitude=0.375;frequency=1" --t1=$(mathPy "1.0*2+0.005") -o sinusoidal --dt 0.005
