@@ -490,7 +490,7 @@ def getResultDirs(mainDir):
 
 	# List content of mainDir:
 	content = sorted(os.listdir(mainDir))
-	innerResDNs = getMatchingItems(content, myRE.compile(names.resInnerDNRE))
+	innerResDNs = myRE.getMatchingItems(content, myRE.compile(names.resInnerDNRE))
 	if (len(innerResDNs) > 0):
 		# We must have inner result directories
 		# so return an array of them
