@@ -17,6 +17,7 @@
 #	01 02 2019: t=0 now also obeys the (periodic) BC, which prevents t=0 from having completely different speckles than t=veryveryshort.
 #	05 02 2019: Now uses MEAN velocity, instead of MAXimum velocity.
 #	05 04 2019: Implemented enhanced RTS "select" functionality by deleting lines that are now no longer necessary.
+#	15 05 2019: Implemented T=0 stop checks correctly. In that case this code simply writes the IC to t=0.
 #
 # TODO:
 #	Set origin, orientation from CLI
@@ -180,6 +181,7 @@ class MoveParticles(object):
 		t00=self.time # t00 := start time
 		self.vprint("self.evolveFor(dt="+str(dt)+", T="+str(T)+", write="+str(write)+") called from t="+str(t00)+":")
 		if dt == None: raise ValueError("Received dt="+str(dt)+", but expected a numeric value (float).")
+		if(T==0): self.vprint("T=0, so nothing to evolve: returning."); return # Evolve for zero time? We're already done!
 		t0=t00 # t0 := last time, t1 := new (target) time
 		i=0 # Use a counter to negate accumulation of rounding errors of continuing adding a rounded dt
 		done = False
@@ -202,9 +204,9 @@ class MoveParticles(object):
 		self.vprint("self.repeatEolve(dt="+str(dt)+", T="+str(T)+", nWrite="+str(nWrite)+", writeStart="+str(writeStart)+") called")
 		if T==None or nWrite==None: raise ValueError("Received T="+str(T)+" and nWrite="+str(nWrite)+", but expected T=float, nWrite=int.")
 		if writeStart:
-			self.moveOnce(dt=00) # Make sure that t=0 obeys the same BCs as the future times to prevent an instant change in speckle.
+			self.moveOnce(dt=0) # Make sure that t=0 obeys the same BCs as the future times to prevent an instant change in speckle.
 			self.writeToFile()
-		if(T==0): return # Evolve for zero time? We're already done!
+		if(T==0): self.vprint("T=0, so nothing to evolve: returning."); return # Evolve for zero time? We're already done!
 		if nWrite>0:
 			Tper = float(T)/nWrite
 		else:
@@ -259,6 +261,7 @@ class MoveParticles(object):
 			# do microstepping for starting time as well
 			self.repeatEvolve(dt, T[0], nWrite[0], writeStart=True)
 		# Evolve:
+		if(T[1]==0): self.vprint("Both T=0, so nothing to evolve: returning."); return # Evolve for zero time? We're already done!
 		for i in range(nWrite[1]):
 			# jump to next major step
 			target_major = t00 + (i+1)*Tper
