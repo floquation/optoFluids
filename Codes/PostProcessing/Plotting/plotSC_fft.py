@@ -152,7 +152,7 @@ for iC in range(1,len(data[0,:,0])): # Way of calculating the speckle contrast
 #	plt.plot(data[fid_range,0,0], data[fid_range,iC,0], colors[iC-1], fillstyle='none')
 	plt.plot(f[fid_range], operation(Y[fid_range,iC-1]), 'k-', fillstyle='none')
 	if opt.tempMod=="Baker2017": plt.plot([12], [0], 'w', markersize=0) # Add an invisible point at end, such that auto scaling scales until 12 + margin
-	plt.xlabel(r'$f$', fontsize=fontsize)
+	plt.xlabel(r'$f\mathrm{\,(Hz)}$', fontsize=fontsize)
 	plt.ylabel(r'$\left|\mathcal{F}\{C\}\right|$', fontsize=fontsize)
 	plt.xticks(fontsize=numbersize)
 	plt.yticks(fontsize=numbersize)
