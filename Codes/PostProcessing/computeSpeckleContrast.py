@@ -91,8 +91,14 @@ if __name__=='__main__':
 				argument = resDN + '/2D/Intensity2D_t0.0'
 				(data, time, index) = optoFluidsIO.readFromFile_Intensity(argument)
 			SCarray.append(computeSpeckleContrast(data, opt.SC_func, *SC_args, **SC_kwargs))
-		# Output
-		print(*SCarray,sep=';')
+		if (len(SCarray) > 1):
+			SCarray.insert(0,np.std(SCarray))
+			SCarray.insert(0,np.mean(SCarray))
+			# Output
+			print("mean","std",*range(1,len(SCarray)-1),sep=';')
+			print(*SCarray,sep=';')
+		else:
+			print(*SCarray)
 
 
 
