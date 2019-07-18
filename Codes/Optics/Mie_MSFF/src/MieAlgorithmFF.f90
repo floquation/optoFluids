@@ -291,7 +291,7 @@ contains
             maxENew = max(maxENew, maxval(sqrt(real(sum(psphi%eField_new*conjg(psphi%eField_new), dim=1))))) ! Maximum value of modulus of new E field over spheres ! OLD: sum(..,dim=2)/dble(Nsph-1) ! Average over other spheres of new Ex, Ey, and Ez scattering via this sphere.
         end do; nullify(psphi)
         !OLD: maxENew = maxENew/dble(Nsph) ! Average over spheres of new light scattering via each sphere
-        call debugmsg(3,"MieAlgorithmFF","MaxENew = ",maxENew)
+        call debugmsg(2,"MieAlgorithmFF","MaxENew = ",maxENew)
 
         ! Check new contributions and divide by the amplitude of incoming light which is now just 1. Currently, the demand is that the bounced-around light is not yet reduced to (maxENewCriterion*100)% of the incoming light 
         continueIterating = maxENew > maxENewCriterion
@@ -367,7 +367,7 @@ contains
                 call debugmsg(4,"MieAlgorithmFF","Multiscattering result: E_il^acm(xyz,l)  = ", psphi%eField_acm)
             end do; nullify(psphi)
 		!OLD: maxENew = maxENew/dble(Nsph) ! Average over spheres of average over all other spheres of new light scattering via each sphere
-		call debugmsg(3,"MieAlgorithmFF","MaxENew = ",maxENew)
+		call debugmsg(2,"MieAlgorithmFF","MaxENew = ",maxENew)
             
         ! Convergence criterion: Until p=conv_maxp (iterating inclusively) or when the bounced-around light is reduced to (maxENewCriterion*100)% of the incoming light at each sphere
             continueIterating = ( itNum+2 < conv_minp .or. itNum+2 < conv_maxp) .and. maxENew > maxENewCriterion
