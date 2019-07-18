@@ -1,0 +1,3 @@
+NO_OF_CORES="$(cat "$PBS_NODEFILE" 2>/dev/null | wc -l)"; [ "$NO_OF_CORES" == 0 ] && NO_OF_CORES=1
+
+

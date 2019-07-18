@@ -9,6 +9,7 @@
 #	11 10 2018: Original
 #	07 02 2019: Improved comments
 #				onlyMajorSteps command-line option
+#	25 05 2019: TODO: Parallelise convertDataTo2D.py and timeIntegrateOptics_timeLooper.py, as they take quite some time, and are fairly easy to parallelise.
 #
 
 resultsDN="$1"; shift
@@ -17,7 +18,7 @@ if [ "$resultsDN" == "" ]; then
 	exit 1
 fi
 onlyMajorSteps="False" # Cannot do camera integration steps if we only have major timesteps. This cannot be detected automatically (as the time structure is identical to not having microsteps instead), hence we need this flag.
-if [ "$1" == "--onlyMajorSteps" ]; then
+if [ "$2" == "--onlyMajorSteps" ]; then
 	shift
 	onlyMajorSteps="True"
 fi
