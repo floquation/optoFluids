@@ -10,6 +10,7 @@
 #	06 03 2019: Implemented grid
 #	07 03 2019: Implemented sliding window
 #				(Note: does not give significant different results than non-sliding for me: <1% difference)
+#	19 07 2019: Added sanity checks to return NaN if window/grid is impossible for input datasize.
 #
 
 # Misc imports
@@ -52,6 +53,13 @@ class window:
 		self.blockSize=blockSize
 
 	def __call__(self,data):
+		# Sanity check on data size:
+		npix=np.shape(data)
+		if blockSize[0]>npix[0] or blockSize[1]>npix[1]:
+			# Window is larger than the entire camera! We cannot deal with this!
+			return float('NaN')
+
+		# Compute speckle contrast:
 		if(self.sliding):
 			return self.computeSliding(data)
 		else:
@@ -139,6 +147,9 @@ class grid:
 		assert (len(np.shape(data)) == 2), "in speckleContrast: \"grid\" only works with a 2D array"
 		npix=np.shape(data)
 		blockSize=(npix[0]/self.gridSize[0], npix[1]/self.gridSize[1])
+		if blockSize[0]<1 or blockSize[1]<1:
+			# Grid blocks smaller than one pixel! We cannot compute that!
+			return float('NaN')
 		C = 0.
 		n = 0
 		for i in range(0, self.gridSize[0]):
