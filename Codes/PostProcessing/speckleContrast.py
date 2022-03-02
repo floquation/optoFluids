@@ -55,7 +55,7 @@ class window:
 	def __call__(self,data):
 		# Sanity check on data size:
 		npix=np.shape(data)
-		if blockSize[0]>npix[0] or blockSize[1]>npix[1]:
+		if self.blockSize[0]>npix[0] or self.blockSize[1]>npix[1]:
 			# Window is larger than the entire camera! We cannot deal with this!
 			return float('NaN')
 

@@ -35,6 +35,9 @@ pathprepend "$THIS_PWD/templating"
 
 # Export useful bash functions
 source "$THIS_PWD/bash_functions/bashmath" # Math in terminal
+source "$THIS_PWD/bash_functions/bashForFoam" # Useful funcs like getTimeDirs
+source "$THIS_PWD/bash_functions/bashForOptics" # Useful funcs like plotting NParticles versus time
+source "$THIS_PWD/bash_functions/bashMisc" # other funcs
 
 # PYTHONPATH: for finding Python modules inside Python scripts
 pathprepend "$THIS_PWD" PYTHONPATH
