@@ -7,6 +7,13 @@ export OPTOFLUIDS_DIR="$thisDir"
 # Load python 3
 pathprepend "$OPTOFLUIDS_DIR/Dependencies/anaconda3/bin"
 
+# gcc
+pathprepend "$OPTOFLUIDS_DIR/Dependencies/gcc/build/bin"
+pathprepend "$OPTOFLUIDS_DIR/Dependencies/gcc/builddeps/lib" LD_LIBRARY_PATH # Required by gcc to execute gcc
+pathprepend "$OPTOFLUIDS_DIR/Dependencies/gcc/builddeps/lib64" LD_LIBRARY_PATH # Required by gcc to execute gcc
+pathprepend "$OPTOFLUIDS_DIR/Dependencies/gcc/build/lib" LD_LIBRARY_PATH # Required by gcc to execute gcc
+pathprepend "$OPTOFLUIDS_DIR/Dependencies/gcc/build/lib64" LD_LIBRARY_PATH # Required by gcc to execute gcc
+
 ## OptoFluids
 # Add the codes to the path
 source "$OPTOFLUIDS_DIR/Codes/.bashrc" 
