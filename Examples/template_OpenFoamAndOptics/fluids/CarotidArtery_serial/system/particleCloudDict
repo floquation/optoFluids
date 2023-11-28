@@ -1,0 +1,101 @@
+// ************************************************************************* //
+//                          Add a cloud to the solver
+// ************************************************************************* //
+
+//TODO:	Do I need this every iteration, or only for initialization???
+//	Hypothesis: I need it every iteration, because mu is used in the calculation and otherwisely it has no knowledge of how to compute mu (=nu*rho).
+
+rho { //Required for "evolveInclusions" (below)
+	type expressionField;
+	expression "nu*1157.2/nu"; // work-around to get the right datatype being a uniform value for rho of 1157.2
+            //Customise rho if required!
+	fieldName "rho";
+	autowrite false;
+	dimension [1 -3 0 0 0 0 0];
+}
+
+mu { //Required for "evolveInclusions" (below)
+	type expressionField;
+	expression "nu*rho";
+	fieldName "mu";
+	autowrite false;
+	dimension [1 -1 -1 0 0 0 0];
+}
+
+evolveParticles {
+	type evolveKinematicCloud;
+	cloudName particles;
+	rhoName rho;
+	UName U;
+	muName mu;
+	//	g g [0 1 -2 0 0 0 0] (0 0 -9.81); //may overwrite the standard gravity if pleased
+}
+
+// ************************************************************************* //
+//                           Gather inclusion data
+//                               swakExpression
+// ************************************************************************* //
+/*
+inclusionPosition_yPos {
+        type swakExpression;
+        outputControlMode timeStep;
+	outputInterval 1;
+        expression "pos().y";
+        accumulations (
+            min
+            max
+            average
+//	    quantile0.75
+//	    quantile0.90
+//	    quantile0.95 
+//	    quantile0.99 
+        );
+        verbose true;
+
+        valueType cloud;
+        cloudName particles;
+}
+inclusionPosition {
+	$inclusionPosition_yPos;
+
+        expression "pos()";
+        accumulations (
+            average
+        );
+}
+
+
+// ************************************************************************* //
+//                           Gather inclusion data
+//                               distributions
+// ************************************************************************* //
+inclusionDistr_yPos {
+	type swakExpressionDistribution;
+        valueType cloud;
+        cloudName particles;
+
+	outputControlMode outputTime;
+	outputInterval 1;
+	verbose true;
+	expression "pos().y";
+
+	writeTimeline true; //TODO: Off @ production run?
+	writeDistribution true;
+	weight "1";
+	mask "true";
+	distributionBinWidth 0.001;
+}
+
+inclusionDistr_yPos_overX {
+	$inclusionDistr_yPos;
+
+	type swakExpressionAverageDistribution;
+	abscissa "pos().x";
+
+	binNumber 50;
+	valueIfZero 0;
+}
+*/
+
+
+// ************************************************************************* //

@@ -1,0 +1,10 @@
+#! /bin/bash
+
+herp=($(grep -E -o "[0-9]+\.[0-9]*\)" CCAFlowRate.data))
+mean=0
+for derp in ${herp[@]}
+do
+	mean=$(awk -v som=$mean -v herpaderp=${derp::-1} 'BEGIN{print som + herpaderp}')
+done
+mean=$(awk -v som=$mean -v lengte=${#herp[@]} 'BEGIN{print som / lengte}')
+echo $mean

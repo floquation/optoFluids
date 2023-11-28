@@ -1,0 +1,11 @@
+
+use this command muthafucka!
+sed -r -i 's/[0-9]+\.[0-9]*\)/####\)/' CCAConstantFlowRateMean.data
+
+Where the #### must be the mean flow rate of the signal
+
+####=44.4058 
+
+so use:
+
+sed -r -i 's/[0-9]+\.[0-9]*\)/44.4058\)/' CCAConstantFlowRateMean.data

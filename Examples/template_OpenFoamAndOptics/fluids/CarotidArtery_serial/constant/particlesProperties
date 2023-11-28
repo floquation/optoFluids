@@ -1,0 +1,159 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.3.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      particleProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solution
+{
+    active          true;
+    coupled         true;
+    transient       yes;
+    cellValueSourceCorrection on;
+
+    interpolationSchemes
+    {
+        rho         cell;
+        U           cellPoint;
+        mu          cell;
+    }
+
+    averagingMethod basic;
+
+    integrationSchemes
+    {
+        U               Euler;
+    }
+
+    sourceTerms
+    {
+        schemes
+        {
+            U semiImplicit 1;
+        }
+    }
+}
+
+constantProperties
+{
+    rho0            1.1E3;
+
+    alphaMax        0.9;
+}
+
+subModels
+{
+    particleForces
+    {
+        sphereDrag;
+        //gravity;
+        // virtualMass {
+        //     Cvm 0.5;
+        // }
+        //pressureGradient;
+    }
+
+    injectionModels
+    {
+    
+        model1
+        {
+            type            patchInjection;
+            patchName       INLET;
+            U0              ( 0 0 0 ); 
+            flowRateProfile constant  0.1;
+            massTotal        1.0; //unused when parcelBasisType = fixed
+	    nParticle       1; //number of particles per parcel
+            SOI              0;
+            parcelBasisType fixed;
+            duration 50; // just keep injecting till the end, since choice to use escape condition at outlet was made
+            parcelsPerSecond 10000; //with nParticle = 1, this corresponds to particles per second. A value of 10000 gave (r-r')_mean = 0.007, (where 0.003 worked with optics code), and (r-r')_min = 0.0004, (where 0.00016 worked with optics code).. however it still gives reconstructPar errors: particle outside cell
+            sizeDistribution
+            {
+                type fixedValue;
+                fixedValueDistribution
+                {
+                    value 4E-6;
+                }
+            }
+        }
+
+    }
+
+    dispersionModel none;
+
+    patchInteractionModel localInteraction;
+
+    localInteractionCoeffs
+    {
+        patches
+        (
+            "WALL||INLET"
+            {
+                type rebound;
+                e    1;
+                mu   0;
+            }
+	    OUT1
+	    {
+		type escape;
+   	    }
+	    OUT2
+	    {
+		type escape;
+	    }
+        );
+    }
+
+    heatTransferModel none;
+
+    surfaceFilmModel none;
+
+    packingModel none;
+
+    dampingModel relaxation;
+
+    relaxationCoeffs
+    {
+        timeScaleModel
+        {
+            type nonEquilibrium;
+            alphaPacked 0.58;
+            e 0.9;
+        }
+    }
+
+    isotropyModel stochastic;
+
+    stochasticCoeffs
+    {
+        timeScaleModel
+        {
+            type isotropic;
+            alphaPacked 0.58;
+            e 0.9;
+        }
+    }
+
+    stochasticCollisionModel none;
+
+    radiation off;
+}
+
+
+cloudFunctions
+{}
+
+
+// ************************************************************************* //

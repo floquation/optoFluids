@@ -1,0 +1,51 @@
+#! /bin/bash
+
+if [[ "$1" == "-h" || "$1" == "--help" || "$2" == "-h" || "$2" == "--help"  ]]; then
+	echo "This script will remove a particle if the input arguments follows the following convention:"
+	echo "	arg1 = (xCoord yCoord zCoord) cellID; arg2 = timefolder"
+	echo "Note: It will simply ignore all other arguments except the first and second"
+	echo "Note 2: The assumption is here that the header is always the same, and the start of the list is as well (line 20)"
+	echo "Note 3: Another assumption is that the chosen particle to remove only exists once or all will be removed... but that makes sense unless a 2nd particle has exactly the same location and the chosen position-cell# combo is an erronous one so remove any and all occurrances anyway"
+else
+	if [[ $1 =~ \([0-9]*\.?[0-9]*[[:space:]][0-9]*\.?[0-9]*[[:space:]][0-9]*\.?[0-9]*\)[[:space:]][0-9]+ && $2 =~ [0-9]+\.?[0-9]* ]]; then
+		echo "Searching particle with position and cell number $1 which occurred for time t = $2"
+		curdir=$(pwd)
+		for dirs in $(find $curdir -mindepth 1 -maxdepth 1 -type d -name "processor*") # Loop over all the processors to find the offending particle
+		do
+			searchResult=$(grep -n "$1" $dirs/$2/lagrangian/particles/positions) #grepping inside one file shouldn't be too slow
+			if [[ ! $searchResult == "" ]]; then # Weed out the non-empty search result (only allows one instance, then killed by break 2) But this makes sense as each error during reconstruct can be treated as unique
+				echo "	Found offending particle in: $dirs/$2"
+				echo "	If something went wrong, feed this folder to undoRemoval script: $dirs/$2/lagrangian/particles/"
+				echo "	Removing particle with position and cell number $1"
+				resultLineNr=$(echo $searchResult | cut -d ":" -f 1) # the line number of the particle in question
+				startingLine=$(grep -Exn "^[0-9]+$" $dirs/$2/lagrangian/particles/positions) # finds the line where the positions array actually starts, with the line number prepended
+				startLineArray=(${startingLine//:/ }) # Separate it into an array. The first index (0) of this array has the startLineNr and the second index (1) has the number of particles
+				locationInArr=$(( $resultLineNr - ${startLineArray[0]} )) #such that this number is the location in the array for all files
+				for lagrangianFile in $(find $dirs/$2/lagrangian/particles/ -mindepth 1 -maxdepth 1 -type f) # then loop over all the files in the lagrangian particle dir
+				do
+					#echo "Editing file $(echo $lagrangianFile | rev | cut -d "/" -f 1 | rev)"
+					hasNoArray=$(grep -En "[0-9]+\{" $lagrangianFile)
+					#cp $lagrangianFile $lagrangianFile.bak #backup the file
+					if [[ $hasNoArray == "" ]]; then # if file does not not contain a long particle array
+						startingLineNrCurFile=$(( $(grep -En "^\($" $lagrangianFile| cut -d ":" -f 1) -1 )) #Find file-specific starting line of array... under the assumption that the single ( character on one line is unique in these files.. should be
+						particleLine=$(( $startingLineNrCurFile + $locationInArr )) #calculate the correct particle line
+						sed -e "${startingLineNrCurFile}s/${startLineArray[1]}/$(( ${startLineArray[1]} - 1))/" $lagrangianFile > $lagrangianFile.Edit # replace ${startLineArray[1]} with $((${startLineArray[1] - 1)), where artihmetic is done inside $(( )), at line ${splitted[0]}. This line replaces the "number of entries"-indicator above the array
+						sed -e "${particleLine}d" $lagrangianFile.Edit > $lagrangianFile.Edited #remove particle line
+						mv $lagrangianFile $lagrangianFile.bak #backup original
+						mv $lagrangianFile.Edited $lagrangianFile #replace original
+						'rm' $lagrangianFile.Edit #remove temporary file of first edit
+					else #if the file only has a single number spec
+						sed -e "s/${startLineArray[1]}{/$(( ${startLineArray[1]} - 1 )){/" $lagrangianFile > $lagrangianFile.Edited #replace the occurance of particleNR{ with (particleNR-1){
+						mv $lagrangianFile $lagrangianFile.bak
+						mv $lagrangianFile.Edited $lagrangianFile
+					fi
+				done
+				echo "Note: Stuff may have still gone wrong but......"
+				echo "Done!"
+				break 2 # found and removed the particle, exit
+			fi
+		done
+	else
+		echo "The input argument is not recognized, doing nothing!"
+	fi		
+fi

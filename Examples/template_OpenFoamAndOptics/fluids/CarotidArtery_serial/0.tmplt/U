@@ -1,0 +1,121 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    location    "0";
+    object      U;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 1 -1 0 0 0 0];
+
+internalField   uniform (0 0 0); 
+
+boundaryField
+{
+    INLET
+    {
+        type			groovyBC;
+	variables		
+	19
+	( //the normals point outward. For the inlet that means all components of the normalvector positive, so do two rotations to align with the normals with +z, then define the parabolic profile
+		"xp=pos().x;" // x-positions of the cell centers
+		"xpmax=max(xp);" // the max
+		"xpmin=min(xp);" // the min
+		"xcenter=(xpmax+xpmin)/2;" //and the x-coordinate of the center
+		"yp=pos().y;" // y-positions of the cell centers
+		"ypmax=max(yp);" // the max
+		"ypmin=min(yp);" // and the min
+		"ycenter=(ypmax+ypmin)/2;" //and the y-coordinate of the center
+		"zp=pos().z;" // z-positions of the cell centers
+		"zpmax=max(zp);" // the max
+		"zpmin=min(zp);" // the min
+		"zcenter=(zpmin+zpmax)/2;" // and the z-coordinate of the center
+		"centerVect=vector(xcenter,ycenter,zcenter);" // the center of the patch in vector-form
+		"posVect=vector(pos().x,pos().y,pos().z)-centerVect;" // now translate the entire crap, such that the posVect's are basically the radii. 
+		"R=max(mag(posVect));" // now obtain the radius as the max of all the corresponding radial positions of the cells
+		"parabolicProfile=mag(1-(sqr(mag(posVect))/sqr(R)));" // now define the parabolic profile for each cell
+		"profileMeanIntermediate=parabolicProfile*area();" // this is approxx the integral of the profile over the surface (f(r,theta)*dA) before actually integrating
+		"profileMean=sum(profileMeanIntermediate)/sum(area());" // actually integrate (sum), and then divide by the total area to get the profile mean
+		"mLtomCubed=1/1000000;"
+	); // notes on the parabolic profile: an averaging integral like 1/A*integral(0,2pi,integral[0,R,V(r,t)] where the V(r,t) is V_HB*(1-(r/R)^2), will give V_HB/2, so correct mean to 1.
+	evaluateDuringConstruction 0;
+	timelines
+	(
+		{
+			name heartBeatSignal;
+			outOfBounds repeat;
+			fileName "$FOAM_CASE/constant/CCAFlowRate.data"; // transient heartbeat waveform thingy
+			//fileName "$FOAM_CASE/constant/CCAConstantFlowRateMean.data"; // constant flowrate = mean of heartbeat thingy
+		}
+	);
+	valueExpression		"-1*mLtomCubed*(1/profileMean)*parabolicProfile*(heartBeatSignal/sum(area()))*normal()"; // the area of the patch is sum of all the area's of the faces
+	value			uniform (0 0 0);				
+    }
+    WALL
+    {
+        type            fixedValue;
+	value		uniform (0 0 0);
+    }
+    OUT1 // ICA
+    {
+        type				flowRateInletVelocity;
+	volumetricFlowRate	swak{ //swak data entry. Only works when the init is done correctly in the controlDict
+		variables
+		2
+		(
+			"flowRatio=0.6;" // the flow is specified at 60/40 ICA/ECA flow ratio at all times
+			"mLtomCubed=1/1000000;"
+		);
+		timelines
+		(
+			{
+				name heartBeatSignal;
+				outOfBounds repeat;
+				fileName "$FOAM_CASE/constant/CCAFlowRate.data"; // transient heartbeat waveform thingy
+			}
+		);
+		expression "-flowRatio*mLtomCubed*heartBeatSignal"; //the minus sign is because the volumetric flow rate is supposed to be out of the domain (the BC is defined as inlet)
+		independentVariableName	t; //Basically a placeholder as well.. to fix weird error
+		valueType	patch;
+		patchName	OUT1;
+	};
+	value	uniform (0 0 0);  // just a place holder
+    }
+    OUT2 //ECA
+    {
+        type				flowRateInletVelocity;
+	volumetricFlowRate	swak{ //swak data entry. Only works when the init is done correctly in the controlDict
+		variables
+		2
+		(
+			"flowRatio=0.4;" // the flow is specified at 60/40 ICA/ECA flow ratio at all times
+			"mLtomCubed=1/1000000;"
+		);
+		timelines
+		(
+			{
+				name heartBeatSignal;
+				outOfBounds repeat;
+				fileName "$FOAM_CASE/constant/CCAFlowRate.data"; // transient heartbeat waveform thingy
+			}
+		);
+		expression "-flowRatio*mLtomCubed*heartBeatSignal"; //the minus sign is because the volumetric flow rate is supposed to be out of the domain (the BC is defined as inlet)
+		independentVariableName	t; //Basically a placeholder as well.. to fix weird error
+		valueType	patch;
+		patchName	OUT2;
+	};
+	value	uniform (0 0 0); // just a place holder
+    }
+}
+
+
+// ************************************************************************* //
