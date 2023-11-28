@@ -1,0 +1,24 @@
+#!/bin/sh
+#### @Author: kevinvanas
+#### @Date: 02/10/2018
+
+### PBS stuff:
+
+#PBS -l nodes=1:ppn=12
+#PBS -r n
+#PBS -N myOpticsRun
+
+
+### Load:
+
+cd $PBS_O_WORKDIR
+source ~/.bashrc
+loadoptofluids
+
+NO_OF_CORES="$(cat "$PBS_NODEFILE" | wc -l)" || NO_OF_CORES=1
+
+### Run:
+date
+timeLooperParallel.py -i particlePositions -o results -f -l -C $NO_OF_CORES
+date
+
