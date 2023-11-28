@@ -1,0 +1,61 @@
+! Rules:
+! All items should be on a separate line.
+! Vectors start with a '(' and end with a ')', space-separated.
+! A line starting with a '!' indicates a comment-line.
+! Maximum length of a line = 250, but no line continuation is supported. The same applies to filenames.
+
+! This is the "double long slit" case of the validation of March10.
+
+! /-------\
+! | DEBUG |
+! \-------/
+
+0                       ! Debug level (0 = off, 5 = max)
+
+! /-----------\
+! | Constants |
+! \-----------/
+
+1.55                    ! Refre
+0.0                     ! Refim
+1.00                    ! Refmed
+
+0.2                       ! Wavelength        [a.u.]
+0.2                       ! a (sphere radius) [same a.u. as wavelength]
+
+! /------------\
+! | Directions |
+! \------------/
+! Note: unit vectors are automatically normalised by the code, so don't bother yourself.
+
+( 1 0 0 )               ! khat, direction of propagation of the incident plane wave
+( 0 1 0 )               ! Eihat, direction of polarisation of the electric field. Linearly polarised per definition. MUST BE ORTHOGONAL TO khat!
+
+! /------------------\
+! | Sphere Positions |
+! \------------------/
+
+particlePositions_longDoubleSlit       ! Filename of the file holding the particle positions
+
+! /--------\
+! | Camera |
+! \--------/
+! Note that the origin is the reference for all phases at t=0.
+
+300                      ! nPixels in direction r1
+300                      ! nPixels in direction r2
+( 100 0 1 )               ! r0, the center position of the camera
+( 0 50 0 )              ! r1, the first direction of pixel increments
+( 0  0  50 )             ! r2, the second direction of pixel increments
+
+
+! /--------\
+! | Output |
+! \--------/
+
+PixelCoords_longDoubleSlit_B2.out         ! Output the pixel positions in which the data is gathered. Columns = xyz, Rows = pixelId,
+Intensity_longDoubleSlit_B2.out           ! Output the intensity. Rows = intensity(pixelId)
+
+
+
+!EOF
