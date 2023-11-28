@@ -1,0 +1,46 @@
+# Non-executable shell script, holding only the required variables
+# It should be sourced to obtain these variables in another shell script.
+
+#############
+## Geometry Input
+####
+
+geom=cyl # geometry {cyl}
+cyl_R=0.001 # cylinder radius [m]
+cyl_L=0.01 # cylinder length [m]
+geom_origin="(0,0,"$(mathPy "-$cyl_L/2")")" # Shift cylinder origin by this amount [m]
+
+#############
+## Fluids Input
+####
+
+Umean=1.0 # Mean flow velocity [m/s]
+dt="5e-4" # Timestep for integrating position based on velocity
+
+#############
+## Particles Input
+####
+
+N=100  # number of particles [-]
+
+#############
+## Flow Configuration
+####
+
+## Spatial profile {constant/plug, Poiseuille}
+profile="plug"
+#profile="Poiseuille"
+
+## Temporal profile {none, sin, lookupTable}
+# none example:
+#modulation="none"
+# sin example:
+modulation="sin"
+modargs="frequency=1.0;amplitude=0.375"
+# lookupTable example:
+#modulation="lookupTable"
+#heartbeat="$(dirname $(which moveParticles.py))/heartbeat/heartbeatVelo_Baker2017"
+#modargs="$heartbeat;boundaryStrategy=cyclic"
+
+
+# EOF

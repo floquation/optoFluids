@@ -1,0 +1,6 @@
+# Non-executable shell script, holding only the required variables
+# It should be sourced to obtain these variables in another shell script.
+
+particlesDN="fluids/particles"
+opticsResultsDN="optics/results"
+

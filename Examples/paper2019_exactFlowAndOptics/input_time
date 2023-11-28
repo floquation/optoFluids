@@ -1,0 +1,22 @@
+# Non-executable shell script, holding only the required variables
+# It should be sourced to obtain these variables in another shell script.
+
+#############
+# OptoFluids Input / Coupling
+####
+
+# Presimulation duration:
+#presim_T=0.01 # time to run CFD before starting to acquire data for optics
+#presim_n_T=1 # how many samples do we write? In principle only one (=the final result) required.
+
+# Simulation duration:
+num_cycles=40
+sim_T=$(mathPy "1*$num_cycles") # total simulation time [s] # sinus f=1Hz
+#sim_T=$(mathPy "0.835*$num_cycles") # total simulation time [s] # heartbeat T=0.835s
+sim_n_T=$(mathPy "20*$num_cycles") # number of temporal data points sampled [-]
+
+# Camera integration time:
+cam_t_int=0.1e-3 # camera integration time [s]
+cam_n_int=40 # number of time samples used for t_int [-]
+
+# EOF

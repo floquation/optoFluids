@@ -1,0 +1,26 @@
+# !/usr/bin/env bash
+
+## Settings
+#PBS -l nodes=1:ppn=10
+#PBS -r n
+#PBS -N rerun_optics
+flags="-f"
+
+## Prepare
+cd $PBS_O_WORKDIR
+shopt -s expand_aliases # Get aliases from ~/.bashrc
+source ~/.bashrc || exit 1
+loadoptofluids || exit 1
+
+date
+
+NO_OF_CORES="$(cat "$PBS_NODEFILE" | wc -l)" || NO_OF_CORES=1
+echo "Using nodes ($NO_OF_CORES):"
+cat $PBS_NODEFILE
+echo ""
+
+## Optics
+./runAll.sh $flags || exit 1
+
+## Finish
+date
