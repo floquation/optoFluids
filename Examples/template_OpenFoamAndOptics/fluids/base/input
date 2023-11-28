@@ -1,0 +1,42 @@
+! Radius of pipe
+R=8E-3
+sqrt2R/2=0.0056568542
+! Halfwidth of the inner square for cylindrical mesh:
+wInnerSquare/2=1.6E-3
+
+! Length of pipe
+L=1E-2
+
+! Origin (NYI)
+!Origin=(0,0,0)
+
+! Density (rho)
+! fluid
+rho_f=1157.2
+! particle
+rho_p=1.1E3
+
+! Kinematic Viscosity (nu)
+nu=8.28E-6
+
+! Number of Particles (N)
+numParticles=100
+
+! Particle Size (a)
+partSize=4E-6
+
+! Estimate of uniform initial velocity (U) (best-guess = <U>=Ucenterline/2)
+! Note, should have opposite sign as DeltaP.
+U_est=-4E-2
+
+! DeltaP/rho, pressure drop over the entire pipe
+! Can be calculated from the required velocity using Poiseuille Flow:
+!  U(r) = 1/4 * dP/dz * 1/mu * (r^2-R^2)
+!  --> DeltaP/rho = dP/dz*L/rho = (4*U(r)*mu/(r^2-R^2))*L/rho
+!  --> DeltaP/rho = -(4*Ucenterline*nu/R^2)*L
+! MUST BE CHOSEN POSITIVE (for some reason I don't understand.)
+DeltaP/rho=2.6780625E-4
+
+
+
+! EOF

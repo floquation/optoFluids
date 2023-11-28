@@ -1,0 +1,24 @@
+// Copyright: 	This dict was given to me by Eelco van Vliet; Tata Steel employee.
+//		I do not know who the original author is.
+
+controlOnNext
+{
+  type abort;
+  functionObjectLibs ("libjobControl.so" );
+  action nextWrite;
+  fileName "snapshot";
+}
+killNow
+{
+  type abort;
+  functionObjectLibs ( "libjobControl.so" );
+  action noWriteNow;
+  fileName "killrun";
+}
+suspendNow
+{
+  type abort;
+  functionObjectLibs ( "libjobControl.so" );
+  action writeNow;
+  fileName "suspend";
+}

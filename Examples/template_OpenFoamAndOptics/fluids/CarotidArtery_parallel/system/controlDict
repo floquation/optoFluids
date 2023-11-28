@@ -1,0 +1,88 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     pimpleFoam;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         1;
+
+deltaT          0.002;
+
+writeControl    runTime;
+
+writeInterval   1;
+
+purgeWrite      0; // set to one for the particle preparation run, only save the last time point, which will be used as the "0" folder for the remainder!
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable yes;
+
+adjustTimeStep  yes;
+
+maxCo		0.8; //only used when adjustTimeStep = yes
+
+libs
+(
+        "libsimpleFunctionObjects.so"
+        
+	"libsimpleSwakFunctionObjects.so"
+	"libswakLagrangianParser.so"
+        "libswakFunctionObjects.so"
+	"libsimpleLagrangianFunctionObjects.so"
+	
+	//"libkvaFunctionObjects.so"
+	//"libswakVelocityFunctionPlugin.so"
+	"libgroovyBC.so"
+	"libgroovyStandardBCs.so"
+	
+	//"libcustomCloudFunctionObjects.so"
+);
+
+functions
+{
+	//work-around: otherwise mesh is NULL during construction of FuncObjs.
+	// this thingy is also needed to be able to do swak dataEntry calls with swak {\n <stuff> \n};
+	doInit {
+		type initSwakFunctionObject;
+	}
+
+//	#include "whichFieldsDict" //Prints a list of available fields before startTime (should be last to see fields created by the above functions (I assume))
+
+// enable/disable particles with the following line:
+	#include "particleCloudDict" //Evolves 1-way coupled particle cloud
+
+//	#include "jobControlDict" //Useful methods to quickly terminate a simulation (should be last if the above functions are to be called before termination)
+
+//	#include "whichFieldsDict" //Prints a list of available fields before startTime (should be last to see fields created by the above functions (I assume))
+}
+
+
+// ************************************************************************* //

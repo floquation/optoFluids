@@ -1,0 +1,24 @@
+#!/bin/sh
+#### @Author: kevinvanas
+#### @Date: 19/09/2018
+
+### PBS stuff:
+
+#PBS -l nodes=1:ppn=$nProc$
+#PBS -r n
+#PBS -N $runName$
+
+
+### Load:
+
+cd \$PBS_O_WORKDIR
+source ~/.bashrc
+loadoptofluids
+of240
+
+#NO_OF_CORES="\$(cat \$PBS_NODEFILE | wc -l)"
+
+### Run:
+date
+./runFoam.sh ../input_time $caseName$
+date

@@ -1,0 +1,157 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.3.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      particleProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solution
+{
+    active          true;
+    coupled         true;
+    transient       yes;
+    cellValueSourceCorrection on;
+
+    interpolationSchemes
+    {
+        rho         cell;
+        U           cellPoint;
+        mu          cell;
+    }
+
+    averagingMethod basic;
+
+    integrationSchemes
+    {
+        U               Euler;
+    }
+
+    sourceTerms
+    {
+        schemes
+        {
+            U semiImplicit 1;
+        }
+    }
+}
+
+constantProperties
+{
+    rho0            $rho_p$;
+
+    alphaMax        0.9;
+}
+
+subModels
+{
+    particleForces
+    {
+        sphereDrag;
+        //gravity;
+        // virtualMass {
+        //     Cvm 0.5;
+        // }
+        //pressureGradient;
+    }
+
+    injectionModels
+    {
+    
+        model1
+        {
+            type            manualInjection;
+            massTotal       1; //unused when parcelBasisType=fixed.
+            parcelBasisType fixed;
+            nParticle       1; //number of particles per parcel
+            SOI             0; //start-time of the injection
+            positionsFile   "particlesPositions";
+            U0              (0 0 0);
+            //sizeDistribution
+            //{
+            //    type uniform;
+            //    uniformDistribution
+            //    {
+            //        minValue        20e-06;
+            //        maxValue        20e-06;
+            //    }
+            //}
+            sizeDistribution
+            {
+                type fixedValue;
+                fixedValueDistribution
+                {
+                    value $partSize$;
+                }
+            }
+        }
+
+    }
+
+    dispersionModel none;
+
+    patchInteractionModel localInteraction;
+
+    localInteractionCoeffs
+    {
+        patches
+        (
+            walls
+            {
+                type rebound;
+                e    1;
+                mu   0;
+            }
+        );
+    }
+
+    heatTransferModel none;
+
+    surfaceFilmModel none;
+
+    packingModel none;
+
+    dampingModel relaxation;
+
+    relaxationCoeffs
+    {
+        timeScaleModel
+        {
+            type nonEquilibrium;
+            alphaPacked 0.58;
+            e 0.9;
+        }
+    }
+
+    isotropyModel stochastic;
+
+    stochasticCoeffs
+    {
+        timeScaleModel
+        {
+            type isotropic;
+            alphaPacked 0.58;
+            e 0.9;
+        }
+    }
+
+    stochasticCollisionModel none;
+
+    radiation off;
+}
+
+
+cloudFunctions
+{}
+
+
+// ************************************************************************* //

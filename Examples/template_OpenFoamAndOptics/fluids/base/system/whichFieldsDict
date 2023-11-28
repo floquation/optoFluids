@@ -1,0 +1,14 @@
+whichFieldsStarter{
+	type executeIfStartTime;
+        outputControlMode timeStep;
+        outputInterval 1;
+        readDuringConstruction  false;
+        runIfStartTime yes;
+        functions {
+               	whichFields{
+               		type listRegisteredObjects;
+               		outputControlMode timeStep;
+        		outputInterval 1;
+                }
+     	 }
+}

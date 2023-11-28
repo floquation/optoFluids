@@ -1,0 +1,44 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      p;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -2 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+
+    walls
+    {
+        type            zeroGradient;
+    }
+
+
+    cycLeft
+    {      
+        type            fan;
+        patchType       cyclic;
+        jumpTable polynomial 1(($DeltaP/rho$ 0)); // Pressure drop: DeltaP/rho
+        // The list is a list of polynomial coefficients: f_1 + f_2*v + f_3*v^2 + ...
+        value           uniform 0;
+    }                                                                                
+
+    cycRight
+    {       
+        type            fan;
+        patchType       cyclic;
+    }
+
